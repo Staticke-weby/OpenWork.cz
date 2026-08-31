@@ -1,57 +1,45 @@
-# Bezplatné úrovně poskytovatelů — zdroj dat pro /kolik-to-stoji/bezplatne-urovne
-# Pravidla: každý řádek má zdroj (odkaz) a datum ověření. Bez zdroje řádek nezveřejňujeme.
-# Limity bezplatných úrovní se často mění — ověřovat průběžně.
+# Bezplatné úrovně — zdroj dat pro /kolik-to-stoji/bezplatne-urovne
+# Struktura: bloky poskytovatelů, pod každým ukázky bezplatných modelů.
+# Bezplatné modely rotují — názvy uvádět vždy s datem ověření.
 
 last_verified: 2026-08-31
 zmenovnik:
   - datum: 2026-08-31
-    zmena: "Ověřeny limity Groq, Cerebras, OpenRouter a bezplatné modely OpenCode Zen z veřejných zdrojů."
-  - datum: 2026-08-30
-    zmena: "Založení souboru, ukázkové řádky."
+    zmena: "Přepracováno na bloky OpenCode Go a OpenRouter s ukázkami bezplatných modelů k 31. 8. 2026."
 
-sloupce:
-  - poskytovatel
-  - modely_zdarma
-  - limit
-  - karta_nutna
-  - data_k_treninku
-  - typ            # trvala_uroven | jednorazovy_kredit
-  - zdroj
-  - overeno
-
-radky:
-  - poskytovatel: "Groq"
-    modely_zdarma: "Llama, Mistral Saba, Qwen 3, Kimi K2, GPT-OSS 120B a další"
-    limit: "30 požadavků/min, 14 400 požadavků/den, 6 000 tokenů/min (dle modelu)"
-    karta_nutna: ne
-    data_k_treninku: "nejasné — ověřit v podmínkách"
-    typ: trvala_uroven
-    zdroj: "https://console.groq.com/docs/rate-limits"
-    overeno: 2026-08-31
-
-  - poskytovatel: "Cerebras"
-    modely_zdarma: "modely na platformě Cerebras (Llama a další)"
-    limit: "1 000 000 tokenů/den, 30 požadavků/min, kontext do 8 000 tokenů"
-    karta_nutna: ne
-    data_k_treninku: "nejasné — ověřit v podmínkách"
-    typ: trvala_uroven
-    zdroj: "https://inference-docs.cerebras.ai/"
-    overeno: 2026-08-31
-
-  - poskytovatel: "OpenCode Zen (bezplatné modely)"
-    modely_zdarma: "Big Pickle, MiMo-V2.5 Free, Ling 3.0 Flash Fin Free, Nemotron 3 Ultra/3.5 Lightning Free, Muse Spark 1.2 Contributor Free (rotují)"
-    limit: "nejasné — uvádět s datem"
+bloky:
+  - poskytovatel: "OpenCode Go"
+    odkaz: "https://opencode.ai/go?ref=K0VC03J925"
+    popis: "Brána od tvůrců opencode a naše doporučená cesta. Část modelů je zdarma; nabídka se mění."
+    limit: "uvádět s datem — ověřit u poskytovatele"
     karta_nutna: "nejasné"
-    data_k_treninku: "u některých ano — free modely mohou trénovat na datech, Nemotron loguje záznamy"
-    typ: trvala_uroven
     zdroj: "https://opencode.ai/docs/zen/"
     overeno: 2026-08-31
+    modely:
+      - nazev: "Big Pickle"
+        poznamka: "v období zdarma může trénovat na datech"
+      - nazev: "MiMo-V2.5 Free"
+        poznamka: "může trénovat na datech"
+      - nazev: "Ling 3.0 Flash Fin Free"
+        poznamka: "může trénovat na datech"
+      - nazev: "Nemotron 3 Ultra Free"
+        poznamka: "loguje záznamy (NVIDIA)"
+      - nazev: "Muse Spark 1.2 Contributor Free"
+        poznamka: "může trénovat na datech"
 
-  - poskytovatel: "OpenRouter (bezplatná řada)"
-    modely_zdarma: "desítky modelů s příponou :free (rotují)"
+  - poskytovatel: "OpenRouter"
+    odkaz: "https://openrouter.ai/models"
+    popis: "Brána k desítkám modelů. Bezplatná řada má u názvu příponu :free a průběžně se obměňuje."
     limit: "20 požadavků/min; 50 požadavků/den (do útraty 10 $), pak 1 000/den"
-    karta_nutna: ne
-    data_k_treninku: "liší se podle modelu — ověřit"
-    typ: trvala_uroven
-    zdroj: "https://openrouter.ai/"
+    karta_nutna: "ne"
+    zdroj: "https://openrouter.ai/models"
     overeno: 2026-08-31
+    modely:
+      - nazev: "Qwen3-Coder :free"
+        poznamka: "vhodný na kód"
+      - nazev: "Llama 3.3 70B Instruct :free"
+        poznamka: "obecný, vícejazyčný"
+      - nazev: "Poolside Laguna :free"
+        poznamka: "vhodný na kód a návrhy v editoru"
+      - nazev: "Nemotron / GPT-OSS / Gemma :free"
+        poznamka: "další z rotující bezplatné nabídky"

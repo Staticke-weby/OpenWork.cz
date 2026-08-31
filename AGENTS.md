@@ -28,8 +28,9 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - **Značku piš vždy „OpenWork" a „OpenWork.cz"** (velké O i W). Malá písmena
   „openwork.cz" jen v URL/doméně. Pozor: „opencode" se naopak píše malým „o".
 - **OpenCode Go a OpenCode Zen vždy plným názvem** — nikdy jen „Go" / „Zen".
-  Referral odkaz na OpenCode Go: `https://opencode.ai/go?ref=K0VC03J925` —
-  používej ho jako CTA „začít / vyzkoušet OpenCode Go" (kanonický zdroj odkazu).
+  **Každý odkaz na OpenCode Go směřuj vždy na referral URL**
+  `https://opencode.ai/go?ref=K0VC03J925` — nejen jako CTA, ale kdekoli
+  OpenCode Go odkazuješ (kanonický zdroj odkazu).
 - **OpenCode Go upřednostňuj** jako doporučenou cestu. Důvod: jde v něm nechat
   jen modely s nulovým uchováváním dat (ZDR) — nevyhovující modely (např. free
   modely trénující na datech, nebo OpenAI/Anthropic API s 30denním uchováním)

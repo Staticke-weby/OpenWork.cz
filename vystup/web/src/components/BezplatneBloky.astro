@@ -1,0 +1,113 @@
+---
+// Bezplatné úrovně jako bloky poskytovatelů, pod každým ukázky modelů.
+// Data ze src/data/*.yaml (čte se v čase sestavení). Prop `zdroj` = název souboru.
+import { load } from 'js-yaml';
+
+interface Props {
+  zdroj: string;
+}
+const { zdroj } = Astro.props;
+
+const soubory = import.meta.glob('../data/*.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+const raw = soubory[`../data/${zdroj}`];
+if (!raw) throw new Error(`BezplatneBloky: soubor src/data/${zdroj} nenalezen.`);
+const data: any = load(raw) ?? {};
+
+const bloky: any[] = data.bloky ?? [];
+const overenoTop: string = String(data.last_verified ?? '—');
+
+const jeSk = Astro.currentLocale === 'sk';
+const odkazZmeny = jeSk ? '/sk/o-webu/historie-zmen/' : '/o-webu/historie-zmen/';
+const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+function datum(h: unknown): string {
+  if (h instanceof Date && !Number.isNaN(h.getTime())) return datumFormat.format(h);
+  return String(h ?? '—');
+}
+
+const t = jeSk
+  ? { overeno: 'Naposledy overené', zmeny: 'história zmien', limit: 'Limit', karta: 'Karta',
+      ano: 'áno', nie: 'nie', model: 'Model', pozn: 'Poznámka', zdroj: 'Zdroj' }
+  : { overeno: 'Naposledy ověřeno', zmeny: 'historie změn', limit: 'Limit', karta: 'Karta',
+      ano: 'ano', nie: 'ne', model: 'Model', pozn: 'Poznámka', zdroj: 'Zdroj' };
+
+function karta(v: unknown): string {
+  if (v === true || v === 'ano' || v === 'áno') return t.ano;
+  if (v === false || v === 'ne' || v === 'nie') return t.nie;
+  return String(v ?? '—');
+}
+---
+
+<p class="zdat-overeno">
+  {t.overeno}: {datum(overenoTop)} · <a href={odkazZmeny}>{t.zmeny}</a>
+</p>
+
+{
+  bloky.map((b) => (
+    <section class="ow-blok">
+      <h3 id={String(b.poskytovatel)}>
+        {b.odkaz ? (
+          <a href={b.odkaz} target="_blank" rel="noopener noreferrer">{b.poskytovatel}</a>
+        ) : (
+          b.poskytovatel
+        )}
+      </h3>
+      {b.popis && <p>{b.popis}</p>}
+      <ul class="ow-blok__meta">
+        <li><strong>{t.limit}:</strong> {b.limit ?? '—'}</li>
+        <li><strong>{t.karta}:</strong> {karta(b.karta_nutna)}</li>
+      </ul>
+      <div class="zdat-obal">
+        <table class="zdat-tabulka">
+          <thead>
+            <tr><th>{t.model}</th><th>{t.pozn}</th></tr>
+          </thead>
+          <tbody>
+            {(b.modely ?? []).map((m: any) => (
+              <tr>
+                <td><code>{m.nazev}</code></td>
+                <td>{m.poznamka ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      {b.zdroj && b.zdroj !== '—' && (
+        <p class="ow-blok__zdroj">
+          {t.zdroj}: <a href={b.zdroj} target="_blank" rel="noopener noreferrer">{b.zdroj}</a>
+        </p>
+      )}
+    </section>
+  ))
+}
+
+<style>
+  .ow-blok {
+    margin: 1.5rem 0 2rem;
+  }
+  .ow-blok__meta {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0.75rem;
+    font-size: var(--sl-text-sm);
+  }
+  .ow-blok__meta li {
+    margin: 0.15rem 0;
+  }
+  .ow-blok__zdroj {
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+    margin-top: 0.4rem;
+  }
+  .zdat-obal {
+    overflow-x: auto;
+  }
+</style>
