@@ -33,6 +33,9 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - Vkládat do webu obrázky, fotky nebo soubory PNG/JPG. Veškerá grafika je
   vložené SVG, tabulky HTML nebo strom složek jako stylovaný seznam.
   Jediná výjimka: favicon jako SVG.
+- Přidávat ilustrační diagramy a schémata. Diagram nasadíme jen tam, kde je
+  nezbytně nutný (bez něj se věc nedá vysvětlit) — ne jako dekoraci. Když text
+  řekne totéž, diagram vynech. Ověřená potřeba > hezká grafika.
 - Vymýšlet si fakta, ceny nebo vlastnosti služeb. Kde ti fakta chybí, napiš
   do textu značku `[DOPLNIT: co]` a pokračuj.
 

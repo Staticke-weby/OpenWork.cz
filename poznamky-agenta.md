@@ -38,10 +38,11 @@ Rozhodnutí, která jsem udělal sám při nejednoznačném zadání (dle AGENTS
   1. „Umělá inteligence nad vašimi soubory — bez měsíčního paušálu a bez
      posílání dat na cizí servery."
   2. „AI, kterou máte pod kontrolou vy: vlastní data, vlastní tempo, vlastní účet."
-- **Ústřední SVG** `DiagramPenezenka.astro` (licence za hlavu vs. společná
-  peněženka). Bez fiktivních čísel — cedulky „paušál", součty slovy
-  („5 × paušál = velká částka" / „platíte jen, co kdo spotřebuje"), aby web
-  nelhal o cenách (AGENTS.md). Barvy přes CSS proměnné, `<title>`+`<desc>`.
+- **Ústřední SVG** `DiagramPenezenka.astro` — **odstraněn na pokyn uživatele
+  (2026-08-31), přebíjí zadání 2.** Uživatel ho označil za zbytečnou/ošklivou
+  grafiku, která nic nepřidá; text pilíře říká totéž. Komponenta smazána,
+  z `index.mdx` odebrán import i použití. Ikony u dlaždic a tlačítek ponechány
+  (uživatel je nechal být).
 - **Odběr novinek** v závěru zatím `[DOPLNIT: odkaz na odběr novinek]` —
   mechanismus (formulář/služba) není rozhodnut.
 - **Ověření SVG:** panel diagramu se v náhledovém prohlížeči nedaří sejmout
