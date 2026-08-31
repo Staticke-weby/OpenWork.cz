@@ -1,0 +1,61 @@
+---
+// Vlastní logo v hlavičce (nahrazuje výchozí Starlight SiteTitle).
+// Ikona = klíčová dírka (data pod vaší kontrolou), ladí s faviconou.
+// Barvy přes CSS proměnné → funguje ve světlém i tmavém režimu.
+const jeSk = Astro.currentLocale === 'sk';
+const domu = jeSk ? '/sk/' : '/';
+---
+
+<a href={domu} class="ow-logo" aria-label="OpenWork.cz — domů">
+  <svg class="ow-logo__ikona" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+    <rect width="32" height="32" rx="8" class="ow-logo__ctverec" />
+    <text x="16" y="22" text-anchor="middle" class="ow-logo__mono">OW</text>
+  </svg>
+  <span class="ow-logo__text">
+    <span class="ow-logo__name">OpenWork</span><span class="ow-logo__tld">.cz</span>
+  </span>
+</a>
+
+<style>
+  .ow-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    line-height: 1;
+  }
+  .ow-logo__ikona {
+    flex-shrink: 0;
+    border-radius: 8px;
+    /* jemný stín pro odsazení od pozadí hlavičky */
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.15));
+  }
+  .ow-logo__ctverec {
+    fill: var(--sl-color-accent);
+  }
+  .ow-logo__mono {
+    /* monogram „prosvítá" barvou pozadí → adaptuje se na motiv */
+    fill: var(--sl-color-bg);
+    font-family: var(--sl-font, system-ui, sans-serif);
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+  }
+  .ow-logo__text {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: -0.01em;
+  }
+  .ow-logo__name {
+    color: var(--sl-color-white);
+  }
+  .ow-logo__tld {
+    color: var(--sl-color-accent);
+  }
+  /* Na úzkém mobilu ponech jen ikonu, ať se hlavička nepřeplní. */
+  @media (max-width: 30rem) {
+    .ow-logo__text {
+      display: none;
+    }
+  }
+</style>
