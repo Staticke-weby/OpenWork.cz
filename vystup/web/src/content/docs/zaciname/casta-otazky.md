@@ -51,9 +51,22 @@ s jedním dodavatelem**. Srovnání:
 Na **Windows, macOS i Linuxu**. Stáhnete ho zdarma na
 [openworklabs.com/download](https://openworklabs.com/download).
 
-## Máte další otázku?
+## Funguje OpenWork bez internetu?
 
-[DOPLNIT: doplnit otázky podle zpětné vazby od čtenářů.]
+Bez internetu funguje jen s [lokálními AI modely](/vase-data/kde-bezi-vypocet/),
+které běží přímo u vás. Když necháte výpočet na poskytovateli, internet potřeba
+je — model běží na jeho serveru.
+
+## Můžu OpenWork používat ve firmě?
+
+Ano. Pro jednotlivce je desktopová aplikace zdarma; pro týmy a firmy jsou
+placené plány s centrální správou a sdílením přístupů (viz
+[Kolik to stojí](/kolik-to-stoji/)).
+
+## Můžu agentovi dát přístup k e-mailu, kalendáři nebo dalším službám?
+
+Ano, přes [MCP a Composio](/prace-se-slozkou/napojeni-nastroju/). Kde má služba
+vlastní připojení (MCP), použijete ho přímo; kde ne, poslouží Composio.
 
 ---
 

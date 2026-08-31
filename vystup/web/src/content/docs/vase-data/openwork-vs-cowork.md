@@ -18,23 +18,29 @@ Coworku dokonce nabízí návod na přechod.
 
 | | OpenWork | Claude Cowork / Codex |
 |---|---|---|
-| **Cena aplikace** | zdarma (do 5 uživatelů; tým 20 $/místo, firma 50 $/uživatel měsíčně) | placené — Cowork přes předplatné Claude / účet Anthropic, Codex přes OpenAI |
+| **Cena aplikace** | zdarma (do 5 uživatelů; tým 20 $/místo, firma 50 $/uživatel měsíčně) | placené předplatné — Cowork v rámci plánů Claude (Team od 20 $/člen měsíčně při roční platbě), Codex přes OpenAI |
 | **Otevřený kód** | ano — můžete si ověřit, jak funguje | ne (uzavřené) |
-| **Výběr modelů** | přes 50 modelů od různých poskytovatelů | modely jednoho dodavatele (Cowork = Anthropic, Codex = OpenAI) |
-| **Lokální AI modely** | ano (běží u vás na počítači) | [DOPLNIT: ověřit] |
-| **Kde jsou data** | v desktop režimu zůstávají u vás | u dodavatele [DOPLNIT: ověřit retenci] |
+| **Kde jsou data** | v desktop režimu zůstávají u vás; na server jde jen zadání | u dodavatele — Cowork uchovává zadání i výstupy **30 dní**; datové centrum v EU jen v plánu Enterprise |
+| **Výběr modelů** | přes 50 modelů od různých poskytovatelů | Cowork nově umí i cizí a lokální modely (dřív jen Claude); jinak modely daného dodavatele |
+| **Lokální AI modely** | ano (běží u vás na počítači) | Cowork ano (i model ve firemní síti); u Codexu podle podmínek OpenAI |
 | **Účet nutný k začátku** | ne | ano (účet u dodavatele) |
 
 ## Co to znamená v praxi
 
-- **Neplatíte za aplikaci.** OpenWork stáhnete zdarma. Platíte až za AI, a jen
-  za to, co využijete — spoustu práce navíc zvládnete i s modely, které jsou
-  zdarma (viz [Kolik to stojí](/kolik-to-stoji/)).
-- **Nejste zamčení u jednoho dodavatele.** Když některý model zdraží nebo
-  přestane vyhovovat, přepnete na jiný. U uzavřených nástrojů berete, co dostanete.
-- **Data máte pod kontrolou.** Můžete zvolit
-  [lokální AI modely](/vase-data/kde-bezi-vypocet/) nebo poskytovatele
-  s [nulovým uchováváním dat](/vase-data/zdr/).
+Rozdíl už není ani tak ve výběru modelů — Cowork mezitím otevřel i cizí a
+lokální modely. Zůstává v tom **ostatním**:
+
+- **Neplatíte za aplikaci.** OpenWork stáhnete zdarma a bez účtu. Cowork
+  i Codex jedou na placeném předplatném. Za AI pak platíte za spotřebu a
+  spoustu práce zvládnete i s modely zdarma (viz [Kolik to stojí](/kolik-to-stoji/)).
+- **Otevřený kód.** U OpenWorku si můžete ověřit, jak aplikace funguje a co
+  dělá s vašimi soubory. Cowork ani Codex otevřené nejsou.
+- **Data ve výchozím stavu u vás.** V desktop režimu OpenWorku soubory neopouštějí
+  počítač. Cowork zadání i výstupy uchovává 30 dní a evropské datové centrum
+  nabízí jen ve firemním plánu.
+- **Nejste vázaní na jednu platformu.** S OpenWorkem nejste závislí na
+  předplatném ani aplikaci jednoho dodavatele — kdykoli změníte model,
+  poskytovatele i způsob provozu.
 
 ## Přechod z Coworku je snadný
 
@@ -65,9 +71,9 @@ bránu k modelům.
 
 ---
 
-**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) — ceník,
-pozice „otevřená alternativa k Claude Cowork" a
-[návod na přechod z Coworku](https://openworklabs.com/docs/start-here/migrate-from-claude-cowork.md).
-Zbylé údaje o Claude Cowork a Codexu označené `[DOPLNIT]` ověříme z jejich
-oficiálních zdrojů. Ceny se mění — naposledy ověřeno 31. srpna 2026,
-změny v [historii změn](/o-webu/historie-zmen/).
+**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) (ceník,
+[návod na přechod z Coworku](https://openworklabs.com/docs/start-here/migrate-from-claude-cowork.md)),
+[ceník Claude](https://claude.com/pricing) a
+[zásady uchovávání dat Anthropicu](https://support.claude.com/en/articles/15425996-data-retention-practices-for-covered-models).
+Ceny i podmínky se mění — naposledy ověřeno 31. srpna 2026, změny sledujeme
+v [historii změn](/o-webu/historie-zmen/).

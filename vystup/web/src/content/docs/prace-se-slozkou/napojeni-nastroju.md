@@ -38,7 +38,24 @@ Notion, Kalendář a další) a funguje přes MCP. Má i **bezplatný plán**
 **Composio používejte jen tam, kde služba nemá vlastní MCP.** Když vlastní MCP
 existuje, připojte ho přímo — je to jednodušší a bez prostředníka.
 
-[DOPLNIT: krok za krokem, jak Composio připojit k OpenWorku přes MCP.]
+Composio se přidá jako vzdálený (remote) MCP server. Do konfigurace pod klíč
+`mcp` vložíte:
+
+```json
+{
+  "mcp": {
+    "composio": {
+      "type": "remote",
+      "url": "https://connect.composio.dev/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+Poté se otevře přihlášení v prohlížeči, kde Composio povolíte. Hotovo — v chatu
+pak agentovi řeknete, ať se ke Composiu připojí, a on si vyžádá přihlášení
+k dané službě.
 
 ## Na co si dát pozor
 
@@ -48,5 +65,7 @@ oprávnění udělíte.
 
 ---
 
-**Odkud čerpáme:** [dokumentace opencode k MCP](https://opencode.ai/docs/mcp-servers/)
-a [composio.dev](https://composio.dev/). Naposledy ověřeno 31. srpna 2026.
+**Odkud čerpáme:** [dokumentace opencode k MCP](https://opencode.ai/docs/mcp-servers/),
+[composio.dev](https://composio.dev/) a
+[návod Composio pro OpenCode](https://composio.dev/content/mcp-with-opencode).
+Naposledy ověřeno 31. srpna 2026.
