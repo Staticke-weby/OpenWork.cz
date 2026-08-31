@@ -53,6 +53,21 @@ Rozhodnutí, která jsem udělal sám při nejednoznačném zadání (dle AGENTS
 - **Favicon** `public/favicon.svg` (klíčová dírka, barva značky natvrdo —
   favicon je jediná povolená grafika a nemá přístup k CSS proměnným webu).
 
+## Úprava homepage na pokyn uživatele (2026-08-31)
+
+- **Vlastní hero** `Hero.astro` (override Starlight `Hero` v configu) — výchozí
+  hero se uživateli nelíbil. Bez ilustrací: eyebrow, velký nadpis, podtitulek,
+  dvě pilulková tlačítka, tři chips s fajfkou, decentní akcentní gradient.
+  Vše přes CSS proměnné (ověřeno světlý i tmavý režim). Pozn.: `--sl-color-white`
+  ve Starlightu = barva nadpisového textu (tmavá ve světlém, světlá v tmavém),
+  proto ji lze použít na titulek i text chipů.
+- **Přeformulované pilíře** (uživatel: „Platíte za spotřebu, ne za hlavy" laikovi
+  nic neřekne): „Platíte jako za elektřinu", „Kdykoli přejdete jinam" místo
+  „Nikde nejste zamčení". Cíl: konkrétní, srozumitelné běžnému člověku.
+- **Sekce „Co děláme jinak" má 4 bloky** (uživatel chtěl 4): přidán blok
+  „Vyberete si z mnoha AI modelů" s odkazem na /modely/. CardGrid bez stagger
+  (čisté 2×2). Nadpis změněn z „Tři věci…" na „Co děláme jinak".
+
 ### Kontrola češtiny (zadání 03) — kostra 2026-08-31
 
 - Prošel jsem vlastní texty (osnovy, slovníček, návod JAK-NAHRAT, komponenty).

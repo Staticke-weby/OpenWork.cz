@@ -4,7 +4,7 @@ description: Všechno, co dnes AI umí. Bez předplatného a s daty pod vaší k
 template: splash
 hero:
   title: Všechno, co dnes AI umí.
-  tagline: Bez předplatného a s daty pod vaší kontrolou. Průvodce pro obyčejné lidi, kteří chtějí nechat počítač pracovat s vlastními soubory — a nechat si data u sebe.
+  tagline: Nechte počítač pracovat s vlastními soubory pomocí AI — a data si nechte u sebe. Bez předplatného a bez závazků.
   actions:
     - text: Začít od začátku
       link: /zaciname/co-je-openwork/
@@ -17,23 +17,28 @@ hero:
 
 import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
 
-## Tři věci, které tu děláme jinak
+## Co děláme jinak
 
-<CardGrid stagger>
+<CardGrid>
   <Card title="Vaše data zůstávají u vás" icon="approve-check">
-    Pracujete nad vlastní složkou souborů na svém počítači. Co jde udělat na
-    vlastním počítači, ukazujeme na vlastním počítači. Uložit něco na cizí
-    server je volba, ne nutnost — a vždy dopředu víte, kdy k tomu dochází.
+    Pracujete nad vlastními soubory na svém počítači. Co jde udělat u vás,
+    děláme u vás. Poslat něco na cizí server je volba, ne nutnost — a vždy
+    dopředu víte, kdy k tomu dojde a proč.
   </Card>
-  <Card title="Platíte za spotřebu, ne za hlavy" icon="setting">
-    Místo měsíčního paušálu za každého člověka jedna společná peněženka pro
-    rodinu nebo firmu. Každý má svůj klíč — přístupové heslo pro aplikace — a
-    svůj strop útraty. Kdo se ptá jednou týdně, stojí koruny.
+  <Card title="Platíte jako za elektřinu" icon="setting">
+    Žádný měsíční paušál za každého člověka. Máte jednu společnou peněženku
+    a platíte jen za to, co opravdu využijete. Kdo se AI zeptá jednou týdně,
+    zaplatí pár korun.
   </Card>
-  <Card title="Nikde nejste zamčení" icon="random">
-    Aplikace OpenWork — program, přes který s AI pracujete — umí desítky
-    poskytovatelů modelů. Když jeden zdraží nebo se nehodí, přepnete jedním
-    výběrem. Soubory, návyky i nastavení vám zůstanou.
+  <Card title="Kdykoli přejdete jinam" icon="random">
+    Nejste svázaní s jednou firmou. Když poskytovatel zdraží nebo přestane
+    vyhovovat, přepnete jedním kliknutím — a vaše soubory i nastavení vám
+    zůstanou.
+  </Card>
+  <Card title="Vyberete si z mnoha AI modelů" icon="puzzle">
+    Na každou práci se hodí jiný model — jiný na psaní česky, jiný na
+    programování. OpenWork jich umí desítky a my [poradíme, který
+    zvolit](/modely/).
   </Card>
 </CardGrid>
 

@@ -1,0 +1,176 @@
+---
+// Vlastní hero sekce úvodní stránky (nahrazuje výchozí Starlight Hero).
+// Bez ilustračních grafik — jen typografie, akcentní barva a decentní gradient.
+// Vše přes CSS proměnné Starlightu → funguje ve světlém i tmavém režimu.
+import { Icon } from '@astrojs/starlight/components';
+
+const route = Astro.locals.starlightRoute;
+const hero = route.entry.data.hero ?? {};
+const title = hero.title ?? route.entry.data.title;
+const tagline = hero.tagline ?? '';
+const actions = hero.actions ?? [];
+
+// Krátká stvrzení pilířů (jen text + fajfka, ne diagram).
+const chips = ['Data zůstávají u vás', 'Platíte jen za využité', 'Kdykoli přejdete jinam'];
+---
+
+<div class="ow-hero">
+  <div class="ow-hero__glow" aria-hidden="true"></div>
+
+  <div class="ow-hero__inner">
+    <p class="ow-hero__eyebrow">Průvodce pro obyčejné lidi</p>
+
+    <h1 class="ow-hero__title" set:html={title} />
+
+    {tagline && <p class="ow-hero__tagline">{tagline}</p>}
+
+    {
+      actions.length > 0 && (
+        <div class="ow-hero__actions">
+          {actions.map((a) => {
+            const iconName = typeof a.icon === 'string' ? a.icon : a.icon?.name;
+            return (
+              <a
+                href={a.link}
+                class:list={['ow-btn', a.variant === 'minimal' ? 'ow-btn--ghost' : 'ow-btn--primary']}
+              >
+                {a.text}
+                {iconName && <Icon name={iconName} />}
+              </a>
+            );
+          })}
+        </div>
+      )
+    }
+
+    <ul class="ow-hero__chips">
+      {
+        chips.map((c) => (
+          <li class="ow-hero__chip">
+            <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" class="ow-hero__check">
+              <path d="M13 4.5 6.5 11 3 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            {c}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>
+
+<style>
+  .ow-hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(2.5rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 1rem;
+  }
+
+  /* Decentní barevná záře vpravo nahoře — jen barva, žádný obrázek. */
+  .ow-hero__glow {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        60% 90% at 85% -10%,
+        color-mix(in srgb, var(--sl-color-accent) 22%, transparent),
+        transparent 70%
+      );
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .ow-hero__inner {
+    position: relative;
+    z-index: 1;
+    max-width: 46rem;
+  }
+
+  .ow-hero__eyebrow {
+    margin: 0 0 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sl-color-accent);
+  }
+
+  .ow-hero__title {
+    margin: 0;
+    font-size: clamp(2.3rem, 6vw, 4rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+    color: var(--sl-color-white);
+  }
+
+  .ow-hero__tagline {
+    margin: 1.1rem 0 0;
+    max-width: 40ch;
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    line-height: 1.5;
+    color: var(--sl-color-gray-2);
+  }
+
+  .ow-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+  }
+
+  .ow-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1.3rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.08s ease, background-color 0.15s ease, border-color 0.15s ease;
+    border: 2px solid transparent;
+  }
+  .ow-btn:hover {
+    transform: translateY(-1px);
+  }
+  .ow-btn--primary {
+    background: var(--sl-color-accent);
+    color: var(--sl-color-bg);
+  }
+  .ow-btn--primary:hover {
+    background: var(--sl-color-accent-high);
+  }
+  .ow-btn--ghost {
+    color: var(--sl-color-white);
+    border-color: var(--sl-color-gray-4);
+  }
+  .ow-btn--ghost:hover {
+    border-color: var(--sl-color-accent);
+    color: var(--sl-color-accent);
+  }
+
+  .ow-hero__chips {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+  .ow-hero__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    background: var(--sl-color-accent-low);
+    color: var(--sl-color-white);
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .ow-hero__check {
+    color: var(--sl-color-accent);
+    flex-shrink: 0;
+  }
+</style>

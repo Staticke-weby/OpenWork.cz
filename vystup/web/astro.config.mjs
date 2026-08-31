@@ -20,6 +20,7 @@ export default defineConfig({
       lastUpdated: true,
       // Vlastní patička (povinná věta o nezávislosti) přes override komponenty.
       components: {
+        Hero: './src/components/Hero.astro',
         Footer: './src/components/Footer.astro',
       },
       customCss: ['./src/styles/custom.css'],
