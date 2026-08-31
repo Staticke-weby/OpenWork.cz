@@ -9,6 +9,19 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 31. srpna 2026 — nová sekce „Co s ním vytvoříte"
+
+- Deset stránek o typech výstupů s příklady zadání:
+  [texty a dokumenty](/co-vytvorite/texty-a-dokumenty/),
+  [tabulky a Excel](/co-vytvorite/tabulky-a-excel/),
+  [prezentace](/co-vytvorite/prezentace/), [weby](/co-vytvorite/weby/),
+  [porovnání smluv a nabídek](/co-vytvorite/porovnani-smluv-a-nabidek/),
+  [seminárky a referáty](/co-vytvorite/seminarky-a-referaty/),
+  [odpovědi a rešerše](/co-vytvorite/odpovedi-a-reserse/),
+  [práce s PDF](/co-vytvorite/prace-s-pdf/),
+  [skeny a fotky](/co-vytvorite/skeny-a-fotky/)
+  a [překlady](/co-vytvorite/preklady/).
+
 ## 31. srpna 2026 — nová sekce „Pro koho je OpenWork"
 
 - Čtyři nové stránky s ukázkovou složkou a prompty:

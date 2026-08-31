@@ -85,6 +85,11 @@ export default defineConfig({
           items: [{ autogenerate: { directory: 'pro-koho' } }],
         },
         {
+          label: 'Co s ním vytvoříte',
+          translations: { sk: 'Čo s ním vytvoríte' },
+          items: [{ autogenerate: { directory: 'co-vytvorite' } }],
+        },
+        {
           label: 'Vaše data',
           translations: { sk: 'Vaše dáta' },
           items: [

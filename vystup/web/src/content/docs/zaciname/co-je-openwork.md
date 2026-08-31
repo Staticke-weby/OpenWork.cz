@@ -23,6 +23,9 @@ připraví přehled. Nemusíte nic programovat, stačí napsat, co potřebujete.
 - **Připravit texty a oslovení** — návrhy e-mailů nebo zpráv na míru podle
   vašich podkladů.
 
+Kompletní přehled typů výstupů — od tabulek pro Excel přes prezentace až po
+jednoduché weby — najdete v sekci [Co s ním vytvoříte](/co-vytvorite/).
+
 Chcete agentovi dát přístup i k dalším službám (e-mail, kalendář, GitHub)?
 Připojíte je přes [MCP a Composio](/prace-se-slozkou/napojeni-nastroju/).
 
