@@ -1,6 +1,6 @@
 ---
 title: "Proč tento web"
-description: "K čemu openwork.cz je a komu."
+description: "K čemu OpenWork.cz je a komu."
 sidebar:
   order: 1
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Změnovník"
+title: "Historie změn"
 description: "Co a kdy jsme na webu změnili."
 sidebar:
   order: 3
@@ -9,5 +9,5 @@ sidebar:
 
 ## Osnova
 
-- K čemu změnovník je
+- K čemu historie změn je
 - [DOPLNIT: záznamy změn]

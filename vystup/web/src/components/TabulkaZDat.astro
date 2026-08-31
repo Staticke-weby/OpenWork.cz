@@ -27,9 +27,9 @@ const sloupce: string[] = data.sloupce ?? [];
 const radky: Record<string, unknown>[] = data.radky ?? [];
 const overeno: unknown = data.last_verified ?? '—';
 
-// Odkaz na změnovník (mění se dle jazykové mutace).
+// Odkaz na historii změn (mění se dle jazykové mutace).
 const jeSk = Astro.currentLocale === 'sk';
-const odkazZmenovnik = jeSk ? '/sk/o-webu/zmenovnik/' : '/o-webu/zmenovnik/';
+const odkazZmenovnik = jeSk ? '/sk/o-webu/historie-zmen/' : '/o-webu/historie-zmen/';
 
 // České popisky sloupců. Klíče v YAML jsou bez diakritiky (kvůli přenositelnosti),
 // tady je převádíme na čitelné české nadpisy. Neznámý klíč se „humanizuje".
@@ -78,7 +78,7 @@ const overenoText = jeDatum(overeno) ? datumFormat.format(overeno) : String(over
 ---
 
 <div class="zdat-overeno">
-  Naposledy ověřeno: {overenoText} · <a href={odkazZmenovnik}>změnovník</a>
+  Naposledy ověřeno: {overenoText} · <a href={odkazZmenovnik}>historie změn</a>
 </div>
 
 <div class="zdat-obal">

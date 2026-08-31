@@ -15,9 +15,14 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   Závazný převodník je v `slovnicek.md` — dodržuj ho ve všech textech.
 - Krátké věty. Činný rod. Čtenáře oslovuj („nahrajete", „zvolíte").
 - Žádné marketingové fráze („revoluce", „game-changer", „unikátní řešení").
+- **Nevymýšlej neobvyklá ani krkolomná slova** (např. „změnovník"). Použij
+  běžný, zavedený český výraz („historie změn"). Když si nejsi jistý, zvol
+  to nejobyčejnější pojmenování.
 - Názvy produktů zůstávají v originále: OpenWork, opencode, OpenCode Zen,
   OpenCode Go, Cortecs, MCP, Astro. Při prvním výskytu na stránce je jednou
   větou vysvětli.
+- **Značku piš vždy „OpenWork" a „OpenWork.cz"** (velké O i W). Malá písmena
+  „openwork.cz" jen v URL/doméně. Pozor: „opencode" se naopak píše malým „o".
 - **OpenCode Go a OpenCode Zen vždy plným názvem** — nikdy jen „Go" / „Zen".
   Referral odkaz na OpenCode Go: `https://opencode.ai/go?ref=K0VC03J925` —
   používej ho jako CTA „začít / vyzkoušet OpenCode Go" (kanonický zdroj odkazu).
