@@ -119,11 +119,11 @@ aktualizují.
 
 ---
 
-## Vlna 6 — slovenská mutace 🇸🇰
+## Vlna 6 — slovenská mutace 🇸🇰 ✅ hotovo
 
-Až je český obsah hotový: přeložit do `/sk/` podle jazykové zásady
-(pěkně po slovensky pro běžné lidi), slovník pojmů jako závazný glosář.
-Do té doby Starlight u chybějících překladů ukazuje český obsah s upozorněním.
+Všechny stránky přeloženy do `/sk/` (Začíname, Vaše dáta, Koľko to stojí,
+Modely, Práca s priečinkom, O webe). Komponenty (Hero, Footer, TabulkaZDat)
+lokalizovány pro `sk`. Zbývá jen `sk/o-webu/pravni.md` (reálné údaje).
 
 ---
 
