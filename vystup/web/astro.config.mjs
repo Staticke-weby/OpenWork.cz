@@ -62,8 +62,10 @@ export default defineConfig({
         root: { label: 'Čeština', lang: 'cs' },
         sk: { label: 'Slovenčina', lang: 'sk' },
       },
-      // Řádek „Aktualizováno:" pod nadpisem.
-      lastUpdated: true,
+      // Datum pro čtenáře je „Naposledy ověřeno" z frontmatteru `last_verified`
+      // (override PageTitle.astro). Automatické „Aktualizováno" z gitu by ho
+      // duplikovalo, proto je vypnuté.
+      lastUpdated: false,
       // Vlastní patička (povinná věta o nezávislosti) přes override komponenty.
       components: {
         SiteTitle: './src/components/SiteTitle.astro',
