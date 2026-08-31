@@ -30,20 +30,55 @@ a soubory přitom v desktopovém režimu [zůstávají u vás](/vase-data/).
 
 ## Ukázkové prompty
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Řekněte, kam výsledek uložit, a co s údaji, které chybí:**
+
 ```text
 Projdi složku smlouvy/ a vypiš mi do vystup/ přehled: co mám sjednané,
-za kolik měsíčně, do kdy trvá závazek a jaká je výpovědní lhůta.
+za kolik měsíčně, do kdy trvá závazek a jaká je výpovědní lhůta. Když
+některý údaj ve smlouvě nenajdeš, napiš „nenalezeno" — neodhaduj.
 ```
+
+**Nenechte agenta domýšlet kategorie — chtějte nezařazené zvlášť:**
 
 ```text
 Z výpisů ve složce finance/ udělej přehled výdajů za poslední tři měsíce
-po kategoriích (bydlení, jídlo, doprava, ostatní). Ukaž, kde utrácíme nejvíc.
+po kategoriích (bydlení, jídlo, doprava, ostatní). Ukaž, kde utrácíme
+nejvíc. Pohyby, které nejde jednoznačně zařadit, dej do „nezařazeno"
+a vypiš je zvlášť.
 ```
+
+**U porovnání chtějte čísla ze souborů, ne dojmy:**
 
 ```text
 Ve složce smlouvy/ máme vyúčtování elektřiny za loňský a letošní rok.
-Porovnej je a napiš srozumitelně, co se změnilo a o kolik.
+Porovnej je a napiš srozumitelně, co se změnilo a o kolik — u každého
+čísla uveď, ze kterého souboru a řádku vyúčtování pochází.
 ```
+
+**Dopisy jen připravit ke kontrole — nikdy rovnou odesílat:**
+
+```text
+Připrav výpověď smlouvy o internetu podle podkladů ve smlouvy/internet/.
+Dodrž výpovědní lhůtu a formu, kterou smlouva vyžaduje. Nikam nic
+neodesílej — ulož mi text do vystup/ ke kontrole a napiš, co mám
+zkontrolovat, než ho pošlu.
+```
+
+**U plánování si nechte sepsat, co ještě chybí:**
+
+```text
+Z podkladů ve složce dovolena/ (termíny, rozpočet 40 000 Kč, co chceme
+vidět) navrhni plán cesty po dnech s odhadem nákladů. Kde ti chybí
+informace, neodhaduj — napiš seznam otázek, na které ti mám odpovědět.
+```
+
+:::tip[Dobré zvyky při zadávání]
+Říct, **kam** výsledek uložit · chybějící údaje **označit, ne odhadovat** ·
+u čísel chtít **odkaz na zdroj** · dopisy a e-maily **jen připravit, ne
+odeslat** · na nejasnosti si nechat sepsat **otázky**.
+:::
 
 ## Kudy dál
 

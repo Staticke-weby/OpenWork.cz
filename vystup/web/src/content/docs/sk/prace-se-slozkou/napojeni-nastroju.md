@@ -1,66 +1,73 @@
 ---
-title: "Pripojenie nástrojov na OpenWork: MCP a Composio"
-description: "Ako dať AI agentovi prístup k ďalším službám (e-mail, kalendár, GitHub…) cez MCP. Kde služba nemá vlastný MCP server, použijete Composio — most k 1000+ nástrojom."
+title: "Napojenie nástrojov na OpenWork: MCP a pripojené služby"
+description: "Ako v aplikácii OpenWork dať agentovi prístup k ďalším službám (e-mail, kalendár, Slack, Notion…): OpenWork Connect pre bežné služby a vlastný MCP server pre všetko ostatné."
 sidebar:
   order: 4
 last_verified: 2026-08-31
 ---
 
-Sám o sebe pracuje agent len s vaším priečinkom a vstavaným prehliadačom. Keď ho
-chcete pustiť aj k ďalším službám — napríklad e-mailu, kalendáru alebo GitHubu —
-pripojíte ich cez **MCP**.
+Sám o sebe pracuje agent len s vaším priečinkom a vstavaným prehliadačom. Keď
+ho chcete pustiť aj k ďalším službám — napríklad e-mailu, kalendáru alebo
+Slacku — pripojíte ich priamo v aplikácii OpenWork. Nejde o programovanie:
+je to pár kliknutí v nastavení.
 
 ## Čo je MCP
 
-**MCP** (Model Context Protocol) je spôsob, ako agent pripojí ďalší nástroj alebo
-službu. Len čo nástroj cez MCP pripojíte, agent s ním vie sám pracovať.
+**MCP** (Model Context Protocol) je spôsob, ako agent pripojí ďalší nástroj
+alebo službu. Len čo nástroj cez MCP pripojíte, agent s ním vie sám pracovať
+popri tom, čo zvládal doteraz.
 
-## Dve cesty, ako nástroj pripojiť
+## Cesta 1: OpenWork Connect (bežné služby)
 
-### 1. Natívne MCP (keď ho služba má)
+Pre **Gmail, Google Kalendár, Google Drive, Slack, Notion alebo Linear** má
+OpenWork pripravené pripojenie — nemusíte nič nastavovať ručne:
 
-Rad služieb má **vlastný MCP server** — ten pripojíte priamo. Je to
-najjednoduchšia a **odporúčaná cesta všade, kde vlastný MCP existuje**. Príklady
-nástrojov s vlastným MCP: **Sentry** (chyby v aplikáciách), **Context7**
-(hľadanie v dokumentácii) alebo **Grep** (hľadanie v kóde na GitHube).
+1. V aplikácii otvorte `Settings` → `OpenWork Connect` a prihláste sa.
+2. Pri službe vo výpise `Needs your sign-in` kliknite na `Connect` a povoľte
+   prístup na prihlasovacej stránke služby.
+3. Po návrate do OpenWorku sa služba presunie do `Ready to use` — hotovo.
 
-Nový MCP server sa pridáva v nastavení (v konfigurácii v sekcii `mcp`). Podrobne
-to opisuje [dokumentácia opencode k MCP](https://opencode.ai/docs/mcp-servers/).
+Potom už agentovi hovoríte, **čo chcete**, nie ako sa nástroj volá: „Zhrň mi
+päť najnovších e-mailov" alebo „Aké mám zajtra stretnutia?"
 
-### 2. Composio (keď natívne MCP chýba)
+:::note
+OpenWork Connect vyžaduje prihlásenie k účtu OpenWork a organizáciu, ktorá má
+Connect zapnutý (typicky tímy a firmy). Chcete zostať bez účtu a čisto
+lokálne? Použite cestu 2 — tá je zadarmo a funguje bez prihlásenia.
+:::
 
-Nie každá služba vlastné MCP má. Pre tie ostatné sa hodí
-**[Composio](https://composio.dev/)** — platforma, ktorá sprístupní **vyše 1 000
-integrácií** (Gmail, Slack, GitHub, Notion, Kalendár a ďalšie) a funguje cez MCP.
-Má aj **bezplatný plán** (100 000 volaní mesačne, bez platobnej karty).
+## Cesta 2: vlastný MCP server (všetko ostatné)
 
-**Composio používajte len tam, kde služba nemá vlastný MCP.** Keď vlastný MCP
-existuje, pripojte ho priamo.
+Službu, ktorá v Connecte nie je — alebo keď nechcete účet — pripojíte ako
+**vlastný MCP server**, zadarmo a len pre aktuálny priečinok (workspace):
 
-Composio sa pridá ako vzdialený (remote) MCP server. Do konfigurácie pod kľúč
-`mcp` vložíte:
+1. V aplikácii otvorte `Settings` → `Library`, rozbaľte `Advanced settings`
+   a kliknite na `Add workspace MCP`.
+2. Vyplňte názov a adresu (URL) servera a označte, či vyžaduje prihlásenie
+   cez OAuth (odovzdanie prístupu bez zdieľania hesla).
+3. Dokončite schválenie v prehliadači — potom vás vráti späť do OpenWorku.
 
-```json
-{
-  "mcp": {
-    "composio": {
-      "type": "remote",
-      "url": "https://connect.composio.dev/mcp",
-      "enabled": true
-    }
-  }
-}
-```
+Adresu MCP servera nájdete v dokumentácii danej služby; vlastné MCP dnes má
+mnoho nástrojov. Keď služba ponúka namiesto toho len klientský kľúč (client
+ID a secret), pridajte ju cez `Add workspace MCP` → `OAuth on this device`.
 
-Potom sa otvorí prihlásenie v prehliadači, kde Composio povolíte.
+### Most k ďalším službám: Composio
+
+Nemá služba vlastné MCP? Poslúži
+**[Composio](https://composio.dev/)** — brána k viac než 1 000 integráciám,
+ktorá sama funguje ako MCP server. Pridáte ju cestou 2 s adresou
+`https://connect.composio.dev/mcp`; má aj bezplatný plán bez platobnej karty.
+Kde vlastné MCP existuje, pripojte ho ale priamo — bez prostredníka.
 
 ## Na čo si dať pozor
 
-Pripojením nástroja dávate agentovi prístup k danej službe — pripájajte len to,
-čomu rozumiete, a udeľte čo najmenšie potrebné oprávnenia.
+Pripojením nástroja dávate agentovi prístup k danej službe — pripájajte len
+to, čomu rozumiete a čo agent naozaj potrebuje. Pri citlivých službách
+zvážte, aké oprávnenia udelíte (viď [Bezpečnosť](/sk/vase-data/bezpecnost/)).
 
 ---
 
-**Odkiaľ čerpáme:** [dokumentácia opencode k MCP](https://opencode.ai/docs/mcp-servers/),
-[composio.dev](https://composio.dev/) a
-[návod Composio pre OpenCode](https://composio.dev/content/mcp-with-opencode).
+**Odkiaľ čerpáme:** dokumentácia OpenWork
+([pripojenie služieb](https://openworklabs.com/docs/start-here/connect-your-stack/connect-services),
+[vlastný MCP server](https://openworklabs.com/docs/start-here/connect-your-stack/add-an-mcp-server))
+a [composio.dev](https://composio.dev/).

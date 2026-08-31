@@ -34,22 +34,54 @@ vygenerovaný text poznat a pravidla akademické poctivosti platí i pro AI.
 
 ## Ukázkové prompty
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**U výpisků chtějte ke každému tvrzení zdroj — kvůli citacím i kontrole:**
+
 ```text
 Ze všech materiálů ve složce prednasky/marketing/ udělej výpisky na dvě
-strany: klíčové pojmy s vysvětlením a příklady. Ulož do vystup/.
+strany: klíčové pojmy s vysvětlením a příklady. U každého tvrzení uveď,
+ze kterého souboru a slidu pochází. Ulož do vystup/.
 ```
+
+**Zkoušení si nastavte po svém — tempo, pořadí, shrnutí:**
 
 ```text
 Podle výpisků ve vystup/ mě vyzkoušej z látky: pokládej mi otázky jednu
-po druhé, u špatné odpovědi vysvětli správnou a na konci shrň, co si mám
-zopakovat.
+po druhé, od lehčích k těžším, u špatné odpovědi vysvětli správnou.
+Na konci shrň, co mi nešlo a co si mám zopakovat.
 ```
+
+**Kontrolu textu chtějte bez přepisování — text je váš:**
 
 ```text
 Přečti si můj rozpracovaný text v seminarky/prace.md a navrhni: co chybí
 ve struktuře, kde je text nejasný a které tvrzení nemá zdroj. Text sám
-nepřepisuj.
+nepřepisuj — jen mi dej seznam připomínek s odkazem na konkrétní odstavce.
 ```
+
+**Seznam literatury nechte složit z toho, co jste opravdu použili:**
+
+```text
+Projdi seminarky/prace.md a zdroje ve složce zdroje/. Sestav seznam
+literatury ve formátu, který chce škola (ČSN ISO 690), jen ze zdrojů,
+na které se v textu opravdu odkazuji. Chybějící údaje (rok, vydavatel)
+označ — nedomýšlej je.
+```
+
+**Termíny z pokynů si nechte vypsat i s místem, odkud pocházejí:**
+
+```text
+Ve složce predmety/ jsou pokyny ke všem předmětům. Vypiš mi do vystup/
+tabulku termínů: co, kdy, jaký předmět a ze kterého dokumentu termín
+pochází. Seřaď podle data a zvýrazni, co je dřív než za 14 dní.
+```
+
+:::tip[Dobré zvyky při zadávání]
+U každého tvrzení chtít **zdroj** · vlastní text nechat **komentovat, ne
+přepisovat** · citace jen z toho, co je **opravdu použité** · chybějící
+údaje **označit, ne domyslet** · říct, **kam** výsledek uložit.
+:::
 
 ## Kudy dál
 

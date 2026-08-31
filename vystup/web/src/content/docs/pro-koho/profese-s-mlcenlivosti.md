@@ -43,21 +43,58 @@ výpočet: u [poskytovatele s nulovým uchováváním dat](/vase-data/zdr/), neb
 
 ## Ukázkové prompty
 
+Každé zadání ukazuje jeden dobrý zvyk — u citlivých dat na nich záleží
+dvojnásob.
+
+**Anonymizujte dřív, než cokoli půjde poskytovateli — a nic nedomýšlejte:**
+
 ```text
 Projdi dokumenty ve složce klienti/novak/ a vytvoř v ní anonymizovanou
 kopii do podsložky anonymizovano/: nahraď jména, adresy, rodná čísla
-a názvy firem zástupnými údaji a vytvoř převodní tabulku jen lokálně.
+a názvy firem zástupnými údaji (Osoba A, Firma 1…). Převodní tabulku
+ulož jen lokálně do klienti/novak/prevod.md. Do anonymizované kopie nic
+nedoplňuj ani nedomýšlej.
 ```
+
+**Před odesláním si nechte anonymizaci zkontrolovat:**
+
+```text
+Zkontroluj všechny soubory v klienti/novak/anonymizovano/, jestli v nich
+nezůstalo žádné jméno, rodné číslo, adresa ani název firmy. Co najdeš,
+vypiš se souborem a řádkem — nic zatím neopravuj.
+```
+
+**U lhůt a povinností chtějte odkaz na konkrétní ustanovení:**
 
 ```text
 Ze smlouvy klienti/novak/anonymizovano/smlouva.md vypiš všechny lhůty,
-povinnosti stran a sankce do přehledné tabulky ve vystup/.
+povinnosti stran a sankce do přehledné tabulky ve vystup/. U každé
+položky uveď číslo článku a odstavce, ze kterého vychází.
 ```
 
+**Porovnání se vzorem — s rozdíly po bodech:**
+
 ```text
-Porovnej návrh smlouvy s naším vzorem ve vzory/kupni-smlouva.md a vypiš,
-v čem se liší a která ustanovení v návrhu chybí.
+Porovnej návrh smlouvy s naším vzorem ve vzory/kupni-smlouva.md a vypiš
+po bodech: co je v návrhu jinak, která ustanovení vzoru chybí a co je
+v návrhu navíc. U každého rozdílu uveď obě znění vedle sebe.
 ```
+
+**Koncepty jen z podkladů — a s označením děr:**
+
+```text
+Připrav koncept vyjádření pro klienta z podkladů ve složce
+klienti/novak/anonymizovano/. Vycházej jen z těchto podkladů; každé
+tvrzení opři o konkrétní dokument. Kde podklad chybí, napiš
+[CHYBÍ PODKLAD] — nic nedovozuj. Koncept ulož do vystup/ ke kontrole.
+```
+
+:::tip[Dobré zvyky při zadávání]
+**Anonymizovat před odesláním** poskytovateli · anonymizaci si nechat
+**zkontrolovat** · u tvrzení chtít **odkaz na dokument a článek** · koncepty
+**jen z podkladů**, díry označit · převodní tabulky a citlivé soubory držet
+**jen lokálně**.
+:::
 
 ## Kudy dál
 

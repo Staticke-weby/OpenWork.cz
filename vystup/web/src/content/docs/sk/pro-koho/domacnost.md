@@ -31,21 +31,55 @@ a súbory pritom v desktopovom režime [zostávajú u vás](/sk/vase-data/).
 
 ## Ukážkové prompty
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Povedzte, kam výsledok uložiť, a čo s údajmi, ktoré chýbajú:**
+
 ```text
 Prejdi priečinok zmluvy/ a vypíš mi do vystup/ prehľad: čo mám dojednané,
-za koľko mesačne, dokedy trvá záväzok a aká je výpovedná lehota.
+za koľko mesačne, dokedy trvá záväzok a aká je výpovedná lehota. Keď
+niektorý údaj v zmluve nenájdeš, napíš „nenájdené" — neodhaduj.
 ```
+
+**Nenechajte agenta domýšľať kategórie — chcite nezaradené zvlášť:**
 
 ```text
 Z výpisov v priečinku financie/ urob prehľad výdavkov za posledné tri
 mesiace po kategóriách (bývanie, jedlo, doprava, ostatné). Ukáž, kde
-míňame najviac.
+míňame najviac. Pohyby, ktoré sa nedajú jednoznačne zaradiť, daj do
+„nezaradené" a vypíš ich zvlášť.
 ```
+
+**Pri porovnaní chcite čísla zo súborov, nie dojmy:**
 
 ```text
 V priečinku zmluvy/ máme vyúčtovanie elektriny za vlaňajší a tohtoročný
-rok. Porovnaj ich a napíš zrozumiteľne, čo sa zmenilo a o koľko.
+rok. Porovnaj ich a napíš zrozumiteľne, čo sa zmenilo a o koľko — pri
+každom čísle uveď, z ktorého súboru a riadku vyúčtovania pochádza.
 ```
+
+**Listy len pripraviť na kontrolu — nikdy rovno odosielať:**
+
+```text
+Priprav výpoveď zmluvy o internete podľa podkladov v zmluvy/internet/.
+Dodrž výpovednú lehotu a formu, ktorú zmluva vyžaduje. Nikam nič
+neodosielaj — ulož mi text do vystup/ na kontrolu a napíš, čo mám
+skontrolovať, než ho pošlem.
+```
+
+**Pri plánovaní si nechajte spísať, čo ešte chýba:**
+
+```text
+Z podkladov v priečinku dovolenka/ (termíny, rozpočet 1 500 €, čo chceme
+vidieť) navrhni plán cesty po dňoch s odhadom nákladov. Kde ti chýba
+informácia, neodhaduj — napíš zoznam otázok, na ktoré ti mám odpovedať.
+```
+
+:::tip[Dobré zvyky pri zadávaní]
+Povedať, **kam** výsledok uložiť · chýbajúce údaje **označiť, nie
+odhadovať** · pri číslach chcieť **odkaz na zdroj** · listy a e-maily
+**len pripraviť, nie odoslať** · na nejasnosti si nechať spísať **otázky**.
+:::
 
 ## Kadiaľ ďalej
 

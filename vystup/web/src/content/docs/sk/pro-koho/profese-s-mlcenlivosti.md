@@ -43,21 +43,58 @@ alebo úplne [u vás na počítači](/sk/vase-data/lokalni-ai/).
 
 ## Ukážkové prompty
 
+Každé zadanie ukazuje jeden dobrý zvyk — pri citlivých dátach na nich
+záleží dvojnásobne.
+
+**Anonymizujte skôr, než čokoľvek pôjde poskytovateľovi — a nič nedomýšľajte:**
+
 ```text
 Prejdi dokumenty v priečinku klienti/novak/ a vytvor v ňom anonymizovanú
 kópiu do podpriečinka anonymizovane/: nahraď mená, adresy, rodné čísla
-a názvy firiem zástupnými údajmi a vytvor prevodnú tabuľku len lokálne.
+a názvy firiem zástupnými údajmi (Osoba A, Firma 1…). Prevodnú tabuľku
+ulož len lokálne do klienti/novak/prevod.md. Do anonymizovanej kópie nič
+nedopĺňaj ani nedomýšľaj.
 ```
+
+**Pred odoslaním si nechajte anonymizáciu skontrolovať:**
+
+```text
+Skontroluj všetky súbory v klienti/novak/anonymizovane/, či v nich
+nezostalo žiadne meno, rodné číslo, adresa ani názov firmy. Čo nájdeš,
+vypíš so súborom a riadkom — nič zatiaľ neopravuj.
+```
+
+**Pri lehotách a povinnostiach chcite odkaz na konkrétne ustanovenie:**
 
 ```text
 Zo zmluvy klienti/novak/anonymizovane/zmluva.md vypíš všetky lehoty,
-povinnosti strán a sankcie do prehľadnej tabuľky vo vystup/.
+povinnosti strán a sankcie do prehľadnej tabuľky vo vystup/. Pri každej
+položke uveď číslo článku a odseku, z ktorého vychádza.
 ```
 
+**Porovnanie so vzorom — s rozdielmi po bodoch:**
+
 ```text
-Porovnaj návrh zmluvy s naším vzorom vo vzory/kupna-zmluva.md a vypíš,
-v čom sa líšia a ktoré ustanovenia v návrhu chýbajú.
+Porovnaj návrh zmluvy s naším vzorom vo vzory/kupna-zmluva.md a vypíš
+po bodoch: čo je v návrhu inak, ktoré ustanovenia vzoru chýbajú a čo je
+v návrhu navyše. Pri každom rozdiele uveď obe znenia vedľa seba.
 ```
+
+**Koncepty len z podkladov — a s označením dier:**
+
+```text
+Priprav koncept vyjadrenia pre klienta z podkladov v priečinku
+klienti/novak/anonymizovane/. Vychádzaj len z týchto podkladov; každé
+tvrdenie opri o konkrétny dokument. Kde podklad chýba, napíš
+[CHÝBA PODKLAD] — nič nedovodzuj. Koncept ulož do vystup/ na kontrolu.
+```
+
+:::tip[Dobré zvyky pri zadávaní]
+**Anonymizovať pred odoslaním** poskytovateľovi · anonymizáciu si nechať
+**skontrolovať** · pri tvrdeniach chcieť **odkaz na dokument a článok** ·
+koncepty **len z podkladov**, diery označiť · prevodné tabuľky a citlivé
+súbory držať **len lokálne**.
+:::
 
 ## Kadiaľ ďalej
 
