@@ -99,8 +99,8 @@ změně webu). Použitá tvrzení na homepage:
   porovnává poslední vydání/commit repozitářů proti `stav.json`. Účelově
   řízený (pole `ucel` u zdroje); hlavní účel = katalog ověřených/ZDR modelů
   a bezplatných úrovní. Seed stavu hotov (openwork v0.18.40, opencode v1.18.25).
-  ⚠ Otevřená otázka: automatické spouštění (GitHub Actions cron + issue) —
-  vyžaduje soubor mimo `vystup/` (`.github/workflows/`), čeká na rozhodnutí.
+  Spouštění: **ručně** (`node hlidac.mjs`), zatím bez cronu — rozhodnutí
+  uživatele 2026-08-31. GitHub Actions cron je možný později, pokud bude třeba.
 - **Odkaz na stažení** `https://openworklabs.com/download` na: hero (primární
   CTA), karta „Zdarma a s otevřeným kódem", stránka Instalace.
 
