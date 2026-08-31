@@ -68,6 +68,26 @@ Rozhodnutí, která jsem udělal sám při nejednoznačném zadání (dle AGENTS
   „Vyberete si z mnoha AI modelů" s odkazem na /modely/. CardGrid bez stagger
   (čisté 2×2). Nadpis změněn z „Tři věci…" na „Co děláme jinak".
 
+## Pozicování homepage: „Zdarma a otevřené" (2026-08-31)
+
+Rozhodnutí uživatele (AskUserQuestion): hlavní nota = **„Zdarma a otevřené —
+platíte, jen když musíte"**; **Cowork zmínit** jako placenou alternativu.
+Formulace „Platíte jako za elektřinu" zavržena (uživatel: „hroznej zvast").
+
+**Zdroj faktů: <https://openworklabs.com/>** (ověřeno 2026-08-31, přeověřit po
+změně webu). Použitá tvrzení na homepage:
+- Desktop aplikace **zdarma a open source, bez účtu**; staví na OpenCode.
+- **50+ modelů** od více poskytovatelů; bez lock-inu.
+- V desktop režimu **soubory zůstávají na počítači**, zadání jde rovnou
+  zvolenému poskytovateli; cloud workers volitelné a sandboxované.
+- **Open-source alternativa k Claude Cowork a Codexu**, „feature parity" bez
+  svázání s jedním dodavatelem; existuje migrační průvodce pro Cowork.
+- Ceník (NEuvedeno na homepage, ale k dispozici): Team Starter prvních 5 míst
+  zdarma, pak 10 $ / místo / měsíc; Enterprise custom + self-host / vlastní
+  inference. ⚠ Kvůli tomu jsem na homepage **vypustil tvrzení „žádný paušál za
+  hlavu"** — Team plán je per-seat, bylo by to nepřesné. Homepage tvrdí jen:
+  aplikace zdarma, za AI platíš poskytovateli za spotřebu, řada modelů zdarma.
+
 ### Kontrola češtiny (zadání 03) — kostra 2026-08-31
 
 - Prošel jsem vlastní texty (osnovy, slovníček, návod JAK-NAHRAT, komponenty).
