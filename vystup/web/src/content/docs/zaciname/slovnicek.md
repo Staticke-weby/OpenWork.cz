@@ -36,7 +36,7 @@ Tyto názvy nemá smysl překládat — jen je jednou vysvětlíme.
 
 - **OpenWork** — aplikace, o které tento web je.
 - **opencode** — motor, na kterém OpenWork staví.
-- **Zen**, **Go** — brány k modelům od tvůrců opencode.
+- **OpenCode Zen**, **[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)** — brány k modelům od tvůrců opencode. Vždy plným názvem.
 - **Cortecs** — evropská brána k modelům.
 - **MCP** — způsob, jak agent připojuje další služby.
 - **ZDR** — nulové uchovávání dat (zero data retention).
