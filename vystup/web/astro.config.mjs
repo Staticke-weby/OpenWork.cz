@@ -80,6 +80,11 @@ export default defineConfig({
           items: [{ autogenerate: { directory: 'zaciname' } }],
         },
         {
+          label: 'Pro koho je OpenWork',
+          translations: { sk: 'Pre koho je OpenWork' },
+          items: [{ autogenerate: { directory: 'pro-koho' } }],
+        },
+        {
           label: 'Vaše data',
           translations: { sk: 'Vaše dáta' },
           items: [

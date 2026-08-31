@@ -9,6 +9,14 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 31. srpna 2026 — nová sekce „Pro koho je OpenWork"
+
+- Čtyři nové stránky s ukázkovou složkou a prompty:
+  [firmy a živnostníci](/pro-koho/firmy/), [domácnost](/pro-koho/domacnost/),
+  [studenti](/pro-koho/studenti/)
+  a [profese s mlčenlivostí](/pro-koho/profese-s-mlcenlivosti/).
+- Karty „Pro koho je OpenWork" na úvodní stránce nově vedou na tyto stránky.
+
 ## 31. srpna 2026 — opravy a vylepšení
 
 - Sloupec **Zdroj** v živých tabulkách je nově klikací odkaz.
