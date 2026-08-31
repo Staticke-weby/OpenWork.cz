@@ -86,7 +86,11 @@ Nie je problém — vytvorte v priečinku textový súbor pomenovaný presne
 `AGENTS.md` a vložte doň obsah z bloku vyššie (bez prvej vety „Založ…").
 Čím jasnejšie pravidlá, tým lepšie a predvídateľnejšie výsledky.
 
----
+## Kadiaľ ďalej
 
-Viď tiež [Štruktúra priečinkov](/sk/prace-se-slozkou/struktura-slozek/) a
-[Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/).
+- **[Štruktúra priečinkov](/sk/prace-se-slozkou/struktura-slozek/)** — kam
+  AGENTS.md patrí.
+- **[Zručnosti (skills)](/sk/prace-se-slozkou/dovednosti-skills/)** — postupy na
+  jeden druh práce.
+- **[Súbory .md](/sk/prace-se-slozkou/soubory-md/)** — formát, v ktorom AGENTS.md
+  píšete.

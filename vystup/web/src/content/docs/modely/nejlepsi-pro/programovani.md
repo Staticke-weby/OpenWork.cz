@@ -46,7 +46,8 @@ Výsledek stejně posoudíte sami na vlastním projektu — začněte levným mo
 a výš sahejte, až když narazíte na jeho hranice.
 :::
 
----
+## Kudy dál
 
-Viz taky [Modely a poskytovatelé](/modely/) a
-[Kolik to stojí](/kolik-to-stoji/).
+- **[Katalog modelů](/modely/katalog/)** — vstupy a dostupnost s datem ověření.
+- **[Vstupy: text, obrázek, video](/modely/vstupy/)** — proč na nich záleží.
+- **[Kolik to stojí](/kolik-to-stoji/)** — platba za spotřebu.

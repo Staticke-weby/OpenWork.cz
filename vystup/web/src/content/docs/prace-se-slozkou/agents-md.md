@@ -86,7 +86,11 @@ Není problém — vytvořte ve složce textový soubor pojmenovaný přesně
 `AGENTS.md` a vložte do něj obsah z bloku výše (bez první věty „Založ…").
 Čím jasnější pravidla, tím lepší a předvídatelnější výsledky.
 
----
+## Kudy dál
 
-Viz taky [Struktura složek](/prace-se-slozkou/struktura-slozek/) a
-[Základy práce se složkou](/prace-se-slozkou/zaklady/).
+- **[Struktura složek](/prace-se-slozkou/struktura-slozek/)** — kam AGENTS.md
+  patří.
+- **[Dovednosti (skills)](/prace-se-slozkou/dovednosti-skills/)** — postupy na
+  jeden druh práce.
+- **[Soubory .md](/prace-se-slozkou/soubory-md/)** — formát, ve kterém AGENTS.md
+  píšete.

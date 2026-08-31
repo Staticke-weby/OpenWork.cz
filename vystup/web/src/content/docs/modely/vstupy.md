@@ -67,6 +67,12 @@ zvládne každý model; co zbyde jen jako obraz či zvuk, chce multimodální mo
 3. Přesné vstupy každého modelu najdete v
    **[katalogu modelů](/modely/katalog/)** — sloupec Vstupy, s datem ověření.
 
+## Kudy dál
+
+- **[Katalog modelů](/modely/katalog/)** — vstupy každého modelu s datem ověření.
+- **[Skeny a fotky dokumentů](/co-vytvorite/skeny-a-fotky/)**
+  a **[práce s PDF](/co-vytvorite/prace-s-pdf/)** — kde na vstupech záleží nejvíc.
+
 ---
 
 **Odkud čerpáme:** přehled modelů a vstupů na

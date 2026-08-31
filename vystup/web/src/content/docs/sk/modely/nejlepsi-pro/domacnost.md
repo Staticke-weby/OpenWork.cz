@@ -48,6 +48,11 @@ Overené údaje o vstupoch a dostupnosti drží
 [katalóg modelov](/sk/modely/katalog/).
 :::
 
----
+## Kadiaľ ďalej
 
-Viď tiež [Modely a poskytovatelia](/sk/modely/).
+- **[OpenWork pre domácnosť](/sk/pro-koho/domacnost/)** — ukážkový priečinok
+  a prompty.
+- **[Poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/)** —
+  štart bez platenia.
+- **[Skeny a fotky dokumentov](/sk/co-vytvorite/skeny-a-fotky/)** — bločky do
+  tabuľky.

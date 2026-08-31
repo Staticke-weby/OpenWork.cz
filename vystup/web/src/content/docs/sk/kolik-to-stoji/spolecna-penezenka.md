@@ -35,6 +35,13 @@ Pri klasických nástrojoch platíte **predplatné za každého používateľa**
 využíva, alebo nie. So spoločnou peňaženkou platíte len za to, čo sa naozaj
 spotrebuje.
 
+## Kadiaľ ďalej
+
+- **[Koľko to stojí](/sk/kolik-to-stoji/)** — ako sa platí za spotrebu.
+- **[Platení poskytovatelia](/sk/kolik-to-stoji/placene-poskytovatele/)** — kde
+  peňaženku dobijete.
+- **[Bezpečnosť](/sk/vase-data/bezpecnost/)** — ako si postrážiť kľúče.
+
 ---
 
 **Odkiaľ čerpáme:** funkcie tímovej správy opísané na

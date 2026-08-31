@@ -28,7 +28,7 @@ bloky:
         poznamka: "může trénovat na datech"
 
   - poskytovatel: "OpenRouter"
-    odkaz: "https://openrouter.ai/models"
+    odkaz: "/modely/poskytovatele/"
     popis: "Brána k desítkám modelů. Bezplatná řada má u názvu příponu :free a průběžně se obměňuje."
     limit: "20 požadavků/min; 50 požadavků/den (do útraty 10 $), pak 1 000/den"
     karta_nutna: "ne"

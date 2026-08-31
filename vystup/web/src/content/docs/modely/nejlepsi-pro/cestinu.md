@@ -49,6 +49,10 @@ Jak dobře model zní česky, posoudíte nejlíp sami na vlastním textu — dne
 a dostupnosti drží [katalog modelů](/modely/katalog/).
 :::
 
----
+## Kudy dál
 
-Viz taky [Modely a poskytovatelé](/modely/).
+- **[Katalog modelů](/modely/katalog/)** — vstupy a dostupnost s datem ověření.
+- **[Překlady dokumentů](/co-vytvorite/preklady/)** — čeština a cizí jazyky
+  v praxi.
+- **[Texty a dokumenty](/co-vytvorite/texty-a-dokumenty/)** — co všechno jde
+  napsat.

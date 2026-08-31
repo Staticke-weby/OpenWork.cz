@@ -6,6 +6,11 @@ import rehypeExternalLinks from 'rehype-external-links';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://openwork.cz',
+  // Zrušené stránky — statické přesměrování (meta refresh) na náhradu.
+  redirects: {
+    '/zaciname/ekosystem/': '/modely/poskytovatele/',
+    '/sk/zaciname/ekosystem/': '/sk/modely/poskytovatele/',
+  },
   markdown: {
     // Odkazy mimo náš web (http/https) otevírat v nové kartě + bezpečné rel.
     rehypePlugins: [
@@ -126,6 +131,7 @@ export default defineConfig({
               slug: 'modely/katalog',
               badge: { text: 'Živé', variant: 'tip' },
             },
+            { slug: 'modely/poskytovatele' },
             {
               label: 'Nejlepší AI modely',
               translations: { sk: 'Najlepšie AI modely' },

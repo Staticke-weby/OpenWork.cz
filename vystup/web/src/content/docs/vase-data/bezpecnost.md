@@ -11,7 +11,7 @@ Pár jednoduchých návyků, díky kterým budete v klidu.
 ## Hlídejte si klíče
 
 **Klíč** je přístupové heslo pro aplikace — třeba klíč k bráně
-[OpenCode Go](/zaciname/ekosystem/). Kdo ho má, může přes něj utrácet.
+[OpenCode Go](/modely/poskytovatele/). Kdo ho má, může přes něj utrácet.
 
 - **Nikam ho nevypisujte veřejně** — ne do e-mailu, chatu ani do souborů, které
   sdílíte.
@@ -37,6 +37,15 @@ jen to, čemu rozumíte, a udělte co nejmenší potřebná oprávnění.
 Nejbezpečnější je to, co nikam neodejde. Když jde o opravdu citlivá data,
 zvažte [lokální AI modely](/vase-data/lokalni-ai/) — pak zůstane všechno
 u vás na počítači.
+
+## Kudy dál
+
+- **[Napojení nástrojů](/prace-se-slozkou/napojeni-nastroju/)** — oprávnění při
+  připojování služeb.
+- **[Nulové uchovávání dat (ZDR)](/vase-data/zdr/)** — co se děje s daty
+  u poskytovatele.
+- **[Společná peněženka](/kolik-to-stoji/spolecna-penezenka/)** — klíče a stropy
+  pro víc lidí.
 
 ---
 

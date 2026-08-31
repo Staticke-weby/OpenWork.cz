@@ -29,7 +29,7 @@ Než si vyberete, oddělte si tři různé věci:
 - **Podívejte se do podmínek poskytovatele** na slova jako „zero data
   retention", „no training" nebo „data se neukládají".
 - **Vyberte bránu, která to má ve výchozím stavu.** Evropská brána
-  [Cortecs](/zaciname/ekosystem/) zpracovává data jen v Evropě a bez uchovávání.
+  [Cortecs](/modely/poskytovatele/) zpracovává data jen v Evropě a bez uchovávání.
 - **Nechcete řešit vůbec nic?** Sáhněte po
   [lokálních AI modelech](/vase-data/lokalni-ai/) — data pak nikam
   neodejdou.
@@ -43,6 +43,14 @@ Než si vyberete, oddělte si tři různé věci:
 Konkrétní poskytovatele vedle sebe najdete ve
 **[srovnávací tabulce (ZDR)](/vase-data/zdr/srovnani-poskytovatelu/)** — každý údaj tam má
 zdroj a datum ověření.
+
+## Kudy dál
+
+- **[Srovnání poskytovatelů (ZDR)](/vase-data/zdr/srovnani-poskytovatelu/)** —
+  ověřená tabulka se zdroji.
+- **[GDPR a NIS2](/vase-data/gdpr-a-nis2/)** — evropská pravidla.
+- **[Profese s mlčenlivostí](/pro-koho/profese-s-mlcenlivosti/)** — jak s citlivými
+  daty pracovat v praxi.
 
 ---
 

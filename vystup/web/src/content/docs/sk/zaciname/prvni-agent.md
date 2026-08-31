@@ -45,6 +45,14 @@ celý priečinok. Podrobne to rozoberá stránka
 - **Pravidlá na jedno miesto.** Keď budete chcieť, aby agent dodržiaval stále
   pravidlá, spíšete si ich do súboru [AGENTS.md](/sk/prace-se-slozkou/agents-md/).
 
+## Kadiaľ ďalej
+
+- **[Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/)** — ako agentovi
+  nachystať priestor.
+- **[Čo s ním vytvoríte](/sk/co-vytvorite/)** — ďalšie zadania na vyskúšanie.
+- **[Zručnosti (skills)](/sk/prace-se-slozkou/dovednosti-skills/)** — podarené
+  postupy si uložte na nabudúce.
+
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) a

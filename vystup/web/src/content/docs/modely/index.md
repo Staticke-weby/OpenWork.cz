@@ -54,6 +54,8 @@ Opak jsou modely, ke kterým se dostanete jen přes poskytovatele.
 - **[Vstupy: text, obrázek, video](/modely/vstupy/)** — proč je to hlavní
   rozdíl mezi modely a jak si vybrat.
 - **[Katalog modelů](/modely/katalog/)** — živé srovnání s ověřenými údaji.
+- **[Poskytovatelé AI modelů](/modely/poskytovatele/)** — přehled bran
+  a kdy kterou zvolit.
 - **[Nejlepší pro programování](/modely/nejlepsi-pro/programovani/)**,
   **[pro češtinu](/modely/nejlepsi-pro/cestinu/)**
   a **[pro domácnost](/modely/nejlepsi-pro/domacnost/)**.

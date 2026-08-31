@@ -48,7 +48,12 @@ tlačidiel uvádzame anglicky:
 Máte nainštalované? Pustite sa do stránky
 **[Prvý agent](/sk/zaciname/prvni-agent/)** — prejdeme prvú úlohu krok za krokom.
 
+## Kadiaľ ďalej
+
+- **[Poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/)** — začnite
+  bez platenia.
+- **[Časté otázky](/sk/zaciname/caste-otazky/)** — odpovede na prvé otázky.
+
 ---
 
-**Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/). Naposledy
-overené 31. augusta 2026.
+**Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/).

@@ -61,6 +61,14 @@ Cena je stejná pro cloud i provoz na vlastním serveru. **Pro jednotlivce
 a domácnost je ale desktopová aplikace zdarma** — placené plány řeší hlavně
 správu více lidí.
 
+## Kudy dál
+
+- **[Placení poskytovatelé](/kolik-to-stoji/placene-poskytovatele/)**
+  a **[poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/)** —
+  koho zvolit.
+- **[Katalog modelů](/modely/katalog/)** — levné a silné modely vedle sebe.
+- **[OpenWork pro firmy](/pro-koho/firmy/)** — platba za spotřebu v praxi.
+
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/). Ceny se mění —

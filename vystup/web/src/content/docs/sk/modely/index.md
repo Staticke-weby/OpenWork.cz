@@ -59,6 +59,8 @@ dostanete len cez poskytovateľa.
   rozdiel medzi modelmi a ako si vybrať.
 - **[Katalóg modelov](/sk/modely/katalog/)** — živé porovnanie s overenými
   údajmi.
+- **[Poskytovatelia AI modelov](/sk/modely/poskytovatele/)** — prehľad brán
+  a kedy ktorú zvoliť.
 - **[Najlepší na programovanie](/sk/modely/nejlepsi-pro/programovani/)**,
   **[na slovenčinu](/sk/modely/nejlepsi-pro/cestinu/)**
   a **[pre domácnosť](/sk/modely/nejlepsi-pro/domacnost/)**.

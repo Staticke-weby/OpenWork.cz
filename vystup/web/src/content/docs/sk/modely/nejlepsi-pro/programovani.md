@@ -46,7 +46,9 @@ Výsledok aj tak posúdite sami na vlastnom projekte — začnite lacným modelo
 a vyššie siahnite, až keď narazíte na jeho hranice.
 :::
 
----
+## Kadiaľ ďalej
 
-Viď tiež [Modely a poskytovatelia](/sk/modely/) a
-[Koľko to stojí](/sk/kolik-to-stoji/).
+- **[Katalóg modelov](/sk/modely/katalog/)** — vstupy a dostupnosť s dátumom
+  overenia.
+- **[Vstupy: text, obrázok, video](/sk/modely/vstupy/)** — prečo na nich záleží.
+- **[Koľko to stojí](/sk/kolik-to-stoji/)** — platba za spotrebu.

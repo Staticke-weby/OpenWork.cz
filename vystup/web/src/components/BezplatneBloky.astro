@@ -66,6 +66,15 @@ function zkracenyOdkaz(url: string): string {
     return url;
   }
 }
+
+// Interní odkazy (root-relativní) dostanou na SK mutaci prefix /sk
+// a nemají target="_blank" (viz AGENTS.md); externí zůstávají beze změny.
+function jeExterni(url: unknown): boolean {
+  return typeof url === 'string' && /^https?:\/\//.test(url);
+}
+function lokalniOdkaz(url: string): string {
+  return jeSk && url.startsWith('/') && !url.startsWith('/sk/') ? `/sk${url}` : url;
+}
 ---
 
 <p class="zdat-overeno">
@@ -76,8 +85,10 @@ function zkracenyOdkaz(url: string): string {
   bloky.map((b) => (
     <section class="ow-blok">
       <h2 id={slugify(b.poskytovatel)}>
-        {b.odkaz ? (
+        {b.odkaz && jeExterni(b.odkaz) ? (
           <a href={b.odkaz} target="_blank" rel="noopener noreferrer">{b.poskytovatel}</a>
+        ) : b.odkaz ? (
+          <a href={lokalniOdkaz(String(b.odkaz))}>{b.poskytovatel}</a>
         ) : (
           b.poskytovatel
         )}

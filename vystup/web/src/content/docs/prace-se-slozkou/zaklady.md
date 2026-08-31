@@ -35,6 +35,13 @@ Podrobně to projde stránka [První agent](/zaciname/prvni-agent/).
 - **[Napojení nástrojů](/prace-se-slozkou/napojeni-nastroju/)** — jak agentovi
   dát přístup i k dalším službám.
 
+## Kudy dál
+
+- **[Struktura složek](/prace-se-slozkou/struktura-slozek/)** — osvědčené
+  uspořádání.
+- **[Soubor AGENTS.md](/prace-se-slozkou/agents-md/)** — pravidla pro agenta.
+- **[Soubory .md](/prace-se-slozkou/soubory-md/)** — formát výstupů.
+
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) a

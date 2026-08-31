@@ -33,7 +33,9 @@ Nič z toho nie je povinné — je to len vzor, ktorý sa osvedčuje.
 Keď má agent jasno, kde čo je, menej tápe a menej sa pýta. A vy máte prehľad, čo
 je vstup a čo výsledok.
 
----
+## Kadiaľ ďalej
 
-Viď tiež [Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/) a
-[Súbor AGENTS.md](/sk/prace-se-slozkou/agents-md/).
+- **[Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/)** — ako agent
+  s priečinkom pracuje.
+- **[Súbor AGENTS.md](/sk/prace-se-slozkou/agents-md/)** — pravidlá pre agenta.
+- **[Súbory .md](/sk/prace-se-slozkou/soubory-md/)** — formát poznámok a výstupov.

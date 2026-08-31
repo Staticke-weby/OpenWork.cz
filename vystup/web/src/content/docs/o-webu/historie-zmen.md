@@ -9,6 +9,16 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 31. srpna 2026 — přehled poskytovatelů AI modelů
+
+- Nová stránka [Poskytovatelé AI modelů](/modely/poskytovatele/) — OpenCode
+  Go a Zen, OpenRouter, Cortecs a lokální provoz na jednom místě; seznam
+  budeme postupně rozšiřovat. Zmínky OpenRouter a Cortecs v obsahu nově
+  vedou sem.
+- Stránka „Ekosystém kolem OpenWork" zrušena — její obsah pokrývá nový
+  přehled poskytovatelů a stránka o napojení nástrojů; stará adresa
+  přesměrovává.
+
 ## 31. srpna 2026 — automatizace a dovednosti
 
 - [Automatizace v prohlížeči](/co-vytvorite/prohlizec/) — agent otevře

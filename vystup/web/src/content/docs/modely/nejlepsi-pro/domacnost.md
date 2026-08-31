@@ -45,6 +45,9 @@ Ověřené údaje o vstupech a dostupnosti drží
 [katalog modelů](/modely/katalog/).
 :::
 
----
+## Kudy dál
 
-Viz taky [Modely a poskytovatelé](/modely/).
+- **[OpenWork pro domácnost](/pro-koho/domacnost/)** — ukázková složka a prompty.
+- **[Poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/)** — start
+  bez placení.
+- **[Skeny a fotky dokumentů](/co-vytvorite/skeny-a-fotky/)** — účtenky do tabulky.

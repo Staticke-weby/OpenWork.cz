@@ -68,6 +68,12 @@ a nastavte si [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) ako prvú
 bránu k modelom.
 :::
 
+## Kadiaľ ďalej
+
+- **[Inštalácia](/sk/zaciname/instalace/)** — vyskúšajte OpenWork za pár minút.
+- **[Koľko to stojí](/sk/kolik-to-stoji/)** — spotreba namiesto paušálu.
+- **[Čo s ním vytvoríte](/sk/co-vytvorite/)** — konkrétne výstupy s príkladmi.
+
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) (cenník,

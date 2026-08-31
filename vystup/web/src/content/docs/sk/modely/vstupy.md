@@ -69,6 +69,13 @@ model.
    v **[katalógu modelov](/sk/modely/katalog/)** — stĺpec Vstupy, s dátumom
    overenia.
 
+## Kadiaľ ďalej
+
+- **[Katalóg modelov](/sk/modely/katalog/)** — vstupy každého modelu s dátumom
+  overenia.
+- **[Skeny a fotky dokumentov](/sk/co-vytvorite/skeny-a-fotky/)**
+  a **[práca s PDF](/sk/co-vytvorite/prace-s-pdf/)** — kde na vstupoch záleží najviac.
+
 ---
 
 **Odkiaľ čerpáme:** prehľad modelov a vstupov na

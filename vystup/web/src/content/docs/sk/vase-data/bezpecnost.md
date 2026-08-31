@@ -11,7 +11,7 @@ Pár jednoduchých návykov, vďaka ktorým budete v pokoji.
 ## Strážte si kľúče
 
 **Kľúč** je prístupové heslo pre aplikácie — napríklad kľúč k bráne
-[OpenCode Go](/sk/zaciname/ekosystem/). Kto ho má, môže cez neho míňať.
+[OpenCode Go](/sk/modely/poskytovatele/). Kto ho má, môže cez neho míňať.
 
 - **Nikam ho nevypisujte verejne** — nie do e-mailu, chatu ani do súborov,
   ktoré zdieľate.
@@ -36,6 +36,15 @@ len to, čomu rozumiete, a udeľte čo najmenšie potrebné oprávnenia.
 Najbezpečnejšie je to, čo nikam neodíde. Keď ide o naozaj citlivé dáta, zvážte
 [lokálne AI modely](/sk/vase-data/lokalni-ai/) — potom zostane všetko u vás
 na počítači.
+
+## Kadiaľ ďalej
+
+- **[Napojenie nástrojov](/sk/prace-se-slozkou/napojeni-nastroju/)** — oprávnenia
+  pri pripájaní služieb.
+- **[Nulové uchovávanie dát (ZDR)](/sk/vase-data/zdr/)** — čo sa deje s dátami
+  u poskytovateľa.
+- **[Spoločná peňaženka](/sk/kolik-to-stoji/spolecna-penezenka/)** — kľúče a stropy
+  pre viac ľudí.
 
 ---
 

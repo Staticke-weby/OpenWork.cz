@@ -47,3 +47,8 @@ Tyto názvy nemá smysl překládat — jen je jednou vysvětlíme.
   odpovídá ([víc tady](/prace-se-slozkou/dovednosti-skills/)).
 - **token** — kousek textu, po kterých se počítá spotřeba.
 - **GDPR**, **NIS2**, **Astro** a názvy modelů (GLM, Qwen, Llama…) zůstávají také v originále.
+
+## Kudy dál
+
+- **[Co je OpenWork](/zaciname/co-je-openwork/)** — pojmy v souvislostech.
+- **[Poskytovatelé AI modelů](/modely/poskytovatele/)** — brány k modelům v souvislostech.

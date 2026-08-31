@@ -63,6 +63,14 @@ platené riešenie a nevadí vám odovzdať dáta jednému dodávateľovi, siahn
 po uzavretých nástrojoch.
 :::
 
+## Kadiaľ ďalej
+
+- **[Inštalácia](/sk/zaciname/instalace/)** — stiahnutie a prvé spustenie.
+- **[Prvý agent](/sk/zaciname/prvni-agent/)** — prvá úloha krok za krokom.
+- **[Čo s ním vytvoríte](/sk/co-vytvorite/)** — typy výstupov s príkladmi zadaní.
+- **[Pre koho je OpenWork](/sk/pro-koho/firmy/)** — ukážky pre firmy, domácnosť,
+  študentov aj profesie s mlčanlivosťou.
+
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) a

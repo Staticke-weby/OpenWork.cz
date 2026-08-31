@@ -83,6 +83,12 @@ platené plány s centrálnou správou (viď [Koľko to stojí](/sk/kolik-to-sto
 
 Áno, cez [MCP a Composio](/sk/prace-se-slozkou/napojeni-nastroju/).
 
+## Kadiaľ ďalej
+
+- **[Čo je OpenWork](/sk/zaciname/co-je-openwork/)** — základné predstavenie.
+- **[Koľko to stojí](/sk/kolik-to-stoji/)** — platba za spotrebu podrobne.
+- **[Vaše dáta](/sk/vase-data/)** — čo zostáva u vás.
+
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) a

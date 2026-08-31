@@ -50,6 +50,11 @@ texte — dnešné špičkové modely sú dobré takmer všetky. Overené údaje
 o vstupoch a dostupnosti drží [katalóg modelov](/sk/modely/katalog/).
 :::
 
----
+## Kadiaľ ďalej
 
-Viď tiež [Modely a poskytovatelia](/sk/modely/).
+- **[Katalóg modelov](/sk/modely/katalog/)** — vstupy a dostupnosť s dátumom
+  overenia.
+- **[Preklady dokumentov](/sk/co-vytvorite/preklady/)** — slovenčina a cudzie
+  jazyky v praxi.
+- **[Texty a dokumenty](/sk/co-vytvorite/texty-a-dokumenty/)** — čo všetko sa dá
+  napísať.

@@ -36,7 +36,9 @@ upravte podle sebe.
 Když má agent jasno, kde co je, méně tápe a míň se ptá. A vy máte přehled, co je
 vstup a co výsledek.
 
----
+## Kudy dál
 
-Viz taky [Základy práce se složkou](/prace-se-slozkou/zaklady/) a
-[Soubor AGENTS.md](/prace-se-slozkou/agents-md/).
+- **[Základy práce se složkou](/prace-se-slozkou/zaklady/)** — jak agent se
+  složkou pracuje.
+- **[Soubor AGENTS.md](/prace-se-slozkou/agents-md/)** — pravidla pro agenta.
+- **[Soubory .md](/prace-se-slozkou/soubory-md/)** — formát poznámek a výstupů.

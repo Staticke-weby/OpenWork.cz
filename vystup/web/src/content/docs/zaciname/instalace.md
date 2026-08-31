@@ -48,7 +48,12 @@ názvy tlačítek uvádíme anglicky:
 Máte nainstalováno? Pusťte se do stránky
 **[První agent](/zaciname/prvni-agent/)** — projdeme první úkol krok za krokem.
 
+## Kudy dál
+
+- **[Poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/)** — začněte
+  bez placení.
+- **[Časté otázky](/zaciname/caste-otazky/)** — odpovědi na první otázky.
+
 ---
 
-**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/). Naposledy
-ověřeno 31. srpna 2026.
+**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/).

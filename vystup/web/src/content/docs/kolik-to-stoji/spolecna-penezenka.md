@@ -36,6 +36,13 @@ U klasických nástrojů platíte **předplatné za každého uživatele**, ať 
 nebo ne. Se společnou peněženkou platíte jen za to, co se opravdu spotřebuje —
 rozdíl je znát hlavně tam, kde část lidí sáhne po AI jen občas.
 
+## Kudy dál
+
+- **[Kolik to stojí](/kolik-to-stoji/)** — jak se platí za spotřebu.
+- **[Placení poskytovatelé](/kolik-to-stoji/placene-poskytovatele/)** — kde
+  peněženku dobijete.
+- **[Bezpečnost](/vase-data/bezpecnost/)** — jak si pohlídat klíče.
+
 ---
 
 **Odkud čerpáme:** funkce týmové správy popsané na

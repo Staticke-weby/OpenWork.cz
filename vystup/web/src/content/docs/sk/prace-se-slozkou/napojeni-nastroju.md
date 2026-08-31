@@ -65,6 +65,14 @@ Pripojením nástroja dávate agentovi prístup k danej službe — pripájajte 
 to, čomu rozumiete a čo agent naozaj potrebuje. Pri citlivých službách
 zvážte, aké oprávnenia udelíte (viď [Bezpečnosť](/sk/vase-data/bezpecnost/)).
 
+## Kadiaľ ďalej
+
+- **[Zručnosti (skills)](/sk/prace-se-slozkou/dovednosti-skills/)** — postupy nad
+  pripojenými službami.
+- **[Automatizácia činností](/sk/co-vytvorite/automatizace/)** — čo s pripojenými
+  systémami zvládnete.
+- **[Bezpečnosť](/sk/vase-data/bezpecnost/)** — oprávnenia s rozmyslom.
+
 ---
 
 **Odkiaľ čerpáme:** dokumentácia OpenWork

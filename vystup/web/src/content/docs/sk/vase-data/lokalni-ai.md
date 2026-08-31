@@ -62,6 +62,14 @@ ako prvú bránu k modelom. Ako východiskový odporúčame **GLM 5.3 Flash** �
 pomer rýchlosti, kvality a ceny.
 :::
 
+## Kadiaľ ďalej
+
+- **[Nulové uchovávanie dát (ZDR)](/sk/vase-data/zdr/)** — kompromis, keď lokálny
+  model nie je praktický.
+- **[Katalóg modelov](/sk/modely/katalog/)** — ktoré modely sú otvorené a kde ich vziať.
+- **[Profesie s mlčanlivosťou](/sk/pro-koho/profese-s-mlcenlivosti/)** — citlivé
+  dáta v praxi.
+
 ---
 
 **Odkiaľ čerpáme:** dokumentácia [opencode](https://opencode.ai/docs/) a

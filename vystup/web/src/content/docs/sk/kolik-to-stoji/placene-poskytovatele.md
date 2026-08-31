@@ -39,7 +39,7 @@ alebo interným pravidlám.
 - **Kedy zvoliť:** keď potrebujete európske spracovanie a dáta pod prísnejšou
   kontrolou.
 
-[Cortecs →](https://cortecs.ai/)
+[Viac o Cortecs v prehľade poskytovateľov →](/sk/modely/poskytovatele/)
 
 ## Ako sa rozhodnúť
 
@@ -50,6 +50,14 @@ alebo interným pravidlám.
 
 Podrobné porovnanie podľa uchovávania dát a regiónu nájdete v
 [porovnávacej tabuľke (ZDR)](/sk/vase-data/zdr/srovnani-poskytovatelu/).
+
+## Kadiaľ ďalej
+
+- **[Poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/)** —
+  štart bez platenia.
+- **[Porovnanie poskytovateľov (ZDR)](/sk/vase-data/zdr/srovnani-poskytovatelu/)** —
+  podľa nakladania s dátami.
+- **[Katalóg modelov](/sk/modely/katalog/)** — čo pri bránach vezmete.
 
 ---
 

@@ -86,6 +86,12 @@ placené plány s centrální správou a sdílením přístupů (viz
 Ano, přes [MCP a Composio](/prace-se-slozkou/napojeni-nastroju/). Kde má služba
 vlastní připojení (MCP), použijete ho přímo; kde ne, poslouží Composio.
 
+## Kudy dál
+
+- **[Co je OpenWork](/zaciname/co-je-openwork/)** — základní představení.
+- **[Kolik to stojí](/kolik-to-stoji/)** — platba za spotřebu podrobně.
+- **[Vaše data](/vase-data/)** — co zůstává u vás.
+
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) a

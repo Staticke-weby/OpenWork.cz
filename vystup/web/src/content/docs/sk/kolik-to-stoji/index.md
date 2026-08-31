@@ -60,6 +60,14 @@ pre tímy a firmy (ceny k 31. augustu 2026):
 Cena je rovnaká pre cloud aj prevádzku na vlastnom serveri. **Pre jednotlivcov
 a domácnosť je ale desktopová aplikácia zadarmo.**
 
+## Kadiaľ ďalej
+
+- **[Platení poskytovatelia](/sk/kolik-to-stoji/placene-poskytovatele/)**
+  a **[poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/)** —
+  koho zvoliť.
+- **[Katalóg modelov](/sk/modely/katalog/)** — lacné a silné modely vedľa seba.
+- **[OpenWork pre firmy](/sk/pro-koho/firmy/)** — platba za spotrebu v praxi.
+
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/). Ceny sa menia —

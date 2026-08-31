@@ -69,6 +69,12 @@ a nastavte si [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) jako první
 bránu k modelům.
 :::
 
+## Kudy dál
+
+- **[Instalace](/zaciname/instalace/)** — vyzkoušejte OpenWork za pár minut.
+- **[Kolik to stojí](/kolik-to-stoji/)** — spotřeba místo paušálu.
+- **[Co s ním vytvoříte](/co-vytvorite/)** — konkrétní výstupy s příklady.
+
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) (ceník,

@@ -50,6 +50,14 @@ celá složka. Podrobně to rozebírá stránka
   pravidla, sepíšete si je do souboru
   [AGENTS.md](/prace-se-slozkou/agents-md/).
 
+## Kudy dál
+
+- **[Základy práce se složkou](/prace-se-slozkou/zaklady/)** — jak agentovi
+  nachystat prostor.
+- **[Co s ním vytvoříte](/co-vytvorite/)** — další zadání k vyzkoušení.
+- **[Dovednosti (skills)](/prace-se-slozkou/dovednosti-skills/)** — povedené
+  postupy si uložte na příště.
+
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) a
