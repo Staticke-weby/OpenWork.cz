@@ -61,8 +61,8 @@ lokální modely umí (přes **Ollama**, **LM Studio** nebo **llama.cpp**).
 
 :::tip
 Nevíte, kde začít? Nastavte si [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)
-jako první bránu k modelům. Jako výchozí doporučujeme **GLM 5.3 Flash** a
-**Deepseek v4 Flash** — dobrý poměr rychlosti, kvality a ceny.
+jako první bránu k modelům. Jako výchozí doporučujeme **GLM 5.3 Flash** — dobrý poměr
+rychlosti, kvality a ceny.
 :::
 
 ---

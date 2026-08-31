@@ -40,8 +40,7 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   2. **Bezplatné modely** — na vyzkoušení a lehké použití, ne jako cíl.
   3. **Lokální AI modely** — jen okrajově, pro menšinu (citlivá data / offline
      + výkonný počítač). Nenech se jimi unést; většině lidí se nevyplatí.
-  Výchozí doporučené modely (současné, ověřovat hlídačem): **GLM 5.3 Flash**
-  a **Deepseek v4 Flash**.
+  Výchozí doporučený model (současný, ověřovat hlídačem): **GLM 5.3 Flash**.
 
 ## Co smíš
 

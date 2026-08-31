@@ -28,7 +28,7 @@ skutečného využití, ne podle počtu lidí.
 Pro každodenní práci doporučujeme **placené modely** — dají lepší rychlost,
 kvalitu a stabilitu než bezplatné. Nejjednodušší je základní předplatné
 [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925); jako výchozí se hodí
-**GLM 5.3 Flash** a **Deepseek v4 Flash**.
+**GLM 5.3 Flash**.
 
 ## Hodně toho zvládnete zdarma
 

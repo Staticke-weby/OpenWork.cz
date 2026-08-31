@@ -114,7 +114,7 @@ změně webu). Použitá tvrzení na homepage:
   HW, setup). Hlavní cesta = poskytovatel, ideálně **placené modely přes
   základní předplatné OpenCode Go** (rychlost, kvalita, stabilita). Bezplatné
   modely jen na vyzkoušení. Pravidlo v AGENTS.md.
-- **Výchozí doporučené modely (současné): GLM 5.3 Flash, Deepseek v4 Flash.**
+- **Výchozí doporučený model (současný): GLM 5.3 Flash.**
   Proměnlivé — ověřovat hlídačem a udržovat v katalogu modelů (Vlna 4).
   ⚠ Nejsou ověřené z oficiálního zdroje, jde o zadání uživatele — před velkým
   rozšířením potvrdit dostupnost přes OpenCode Go.
