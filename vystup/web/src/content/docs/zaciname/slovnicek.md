@@ -17,7 +17,7 @@ Na tomto webu píšeme pro běžné lidi. Kde jde technický výraz nahradit
 | pay-as-you-go | platba za spotřebu |
 | shared billing | společná peněženka |
 | API key | klíč (přístupové heslo pro aplikace) |
-| local inference, on-device | běh na vlastním počítači |
+| local inference, on-device | lokální AI modely (běží přímo u vás na počítači) |
 | cloud (dát do cloudu) | uložit na cizí server |
 | workspace | pracovní prostor / složka |
 | settings | nastavení |

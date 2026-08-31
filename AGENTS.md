@@ -70,6 +70,23 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   (v `astro.config.mjs`); ve vlastních `.astro` komponentách to nastav ručně
   podle vzoru v `Hero.astro`. Interní (root-relativní) odkazy target nemají.
 
+## SEO (projekt stojí na návštěvnosti)
+
+Cílem webu je návštěvnost — bez ní projekt nesplní účel. Piš proto s ohledem
+na to, co lidé skutečně hledají, ale nikdy na úkor pravdivosti.
+
+- **Používej vyhledávané termíny:** „lokální AI", „AI zdarma", „AI agenti",
+  „AI nad vlastními soubory", „alternativa Claude Cowork", názvy modelů.
+  Kde se sráží s pravidlem jednoduché češtiny, vyhrává vyhledávaný termín —
+  ale při prvním výskytu ho vysvětli jednou větou.
+- **SEO výjimky ze slovníčku:** „lokální AI / lokální modely" **používáme**
+  (místo opisu „na vlastním počítači"), protože se to hledá. Vysvětli:
+  „běží přímo u vás na počítači". Slovo „suverenita" zůstává zakázané.
+- **Každá stránka:** výstižný `<title>` s klíčovým slovem, smysluplný
+  `description` ve frontmatteru, jeden jasný nadpis H1, klíčová slova
+  i v podnadpisech. Popisky nepřeplňuj — čitelnost pro člověka je přednější.
+- Interní prolinkování mezi souvisejícími stránkami (rozcestníky, „viz také").
+
 ## Styl práce
 
 - Pracuj po krocích a po každém větším kroku stručně shrň, co jsi udělal

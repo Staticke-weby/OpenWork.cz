@@ -10,7 +10,7 @@ se stejnou logikou). Levý sloupec se na webu nepoužívá, pravý ano.
 | pay-as-you-go | platba za spotřebu |
 | shared billing | společná peněženka |
 | API key | klíč (při prvním výskytu „klíč — přístupové heslo pro aplikace") |
-| local inference, on-device | běh na vlastním počítači |
+| local inference, on-device | lokální AI modely (SEO výjimka — vyhledávaný termín; při prvním výskytu vysvětli „běží přímo u vás na počítači") |
 | cloud (jako sloveso „dát do cloudu") | uložit na cizí server |
 | workspace | pracovní prostor / složka |
 | settings | nastavení |
@@ -22,7 +22,7 @@ se stejnou logikou). Levý sloupec se na webu nepoužívá, pravý ano.
 | deploy | nasadit |
 | self-hosting | provoz na vlastním serveru |
 | suverenita, digitální suverenita | data pod vaší kontrolou / nezávislost na velkých platformách (slovo „suverenita" na webu nepoužíváme vůbec) |
-| lokálně | na vlastním počítači |
+| lokálně (příslovce) | na vlastním počítači — ALE „lokální AI / lokální modely" jako termín **používat** kvůli SEO (viz řádek výše) |
 | inference | výpočet (při prvním výskytu: „výpočet — když model zpracovává vaše zadání") |
 
 ## Zůstává v originále (s vysvětlením při prvním výskytu na stránce)
