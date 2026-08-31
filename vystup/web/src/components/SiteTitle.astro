@@ -1,72 +1,28 @@
 ---
 // Vlastní logo v hlavičce (nahrazuje výchozí Starlight SiteTitle).
-// Ikona = monogram OW: prstenec „O" propletený s tahovým „W", ladí s faviconou.
-// Barvy přes CSS proměnné → funguje ve světlém i tmavém režimu.
+// Čistý wordmark bez ikony — „.cz" v barvě značky. Barvy přes CSS proměnné.
 const jeSk = Astro.currentLocale === 'sk';
 const domu = jeSk ? '/sk/' : '/';
 ---
 
 <a href={domu} class="ow-logo" aria-label="OpenWork.cz — domů">
-  <svg class="ow-logo__ikona" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
-    <defs>
-      <linearGradient id="ow-grad" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" class="ow-logo__stop1" />
-        <stop offset="1" class="ow-logo__stop2" />
-      </linearGradient>
-    </defs>
-    <rect width="32" height="32" rx="8" fill="url(#ow-grad)" />
-    <circle cx="12" cy="16.5" r="5" class="ow-logo__mark" />
-    <path d="M14.6 11.5 L16.8 21 L19 15 L21.2 21 L23.4 11.5" class="ow-logo__mark" />
-  </svg>
-  <span class="ow-logo__text">
-    <span class="ow-logo__name">OpenWork</span><span class="ow-logo__tld">.cz</span>
-  </span>
+  <span class="ow-logo__name">OpenWork</span><span class="ow-logo__tld">.cz</span>
 </a>
 
 <style>
   .ow-logo {
     display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    align-items: baseline;
     text-decoration: none;
-    line-height: 1;
-  }
-  .ow-logo__ikona {
-    flex-shrink: 0;
-    border-radius: 8px;
-    /* jemný stín pro odsazení od pozadí hlavičky */
-    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.15));
-  }
-  .ow-logo__stop1 {
-    stop-color: var(--sl-color-accent);
-  }
-  .ow-logo__stop2 {
-    /* jemně tmavší odstín značky dole → hloubka; adaptuje se na motiv */
-    stop-color: color-mix(in srgb, var(--sl-color-accent) 74%, #000);
-  }
-  .ow-logo__mark {
-    /* tahy „prosvítají" barvou pozadí → adaptuje se na motiv */
-    fill: none;
-    stroke: var(--sl-color-bg);
-    stroke-width: 2.4;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-  }
-  .ow-logo__text {
     font-weight: 700;
-    font-size: 1.2rem;
-    letter-spacing: -0.01em;
+    font-size: 1.35rem;
+    letter-spacing: -0.02em;
+    line-height: 1;
   }
   .ow-logo__name {
     color: var(--sl-color-white);
   }
   .ow-logo__tld {
     color: var(--sl-color-accent);
-  }
-  /* Na úzkém mobilu ponech jen ikonu, ať se hlavička nepřeplní. */
-  @media (max-width: 30rem) {
-    .ow-logo__text {
-      display: none;
-    }
   }
 </style>

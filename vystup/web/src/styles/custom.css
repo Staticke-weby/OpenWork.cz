@@ -12,6 +12,11 @@
   --ow-gold: #c79a2e;
   --ow-gold-high: #7d6216;
 
+  /* Barvy značky v logu. Čtvereček loga je v obou režimech zelený, proto jsou
+     tahy konstantní (nepřeklápí se dark/light) — záměrně definované jen zde. */
+  --ow-logo-o: #ffffff;
+  --ow-logo-w: #e6c15a;
+
   /* Systémové písmo — nenačítáme webfonty ze zahraničních serverů (AGENTS.md). */
   --sl-font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, sans-serif;
