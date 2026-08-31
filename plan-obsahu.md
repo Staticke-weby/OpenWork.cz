@@ -102,7 +102,10 @@ Pravidlo: dokud řádek nemá `overeno`, drží upozornění „předběžné".
 
 ---
 
-## Vlna 5 — O webu (důvěryhodnost) ⬜
+## Vlna 5 — O webu (důvěryhodnost) ✅ hotovo
+
+> Zbývá jen `pravni.md`: provozovatel, kontakt, licence textů — potřebuje reálné
+> údaje uživatele (nelze vymyslet).
 
 | Stránka | Účel |
 |---|---|
