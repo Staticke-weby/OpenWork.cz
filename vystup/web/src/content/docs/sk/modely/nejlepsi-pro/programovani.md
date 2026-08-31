@@ -21,10 +21,15 @@ zložitejšiu úlohu.
 - **Presnosť** — drží sa zadania a nevymýšľa si.
 - **Práca s väčšími celkami** — udrží kontext naprieč viacerými súbormi.
 - **Rýchlosť a cena** — pri kóde sa pýtate často, spotreba sa nasčíta.
+- **Obrázkový vstup** — hodí sa, keď chcete poslať snímku obrazovky
+  s chybou alebo návrh vzhľadu ([prečo na vstupoch
+  záleží](/sk/modely/vstupy/)).
 
 :::note
-Overený rebríček konkrétnych modelov na kód ešte chystáme — bude v katalógu
-modelov s dátami a dátumom overenia.
+Dnešné modely na kód sú dobré takmer všetky — výsledok aj tak posúdite sami
+na vlastnom projekte. Overené údaje o vstupoch a dostupnosti drží
+[katalóg modelov](/sk/modely/katalog/); na čisto textovú prácu vyjde
+najlacnejšie DeepSeek V4 Flash.
 :::
 
 ---

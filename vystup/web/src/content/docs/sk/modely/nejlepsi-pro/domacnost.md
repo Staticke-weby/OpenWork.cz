@@ -15,7 +15,12 @@ prejsť poznámky.
 Ideálny štart je **GLM 5.3 Flash** cez
 [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) — lacný a rýchly, na domáce
 použitie bohato stačí. Väčšinu mesiaca vás vyjde na pár desiatok centov (viď
-[Koľko to stojí](/sk/kolik-to-stoji/)).
+[Koľko to stojí](/sk/kolik-to-stoji/)). Navyše prijme aj **obrázky a video**,
+takže zvládne fotky bločkov alebo sken zmluvy — doma sa to hodí častejšie,
+než čakáte ([prečo na vstupoch záleží](/sk/modely/vstupy/)).
+
+Kopu bežnej práce zvládne prakticky zadarmo aj **MiMo-V2.5** — v Go má
+zďaleka najvyššie limity a berie aj zvuk.
 
 ## Kedy zvážiť lokálny model
 
@@ -30,8 +35,9 @@ Pozrite si [poskytovateľov AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdar
 domácich úloh zvládnete bez platenia.
 
 :::note
-Overené porovnanie modelov ešte len chystáme — bude v katalógu modelov s dátami
-a dátumom overenia.
+Dnešné modely sú dobré takmer všetky — výsledok posúdite najlepšie sami.
+Overené údaje o vstupoch a dostupnosti drží
+[katalóg modelov](/sk/modely/katalog/).
 :::
 
 ---

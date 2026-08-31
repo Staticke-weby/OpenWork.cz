@@ -1,0 +1,125 @@
+# Katalog modelů — zdroj dat pro /modely/katalog
+# Sledujeme jen brány, které web doporučuje: OpenCode Go/Zen, OpenRouter, Cortecs.
+# Fakta ověřujeme na třech místech: https://opencode.ai/docs/go/ (nabídka Go),
+# https://opencode.ai/docs/zen/ (nabídka a ceny Zen),
+# https://openrouter.ai/api/v1/models (vstupy/modality a ceny).
+# Vstupy = co model přijme. Výstup je vždy text (soubory z něj tvoří agent).
+
+last_verified: 2026-08-31
+zmenovnik:
+  - datum: 2026-08-31
+    zmena: "Založení katalogu: 13 modelů, vstupy (text/obrázek/zvuk/video) ověřeny z OpenRouter API, dostupnost z dokumentace OpenCode Go/Zen."
+
+sloupce:
+  - model
+  - vyrobce
+  - vstupy
+  - vhodne_pro
+  - kde_dostupny
+  - zdroj
+  - overeno
+
+radky:
+  - model: "GLM 5.3 Flash"
+    vyrobce: "Z.AI"
+    vstupy: "text + obrázek + video"
+    vhodne_pro: "výchozí volba: levný univerzál, dlouhý kontext, zvládne i fotky dokumentů"
+    kde_dostupny: "Go (předplatné) i OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "MiMo-V2.5"
+    vyrobce: "Xiaomi"
+    vstupy: "text + obrázek + zvuk + video"
+    vhodne_pro: "spousta běžné práce prakticky zadarmo; v Go zdaleka nejvyšší limity"
+    kde_dostupny: "Go (i zdarma na Zen) a OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "GPT 5.6 Luna"
+    vyrobce: "OpenAI"
+    vstupy: "text + obrázek + soubory"
+    vhodne_pro: "levná každodenní práce s dokumenty"
+    kde_dostupny: "Go, Zen (za spotřebu) i OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "MiniMax M3"
+    vyrobce: "MiniMax"
+    vstupy: "text + obrázek + video"
+    vhodne_pro: "levný model na obrázky i video; na OpenRouter má bezplatnou variantu"
+    kde_dostupny: "Go, Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "Qwen3.8 Flash"
+    vyrobce: "Alibaba"
+    vstupy: "text + obrázek + video"
+    vhodne_pro: "rychlá práce s dokumenty a obrázky"
+    kde_dostupny: "Go i OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "DeepSeek V4 Flash"
+    vyrobce: "DeepSeek"
+    vstupy: "jen text"
+    vhodne_pro: "nejlevnější čistě textová práce ve velkém objemu"
+    kde_dostupny: "Go, Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: 2026-08-31
+
+  - model: "Kimi K2.7 Code"
+    vyrobce: "Moonshot AI"
+    vstupy: "text + obrázek"
+    vhodne_pro: "programování za rozumnou cenu; přečte i snímek obrazovky s chybou"
+    kde_dostupny: "Go, Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "Claude Sonnet 5"
+    vyrobce: "Anthropic"
+    vstupy: "text + obrázek + soubory"
+    vhodne_pro: "náročnější texty a programování, spolehlivé držení zadání"
+    kde_dostupny: "Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: 2026-08-31
+
+  - model: "Claude Opus 5"
+    vyrobce: "Anthropic"
+    vstupy: "text + obrázek + soubory"
+    vhodne_pro: "nejtěžší úlohy, kde záleží na kvalitě víc než na ceně"
+    kde_dostupny: "Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: 2026-08-31
+
+  - model: "GPT 5.6 Sol"
+    vyrobce: "OpenAI"
+    vstupy: "text + obrázek + soubory"
+    vhodne_pro: "náročnější úlohy a delší rozbory"
+    kde_dostupny: "Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: 2026-08-31
+
+  - model: "Gemini 3.7 Flash"
+    vyrobce: "Google"
+    vstupy: "text + obrázek + zvuk + video + soubory"
+    vhodne_pro: "nejširší vstupy včetně zvuku a dlouhých videí"
+    kde_dostupny: "Zen i OpenRouter"
+    zdroj: "https://openrouter.ai/models"
+    overeno: 2026-08-31
+
+  - model: "Grok 4.6"
+    vyrobce: "xAI"
+    vstupy: "text + obrázek + soubory"
+    vhodne_pro: "silný univerzál; v Go ale rychle čerpá limit"
+    kde_dostupny: "Go, Zen i OpenRouter"
+    zdroj: "https://opencode.ai/docs/go/"
+    overeno: 2026-08-31
+
+  - model: "Nemotron 3 Ultra Free"
+    vyrobce: "NVIDIA"
+    vstupy: "jen text"
+    vhodne_pro: "vyzkoušení zdarma; pozor, loguje záznamy"
+    kde_dostupny: "Zen (zdarma) i OpenRouter"
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: 2026-08-31

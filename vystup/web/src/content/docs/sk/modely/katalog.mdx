@@ -1,0 +1,56 @@
+---
+title: "Katalóg AI modelov: porovnanie s overenými údajmi"
+description: "Porovnanie najlepších AI modelov pre OpenWork: aké vstupy prijmú (text, obrázok, zvuk, video), na čo sa hodia a kde ich vezmete — OpenCode Go/Zen alebo OpenRouter. Overené ku dňu pri tabuľke."
+sidebar:
+  order: 3
+  label: "Katalóg modelov"
+  badge:
+    text: Živé
+    variant: tip
+---
+
+import TabulkaZDat from '../../../../components/TabulkaZDat.astro';
+
+Vybraných trinásť modelov, ktoré dávajú v OpenWorku zmysel — od bezplatných
+po najsilnejšie. Pri každom uvádzame **vstupy** (čo model prijme — práve tým
+sa modely najviac líšia, viď [Text, obrázok, video](/sk/modely/vstupy/)),
+na čo sa hodí a kde ho vezmete.
+
+## Porovnanie modelov
+
+<TabulkaZDat zdroj="modely.yaml" popisek="Katalóg AI modelov: vstupy, vhodnosť a dostupnosť" />
+
+:::caution
+Ponuka aj ceny sa menia. Fakty overujeme v troch zdrojoch: dokumentácia
+[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) a Zen (ponuka a ceny)
+a [OpenRouter](https://openrouter.ai/models) (vstupy a ceny). Pred
+rozhodnutím si kľúčový údaj overte pri zdroji (odkaz v stĺpci Zdroj).
+Popisy v tabuľke sú v češtine — údaje platia rovnako.
+:::
+
+## Ako tabuľku čítať
+
+- **Vstupy** — čo modelu môžete poslať. „Jen text" znamená, že fotky bločkov
+  ani skeny neprečíta; na tie potrebujete model s obrázkovým vstupom.
+- **Hodí sa na** — naše stručné odporúčanie; podrobnejšie na stránkach
+  [najlepších modelov](/sk/modely/nejlepsi-pro/programovani/).
+- **Kde ho vezmete** — *Go* je [predplatné OpenCode
+  Go](https://opencode.ai/go?ref=K0VC03J925) za 10 $ mesačne, *Zen* platba
+  za spotrebu tamtiež, *OpenRouter* samostatná brána. Európska brána
+  [Cortecs](/sk/kolik-to-stoji/placene-poskytovatele/) ponúka vyše 150
+  modelov s výpočtom len v EÚ — konkrétnu ponuku overte u nej.
+
+## S čím začať
+
+- **Východisková voľba:** GLM 5.3 Flash — lacný, s dlhým kontextom a vstupom
+  obrázkov aj videa.
+- **Kopa práce prakticky zadarmo:** MiMo-V2.5 — v Go má zďaleka najvyššie
+  limity a berie aj zvuk a video.
+- **Lacno na obrázky a video:** MiniMax M3.
+- **Najlacnejší čistý text:** DeepSeek V4 Flash.
+- **Keď ide o veľa:** Claude Sonnet 5 alebo GPT 5.6 Sol; na najťažšie úlohy
+  Claude Opus 5.
+
+Ponuka sa mení prakticky denne a mnohé modely sú zameniteľné — čo je práve
+nové a lacnejšie, uvidíte na
+[aktuálnom zozname modelov OpenCode Go](https://opencode.ai/go?ref=K0VC03J925).

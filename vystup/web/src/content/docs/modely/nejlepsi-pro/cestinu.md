@@ -26,9 +26,17 @@ posuďte, jestli zní přirozeně.
 - **Delší texty.** U dlouhých textů hlídejte, jestli si model udrží styl a
   souvislost.
 
+## Skeny českých dokumentů
+
+Papírové smlouvy, účtenky a úřední dopisy bývají skeny — a ty přečte jen
+model s **obrázkovým vstupem** ([proč na vstupech
+záleží](/modely/vstupy/)). GLM 5.3 Flash obrázky přijme; u jiných modelů si
+to ověřte v [katalogu modelů](/modely/katalog/).
+
 :::note
-Ověřené srovnání modelů na češtinu teprve chystáme — bude v katalogu modelů
-s daty a datem ověření. Zatím zkuste GLM 5.3 Flash a řiďte se tím, jak text zní.
+Jak dobře model zní česky, posoudíte nejlíp sami na vlastním textu — dnešní
+špičkové modely jsou dobré skoro všechny. Ověřené údaje o vstupech
+a dostupnosti drží [katalog modelů](/modely/katalog/).
 :::
 
 ---

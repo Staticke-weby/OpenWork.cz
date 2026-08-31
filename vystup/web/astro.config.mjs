@@ -119,6 +119,11 @@ export default defineConfig({
           translations: { sk: 'Modely a poskytovatelia' },
           items: [
             { slug: 'modely' },
+            { slug: 'modely/vstupy' },
+            {
+              slug: 'modely/katalog',
+              badge: { text: 'Živé', variant: 'tip' },
+            },
             {
               label: 'Nejlepší AI modely',
               translations: { sk: 'Najlepšie AI modely' },

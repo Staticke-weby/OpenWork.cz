@@ -21,11 +21,14 @@ narazíte na složitější úkol, který menší model nezvládá.
 - **Přesnost** — drží se zadání a nevymýšlí si.
 - **Práce s většími celky** — udrží kontext napříč více soubory.
 - **Rychlost a cena** — u kódu se ptáte často, spotřeba se nasčítá.
+- **Obrázkový vstup** — hodí se, když chcete poslat snímek obrazovky
+  s chybou nebo návrh vzhledu ([proč na vstupech záleží](/modely/vstupy/)).
 
 :::note
-Ověřený žebříček konkrétních modelů na kód teprve chystáme — bude v katalogu
-modelů s daty a datem ověření. Zatím platí doporučení výše: začněte s GLM 5.3
-Flash a měňte podle potřeby.
+Dnešní modely na kód jsou dobré skoro všechny — výsledek stejně posoudíte
+sami na vlastním projektu. Ověřené údaje o vstupech a dostupnosti drží
+[katalog modelů](/modely/katalog/); na čistě textovou práci vyjde nejlevněji
+DeepSeek V4 Flash.
 :::
 
 ---

@@ -9,6 +9,16 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 31. srpna 2026 — přepracovaná sekce Modely a poskytovatelé
+
+- Nový **[katalog modelů](/modely/katalog/)** — živá tabulka 13 modelů se
+  vstupy (text/obrázek/zvuk/video), vhodností a dostupností; ověřeno
+  z dokumentace OpenCode Go/Zen a OpenRouter.
+- Nová stránka **[Vstupy: text, obrázek, video](/modely/vstupy/)** — proč je
+  to hlavní praktický rozdíl mezi modely a kam patří Word či Excel.
+- Přehled sekce přepsán: méně žebříčků, důraz na vstupy a cenu; doporučení
+  rozšířeno o MiMo-V2.5, MiniMax M3 a DeepSeek V4 Flash.
+
 ## 31. srpna 2026 — nová sekce „Co s ním vytvoříte"
 
 - Deset stránek o typech výstupů s příklady zadání:

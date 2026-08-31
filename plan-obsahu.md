@@ -96,9 +96,10 @@ Každý řádek má zdroj a datum ověření.
   (OpenCode Zen/Go, Cortecs, lokální; zdroje opencode.ai/docs/zen, cortecs.ai).
 - ✅ `data/bezplatne-urovne.yaml` → `kolik-to-stoji/bezplatne-urovne` — ověřeno
   2026-08-31 (Groq, Cerebras, OpenRouter, OpenCode Zen; veřejné zdroje).
-- ⬜ **Katalog modelů** (nový datový soubor) → `modely/*`. Větší a proměnlivá
-  věc; budovat průběžně a napojit na hlídač zdrojů. Zatím na stránkách modelů
-  platí doporučení GLM 5.3 Flash + kritéria výběru.
+- ✅ **Katalog modelů** `vystup/web/src/data/modely.yaml` → `modely/katalog` —
+  ověřeno 2026-08-31 (13 modelů; vstupy z OpenRouter API, dostupnost
+  z opencode.ai/docs/go a /zen). K tomu stránka `modely/vstupy`
+  (text/obrázek/zvuk/video) a přepsaný přehled sekce.
 
 Pravidlo: limity/podmínky se mění — tabulky drží datum ověření a průběžně se
 aktualizují.

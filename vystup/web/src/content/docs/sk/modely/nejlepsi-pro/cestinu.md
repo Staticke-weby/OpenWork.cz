@@ -26,9 +26,17 @@ vlastného textu a posúďte, či znie prirodzene.
 - **Dlhšie texty.** Pri dlhých textoch strážte, či si model udrží štýl a
   súvislosť.
 
+## Skeny slovenských dokumentov
+
+Papierové zmluvy, bločky a úradné listy bývajú skeny — a tie prečíta len
+model s **obrázkovým vstupom** ([prečo na vstupoch
+záleží](/sk/modely/vstupy/)). GLM 5.3 Flash obrázky prijme; pri iných
+modeloch si to overte v [katalógu modelov](/sk/modely/katalog/).
+
 :::note
-Overené porovnanie modelov na slovenčinu ešte chystáme — bude v katalógu modelov
-s dátami a dátumom overenia.
+Ako dobre model znie po slovensky, posúdite najlepšie sami na vlastnom
+texte — dnešné špičkové modely sú dobré takmer všetky. Overené údaje
+o vstupoch a dostupnosti drží [katalóg modelov](/sk/modely/katalog/).
 :::
 
 ---

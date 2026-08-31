@@ -53,6 +53,26 @@ const POPISKY: Record<string, string> = {
   karta_nutna: 'Karta nutná',
   data_k_treninku: 'Data k tréninku',
   typ: 'Typ',
+  model: 'Model',
+  vyrobce: 'Výrobce',
+  vstupy: 'Vstupy',
+  vhodne_pro: 'Hodí se na',
+  kde_dostupny: 'Kde ho vezmete',
+};
+
+// Slovenské popisky — jen tam, kde se liší od češtiny.
+const POPISKY_SK: Record<string, string> = {
+  poskytovatel: 'Poskytovateľ',
+  trenink_na_datech: 'Tréning na dátach',
+  uchovavani_zaznamu: 'Uchovávanie záznamov',
+  region_vypoctu: 'Región výpočtu',
+  overeno: 'Overené',
+  poznamka: 'Poznámka',
+  karta_nutna: 'Karta nutná',
+  vstupy: 'Vstupy',
+  vyrobce: 'Výrobca',
+  vhodne_pro: 'Hodí sa na',
+  kde_dostupny: 'Kde ho vezmete',
 };
 
 const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
@@ -66,6 +86,7 @@ function jeDatum(h: unknown): h is Date {
 }
 
 function popisek(klic: string): string {
+  if (jeSk && POPISKY_SK[klic]) return POPISKY_SK[klic];
   if (POPISKY[klic]) return POPISKY[klic];
   const s = klic.replace(/_/g, ' ');
   return s.charAt(0).toUpperCase() + s.slice(1);
