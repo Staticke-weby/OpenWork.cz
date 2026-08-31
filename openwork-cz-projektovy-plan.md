@@ -7,7 +7,7 @@
 
 ## 1. Vize a pozice
 
-**Openwork.cz je nezávislý český průvodce prací s AI agenty nad vlastními soubory — pro obyčejné lidi.**
+**Openwork.cz je nezávislý český průvodce prací s AI agenty nad vlastními soubory — pro běžné lidi.**
 
 Web vzniká kolem otevřené aplikace OpenWork (openworklabs.com, alternativa ke Claude Cowork), ale jeho skutečným tématem je širší myšlenka: **vlastní model → vlastní výpočet → vlastní data.** OpenWork je vstupní bod; tři pilíře jsou páteř.
 
@@ -31,7 +31,7 @@ Boční nabídka webu kopíruje pilíře: sekce **Vaše data** (pilíř 1), **Ko
 
 ### Jazyk webu (redakční zásada)
 
-**Celý web je psaný hezky česky pro obyčejné lidi.** Technický žargon a amerikanismy jen tam, kde je to nezbytné.
+**Celý web je psaný hezky česky pro běžné lidi.** Technický žargon a amerikanismy jen tam, kde je to nezbytné.
 
 - Preferované výrazy: poskytovatel (ne provider), společná peněženka (ne shared billing), platba za spotřebu (ne pay-as-you-go), bezplatná úroveň (ne free tier), běh na vlastním počítači (ne local inference), klíč (ne API key), složka (ne workspace), nastavení (ne settings), **data pod vaší kontrolou / nezávislost na velkých platformách (ne suverenita)**.
 - V originále s vysvětlením při prvním výskytu: OpenWork, opencode, Zen, Go, Cortecs, MCP, AGENTS.md, ZDR („nulové uchovávání dat"), GDPR, token.
@@ -42,7 +42,7 @@ Boční nabídka webu kopíruje pilíře: sekce **Vaše data** (pilíř 1), **Ko
 
 ### Vymezení rozsahu (co web NEpokrývá)
 
-- **Programování a vývojářské nástroje.** Kódovací nástroj opencode zmiňujeme jedinkrát (/zaciname/ekosystem) kvůli vysvětlení vztahu k OpenWork a názvům bran Zen/Go. Běžné „programovací" potřeby obyčejného člověka (skript, makro, úprava souborů) zvládne OpenWork sám.
+- **Programování a vývojářské nástroje.** Kódovací nástroj opencode zmiňujeme jedinkrát (/zaciname/ekosystem) kvůli vysvětlení vztahu k OpenWork a názvům bran Zen/Go. Běžné „programovací" potřeby běžného člověka (skript, makro, úprava souborů) zvládne OpenWork sám.
 - Recenze chatbotů a předplatných služeb (jen srovnání cen v sekci Kolik to stojí).
 - Obecné zpravodajství o AI — Novinky pokrývají jen to, co se dotýká témat webu.
 

@@ -5,7 +5,7 @@ sidebar:
   order: 5
 ---
 
-Na tomto webu píšeme pro obyčejné lidi. Kde jde technický výraz nahradit
+Na tomto webu píšeme pro běžné lidi. Kde jde technický výraz nahradit
 českým, nahrazujeme ho. Tady je přehled, co které slovo znamená.
 
 ## Místo cizích slov říkáme

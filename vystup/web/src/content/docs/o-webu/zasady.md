@@ -10,6 +10,6 @@ sidebar:
 ## Osnova
 
 - Ověřená fakta, žádné dohady
-- Jazyk pro obyčejné lidi
+- Jazyk pro běžné lidi
 - Nezávislost
 - [DOPLNIT: úplné zásady]

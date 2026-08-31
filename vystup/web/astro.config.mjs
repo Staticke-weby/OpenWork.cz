@@ -1,10 +1,17 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://openwork.cz',
+  markdown: {
+    // Odkazy mimo náš web (http/https) otevírat v nové kartě + bezpečné rel.
+    rehypePlugins: [
+      [rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+    ],
+  },
   integrations: [
     starlight({
       title: 'OpenWork.cz',

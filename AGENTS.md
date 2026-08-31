@@ -1,7 +1,7 @@
 # AGENTS.md — pravidla pro práci v této složce
 
 Jsi pomocník při stavbě webů **openwork.cz** (česky) a **openwork.sk** (slovensky).
-Weby jsou průvodcem prací s AI agenty nad vlastními soubory pro obyčejné lidi.
+Weby jsou průvodcem prací s AI agenty nad vlastními soubory pro běžné lidi.
 Tři pilíře projektu: **1) Vaše data zůstávají u vás. 2) Platíte za to, co
 spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 
@@ -9,7 +9,7 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 
 - Slovo „suverenita" nepoužívej — sekce se jmenují podle toho, co čtenář
   řeší: Vaše data · Kolik to stojí · Modely a poskytovatelé.
-- Piš **hezky česky pro obyčejné lidi**. Text musí pochopit i čtenářův rodič
+- Piš **hezky česky pro běžné lidi**. Text musí pochopit i čtenářův rodič
   nebo prarodič. Pokud si nejsi jistý, přepiš to jednodušeji.
 - Technické výrazy a amerikanismy používej jen tam, kde je to nezbytné.
   Závazný převodník je v `slovnicek.md` — dodržuj ho ve všech textech.
@@ -65,6 +65,10 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - Každá stránka s proměnlivými údaji má ve frontmatteru `last_verified`
   (datum poslední kontroly) a šablona ho zobrazuje pod nadpisem.
 - Tmavý i světlý režim přes CSS proměnné; barvy nikdy natvrdo v SVG.
+- Odkazy mimo náš web (http/https) vždy `target="_blank"` + `rel="noopener
+  noreferrer"`. V Markdownu/MDX to řeší plugin `rehype-external-links`
+  (v `astro.config.mjs`); ve vlastních `.astro` komponentách to nastav ručně
+  podle vzoru v `Hero.astro`. Interní (root-relativní) odkazy target nemají.
 
 ## Styl práce
 
