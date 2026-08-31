@@ -14,21 +14,26 @@ prejsť poznámky.
 
 Ideálny štart je **GLM 5.3 Flash** cez
 [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) — lacný a rýchly, na domáce
-použitie bohato stačí. Väčšinu mesiaca vás vyjde na pár korún (viď
+použitie bohato stačí. Väčšinu mesiaca vás vyjde na pár desiatok centov (viď
 [Koľko to stojí](/sk/kolik-to-stoji/)).
 
 ## Kedy zvážiť lokálny model
 
 Keď vám nevadí trochu nastavovania a máte výkonnejší počítač, môžete bežné úlohy
-zvládnuť aj [lokálnym AI modelom](/sk/vase-data/kde-bezi-vypocet/) — potom za
+zvládnuť aj [lokálnym AI modelom](/sk/vase-data/lokalni-ai/) — potom za
 výpočet neplatíte vôbec a dáta zostanú u vás. Pre väčšinu domácností je ale
 jednoduchší poskytovateľ.
 
 ## Chcete začať úplne zadarmo?
 
-Pozrite si [bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/) — kopu
+Pozrite si [poskytovateľov AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/) — kopu
 domácich úloh zvládnete bez platenia.
+
+:::note
+Overené porovnanie modelov ešte len chystáme — bude v katalógu modelov s dátami
+a dátumom overenia.
+:::
 
 ---
 
-Viď tiež [Modely a poskytovatelia](/sk/modely/). Naposledy overené 31. augusta 2026.
+Viď tiež [Modely a poskytovatelia](/sk/modely/).

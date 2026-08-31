@@ -33,4 +33,4 @@ s daty a datem ověření. Zatím zkuste GLM 5.3 Flash a řiďte se tím, jak te
 
 ---
 
-Viz taky [Modely a poskytovatelé](/modely/). Naposledy ověřeno 31. srpna 2026.
+Viz taky [Modely a poskytovatelé](/modely/).

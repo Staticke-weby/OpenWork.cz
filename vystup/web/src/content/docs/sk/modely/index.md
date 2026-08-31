@@ -24,11 +24,11 @@ ceny. Rozbehnite sa s ním a meňte, až keď narazíte na jeho hranice.
 ## Otvorené modely
 
 Občas narazíte na pojem **otvorený model** — model, ktorý si môžete stiahnuť a
-prevádzkovať sami (napríklad ako [lokálny AI model](/sk/vase-data/kde-bezi-vypocet/)).
+prevádzkovať sami (napríklad ako [lokálny AI model](/sk/vase-data/lokalni-ai/)).
 
 ## Aký model na akú prácu
 
-- **[Najlepší na kód](/sk/modely/nejlepsi-pro/kod/)** — programovanie a technické
+- **[Najlepší na kód](/sk/modely/nejlepsi-pro/programovani/)** — programovanie a technické
   úlohy.
 - **[Najlepší na slovenčinu](/sk/modely/nejlepsi-pro/cestinu/)** — písanie a
   práca v slovenčine.
@@ -36,9 +36,9 @@ prevádzkovať sami (napríklad ako [lokálny AI model](/sk/vase-data/kde-bezi-v
   použitie doma.
 
 Chcete začať zadarmo? Pozrite si
-[bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).
+[poskytovateľov AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 ---
 
-**Odkiaľ čerpáme:** [OpenCode Zen](https://opencode.ai/docs/zen/) a
-[openworklabs.com](https://openworklabs.com/). Naposledy overené 31. augusta 2026.
+**Odkiaľ čerpáme:** [OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925) a
+[openworklabs.com](https://openworklabs.com/).

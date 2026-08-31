@@ -24,21 +24,21 @@ Rozjeďte se s ním a měňte, teprve když narazíte na jeho hranice.
 ## Otevřené modely
 
 Občas narazíte na pojem **otevřený model** — model, který si můžete stáhnout a
-provozovat sami (třeba jako [lokální AI model](/vase-data/kde-bezi-vypocet/)).
+provozovat sami (třeba jako [lokální AI model](/vase-data/lokalni-ai/)).
 Opak jsou modely, ke kterým se dostanete jen přes poskytovatele.
 
 ## Jaký model na jakou práci
 
-- **[Nejlepší pro kód](/modely/nejlepsi-pro/kod/)** — programování a technické úkoly.
+- **[Nejlepší pro kód](/modely/nejlepsi-pro/programovani/)** — programování a technické úkoly.
 - **[Nejlepší pro češtinu](/modely/nejlepsi-pro/cestinu/)** — psaní a práce
   v češtině.
 - **[Nejlepší pro domácnost](/modely/nejlepsi-pro/domacnost/)** — běžné použití
   doma.
 
 Chcete začít zadarmo? Podívejte se na
-[bezplatné úrovně](/kolik-to-stoji/poskytovatele-ai-zdarma/).
+[poskytovatele AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 ---
 
-**Odkud čerpáme:** [OpenCode Zen](https://opencode.ai/docs/zen/) a
-[openworklabs.com](https://openworklabs.com/). Naposledy ověřeno 31. srpna 2026.
+**Odkud čerpáme:** [OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925) a
+[openworklabs.com](https://openworklabs.com/).

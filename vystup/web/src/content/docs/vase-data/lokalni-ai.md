@@ -69,5 +69,4 @@ rychlosti, kvality a ceny.
 ---
 
 **Odkud čerpáme:** dokumentace [opencode](https://opencode.ai/docs/) a
-[OpenWork](https://openworklabs.com/). Naposledy ověřeno 31. srpna 2026 —
-změny sledujeme v [historii změn](/o-webu/historie-zmen/).
+[OpenWork](https://openworklabs.com/). Změny sledujeme v [historii změn](/o-webu/historie-zmen/).

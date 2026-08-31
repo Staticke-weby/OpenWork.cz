@@ -31,14 +31,14 @@ Připojíte je přes [MCP a Composio](/prace-se-slozkou/napojeni-nastroju/).
 OpenWork staví na otevřeném nástroji **opencode** (motor pro práci s AI agenty)
 a umí přes 50 modelů od různých poskytovatelů. Je to
 [otevřená alternativa k placeným nástrojům jako Claude Cowork nebo
-Codex](/vase-data/openwork-vs-cowork/) — se srovnatelnými funkcemi, ale bez
+Codex](/vase-data/openwork-vs-claude-cowork/) — se srovnatelnými funkcemi, ale bez
 svázání s jedním dodavatelem.
 
 ## Tři věci, na kterých nám záleží
 
 1. **Vaše data zůstávají u vás.** V desktopovém režimu soubory neopouštějí váš
    počítač; na cizí server se posílá jen zadání, a jen když si to zvolíte.
-   Víc na stránce [Kde běží výpočet](/vase-data/kde-bezi-vypocet/).
+   Víc na stránce [Kde běží výpočet](/vase-data/lokalni-ai/).
 2. **Platíte, jen když musíte.** Aplikace je zdarma, za AI platíte za spotřebu
    a řada modelů je zdarma. Viz [Kolik to stojí](/kolik-to-stoji/).
 3. **Nejste nikde zamčení.** Model i poskytovatele kdykoli vyměníte, vaše
@@ -63,4 +63,4 @@ uzavřených nástrojích.
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) a
-[opencode](https://opencode.ai/docs/). Naposledy ověřeno 31. srpna 2026.
+[opencode](https://opencode.ai/docs/).

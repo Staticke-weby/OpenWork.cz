@@ -66,7 +66,9 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - Odesílat obsah složky třetím stranám.
 - Vkládat do webu obrázky, fotky nebo soubory PNG/JPG. Veškerá grafika je
   vložené SVG, tabulky HTML nebo strom složek jako stylovaný seznam.
-  Jediná výjimka: favicon jako SVG.
+  Dvě výjimky: favicon jako SVG a náhledový obrázek pro sdílení
+  `public/og.png` (sociální sítě SVG neumí; zdroj návrhu je
+  `vystup/web/og-zdroj.svg`).
 - Přidávat ilustrační diagramy a schémata. Diagram nasadíme jen tam, kde je
   nezbytně nutný (bez něj se věc nedá vysvětlit) — ne jako dekoraci. Když text
   řekne totéž, diagram vynech. Ověřená potřeba > hezká grafika.
@@ -76,7 +78,7 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 ## Technická pravidla webu
 
 - Generátor: **Astro se šablonou Starlight**, obsah v Markdownu, živé tabulky
-  z YAML v `data/`. Vzhled neřešíme — bereme Starlight tak, jak je,
+  z YAML ve `vystup/web/src/data/`. Vzhled neřešíme — bereme Starlight tak, jak je,
   plus jeden soubor CSS s barvou značky.
 - Výstupem je čistě statický web. Žádný JavaScript, který není nutný;
   povolené výjimky: řazení tabulek a kalkulačky, vždy tak, aby stránka
@@ -137,6 +139,6 @@ co je nového. Detail a spuštění v jeho `README.md`.
 
 **Sledování má mít účel.** Nesleduj zdroje „pro jistotu". Hlavní účel je držet
 aktuální **katalog ověřených / ZDR modelů a bezplatných úrovní** (tabulky
-`data/*.yaml`) a fakta o produktech. Každý zdroj v hlídači má pole `ucel` —
+`vystup/web/src/data/*.yaml`) a fakta o produktech. Každý zdroj v hlídači má pole `ucel` —
 proč ho sledujeme a co z něj do webu teče. Nový zdroj (např. poskytovatel
 modelů) přidávej jen tehdy, když napojíš na konkrétní potřebu.

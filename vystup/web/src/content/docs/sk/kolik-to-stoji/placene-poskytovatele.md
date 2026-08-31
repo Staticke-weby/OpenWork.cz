@@ -17,7 +17,7 @@ východiskový sa hodí **GLM 5.3 Flash**. Platíte za spotrebu.
 
 - **Za čo platíte:** za využité tokeny (čo spotrebujete).
 - **Nulové uchovávanie dát:** pri väčšine modelov áno (výnimky pri niektorých
-  modeloch — viď [porovnávacia tabuľka](/sk/vase-data/zdr/tabulka/)).
+  modeloch — viď [porovnávacia tabuľka](/sk/vase-data/zdr/srovnani-poskytovatelu/)).
 - **Kde beží výpočet:** USA.
 - **Kedy zvoliť:** vo väčšine prípadov — je to najjednoduchší štart.
 
@@ -49,10 +49,10 @@ alebo interným pravidlám.
   [Poskytovateľov AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 Podrobné porovnanie podľa uchovávania dát a regiónu nájdete v
-[porovnávacej tabuľke (ZDR)](/sk/vase-data/zdr/tabulka/).
+[porovnávacej tabuľke (ZDR)](/sk/vase-data/zdr/srovnani-poskytovatelu/).
 
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/),
-[OpenCode Zen](https://opencode.ai/docs/zen/) a [cortecs.ai](https://cortecs.ai/).
-Ceny a podmienky sa menia — naposledy overené 31. augusta 2026.
+[OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925) a [cortecs.ai](https://cortecs.ai/).
+Ceny a podmienky sa menia — zmeny sledujeme v [histórii zmien](/sk/o-webu/historie-zmen/).

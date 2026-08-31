@@ -40,4 +40,4 @@ rozdíl je znát hlavně tam, kde část lidí sáhne po AI jen občas.
 
 **Odkud čerpáme:** funkce týmové správy popsané na
 [openworklabs.com](https://openworklabs.com/) a
-[OpenCode Zen/Go](https://opencode.ai/docs/zen/). Naposledy ověřeno 31. srpna 2026.
+[OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925).

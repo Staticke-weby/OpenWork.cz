@@ -2,8 +2,8 @@
 
 Malý skript, který kontroluje nový obsah v oficiálních repozitářích, ze kterých
 openwork.cz čerpá fakta. Cíl: **vědět, kdy je potřeba upravit web** — hlavně
-katalog ověřených / ZDR modelů a bezplatných úrovní (`data/*.yaml`), a fakta
-o produktech.
+katalog ověřených / ZDR modelů a bezplatných úrovní
+(`vystup/web/src/data/*.yaml`), a fakta o produktech.
 
 ## Co sleduje
 
@@ -35,7 +35,7 @@ nastavit proměnnou `GITHUB_TOKEN`.
 
 1. Otevři odkaz na vydání/commit a zjisti, čeho se změna týká.
 2. Dotýká-li se webu (nový/změněný model, ZDR politika, ceník, funkce),
-   uprav příslušnou stránku nebo `data/*.yaml` a datum `last_verified`.
+   uprav příslušnou stránku nebo `vystup/web/src/data/*.yaml` a datum `last_verified`.
 3. Spusť `node hlidac.mjs --uloz`, aby se stav posunul.
 
 ## Rozšíření o další zdroje

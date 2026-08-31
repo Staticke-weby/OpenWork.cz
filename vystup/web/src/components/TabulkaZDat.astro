@@ -5,9 +5,11 @@ import { load } from 'js-yaml';
 
 interface Props {
   zdroj: string;
+  /** Popis tabulky pro čtečky obrazovky (<caption>). */
+  popisek?: string;
 }
 
-const { zdroj } = Astro.props;
+const { zdroj, popisek: popisekTabulkyProp } = Astro.props;
 
 // YAML se načte jako text a zabalí do buildu (nezávisle na umístění souboru
 // za běhu). Web je statický, čte se v čase sestavení.
@@ -76,7 +78,23 @@ function bunka(hodnota: unknown): string {
   return String(hodnota);
 }
 
+// URL v buňce (typicky sloupec Zdroj) se renderuje jako odkaz se zkráceným textem.
+function jeUrl(hodnota: unknown): hodnota is string {
+  return typeof hodnota === 'string' && /^https?:\/\//.test(hodnota);
+}
+
+function zkracenyOdkaz(url: string): string {
+  try {
+    const u = new URL(url);
+    return (u.hostname + u.pathname).replace(/\/$/, '');
+  } catch {
+    return url;
+  }
+}
+
 const overenoText = jeDatum(overeno) ? datumFormat.format(overeno) : String(overeno);
+const popisekTabulky =
+  popisekTabulkyProp ?? (jeSk ? 'Porovnanie poskytovateľov' : 'Srovnání poskytovatelů');
 ---
 
 <div class="zdat-overeno">
@@ -85,16 +103,27 @@ const overenoText = jeDatum(overeno) ? datumFormat.format(overeno) : String(over
 
 <div class="zdat-obal">
   <table class="zdat-tabulka">
+    <caption class="sr-only">{popisekTabulky}</caption>
     <thead>
       <tr>
-        {sloupce.map((s) => <th>{popisek(s)}</th>)}
+        {sloupce.map((s) => <th scope="col">{popisek(s)}</th>)}
       </tr>
     </thead>
     <tbody>
       {
         radky.map((r) => (
           <tr>
-            {sloupce.map((s) => <td>{bunka(r[s])}</td>)}
+            {sloupce.map((s) => (
+              <td>
+                {jeUrl(r[s]) ? (
+                  <a href={r[s]} target="_blank" rel="noopener noreferrer">
+                    {zkracenyOdkaz(r[s] as string)}
+                  </a>
+                ) : (
+                  bunka(r[s])
+                )}
+              </td>
+            ))}
           </tr>
         ))
       }

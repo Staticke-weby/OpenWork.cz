@@ -37,16 +37,16 @@ víc dává smysl mít nad daty kontrolu.
 ## Jak vám OpenWork pomáhá
 
 - **Data ve výchozím stavu u vás.** V desktopovém režimu soubory neopouštějí váš
-  počítač — viz [Kde běží výpočet](/vase-data/kde-bezi-vypocet/).
+  počítač — viz [Kde běží výpočet](/vase-data/lokalni-ai/).
 - **Evropské zpracování.** Když výpočet svěříte poskytovateli, můžete zvolit
   evropskou bránu [Cortecs](/zaciname/ekosystem/), která zpracovává data jen
   v EU.
 - **Nulové uchovávání dat.** Vyberte poskytovatele, který si vaše zadání
   neukládá — viz [ZDR](/vase-data/zdr/).
 - **Nejcitlivější data lokálně.** Co nesmí opustit váš stůl, zpracujte
-  [lokálními AI modely](/vase-data/kde-bezi-vypocet/).
+  [lokálními AI modely](/vase-data/lokalni-ai/).
 
 ---
 
 **Odkud čerpáme:** obecná pravidla GDPR a NIS2 a funkce popsané na
-[openworklabs.com](https://openworklabs.com/). Naposledy ověřeno 31. srpna 2026.
+[openworklabs.com](https://openworklabs.com/).

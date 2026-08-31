@@ -14,9 +14,20 @@ Tabulka odděluje tři věci, které se často pletou: **trénink na datech**,
 **uchovávání záznamů** a **kde fyzicky běží výpočet**. Data se průběžně
 ověřují; sporné údaje označujeme, nikdy nehádáme.
 
-<TabulkaZDat zdroj="zdr-poskytovatele.yaml" />
+## Srovnání poskytovatelů
+
+<TabulkaZDat zdroj="zdr-poskytovatele.yaml" popisek="Srovnání poskytovatelů podle nulového uchovávání dat" />
 
 :::caution
 Podmínky poskytovatelů se mění. Řádky jsme ověřili k datu u tabulky, ale před
 rozhodnutím si klíčový údaj ověřte přímo u zdroje (odkaz ve sloupci Zdroj).
 :::
+
+## Jak tabulku číst
+
+- **Trénink na datech** — zda poskytovatel smí vaše zadání použít k učení
+  svých modelů. „Ne" je pro citlivá data nutnost.
+- **Uchovávání záznamů** — jak dlouho poskytovatel drží vaše požadavky
+  a odpovědi. ZDR znamená, že je nedrží vůbec.
+- **Region výpočtu** — kde fyzicky běží servery, které vaše data zpracují.
+  Pro GDPR je podstatné, zda jde o EU.

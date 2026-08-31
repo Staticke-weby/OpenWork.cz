@@ -36,7 +36,7 @@ nad vašimi súbormi urobí.
 V desktopovom režime **súbory neopúšťajú váš počítač**. Poskytovateľovi modelu
 sa posiela len vaše zadanie (a časti textu, ktoré agent potrebuje k práci) — nie
 celý priečinok. Podrobne to rozoberá stránka
-[Kde beží výpočet](/sk/vase-data/kde-bezi-vypocet/).
+[Kde beží výpočet](/sk/vase-data/lokalni-ai/).
 
 ## Pár tipov na začiatok
 
@@ -48,4 +48,4 @@ celý priečinok. Podrobne to rozoberá stránka
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) a
-[opencode](https://opencode.ai/docs/). Naposledy overené 31. augusta 2026.
+[opencode](https://opencode.ai/docs/).

@@ -21,7 +21,7 @@ Než si vyberiete, oddeľte si tri rôzne veci:
    „Nulové uchovávanie" znamená, že sa nič neukladá. Niektorí veľkí
    poskytovatelia naopak držia záznamy pár dní (napríklad 30) kvôli bezpečnosti.
 3. **Kde beží výpočet.** Na cudzom serveri, alebo
-   [u vás na počítači](/sk/vase-data/kde-bezi-vypocet/)? Keď beží u vás, otázka
+   [u vás na počítači](/sk/vase-data/lokalni-ai/)? Keď beží u vás, otázka
    uchovávania odpadá.
 
 ## Ako to spoznáte
@@ -31,7 +31,7 @@ Než si vyberiete, oddeľte si tri rôzne veci:
 - **Vyberte bránu, ktorá to má východiskovo.** Európska brána
   [Cortecs](/sk/zaciname/ekosystem/) spracúva dáta len v Európe a bez uchovávania.
 - **Nechcete riešiť vôbec nič?** Siahnite po
-  [lokálnych AI modeloch](/sk/vase-data/kde-bezi-vypocet/) — dáta potom nikam
+  [lokálnych AI modeloch](/sk/vase-data/lokalni-ai/) — dáta potom nikam
   neodídu.
 
 ## Na čo sa pýtať
@@ -41,10 +41,10 @@ Než si vyberiete, oddeľte si tri rôzne veci:
 - Kde fyzicky prebieha výpočet? (Kvôli pravidlám EÚ môže záležať na krajine.)
 
 Konkrétnych poskytovateľov vedľa seba nájdete v
-**[porovnávacej tabuľke (ZDR)](/sk/vase-data/zdr/tabulka/)** — každý údaj tam má
+**[porovnávacej tabuľke (ZDR)](/sk/vase-data/zdr/srovnani-poskytovatelu/)** — každý údaj tam má
 zdroj a dátum overenia.
 
 ---
 
-**Odkiaľ čerpáme:** [dokumentácia OpenCode Zen](https://opencode.ai/docs/zen/)
-a podmienky jednotlivých poskytovateľov. Naposledy overené 31. augusta 2026.
+**Odkiaľ čerpáme:** [OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925)
+a podmienky jednotlivých poskytovateľov.

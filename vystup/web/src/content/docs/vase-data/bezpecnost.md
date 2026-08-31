@@ -35,10 +35,10 @@ jen to, čemu rozumíte, a udělte co nejmenší potřebná oprávnění.
 ## Kde je nejbezpečněji
 
 Nejbezpečnější je to, co nikam neodejde. Když jde o opravdu citlivá data,
-zvažte [lokální AI modely](/vase-data/kde-bezi-vypocet/) — pak zůstane všechno
+zvažte [lokální AI modely](/vase-data/lokalni-ai/) — pak zůstane všechno
 u vás na počítači.
 
 ---
 
 **Odkud čerpáme:** obecné zásady bezpečnosti a funkce popsané na
-[openworklabs.com](https://openworklabs.com/). Naposledy ověřeno 31. srpna 2026.
+[openworklabs.com](https://openworklabs.com/).

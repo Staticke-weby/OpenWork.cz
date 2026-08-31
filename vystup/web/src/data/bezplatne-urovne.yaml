@@ -11,9 +11,9 @@ bloky:
   - poskytovatel: "OpenCode Go"
     odkaz: "https://opencode.ai/go?ref=K0VC03J925"
     popis: "Brána od tvůrců opencode a naše doporučená cesta. Část modelů je zdarma; nabídka se mění."
-    limit: "uvádět s datem — ověřit u poskytovatele"
+    limit: "neuvádí se veřejně — ověřte u poskytovatele"
     karta_nutna: "nejasné"
-    zdroj: "https://opencode.ai/docs/zen/"
+    zdroj: "https://opencode.ai/go?ref=K0VC03J925"
     overeno: 2026-08-31
     modely:
       - nazev: "Big Pickle"

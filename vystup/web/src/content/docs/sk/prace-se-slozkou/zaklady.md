@@ -16,7 +16,7 @@ to, čo je vnútri.
 - **Pracuje so súbormi podľa zadania** — číta ich, upravuje, vytvára nové.
 - **Pri dôležitých krokoch sa pýta.** Nič zásadné neurobí bez vášho vedomia.
 - **Súbory zostávajú u vás.** V desktopovom režime priečinok neopúšťa váš
-  počítač (viď [Kde beží výpočet](/sk/vase-data/kde-bezi-vypocet/)).
+  počítač (viď [Kde beží výpočet](/sk/vase-data/lokalni-ai/)).
 
 ## Ako začať
 
@@ -38,4 +38,4 @@ Podrobne to prejde stránka [Prvý agent](/sk/zaciname/prvni-agent/).
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) a
-[opencode](https://opencode.ai/docs/). Naposledy overené 31. augusta 2026.
+[opencode](https://opencode.ai/docs/).

@@ -9,6 +9,15 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 31. augusta 2026 — opravy a vylepšenia
+
+- Stĺpec **Zdroj** v živých tabuľkách je po novom klikateľný odkaz.
+- Opravené drobné chyby v textoch a odkazoch, vylepšená prístupnosť tabuliek
+  a kontrast farieb vo svetlom režime.
+- Doplnené popisy pre zdieľanie na sociálnych sieťach a štruktúrované dáta
+  pre vyhľadávače.
+- Slovenská verzia doplnená o pasáže, ktoré oproti českej verzii chýbali.
+
 ## 31. augusta 2026 — spustenie webu
 
 - Založený web a jeho štruktúra.
@@ -18,8 +27,9 @@ podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
   a opencode — cenník, funkcie, prístup k dátam.
 - Odporúčaná východisková cesta: **OpenCode Go** s modelom **GLM 5.3 Flash**.
 - Overené a naplnené **živé tabuľky**: [porovnanie poskytovateľov podľa nulového
-  uchovávania dát](/sk/vase-data/zdr/tabulka/) a
-  [bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).
+  uchovávania dát](/sk/vase-data/zdr/srovnani-poskytovatelu/) (OpenCode Zen/Go, Cortecs, lokálne) a
+  [poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/)
+  (OpenCode Go, OpenRouter). Každý údaj má zdroj a dátum overenia.
 
 :::note
 Limity bezplatných úrovní a podmienky poskytovateľov sa menia — tabuľky preto

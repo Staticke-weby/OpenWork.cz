@@ -16,10 +16,44 @@ export default defineConfig({
     starlight({
       title: 'OpenWork.cz',
       favicon: '/favicon.svg',
-      // Doplňkové meta pro sdílení a vyhledávače (bez obrázků — viz AGENTS.md).
+      // Doplňkové meta pro sdílení a vyhledávače. Náhledový obrázek og.png je
+      // povolená výjimka z pravidla „žádné rastrové obrázky" (viz AGENTS.md).
       head: [
-        { tag: 'meta', attrs: { property: 'og:site_name', content: 'OpenWork.cz' } },
-        { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary' } },
+        {
+          tag: 'meta',
+          attrs: { property: 'og:image', content: 'https://openwork.cz/og.png' },
+        },
+        { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
+        { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
+        {
+          tag: 'meta',
+          attrs: {
+            property: 'og:image:alt',
+            content: 'OpenWork.cz — nezávislý průvodce aplikací OpenWork',
+          },
+        },
+        // Strukturovaná data pro vyhledávače (web + provozovatel).
+        {
+          tag: 'script',
+          attrs: { type: 'application/ld+json' },
+          content: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'WebSite',
+                name: 'OpenWork.cz',
+                url: 'https://openwork.cz/',
+                inLanguage: ['cs', 'sk'],
+              },
+              {
+                '@type': 'Organization',
+                name: 'OpenWork.cz',
+                url: 'https://openwork.cz/',
+                logo: 'https://openwork.cz/og.png',
+              },
+            ],
+          }),
+        },
       ],
       // Čeština výchozí (root), slovenština v /sk/. Starlight u chybějících
       // překladů zobrazí český obsah s upozorněním — to je žádoucí.
@@ -35,6 +69,8 @@ export default defineConfig({
         SiteTitle: './src/components/SiteTitle.astro',
         Hero: './src/components/Hero.astro',
         Footer: './src/components/Footer.astro',
+        // Nadpis + řádek „Naposledy ověřeno" z frontmatteru `last_verified`.
+        PageTitle: './src/components/PageTitle.astro',
       },
       customCss: ['./src/styles/custom.css'],
       // Boční nabídka podle sekcí; obsah složek se generuje automaticky.
@@ -48,20 +84,20 @@ export default defineConfig({
           translations: { sk: 'Vaše dáta' },
           items: [
             { slug: 'vase-data' },
-            { slug: 'vase-data/kde-bezi-vypocet' },
+            { slug: 'vase-data/lokalni-ai' },
             {
               label: 'ZDR',
               items: [
                 { slug: 'vase-data/zdr' },
                 {
-                  slug: 'vase-data/zdr/tabulka',
+                  slug: 'vase-data/zdr/srovnani-poskytovatelu',
                   badge: { text: 'Živé', variant: 'tip' },
                 },
               ],
             },
             { slug: 'vase-data/gdpr-a-nis2' },
             { slug: 'vase-data/bezpecnost' },
-            { slug: 'vase-data/openwork-vs-cowork' },
+            { slug: 'vase-data/openwork-vs-claude-cowork' },
           ],
         },
         {
@@ -77,7 +113,7 @@ export default defineConfig({
               label: 'Nejlepší AI modely',
               translations: { sk: 'Najlepšie AI modely' },
               items: [
-                { slug: 'modely/nejlepsi-pro/kod' },
+                { slug: 'modely/nejlepsi-pro/programovani' },
                 { slug: 'modely/nejlepsi-pro/cestinu' },
                 { slug: 'modely/nejlepsi-pro/domacnost' },
               ],

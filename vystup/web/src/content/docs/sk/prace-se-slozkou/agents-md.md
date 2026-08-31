@@ -89,5 +89,4 @@ Nie je problém — vytvorte v priečinku textový súbor pomenovaný presne
 ---
 
 Viď tiež [Štruktúra priečinkov](/sk/prace-se-slozkou/struktura-slozek/) a
-[Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/). Naposledy overené
-31. augusta 2026.
+[Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/).

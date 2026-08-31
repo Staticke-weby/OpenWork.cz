@@ -1,4 +1,4 @@
-# ZDR — nulové uchovávání dat: zdroj dat pro /vase-data/zdr/tabulka
+# ZDR — nulové uchovávání dat: zdroj dat pro /vase-data/zdr/srovnani-poskytovatelu
 # Tři různé věci, které se pletou: (1) trénink na datech, (2) uchovávání
 # záznamů, (3) kde fyzicky běží výpočet. Tabulka je drží oddělené.
 # Každá buňka s tvrzením má zdroj. Sporné → "nejasné" + odkaz, nikdy dohad.
@@ -28,7 +28,7 @@ radky:
     zdr_dostupne: "výchozí (mimo uvedené výjimky)"
     region_vypoctu: "USA"
     dpa: "nejasné"
-    zdroj: "https://opencode.ai/docs/zen/"
+    zdroj: "https://opencode.ai/go?ref=K0VC03J925"
     overeno: 2026-08-31
     poznamka: "referenční řádek doporučené cesty; free modely mohou trénovat na datech"
 

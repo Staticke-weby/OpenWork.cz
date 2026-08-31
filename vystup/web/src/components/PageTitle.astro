@@ -1,0 +1,34 @@
+---
+// Nadpis stránky + datum poslední kontroly údajů (frontmatter `last_verified`).
+// Jediný zdroj data ověření — ruční věty v textu stránek nepíšeme (AGENTS.md).
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+
+const lastVerified = (Astro.locals.starlightRoute.entry.data as any).last_verified as
+  | Date
+  | undefined;
+
+const jeSk = Astro.currentLocale === 'sk';
+const popisek = jeSk ? 'Naposledy overené' : 'Naposledy ověřeno';
+const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<Default><slot /></Default>
+{
+  lastVerified instanceof Date && !Number.isNaN(lastVerified.getTime()) && (
+    <p class="ow-overeno">
+      {popisek}: {datumFormat.format(lastVerified)}
+    </p>
+  )
+}
+
+<style>
+  .ow-overeno {
+    margin-top: 0.35rem;
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+  }
+</style>

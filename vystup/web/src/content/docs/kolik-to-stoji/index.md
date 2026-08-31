@@ -17,7 +17,7 @@ neplatíte nic.
 
 ## Za AI platíte za spotřebu
 
-Když necháte pracovat model u [poskytovatele](/vase-data/kde-bezi-vypocet/),
+Když necháte pracovat model u [poskytovatele](/vase-data/lokalni-ai/),
 platíte mu **za spotřebu** — podobně jako za elektřinu. Spotřeba se počítá po
 **tokenech** (token = kousek textu, po kterých se účtuje). Kdo se AI zeptá jednou
 týdně, zaplatí pár korun; kdo s ní pracuje celý den, zaplatí víc.
@@ -35,8 +35,8 @@ stránce [Placení poskytovatelé](/kolik-to-stoji/placene-poskytovatele/).
 
 Řada modelů má **bezplatnou úroveň** — vyzkoušet a používat je můžete, aniž
 byste dali první korunu. Přehled najdete na stránce
-[Bezplatné úrovně](/kolik-to-stoji/poskytovatele-ai-zdarma/). A pokud sáhnete po
-[lokálních AI modelech](/vase-data/kde-bezi-vypocet/), za výpočet neplatíte
+[Poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/). A pokud sáhnete po
+[lokálních AI modelech](/vase-data/lokalni-ai/), za výpočet neplatíte
 vůbec — běží u vás na počítači.
 
 ## Rodina nebo firma: společná peněženka
@@ -64,4 +64,4 @@ správu více lidí.
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/). Ceny se mění —
-naposledy ověřeno 31. srpna 2026, změny v [historii změn](/o-webu/historie-zmen/).
+změny sledujeme v [historii změn](/o-webu/historie-zmen/).

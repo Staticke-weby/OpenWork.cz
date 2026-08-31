@@ -39,7 +39,7 @@ nad vašimi soubory udělá.
 V desktopovém režimu **soubory neopouštějí váš počítač**. Poskytovateli modelu
 se posílá jen vaše zadání (a části textu, které agent potřebuje k práci) — ne
 celá složka. Podrobně to rozebírá stránka
-[Kde běží výpočet](/vase-data/kde-bezi-vypocet/).
+[Kde běží výpočet](/vase-data/lokalni-ai/).
 
 ## Pár tipů na začátek
 
@@ -53,4 +53,4 @@ celá složka. Podrobně to rozebírá stránka
 ---
 
 **Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) a
-[opencode](https://opencode.ai/docs/). Naposledy ověřeno 31. srpna 2026.
+[opencode](https://opencode.ai/docs/).

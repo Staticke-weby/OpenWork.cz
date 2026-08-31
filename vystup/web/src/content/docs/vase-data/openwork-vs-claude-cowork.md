@@ -75,5 +75,5 @@ bránu k modelům.
 [návod na přechod z Coworku](https://openworklabs.com/docs/start-here/migrate-from-claude-cowork.md)),
 [ceník Claude](https://claude.com/pricing) a
 [zásady uchovávání dat Anthropicu](https://support.claude.com/en/articles/15425996-data-retention-practices-for-covered-models).
-Ceny i podmínky se mění — naposledy ověřeno 31. srpna 2026, změny sledujeme
+Ceny i podmínky se mění — změny sledujeme
 v [historii změn](/o-webu/historie-zmen/).

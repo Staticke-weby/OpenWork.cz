@@ -1,5 +1,5 @@
 ---
-title: "Najlepší AI model na kód a programovanie"
+title: "Najlepší AI model na programovanie a kód"
 description: "Ktorý AI model zvoliť na programovanie a technické úlohy. S čím začať, na čo pri kóde pozerať a kedy siahnuť po silnejšom modeli."
 sidebar:
   order: 1
@@ -30,4 +30,4 @@ modelov s dátami a dátumom overenia.
 ---
 
 Viď tiež [Modely a poskytovatelia](/sk/modely/) a
-[Koľko to stojí](/sk/kolik-to-stoji/). Naposledy overené 31. augusta 2026.
+[Koľko to stojí](/sk/kolik-to-stoji/).

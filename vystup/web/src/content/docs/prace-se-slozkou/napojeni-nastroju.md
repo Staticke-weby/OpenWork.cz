@@ -68,4 +68,3 @@ oprávnění udělíte.
 **Odkud čerpáme:** [dokumentace opencode k MCP](https://opencode.ai/docs/mcp-servers/),
 [composio.dev](https://composio.dev/) a
 [návod Composio pro OpenCode](https://composio.dev/content/mcp-with-opencode).
-Naposledy ověřeno 31. srpna 2026.

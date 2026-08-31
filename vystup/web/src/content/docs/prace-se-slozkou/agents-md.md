@@ -89,5 +89,4 @@ Není problém — vytvořte ve složce textový soubor pojmenovaný přesně
 ---
 
 Viz taky [Struktura složek](/prace-se-slozkou/struktura-slozek/) a
-[Základy práce se složkou](/prace-se-slozkou/zaklady/). Naposledy ověřeno
-31. srpna 2026.
+[Základy práce se složkou](/prace-se-slozkou/zaklady/).

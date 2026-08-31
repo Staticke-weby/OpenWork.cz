@@ -10,6 +10,10 @@ OpenWork robí v jadre to isté čo platené nástroje **Claude Cowork** (od
 Anthropicu) a **Codex** (od OpenAI) — necháte AI agenta pracovať s vašimi
 súbormi. Rozdiel je v tom, **komu tým zveríte dáta a peniaze**.
 
+OpenWork je podľa svojich tvorcov **otvorená alternatíva k týmto nástrojom**
+s porovnateľnými funkciami, ale bez zviazania s jedným dodávateľom. Pre
+používateľov Coworku dokonca ponúka návod na prechod.
+
 ## Hlavné rozdiely
 
 | | OpenWork | Claude Cowork / Codex |
@@ -27,13 +31,16 @@ Rozdiel už nie je ani tak vo výbere modelov — Cowork medzitým otvoril aj cu
 a lokálne modely. Zostáva v tom **ostatnom**:
 
 - **Neplatíte za aplikáciu.** OpenWork stiahnete zadarmo a bez účtu. Cowork aj
-  Codex bežia na platenom predplatnom.
-- **Otvorený kód.** Pri OpenWorku si môžete overiť, ako aplikácia funguje.
+  Codex bežia na platenom predplatnom. Za AI potom platíte za spotrebu a kopu
+  práce zvládnete aj s modelmi zadarmo (viď [Koľko to stojí](/sk/kolik-to-stoji/)).
+- **Otvorený kód.** Pri OpenWorku si môžete overiť, ako aplikácia funguje a čo
+  robí s vašimi súbormi. Cowork ani Codex otvorené nie sú.
 - **Dáta východiskovo u vás.** V desktop režime OpenWorku súbory neopúšťajú
   počítač. Cowork zadania aj výstupy uchováva 30 dní a európske dátové centrum
   ponúka len vo firemnom pláne.
 - **Nie ste viazaní na jednu platformu.** S OpenWorkom nie ste závislí na
-  predplatnom ani aplikácii jedného dodávateľa.
+  predplatnom ani aplikácii jedného dodávateľa — kedykoľvek zmeníte model,
+  poskytovateľa aj spôsob prevádzky.
 
 ## Prechod z Coworku je jednoduchý
 
@@ -44,9 +51,10 @@ nič budovať nanovo**. Prenesie sa:
 - **Zručnosti (skills)** vo formáte `SKILL.md` a **pluginy** kompatibilné s Claude.
 - **Pripojené nástroje (MCP servery)** — znovu ich pripojíte.
 - **Modely** — môžete ďalej používať modely od Anthropicu, pridať iného
-  poskytovateľa, alebo ich nechať spravovať centrálne.
+  poskytovateľa, alebo ich nechať spravovať centrálne (OpenWork je nezávislý od
+  konkrétneho dodávateľa modelov).
 
-Neprenáša sa automaticky **história konverzácií**.
+Neprenáša sa automaticky **história konverzácií** — tú treba počítať zvlášť.
 
 ## Kedy zvoliť čo
 
@@ -62,7 +70,9 @@ bránu k modelom.
 
 ---
 
-**Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/),
+**Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/) (cenník,
+[návod na prechod z Coworku](https://openworklabs.com/docs/start-here/migrate-from-claude-cowork.md)),
 [cenník Claude](https://claude.com/pricing) a
 [zásady uchovávania dát Anthropicu](https://support.claude.com/en/articles/15425996-data-retention-practices-for-covered-models).
-Ceny aj podmienky sa menia — naposledy overené 31. augusta 2026.
+Ceny aj podmienky sa menia — zmeny sledujeme
+v [histórii zmien](/sk/o-webu/historie-zmen/).

@@ -2,9 +2,10 @@
    Barvy jen přes proměnné Starlightu, nikdy natvrdo v SVG (viz AGENTS.md). */
 
 :root {
-  /* Barva značky OpenWork (odstíny modrozelené). Světlý režim. */
+  /* Barva značky OpenWork (odstíny modrozelené). Světlý režim.
+     Akcent min. 4,5:1 na bílé (WCAG AA) — bílý text na tlačítku i akcent na bílé. */
   --sl-color-accent-low: #d7ede9;
-  --sl-color-accent: #1f8a70;
+  --sl-color-accent: #187a63;
   --sl-color-accent-high: #135a49;
 
   /* Teplá zlatá — doplňková barva pro rámečky (světlý režim). */

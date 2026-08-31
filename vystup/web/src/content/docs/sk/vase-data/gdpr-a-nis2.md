@@ -34,16 +34,16 @@ v dôležitých odvetviach (energetika, zdravotníctvo, doprava, verejná správ
 ## Ako vám OpenWork pomáha
 
 - **Dáta východiskovo u vás.** V desktopovom režime súbory neopúšťajú váš
-  počítač — viď [Kde beží výpočet](/sk/vase-data/kde-bezi-vypocet/).
+  počítač — viď [Kde beží výpočet](/sk/vase-data/lokalni-ai/).
 - **Európske spracovanie.** Keď výpočet zveríte poskytovateľovi, môžete zvoliť
   európsku bránu [Cortecs](/sk/zaciname/ekosystem/), ktorá spracúva dáta len
   v EÚ.
 - **Nulové uchovávanie dát.** Vyberte poskytovateľa, ktorý si vaše zadania
   neukladá — viď [ZDR](/sk/vase-data/zdr/).
 - **Najcitlivejšie dáta lokálne.** Čo nesmie opustiť váš stôl, spracujte
-  [lokálnymi AI modelmi](/sk/vase-data/kde-bezi-vypocet/).
+  [lokálnymi AI modelmi](/sk/vase-data/lokalni-ai/).
 
 ---
 
 **Odkiaľ čerpáme:** všeobecné pravidlá GDPR a NIS2 a funkcie opísané na
-[openworklabs.com](https://openworklabs.com/). Naposledy overené 31. augusta 2026.
+[openworklabs.com](https://openworklabs.com/).

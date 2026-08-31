@@ -15,14 +15,14 @@ Tahle sekce vysvětluje, co to znamená v praxi a jak si data pohlídat.
 
 ## Co tu najdete
 
-- **[Kde běží výpočet](/vase-data/kde-bezi-vypocet/)** — rozdíl mezi lokálními
+- **[Kde běží výpočet](/vase-data/lokalni-ai/)** — rozdíl mezi lokálními
   AI modely (u vás na počítači) a výpočtem u poskytovatele.
 - **[Nulové uchovávání dat (ZDR)](/vase-data/zdr/)** — co znamená, že si
   poskytovatel vaše data neukládá, a jak to poznáte.
 - **[GDPR a NIS2](/vase-data/gdpr-a-nis2/)** — co pro vás znamenají evropská
   pravidla.
 - **[Bezpečnost](/vase-data/bezpecnost/)** — jak si pohlídat klíče a přístupy.
-- **[OpenWork vs. Claude Cowork a Codex](/vase-data/openwork-vs-cowork/)** — čím
+- **[OpenWork vs. Claude Cowork a Codex](/vase-data/openwork-vs-claude-cowork/)** — čím
   se liší v přístupu k datům.
 
 ## Tři věci, které se u dat pletou
@@ -36,4 +36,4 @@ oddělené:
 3. **Kde běží výpočet** — jestli u vás na počítači, nebo na cizím serveru.
 
 Každou z nich řeší jiná stránka v této sekci — a
-[srovnávací tabulka poskytovatelů](/vase-data/zdr/tabulka/) je drží zvlášť.
+[srovnávací tabulka poskytovatelů](/vase-data/zdr/srovnani-poskytovatelu/) je drží zvlášť.

@@ -134,3 +134,51 @@ změně webu). Použitá tvrzení na homepage:
 - Fakta: všechna čísla/ceny buď z `data/*.yaml`, nebo označena `[DOPLNIT]`.
 - K rozhodnutí člověku: finální texty stránek (zadání 2+) a ověření řádků obou
   YAML tabulek (zatím kostra, označeno v caution rámečku).
+
+## Opravy webu, SEO a parita CZ/SK (2026-08-31)
+
+- **Opravy:** klikací sloupec Zdroj v živých tabulkách; kotvy bloků poskytovatelů
+  bez mezer (`opencode-go`) a h2 místo h3; odstraněn uniklý redakční placeholder
+  z `bezplatne-urovne.yaml`; historie změn srovnána se skutečným obsahem tabulek;
+  „viz níže" → „viz samostatná stránka"; přístupnost tabulek (`scope="col"`,
+  skrytý `<caption>`); světlý akcent ztmaven na `#187a63` (kontrast ≥ 4,5:1).
+- **Smazány zastaralé YAML v kořeni repa** (`data/*.yaml`) — živá data jsou jen
+  ve `vystup/web/src/data/`; odkazy v README/AGENTS.md/hlídači opraveny.
+- **SEO:** `og:title` na úvodních stránkách; náhledový obrázek `public/og.png`
+  (1200×630, zdroj návrhu `vystup/web/og-zdroj.svg` — povolená výjimka
+  z pravidla „žádné rastrové obrázky", zapsána v AGENTS.md); JSON-LD WebSite +
+  Organization site-wide a FAQPage na častých otázkách (CZ i SK, ve frontmatter
+  `head:` — při změně otázek aktualizovat i JSON-LD).
+- **Parita CZ/SK:** doplněny vypuštěné pasáže v `sk/vase-data/openwork-vs-cowork`
+  a chybějící `:::note` v `sk/modely/nejlepsi-pro/domacnost`; dvojjazyčná 404
+  (`src/content/docs/404.md`); „pár korún" → „pár desiatok centov".
+- **Centralizace:** `last_verified` z frontmatteru se nově renderuje pod
+  nadpisem (override `PageTitle.astro`, schéma rozšířeno v `content.config.ts`);
+  ruční věty „Naposledy ověřeno/overené …" z textů odstraněny. Konstanta
+  doporučeného modelu v `src/data/konstanty.yaml`; konzistenci hlídá
+  `scripts/kontrola-obsahu.mjs` (`npm run check`, spouští se i před buildem).
+- **Slovenské slugy: ODLOŽENO.** Starlight 0.41 páruje překlady CZ↔SK výhradně
+  shodným slugem za prefixem `/sk/` — přejmenování by rozbilo sidebar, přepínač
+  jazyků a vyrobilo fallback duplicity. Mapa 16 přejmenování (kolik-to-stoji →
+  kolko-to-stoji, prace-se-slozkou → praca-s-priecinkom, nejlepsi-pro/cestinu →
+  najlepsi-pre/slovencinu, instalace → instalacia, prvni-agent → prvy-agent,
+  casta-otazky → caste-otazky, slovnik-pojmu → slovnik-pojmov,
+  placene-poskytovatele → plateni-poskytovatelia, poskytovatele-ai-zdarma →
+  poskytovatelia-ai-zadarmo, spolecna-penezenka → spolocna-penazenka,
+  struktura-slozek → struktura-priecinkov, napojeni-nastroju →
+  napojenie-nastrojov, proc-tento-web → preco-tento-web, historie-zmen →
+  historia-zmien, pravni → pravne, zaklady/kod/domacnost/agents-md jen změna
+  adresáře) se použije až u samostatného **openwork.sk** (SK jako root locale),
+  s přesměrováními přes Astro `redirects:` (meta-refresh, funguje na FTP).
+
+## Vylepšení slugů před prvním nasazením (2026-08-31)
+
+Web ještě nebyl nasazen → přejmenování bez přesměrování. Provedeno (CZ i SK
+zrcadla, sidebar, všechny interní odkazy):
+`casta-otazky` → `caste-otazky` (gramatika); `kde-bezi-vypocet` → `lokalni-ai`;
+`zdr/tabulka` → `zdr/srovnani-poskytovatelu`; `openwork-vs-cowork` →
+`openwork-vs-claude-cowork`; `nejlepsi-pro/kod` → `nejlepsi-pro/programovani`
+(titulek nově „…na programování a kód"). Dále sjednoceno názvosloví odkazů
+„bezplatné úrovně" → „poskytovatelé AI zdarma", popisky Zen odkazů na referral
+přejmenovány na „OpenCode Zen/Go" a oslovení na úvodu je neutrální
+(„Jste tu poprvé?" / „Ste tu prvýkrát?").

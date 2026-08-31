@@ -1,0 +1,6 @@
+# Sdílené konstanty obsahu. Jediný zdroj pravdy pro údaje opakované
+# na mnoha stránkách — konzistenci hlídá scripts/kontrola-obsahu.mjs.
+# Při změně modelu: uprav hodnotu tady a hromadně nahraď starý název
+# ve všech souborech v src/content/docs/ (skript vypíše, kde zůstal).
+
+doporuceny_model: "GLM 5.3 Flash"

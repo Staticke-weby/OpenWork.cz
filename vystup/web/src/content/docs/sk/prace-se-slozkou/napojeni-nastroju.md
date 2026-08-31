@@ -64,4 +64,3 @@ Pripojením nástroja dávate agentovi prístup k danej službe — pripájajte 
 **Odkiaľ čerpáme:** [dokumentácia opencode k MCP](https://opencode.ai/docs/mcp-servers/),
 [composio.dev](https://composio.dev/) a
 [návod Composio pre OpenCode](https://composio.dev/content/mcp-with-opencode).
-Naposledy overené 31. augusta 2026.

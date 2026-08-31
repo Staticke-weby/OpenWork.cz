@@ -23,7 +23,7 @@ složitého — stačí pár rozumných návyků.
 Takhle může vypadat složka pro jeden úkol:
 
 - **muj-projekt/**
-  - `AGENTS.md` — pravidla pro agenta ([viz níže](/prace-se-slozkou/agents-md/))
+  - `AGENTS.md` — pravidla pro agenta ([viz samostatná stránka](/prace-se-slozkou/agents-md/))
   - **podklady/** — vstupní dokumenty, ze kterých agent čerpá
   - **vystup/** — sem agent ukládá výsledky
   - `poznamky.md` — vaše poznámky k úkolu
@@ -39,4 +39,4 @@ vstup a co výsledek.
 ---
 
 Viz taky [Základy práce se složkou](/prace-se-slozkou/zaklady/) a
-[Soubor AGENTS.md](/prace-se-slozkou/agents-md/). Naposledy ověřeno 31. srpna 2026.
+[Soubor AGENTS.md](/prace-se-slozkou/agents-md/).

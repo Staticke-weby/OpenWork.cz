@@ -17,7 +17,7 @@ neplatíte nič.
 
 ## Za AI platíte za spotrebu
 
-Keď necháte pracovať model u [poskytovateľa](/sk/vase-data/kde-bezi-vypocet/),
+Keď necháte pracovať model u [poskytovateľa](/sk/vase-data/lokalni-ai/),
 platíte mu **za spotrebu** — podobne ako za elektrinu. Spotreba sa počíta po
 **tokenoch** (token = kúsok textu, po ktorých sa účtuje). Kto sa AI spýta raz
 týždenne, zaplatí pár korún; kto s ňou pracuje celý deň, zaplatí viac.
@@ -35,8 +35,8 @@ stránke [Platení poskytovatelia](/sk/kolik-to-stoji/placene-poskytovatele/).
 
 Rad modelov má **bezplatnú úroveň** — vyskúšať a používať ich môžete bez toho,
 aby ste dali prvú korunu. Prehľad nájdete na stránke
-[Bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/). A ak siahnete po
-[lokálnych AI modeloch](/sk/vase-data/kde-bezi-vypocet/), za výpočet neplatíte
+[Poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/). A ak siahnete po
+[lokálnych AI modeloch](/sk/vase-data/lokalni-ai/), za výpočet neplatíte
 vôbec.
 
 ## Rodina alebo firma: spoločná peňaženka
@@ -63,4 +63,4 @@ a domácnosť je ale desktopová aplikácia zadarmo.**
 ---
 
 **Odkiaľ čerpáme:** [openworklabs.com](https://openworklabs.com/). Ceny sa menia —
-naposledy overené 31. augusta 2026, zmeny v [histórii zmien](/sk/o-webu/historie-zmen/).
+zmeny sledujeme v [histórii zmien](/sk/o-webu/historie-zmen/).

@@ -33,4 +33,4 @@ s dátami a dátumom overenia.
 
 ---
 
-Viď tiež [Modely a poskytovatelia](/sk/modely/). Naposledy overené 31. augusta 2026.
+Viď tiež [Modely a poskytovatelia](/sk/modely/).

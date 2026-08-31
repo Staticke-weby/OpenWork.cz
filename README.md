@@ -21,8 +21,8 @@ a nechte agenta plnit zadání ze složky `zadani/` — v pořadí podle čísel
 | zadani/01-kostra-astro.md | Úkol 1: založit kostru webu (Astro, obě domény, první vlna stránek). |
 | zadani/02-uvodni-stranka.md | Úkol 2: napsat úvodní stránku podle tří pilířů + ústřední SVG. |
 | zadani/03-kontrola-cestiny.md | Úkol 3: projít vzniklé texty testem čitelnosti a opravit je. |
-| data/bezplatne-urovne.yaml | Kostra dat pro tabulku bezplatných úrovní (naplní se později). |
-| data/zdr-poskytovatele.yaml | Kostra dat pro tabulku ZDR — nulového uchovávání dat. |
+| vystup/web/src/data/bezplatne-urovne.yaml | Živá data pro stránku poskytovatelů AI zdarma. |
+| vystup/web/src/data/zdr-poskytovatele.yaml | Živá data pro tabulku ZDR — nulového uchovávání dat. |
 | vystup/ | Sem agent ukládá hotový projekt webu. Vznikne při prvním úkolu. |
 
 ## Sledování nákladů

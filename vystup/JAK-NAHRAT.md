@@ -32,6 +32,17 @@ Hotový web najdete ve `web/dist/`.
 > Tip: Nahrávejte **obsah** složky `dist/` (soubory a podsložky uvnitř), ne
 > složku `dist` jako celek — jinak by web běžel na adrese `.../dist/`.
 
+## Stránka „404 — nenalezeno"
+
+Web má vlastní chybovou stránku `404.html` (v kořeni `dist/`). Většina hostingů
+ji použije automaticky. Pokud váš hosting na neexistující adrese ukazuje svou
+vlastní chybovou stránku, nahrajte na server ještě soubor `.htaccess` s jedním
+řádkem:
+
+```
+ErrorDocument 404 /404.html
+```
+
 ## Když něco nesedí
 
 - Web se otevře, ale bez vzhledu → nejspíš jste nenahráli celý obsah `dist/`

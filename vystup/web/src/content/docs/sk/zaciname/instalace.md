@@ -38,10 +38,10 @@ tlačidiel uvádzame anglicky:
 ## Čo budete potrebovať
 
 - Bežný počítač stačí — keď necháte výpočet na
-  [poskytovateľovi](/sk/vase-data/kde-bezi-vypocet/), nároky na váš hardvér sú
+  [poskytovateľovi](/sk/vase-data/lokalni-ai/), nároky na váš hardvér sú
   malé.
 - Výkonný počítač budete potrebovať len vtedy, keď chcete prevádzkovať
-  [lokálne AI modely](/sk/vase-data/kde-bezi-vypocet/) priamo u seba.
+  [lokálne AI modely](/sk/vase-data/lokalni-ai/) priamo u seba.
 
 ## Hotovo, čo ďalej
 

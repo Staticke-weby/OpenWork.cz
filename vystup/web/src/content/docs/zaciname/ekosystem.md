@@ -13,7 +13,7 @@ a jak spolu souvisí.
 
 **opencode** je otevřený nástroj (motor) pro práci s AI agenty, na kterém
 OpenWork staví. Umí připojit **desítky poskytovatelů modelů** a zvládá i
-[lokální AI modely](/vase-data/kde-bezi-vypocet/). OpenWork k němu přidává
+[lokální AI modely](/vase-data/lokalni-ai/). OpenWork k němu přidává
 přívětivou aplikaci do počítače.
 
 ## OpenCode Zen a OpenCode Go — brány k modelům
@@ -55,5 +55,5 @@ zbytek přijde, až ho budete potřebovat.
 ---
 
 **Odkud čerpáme:** [opencode](https://opencode.ai/docs/),
-[OpenCode Zen](https://opencode.ai/docs/zen/) a
-[openworklabs.com](https://openworklabs.com/). Naposledy ověřeno 31. srpna 2026.
+[OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925) a
+[openworklabs.com](https://openworklabs.com/).

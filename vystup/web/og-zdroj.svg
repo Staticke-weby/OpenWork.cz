@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Podklad náhledového obrázku pro sdílení (og.png, 1200×630).
+     Toto je zdroj návrhu; public/og.png se z něj generuje jednorázově
+     (viz poznamky-agenta.md). Při změně návrhu vygeneruj PNG znovu. -->
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pozadi" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f4437"/>
+      <stop offset="1" stop-color="#187a63"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#pozadi)"/>
+  <!-- Značka [OW] -->
+  <text x="90" y="200" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
+        font-size="64" font-weight="700" fill="#b6e6d8">[OW]</text>
+  <!-- Název webu -->
+  <text x="90" y="310" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
+        font-size="96" font-weight="700" fill="#ffffff">OpenWork.cz</text>
+  <!-- Tagline -->
+  <text x="90" y="400" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
+        font-size="40" fill="#d7ede9">AI nad vašimi soubory — zdarma</text>
+  <text x="90" y="455" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
+        font-size="40" fill="#d7ede9">a s otevřeným kódem</text>
+  <!-- Spodní linka -->
+  <rect x="90" y="520" width="220" height="8" rx="4" fill="#d9b44a"/>
+</svg>

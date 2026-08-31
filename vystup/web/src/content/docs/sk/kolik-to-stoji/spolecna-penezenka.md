@@ -39,4 +39,4 @@ spotrebuje.
 
 **Odkiaľ čerpáme:** funkcie tímovej správy opísané na
 [openworklabs.com](https://openworklabs.com/) a
-[OpenCode Zen/Go](https://opencode.ai/docs/zen/). Naposledy overené 31. augusta 2026.
+[OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925).

@@ -65,5 +65,4 @@ pomer rýchlosti, kvality a ceny.
 ---
 
 **Odkiaľ čerpáme:** dokumentácia [opencode](https://opencode.ai/docs/) a
-[OpenWork](https://openworklabs.com/). Naposledy overené 31. augusta 2026 —
-zmeny sledujeme v [histórii zmien](/sk/o-webu/historie-zmen/).
+[OpenWork](https://openworklabs.com/). Zmeny sledujeme v [histórii zmien](/sk/o-webu/historie-zmen/).

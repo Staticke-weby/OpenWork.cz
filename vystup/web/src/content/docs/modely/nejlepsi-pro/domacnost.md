@@ -20,13 +20,13 @@ domácí použití bohatě stačí. Většinu měsíce vás vyjde na pár korun 
 ## Kdy zvážit lokální model
 
 Když vám nevadí trochu nastavování a máte výkonnější počítač, můžete běžné úkoly
-zvládnout i [lokálním AI modelem](/vase-data/kde-bezi-vypocet/) — pak za výpočet
+zvládnout i [lokálním AI modelem](/vase-data/lokalni-ai/) — pak za výpočet
 neplatíte vůbec a data zůstanou u vás. Pro většinu domácností je ale
 jednodušší poskytovatel.
 
 ## Chcete začít úplně zadarmo?
 
-Podívejte se na [bezplatné úrovně](/kolik-to-stoji/poskytovatele-ai-zdarma/) — spoustu
+Podívejte se na [poskytovatele AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/) — spoustu
 domácích úkolů zvládnete bez placení.
 
 :::note
@@ -36,4 +36,4 @@ ověření.
 
 ---
 
-Viz taky [Modely a poskytovatelé](/modely/). Naposledy ověřeno 31. srpna 2026.
+Viz taky [Modely a poskytovatelé](/modely/).

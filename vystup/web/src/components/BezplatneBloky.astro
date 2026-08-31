@@ -35,14 +35,36 @@ function datum(h: unknown): string {
 
 const t = jeSk
   ? { overeno: 'Naposledy overené', zmeny: 'história zmien', limit: 'Limit', karta: 'Karta',
-      ano: 'áno', nie: 'nie', model: 'Model', pozn: 'Poznámka', zdroj: 'Zdroj' }
+      ano: 'áno', nie: 'nie', model: 'Model', pozn: 'Poznámka', zdroj: 'Zdroj',
+      popisTabulky: 'Bezplatné modely' }
   : { overeno: 'Naposledy ověřeno', zmeny: 'historie změn', limit: 'Limit', karta: 'Karta',
-      ano: 'ano', nie: 'ne', model: 'Model', pozn: 'Poznámka', zdroj: 'Zdroj' };
+      ano: 'ano', nie: 'ne', model: 'Model', pozn: 'Poznámka', zdroj: 'Zdroj',
+      popisTabulky: 'Bezplatné modely' };
 
 function karta(v: unknown): string {
   if (v === true || v === 'ano' || v === 'áno') return t.ano;
   if (v === false || v === 'ne' || v === 'nie') return t.nie;
   return String(v ?? '—');
+}
+
+// Kotvy nadpisů: bez diakritiky, mezer a velkých písmen (platné HTML id).
+function slugify(text: unknown): string {
+  return String(text ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+// Zobrazený text odkazu bez protokolu a parametrů (href zůstává celý).
+function zkracenyOdkaz(url: string): string {
+  try {
+    const u = new URL(url);
+    return (u.hostname + u.pathname).replace(/\/$/, '');
+  } catch {
+    return url;
+  }
 }
 ---
 
@@ -53,13 +75,13 @@ function karta(v: unknown): string {
 {
   bloky.map((b) => (
     <section class="ow-blok">
-      <h3 id={String(b.poskytovatel)}>
+      <h2 id={slugify(b.poskytovatel)}>
         {b.odkaz ? (
           <a href={b.odkaz} target="_blank" rel="noopener noreferrer">{b.poskytovatel}</a>
         ) : (
           b.poskytovatel
         )}
-      </h3>
+      </h2>
       {b.popis && <p>{b.popis}</p>}
       <ul class="ow-blok__meta">
         <li><strong>{t.limit}:</strong> {b.limit ?? '—'}</li>
@@ -67,8 +89,9 @@ function karta(v: unknown): string {
       </ul>
       <div class="zdat-obal">
         <table class="zdat-tabulka">
+          <caption class="sr-only">{t.popisTabulky} — {b.poskytovatel}</caption>
           <thead>
-            <tr><th>{t.model}</th><th>{t.pozn}</th></tr>
+            <tr><th scope="col">{t.model}</th><th scope="col">{t.pozn}</th></tr>
           </thead>
           <tbody>
             {(b.modely ?? []).map((m: any) => (
@@ -82,7 +105,7 @@ function karta(v: unknown): string {
       </div>
       {b.zdroj && b.zdroj !== '—' && (
         <p class="ow-blok__zdroj">
-          {t.zdroj}: <a href={b.zdroj} target="_blank" rel="noopener noreferrer">{b.zdroj}</a>
+          {t.zdroj}: <a href={b.zdroj} target="_blank" rel="noopener noreferrer">{zkracenyOdkaz(String(b.zdroj))}</a>
         </p>
       )}
     </section>

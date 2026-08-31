@@ -36,4 +36,4 @@ je vstup a čo výsledok.
 ---
 
 Viď tiež [Základy práce s priečinkom](/sk/prace-se-slozkou/zaklady/) a
-[Súbor AGENTS.md](/sk/prace-se-slozkou/agents-md/). Naposledy overené 31. augusta 2026.
+[Súbor AGENTS.md](/sk/prace-se-slozkou/agents-md/).

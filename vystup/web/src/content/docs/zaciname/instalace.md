@@ -38,10 +38,10 @@ názvy tlačítek uvádíme anglicky:
 ## Co budete potřebovat
 
 - Běžný počítač stačí — když necháte výpočet na
-  [poskytovateli](/vase-data/kde-bezi-vypocet/), nároky na váš hardware jsou
+  [poskytovateli](/vase-data/lokalni-ai/), nároky na váš hardware jsou
   malé.
 - Výkonný počítač budete potřebovat jen tehdy, když chcete provozovat
-  [lokální AI modely](/vase-data/kde-bezi-vypocet/) přímo u sebe.
+  [lokální AI modely](/vase-data/lokalni-ai/) přímo u sebe.
 
 ## Hotovo, co dál
 
