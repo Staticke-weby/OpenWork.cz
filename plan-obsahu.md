@@ -46,14 +46,15 @@ Převážně text, dají se napsat hned. Nejvyšší priorita.
 
 | # | Stránka | Účel / hlavní sdělení | Klíčová slova | Zdroj |
 |---|---|---|---|---|
-| 1 | `vase-data/kde-bezi-vypocet` 🟡 | Kde běží výpočet: lokální AI vs. cizí server | lokální AI modely, kde běží AI, AI na vlastním počítači | opencode/OpenWork docs |
-| 2 | **`vase-data/openwork-vs-cowork`** ⬜ *(nová)* | Otevřená alternativa k Claude Cowork / Codexu, bez lock-inu | OpenWork vs Claude Cowork, alternativa Codex | openworklabs.com (feature parity, migrace) |
-| 3 | `kolik-to-stoji/index` 🟡 | Jak se platí: aplikace zdarma, za AI za spotřebu, řada modelů zdarma | AI zdarma, kolik stojí AI, platba za spotřebu | openworklabs.com (ceník) |
-| 4 | `zaciname/co-je-openwork` 🟡 | Co OpenWork je a k čemu, tři pilíře, stažení | co je OpenWork, AI agent nad soubory | openworklabs.com |
+| 1 | `vase-data/kde-bezi-vypocet` ✅ | Kde běží výpočet: lokální AI vs. cizí server | lokální AI modely, kde běží AI, AI na vlastním počítači | opencode/OpenWork docs |
+| 2 | `vase-data/openwork-vs-cowork` ✅ *(nová)* | Otevřená alternativa k Claude Cowork / Codexu, bez lock-inu | OpenWork vs Claude Cowork, alternativa Codex | openworklabs.com (feature parity, migrace) |
+| 3 | `kolik-to-stoji/index` ✅ | Jak se platí: aplikace zdarma, za AI za spotřebu, řada modelů zdarma | AI zdarma, kolik stojí AI, platba za spotřebu | openworklabs.com (ceník) |
+| 4 | `zaciname/co-je-openwork` ✅ | Co OpenWork je a k čemu, tři pilíře, stažení | co je OpenWork, AI agent nad soubory | openworklabs.com |
 
-> Pozn.: řádek 2 je **nová stránka nad rámec původní kostry** — přidáme ji kvůli
-> silnému vyhledávacímu záměru. Umístění a slug potvrdit (návrh:
-> `/vase-data/openwork-vs-cowork/` nebo `/openwork-vs-cowork/`).
+> Pozn.: řádek 2 je nová stránka nad rámec původní kostry, přidaná kvůli silnému
+> vyhledávacímu záměru. Slug: `/vase-data/openwork-vs-cowork/` (schváleno).
+> Otevřené `[DOPLNIT]`: fakta o Claude Cowork/Codexu (ceny, data, účet), lokální
+> modely přímo v OpenWorku, ceny týmového/firemního plánu, příklady z praxe.
 
 ---
 

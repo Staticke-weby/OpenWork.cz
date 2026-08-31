@@ -34,6 +34,14 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - **Fakta o produktech čerpej primárně z oficiálních zdrojů opencode a OpenWork
   a jejich GitHubu** (viz sekce „Zdroje a hlídání aktuálnosti" na konci). Když
   fakt nemáš ověřený z těchto zdrojů, použij `[DOPLNIT: co]`.
+- **Doporučovaná cesta pro čtenáře** (pořadí důrazu):
+  1. **Placené modely přes základní předplatné OpenCode Go** — pro každodenní
+     práci; dají lepší rychlost, kvalitu a stabilitu. Toto je hlavní cesta.
+  2. **Bezplatné modely** — na vyzkoušení a lehké použití, ne jako cíl.
+  3. **Lokální AI modely** — jen okrajově, pro menšinu (citlivá data / offline
+     + výkonný počítač). Nenech se jimi unést; většině lidí se nevyplatí.
+  Výchozí doporučené modely (současné, ověřovat hlídačem): **GLM 5.3 Flash**
+  a **Deepseek v4 Flash**.
 
 ## Co smíš
 

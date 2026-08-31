@@ -104,6 +104,21 @@ změně webu). Použitá tvrzení na homepage:
 - **Odkaz na stažení** `https://openworklabs.com/download` na: hero (primární
   CTA), karta „Zdarma a s otevřeným kódem", stránka Instalace.
 
+## Vlna 1 obsahu + pozicování cest/modelů (2026-08-31)
+
+- Napsány nosné stránky: `vase-data/kde-bezi-vypocet`,
+  `vase-data/openwork-vs-cowork` (nová), `kolik-to-stoji/index`,
+  `zaciname/co-je-openwork`. Fakta z openworklabs.com + opencode docs;
+  nejistá fakta jako `[DOPLNIT]`.
+- **Lokální AI netlačit** (pokyn uživatele): většině lidí se nevyplatí (drahý
+  HW, setup). Hlavní cesta = poskytovatel, ideálně **placené modely přes
+  základní předplatné OpenCode Go** (rychlost, kvalita, stabilita). Bezplatné
+  modely jen na vyzkoušení. Pravidlo v AGENTS.md.
+- **Výchozí doporučené modely (současné): GLM 5.3 Flash, Deepseek v4 Flash.**
+  Proměnlivé — ověřovat hlídačem a udržovat v katalogu modelů (Vlna 4).
+  ⚠ Nejsou ověřené z oficiálního zdroje, jde o zadání uživatele — před velkým
+  rozšířením potvrdit dostupnost přes OpenCode Go.
+
 ### Kontrola češtiny (zadání 03) — kostra 2026-08-31
 
 - Prošel jsem vlastní texty (osnovy, slovníček, návod JAK-NAHRAT, komponenty).
