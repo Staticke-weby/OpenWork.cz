@@ -1,0 +1,107 @@
+---
+// Živá tabulka z YAML v src/data/. Čte se v čase sestavení (web je statický).
+// Prop `zdroj` = název souboru v src/data/, např. "zdr-poskytovatele.yaml".
+import { load } from 'js-yaml';
+
+interface Props {
+  zdroj: string;
+}
+
+const { zdroj } = Astro.props;
+
+// YAML se načte jako text a zabalí do buildu (nezávisle na umístění souboru
+// za běhu). Web je statický, čte se v čase sestavení.
+const soubory = import.meta.glob('../data/*.yaml', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+const raw = soubory[`../data/${zdroj}`];
+if (!raw) {
+  throw new Error(`TabulkaZDat: soubor src/data/${zdroj} nenalezen.`);
+}
+const data: any = load(raw) ?? {};
+
+const sloupce: string[] = data.sloupce ?? [];
+const radky: Record<string, unknown>[] = data.radky ?? [];
+const overeno: unknown = data.last_verified ?? '—';
+
+// Odkaz na změnovník (mění se dle jazykové mutace).
+const jeSk = Astro.currentLocale === 'sk';
+const odkazZmenovnik = jeSk ? '/sk/o-webu/zmenovnik/' : '/o-webu/zmenovnik/';
+
+// České popisky sloupců. Klíče v YAML jsou bez diakritiky (kvůli přenositelnosti),
+// tady je převádíme na čitelné české nadpisy. Neznámý klíč se „humanizuje".
+const POPISKY: Record<string, string> = {
+  poskytovatel: 'Poskytovatel',
+  trenink_na_datech: 'Trénink na datech',
+  uchovavani_zaznamu: 'Uchovávání záznamů',
+  zdr_dostupne: 'ZDR dostupné',
+  region_vypoctu: 'Region výpočtu',
+  dpa: 'DPA',
+  gdpr: 'GDPR',
+  zdroj: 'Zdroj',
+  overeno: 'Ověřeno',
+  poznamka: 'Poznámka',
+  modely_zdarma: 'Modely zdarma',
+  limit: 'Limit',
+  karta_nutna: 'Karta nutná',
+  data_k_treninku: 'Data k tréninku',
+  typ: 'Typ',
+};
+
+const datumFormat = new Intl.DateTimeFormat('cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+function jeDatum(h: unknown): h is Date {
+  return h instanceof Date && !Number.isNaN(h.getTime());
+}
+
+function popisek(klic: string): string {
+  if (POPISKY[klic]) return POPISKY[klic];
+  const s = klic.replace(/_/g, ' ');
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function bunka(hodnota: unknown): string {
+  if (hodnota === null || hodnota === undefined) return '—';
+  if (typeof hodnota === 'boolean') return hodnota ? 'ano' : 'ne';
+  if (jeDatum(hodnota)) return datumFormat.format(hodnota);
+  return String(hodnota);
+}
+
+const overenoText = jeDatum(overeno) ? datumFormat.format(overeno) : String(overeno);
+---
+
+<div class="zdat-overeno">
+  Naposledy ověřeno: {overenoText} · <a href={odkazZmenovnik}>změnovník</a>
+</div>
+
+<div class="zdat-obal">
+  <table class="zdat-tabulka">
+    <thead>
+      <tr>
+        {sloupce.map((s) => <th>{popisek(s)}</th>)}
+      </tr>
+    </thead>
+    <tbody>
+      {
+        radky.map((r) => (
+          <tr>
+            {sloupce.map((s) => <td>{bunka(r[s])}</td>)}
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .zdat-obal {
+    overflow-x: auto;
+  }
+</style>

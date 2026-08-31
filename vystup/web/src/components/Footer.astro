@@ -1,0 +1,31 @@
+---
+// Vlastní patička: zachová výchozí patičku Starlightu (mj. řádek
+// „Aktualizováno:") a přidá povinnou větu o nezávislosti + odkaz na zásady.
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+// Odkaz na zásady s ohledem na jazykovou mutaci (/ vs. /sk/).
+const jeSk = Astro.currentLocale === 'sk';
+const odkazZasady = jeSk ? '/sk/o-webu/zasady/' : '/o-webu/zasady/';
+---
+
+<Default {...Astro.props}><slot /></Default>
+
+<div class="ow-nezavislost">
+  <p>
+    Openwork.cz je nezávislý český průvodce. Nejsme spojeni s OpenWork Labs, Inc.
+    <a href={odkazZasady}>Zásady webu</a>
+  </p>
+</div>
+
+<style>
+  .ow-nezavislost {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--sl-color-gray-5);
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+  .ow-nezavislost a {
+    color: var(--sl-color-accent);
+  }
+</style>

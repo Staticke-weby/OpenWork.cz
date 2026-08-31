@@ -1,0 +1,55 @@
+# Bezplatné úrovně poskytovatelů — zdroj dat pro /kolik-to-stoji/bezplatne-urovne
+# Pravidla: každý řádek má zdroj (odkaz) a datum ověření. Bez zdroje řádek nezveřejňujeme.
+# Údaje níže jsou KOSTRA s ukázkou — před zveřejněním ověřit a doplnit.
+
+last_verified: 2026-08-30
+zmenovnik:
+  - datum: 2026-08-30
+    zmena: "Založení souboru, ukázkové řádky — NEOVĚŘENO, nezveřejňovat bez kontroly."
+
+sloupce:
+  - poskytovatel
+  - modely_zdarma
+  - limit
+  - karta_nutna
+  - data_k_treninku
+  - typ            # trvala_uroven | jednorazovy_kredit
+  - zdroj
+  - overeno
+
+radky:
+  - poskytovatel: "Groq"
+    modely_zdarma: "[DOPLNIT]"
+    limit: "[DOPLNIT] požadavků/min"
+    karta_nutna: ne
+    data_k_treninku: "[DOPLNIT]"
+    typ: trvala_uroven
+    zdroj: "[DOPLNIT odkaz na oficiální ceník]"
+    overeno: null
+
+  - poskytovatel: "Cerebras"
+    modely_zdarma: "[DOPLNIT]"
+    limit: "[DOPLNIT] tokenů/den"
+    karta_nutna: "[DOPLNIT]"
+    data_k_treninku: "[DOPLNIT]"
+    typ: trvala_uroven
+    zdroj: "[DOPLNIT]"
+    overeno: null
+
+  - poskytovatel: "OpenCode Zen (bezplatné modely)"
+    modely_zdarma: "[DOPLNIT — rotují, uvádět s datem]"
+    limit: "[DOPLNIT]"
+    karta_nutna: "[DOPLNIT]"
+    data_k_treninku: "u některých bezplatných modelů ano — ověřit per model"
+    typ: trvala_uroven
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: null
+
+  - poskytovatel: "OpenRouter (bezplatná řada)"
+    modely_zdarma: "[DOPLNIT — ~30 modelů, rotují]"
+    limit: "[DOPLNIT] požadavků/den"
+    karta_nutna: ne
+    data_k_treninku: "liší se podle modelu — ověřit"
+    typ: trvala_uroven
+    zdroj: "[DOPLNIT]"
+    overeno: null

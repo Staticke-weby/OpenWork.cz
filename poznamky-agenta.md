@@ -1,0 +1,40 @@
+# Poznámky agenta
+
+Rozhodnutí, která jsem udělal sám při nejednoznačném zadání (dle AGENTS.md).
+
+## Zadání 1 — kostra Astro (2026-08-31)
+
+- **Umístění projektu:** `vystup/web/` (dle zadání). Sestavený web bude ve
+  `vystup/web/dist/`.
+- **Scaffold ručně, ne přes `npm create astro`:** interaktivní průvodce nejde
+  spustit neinteraktivně. Založil jsem stejnou strukturu ručně (package.json +
+  astro.config.mjs + Starlight), obsahově odpovídá `--template starlight`.
+- **Verze balíčků:** `astro` a `@astrojs/starlight` nejnovější stabilní přes
+  `npm install`. Konkrétní verze viz `vystup/web/package.json`.
+- **Živé tabulky z YAML:** komponenta `TabulkaZDat.astro` čte YAML ze
+  `src/data/` přes `node:fs` + `js-yaml` v čase sestavení (web je statický).
+  Prop `zdroj` = název souboru.
+- **Sidebar:** `autogenerate` po složkách; české popisky sekcí přes `label`.
+- **Patička:** vlastní `src/components/Footer.astro` přes `components` override
+  Starlightu (ne úpravou šablony), obsahuje povinnou větu o nezávislosti.
+- **Slovenská větev:** jen jedna ukázková stránka `sk/index.mdx`; překlady
+  jsou pozdější úkol. Starlight u chybějících překladů zobrazí český obsah.
+- **Obsah stránek:** zatím jen nadpis + osnova + `[DOPLNIT: …]` značky
+  (finální texty jsou zadání 2+).
+- **Popisky sloupců tabulek:** klíče v YAML jsou bez diakritiky (přenositelnost),
+  komponenta je mapuje na české nadpisy (mapa `POPISKY`). Nový sloupec v YAML =
+  doplnit řádek do mapy, jinak se jen „humanizuje" bez diakritiky.
+- **Data v tabulce:** hodnoty typu datum (`last_verified`, `overeno`) se
+  formátují česky („30. srpna 2026") přes `Intl.DateTimeFormat('cs-CZ')`.
+- **Podskupina `modely/nejlepsi-pro/`:** autogenerate ji zobrazí jako skupinu
+  s popiskem odvozeným z názvu složky („nejlepsi-pro"). K vyřešení, až se sekce
+  Modely bude finalizovat (buď ruční sidebar, nebo přejmenování). Zatím ponecháno.
+
+### Kontrola češtiny (zadání 03) — kostra 2026-08-31
+
+- Prošel jsem vlastní texty (osnovy, slovníček, návod JAK-NAHRAT, komponenty).
+- Slovníček: 0 zakázaných slov; „suverenita" nikde. Produkty (OpenWork, opencode,
+  Zen, Go, Cortecs, MCP, ZDR, token) vysvětleny při prvním výskytu.
+- Fakta: všechna čísla/ceny buď z `data/*.yaml`, nebo označena `[DOPLNIT]`.
+- K rozhodnutí člověku: finální texty stránek (zadání 2+) a ověření řádků obou
+  YAML tabulek (zatím kostra, označeno v caution rámečku).
