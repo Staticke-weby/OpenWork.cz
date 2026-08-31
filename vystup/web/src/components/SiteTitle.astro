@@ -1,28 +1,58 @@
 ---
 // Vlastní logo v hlavičce (nahrazuje výchozí Starlight SiteTitle).
-// Čistý wordmark bez ikony — „.cz" v barvě značky. Barvy přes CSS proměnné.
+// Monogram OW: prstenec O + geometrické W s ostrými spoji, jedna barva.
+// Barvy dané inline stylem s CSS proměnnou — Astro nescopuje SVG podprvky,
+// takže styl přes třídu by se na circle/path/stop neaplikoval.
 const jeSk = Astro.currentLocale === 'sk';
 const domu = jeSk ? '/sk/' : '/';
+const tah = 'fill:none; stroke: var(--ow-logo-o); stroke-width:2.2;';
 ---
 
 <a href={domu} class="ow-logo" aria-label="OpenWork.cz — domů">
-  <span class="ow-logo__name">OpenWork</span><span class="ow-logo__tld">.cz</span>
+  <svg class="ow-logo__ikona" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+    <defs>
+      <linearGradient id="ow-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" style="stop-color: var(--sl-color-accent)" />
+        <stop offset="1" style="stop-color: color-mix(in srgb, var(--sl-color-accent) 76%, #000)" />
+      </linearGradient>
+    </defs>
+    <rect width="32" height="32" rx="8" fill="url(#ow-grad)" />
+    <circle cx="11" cy="16" r="4.4" style={tah} />
+    <path
+      d="M16.8 11.6 L18.65 20.4 L20.5 15 L22.35 20.4 L24.2 11.6"
+      style={tah + ' stroke-linejoin:miter; stroke-linecap:butt; stroke-miterlimit:6;'}
+    />
+  </svg>
+  <span class="ow-logo__text">
+    <span class="ow-logo__name">OpenWork</span><span class="ow-logo__tld">.cz</span>
+  </span>
 </a>
 
 <style>
   .ow-logo {
     display: inline-flex;
-    align-items: baseline;
+    align-items: center;
+    gap: 0.5rem;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 1.35rem;
-    letter-spacing: -0.02em;
     line-height: 1;
+  }
+  .ow-logo__ikona {
+    flex-shrink: 0;
+  }
+  .ow-logo__text {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
   }
   .ow-logo__name {
     color: var(--sl-color-white);
   }
   .ow-logo__tld {
     color: var(--sl-color-accent);
+  }
+  @media (max-width: 30rem) {
+    .ow-logo__text {
+      display: none;
+    }
   }
 </style>
