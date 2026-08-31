@@ -9,6 +9,12 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 31. augusta 2026 — nová stránka o súboroch .md
+
+- [Súbory .md (Markdown)](/sk/prace-se-slozkou/soubory-md/) — čo to je,
+  čím ich otvoriť, základné značky a prevod do Wordu či PDF. Pojem pridaný
+  aj do [slovníka](/sk/zaciname/slovnik-pojmu/).
+
 ## 31. augusta 2026 — prepracovaná sekcia Modely a poskytovatelia
 
 - Nový **[katalóg modelov](/sk/modely/katalog/)** — živá tabuľka 13 modelov
