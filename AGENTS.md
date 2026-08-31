@@ -79,7 +79,7 @@ na to, co lidé skutečně hledají, ale nikdy na úkor pravdivosti.
   „AI nad vlastními soubory", „alternativa Claude Cowork", názvy modelů.
   Kde se sráží s pravidlem jednoduché češtiny, vyhrává vyhledávaný termín —
   ale při prvním výskytu ho vysvětli jednou větou.
-- **SEO výjimky ze slovníčku:** „lokální AI / lokální modely" **používáme**
+- **SEO výjimky ze slovníku pojmů:** „lokální AI / lokální modely" **používáme**
   (místo opisu „na vlastním počítači"), protože se to hledá. Vysvětli:
   „běží přímo u vás na počítači". Slovo „suverenita" zůstává zakázané.
 - **Každá stránka:** výstižný `<title>` s klíčovým slovem, smysluplný

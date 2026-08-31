@@ -1,4 +1,4 @@
-# Slovníček — závazná terminologie webu
+# Slovník pojmů — závazná terminologie webu
 
 Platí pro všechny texty na openwork.cz i openwork.sk (tam ve slovenštině
 se stejnou logikou). Levý sloupec se na webu nepoužívá, pravý ano.

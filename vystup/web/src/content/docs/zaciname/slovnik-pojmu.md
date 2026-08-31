@@ -1,5 +1,5 @@
 ---
-title: Slovníček
+title: Slovník pojmů
 description: Jak čemu na tomto webu říkáme — přehled pojmů srozumitelně.
 sidebar:
   order: 5
