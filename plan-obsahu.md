@@ -88,17 +88,20 @@ Klíčová slova této vlny: nulové uchovávání dat / ZDR, GDPR AI, nejlepš�
 
 ---
 
-## Vlna 4 — datové tabulky (až po ověření faktů) 🔒
+## Vlna 4 — datové tabulky (až po ověření faktů)
 
-Plní se, jakmile hlídač zdrojů a ruční ověření dodají fakta. Každý řádek má
-zdroj a datum.
+Každý řádek má zdroj a datum ověření.
 
-- `data/zdr-poskytovatele.yaml` → stránka `vase-data/zdr/tabulka` (živá)
-- `data/bezplatne-urovne.yaml` → stránka `kolik-to-stoji/bezplatne-urovne` (živá)
-- **Katalog modelů** (nový datový soubor) → napojit na `modely/*` — hlavní účel
-  hlídání zdrojů (viz `vystup/hlidac-zdroju/`).
+- ✅ `data/zdr-poskytovatele.yaml` → `vase-data/zdr/tabulka` — ověřeno 2026-08-31
+  (OpenCode Zen/Go, Cortecs, lokální; zdroje opencode.ai/docs/zen, cortecs.ai).
+- ✅ `data/bezplatne-urovne.yaml` → `kolik-to-stoji/bezplatne-urovne` — ověřeno
+  2026-08-31 (Groq, Cerebras, OpenRouter, OpenCode Zen; veřejné zdroje).
+- ⬜ **Katalog modelů** (nový datový soubor) → `modely/*`. Větší a proměnlivá
+  věc; budovat průběžně a napojit na hlídač zdrojů. Zatím na stránkách modelů
+  platí doporučení GLM 5.3 Flash + kritéria výběru.
 
-Pravidlo: dokud řádek nemá `overeno`, drží upozornění „předběžné".
+Pravidlo: limity/podmínky se mění — tabulky drží datum ověření a průběžně se
+aktualizují.
 
 ---
 

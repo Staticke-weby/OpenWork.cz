@@ -17,9 +17,12 @@ podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 - Ověřeny základní údaje o OpenWorku z [openworklabs.com](https://openworklabs.com/)
   a opencode — ceník, funkce, přístup k datům.
 - Doporučená výchozí cesta: **OpenCode Go** s modelem **GLM 5.3 Flash**.
+- Ověřeny a naplněny **živé tabulky**: [srovnání poskytovatelů podle nulového
+  uchovávání dat](/vase-data/zdr/tabulka/) (OpenCode Zen/Go, Cortecs, lokální)
+  a [bezplatné úrovně](/kolik-to-stoji/bezplatne-urovne/) (Groq, Cerebras,
+  OpenRouter, OpenCode Zen). Každý řádek má zdroj a datum ověření.
 
 :::note
-Datové tabulky (srovnání poskytovatelů podle nulového uchovávání dat a bezplatné
-úrovně) jsou zatím rozpracované — jednotlivé řádky doplňujeme až po ověření
-a označujeme datem.
+Limity bezplatných úrovní a podmínky poskytovatelů se mění — tabulky proto
+označujeme datem ověření a budeme je průběžně aktualizovat.
 :::

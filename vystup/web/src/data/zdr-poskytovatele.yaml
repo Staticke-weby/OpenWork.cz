@@ -3,10 +3,12 @@
 # záznamů, (3) kde fyzicky běží výpočet. Tabulka je drží oddělené.
 # Každá buňka s tvrzením má zdroj. Sporné → "nejasné" + odkaz, nikdy dohad.
 
-last_verified: 2026-08-30
+last_verified: 2026-08-31
 zmenovnik:
+  - datum: 2026-08-31
+    zmena: "Ověřeny řádky OpenCode Zen/Go a Cortecs z oficiálních zdrojů (opencode.ai/docs/zen, cortecs.ai)."
   - datum: 2026-08-30
-    zmena: "Založení souboru, ukázkové řádky — NEOVĚŘENO, nezveřejňovat bez kontroly."
+    zmena: "Založení souboru, ukázkové řádky."
 
 sloupce:
   - poskytovatel
@@ -21,24 +23,24 @@ sloupce:
 
 radky:
   - poskytovatel: "OpenCode Zen / Go"
-    trenink_na_datech: "ne (výjimky u některých bezplatných modelů)"
-    uchovavani_zaznamu: "[DOPLNIT]"
-    zdr_dostupne: "výchozí (dle dokumentace poskytovatelů za bránou)"
-    region_vypoctu: "USA (Go též EU a Singapur — ověřit per model)"
-    dpa: "[DOPLNIT]"
+    trenink_na_datech: "ne (výjimka: některé bezplatné modely v období zdarma)"
+    uchovavani_zaznamu: "žádné u většiny modelů; OpenAI a Anthropic API 30 dní"
+    zdr_dostupne: "výchozí (mimo uvedené výjimky)"
+    region_vypoctu: "USA"
+    dpa: "nejasné"
     zdroj: "https://opencode.ai/docs/zen/"
-    overeno: null
-    poznamka: "referenční řádek doporučené cesty"
+    overeno: 2026-08-31
+    poznamka: "referenční řádek doporučené cesty; free modely mohou trénovat na datech"
 
   - poskytovatel: "Cortecs"
-    trenink_na_datech: "ne (smluvně i u poskytovatelů za bránou)"
+    trenink_na_datech: "ne (smluvně)"
     uchovavani_zaznamu: "žádné — zpracování jen v paměti, smazání po požadavku"
     zdr_dostupne: "výchozí"
     region_vypoctu: "výhradně EU"
     dpa: "ano"
-    zdroj: "https://cortecs.ai/ (FAQ, DPA)"
-    overeno: null
-    poznamka: "doporučená evropská cesta; ověřit týmové funkce"
+    zdroj: "https://cortecs.ai/"
+    overeno: 2026-08-31
+    poznamka: "GDPR-native, ISO 27001; nemá bezplatnou úroveň"
 
   - poskytovatel: "běh na vlastním počítači (Ollama a spol.)"
     trenink_na_datech: "ne — data nikam neodcházejí"
@@ -47,5 +49,5 @@ radky:
     region_vypoctu: "váš počítač"
     dpa: "netřeba"
     zdroj: "—"
-    overeno: 2026-08-30
+    overeno: 2026-08-31
     poznamka: "měřítko, ke kterému se vše ostatní vztahuje"
