@@ -57,6 +57,8 @@ celá složka. Podrobně to rozebírá stránka
 - **[Co s ním vytvoříte](/co-vytvorite/)** — další zadání k vyzkoušení.
 - **[Dovednosti (skills)](/prace-se-slozkou/dovednosti-skills/)** — povedené
   postupy si uložte na příště.
+- **[OpenWork komunita CZ/SK na Discordu](https://discord.gg/dKYspwbsSR)** —
+  když se zaseknete, poradíme česky a slovensky.
 
 ---
 

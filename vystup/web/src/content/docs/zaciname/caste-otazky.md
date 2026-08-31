@@ -20,7 +20,8 @@ head:
       {"@type":"Question","name":"Na čem OpenWork běží?","acceptedAnswer":{"@type":"Answer","text":"Na Windows, macOS i Linuxu. Stáhnete ho zdarma na openworklabs.com."}},
       {"@type":"Question","name":"Funguje OpenWork bez internetu?","acceptedAnswer":{"@type":"Answer","text":"Jen s lokálními AI modely, které běží přímo u vás. U poskytovatele je internet potřeba."}},
       {"@type":"Question","name":"Můžu OpenWork používat ve firmě?","acceptedAnswer":{"@type":"Answer","text":"Ano. Pro jednotlivce je desktopová aplikace zdarma; pro týmy a firmy jsou placené plány s centrální správou."}},
-      {"@type":"Question","name":"Můžu agentovi dát přístup k e-mailu, kalendáři nebo dalším službám?","acceptedAnswer":{"@type":"Answer","text":"Ano, přes MCP a Composio. Kde má služba vlastní připojení, použijete ho přímo."}}
+      {"@type":"Question","name":"Můžu agentovi dát přístup k e-mailu, kalendáři nebo dalším službám?","acceptedAnswer":{"@type":"Answer","text":"Ano, přes MCP a Composio. Kde má služba vlastní připojení, použijete ho přímo."}},
+      {"@type":"Question","name":"Kde se poradit s ostatními?","acceptedAnswer":{"@type":"Answer","text":"V Discord komunitě OpenWork komunita CZ/SK — česky a slovensky, od prvních krůčků po pokročilé postupy."}}
       ]}
 ---
 
@@ -85,6 +86,13 @@ placené plány s centrální správou a sdílením přístupů (viz
 
 Ano, přes [MCP a Composio](/prace-se-slozkou/napojeni-nastroju/). Kde má služba
 vlastní připojení (MCP), použijete ho přímo; kde ne, poslouží Composio.
+
+## Kde se poradit s ostatními?
+
+V Discord komunitě
+**[OpenWork komunita CZ/SK](https://discord.gg/dKYspwbsSR)** — česky
+a slovensky, od prvních krůčků po pokročilé postupy. Zeptejte se na cokoli,
+nebo se podělte o to, co se vám povedlo.
 
 ## Kudy dál
 

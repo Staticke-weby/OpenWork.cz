@@ -9,6 +9,7 @@ const odkazZasady = jeSk ? '/sk/o-webu/zasady/' : '/o-webu/zasady/';
 const vetaNezavislost = jeSk
   ? 'OpenWork.cz je nezávislý sprievodca. Nie sme spojení s OpenWork Labs, Inc.'
   : 'OpenWork.cz je nezávislý český průvodce. Nejsme spojeni s OpenWork Labs, Inc.';
+const popisDiscord = jeSk ? 'Pridajte sa na Discord:' : 'Přidejte se na Discord:';
 ---
 
 <Default {...Astro.props}><slot /></Default>
@@ -18,6 +19,10 @@ const vetaNezavislost = jeSk
     {vetaNezavislost}
     <span class="ow-oddelovac">·</span>
     <a href={odkazZasady}>Zásady webu</a>
+    <span class="ow-oddelovac">·</span>
+    {popisDiscord}
+    <a href="https://discord.gg/dKYspwbsSR" target="_blank" rel="noopener noreferrer"
+      >OpenWork komunita CZ/SK</a>
   </p>
 </div>
 

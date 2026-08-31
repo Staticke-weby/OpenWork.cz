@@ -9,6 +9,13 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 31. augusta 2026 — Discord komunita
+
+- Spustený Discord server
+  **[OpenWork komunita CZ/SK](https://discord.gg/dKYspwbsSR)** — poradňa
+  a zdieľanie postupov po česky a slovensky. Odkaz je v pätičke každej
+  stránky, na úvode a v častých otázkach.
+
 ## 31. augusta 2026 — prehľad poskytovateľov AI modelov
 
 - Nová stránka [Poskytovatelia AI modelov](/sk/modely/poskytovatele/) —

@@ -20,7 +20,8 @@ head:
       {"@type":"Question","name":"Na čom OpenWork beží?","acceptedAnswer":{"@type":"Answer","text":"Na Windows, macOS aj Linuxe. Stiahnete ho zadarmo na openworklabs.com."}},
       {"@type":"Question","name":"Funguje OpenWork bez internetu?","acceptedAnswer":{"@type":"Answer","text":"Len s lokálnymi AI modelmi, ktoré bežia priamo u vás. U poskytovateľa je internet potrebný."}},
       {"@type":"Question","name":"Môžem OpenWork používať vo firme?","acceptedAnswer":{"@type":"Answer","text":"Áno. Pre jednotlivcov je desktopová aplikácia zadarmo; pre tímy a firmy sú platené plány s centrálnou správou."}},
-      {"@type":"Question","name":"Môžem agentovi dať prístup k e-mailu, kalendáru či ďalším službám?","acceptedAnswer":{"@type":"Answer","text":"Áno, cez MCP a Composio. Kde má služba vlastné pripojenie, použijete ho priamo."}}
+      {"@type":"Question","name":"Môžem agentovi dať prístup k e-mailu, kalendáru či ďalším službám?","acceptedAnswer":{"@type":"Answer","text":"Áno, cez MCP a Composio. Kde má služba vlastné pripojenie, použijete ho priamo."}},
+      {"@type":"Question","name":"Kde sa poradiť s ostatnými?","acceptedAnswer":{"@type":"Answer","text":"V Discord komunite OpenWork komunita CZ/SK — po česky a slovensky, od prvých krôčikov po pokročilé postupy."}}
       ]}
 ---
 
@@ -82,6 +83,13 @@ platené plány s centrálnou správou (viď [Koľko to stojí](/sk/kolik-to-sto
 ## Môžem agentovi dať prístup k e-mailu, kalendáru či ďalším službám?
 
 Áno, cez [MCP a Composio](/sk/prace-se-slozkou/napojeni-nastroju/).
+
+## Kde sa poradiť s ostatnými?
+
+V Discord komunite
+**[OpenWork komunita CZ/SK](https://discord.gg/dKYspwbsSR)** — po česky
+a slovensky, od prvých krôčikov po pokročilé postupy. Spýtajte sa na
+čokoľvek, alebo sa podeľte o to, čo sa vám podarilo.
 
 ## Kadiaľ ďalej
 

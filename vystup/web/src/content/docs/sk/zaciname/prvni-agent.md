@@ -52,6 +52,8 @@ celý priečinok. Podrobne to rozoberá stránka
 - **[Čo s ním vytvoríte](/sk/co-vytvorite/)** — ďalšie zadania na vyskúšanie.
 - **[Zručnosti (skills)](/sk/prace-se-slozkou/dovednosti-skills/)** — podarené
   postupy si uložte na nabudúce.
+- **[OpenWork komunita CZ/SK na Discorde](https://discord.gg/dKYspwbsSR)** —
+  keď sa zaseknete, poradíme po česky a slovensky.
 
 ---
 
