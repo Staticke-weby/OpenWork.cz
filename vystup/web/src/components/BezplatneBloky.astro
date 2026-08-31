@@ -19,7 +19,7 @@ if (!raw) throw new Error(`BezplatneBloky: soubor src/data/${zdroj} nenalezen.`)
 const data: any = load(raw) ?? {};
 
 const bloky: any[] = data.bloky ?? [];
-const overenoTop: string = String(data.last_verified ?? '—');
+const overenoTop: unknown = data.last_verified ?? '—';
 
 const jeSk = Astro.currentLocale === 'sk';
 const odkazZmeny = jeSk ? '/sk/o-webu/historie-zmen/' : '/o-webu/historie-zmen/';
