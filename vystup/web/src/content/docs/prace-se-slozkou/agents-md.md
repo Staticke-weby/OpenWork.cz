@@ -1,6 +1,6 @@
 ---
 title: "Soubor AGENTS.md: pravidla pro agenta na jednom místě"
-description: "AGENTS.md je textový soubor s pravidly, kterými se agent řídí. Co do něj psát a jak vypadá — jednoduchý vzor pro začátek."
+description: "AGENTS.md je textový soubor s pravidly, kterými se agent řídí. Nechte si ho založit samotným agentem — stačí zkopírovat hotový text podle toho, co děláte."
 sidebar:
   order: 3
 last_verified: 2026-08-31
@@ -10,37 +10,81 @@ last_verified: 2026-08-31
 agenta**. Když ho dáte do pracovní složky, agent si ho přečte a řídí se jím —
 nemusíte tak stejné pokyny opakovat u každého úkolu.
 
-## K čemu je dobrý
+## Nechte si ho založit agentem
 
-- **Stálá pravidla na jednom místě** — tón, co dělat a co ne, na co si dát pozor.
-- **Míň opakování** — nemusíte pořád dokola vysvětlovat totéž.
-- **Přehled** — kdokoli si přečte, podle čeho agent pracuje.
+Nevíte, jak takový soubor vytvořit a uložit? Nevadí — **nemusíte ho psát ručně.**
+Zkopírujte jeden z hotových textů níže, vložte ho agentovi do chatu a on
+`AGENTS.md` ve vaší složce **sám založí**. Text si klidně upravte podle sebe.
 
-## Co do něj psát
+:::tip
+Vyberte blok podle toho, co s agentem děláte. Vždy kopírujte **celý** blok
+(i s první větou „Založ v této složce…").
+:::
 
-- **Jak má psát.** Třeba „piš stručně a česky" nebo „oslovuj zákazníka vykáním".
-- **Co smí a co ne.** Třeba „neupravuj soubory ve složce `originaly/`".
-- **Podklady a fakta.** Věci, které má agent vědět a nemá si je domýšlet.
+## Na psaní a texty
 
-## Jednoduchý vzor
+Když s agentem hlavně píšete (e-maily, příspěvky, shrnutí):
 
-```markdown
+```text
+Založ v této složce soubor AGENTS.md s tímto obsahem:
+
 # Pravidla pro agenta
 
 ## Jak psát
 - Piš česky, stručně a srozumitelně.
 - Oslovuj vykáním.
+- Žádné marketingové fráze ani plané sliby.
 
 ## Co nedělej
-- Needituj soubory ve složce `originaly/`.
-- Nevymýšlej si údaje — když chybí, napiš to.
-
-## Podklady
-- Ceník je v souboru `podklady/cenik.md`.
+- Nevymýšlej si fakta — když něco nevíš, napiš to.
+- Neměň smysl mých podkladů, jen s nimi pracuj.
 ```
 
-Uložte ho jako `AGENTS.md` do své pracovní složky a upravte podle sebe. Čím
-jasnější pravidla, tím lepší a předvídatelnější výsledky.
+## Na práci s dokumenty a daty
+
+Když agent zpracovává vaše dokumenty, tabulky nebo data:
+
+```text
+Založ v této složce soubor AGENTS.md s tímto obsahem:
+
+# Pravidla pro agenta
+
+## Jak pracovat
+- Vycházej jen z podkladů v této složce, nic si nedomýšlej.
+- Výsledky ukládej do podsložky `vystup/`.
+- U čísel a údajů uveď, ze kterého souboru pocházejí.
+
+## Co nedělej
+- Needituj původní soubory ve složce `originaly/` — pracuj s kopiemi.
+- Když si nejsi jistý, zeptej se místo hádání.
+```
+
+## Na firmu a zákazníky
+
+Když agent připravuje komunikaci se zákazníky nebo firemní texty:
+
+```text
+Založ v této složce soubor AGENTS.md s tímto obsahem:
+
+# Pravidla pro agenta
+
+## Tón a značka
+- Oslovuj zákazníka vykáním, přátelsky a věcně.
+- Drž se našeho názvu a stylu z podkladů ve složce.
+
+## Fakta
+- Ceny, termíny a dostupnost ber jen z našich podkladů.
+- Nikdy si nevymýšlej ceny ani sliby, které nemáme potvrzené.
+
+## Co nedělej
+- Nic neodesílej ani nezveřejňuj — jen připrav návrh ke schválení.
+```
+
+## Chcete ho napsat ručně?
+
+Není problém — vytvořte ve složce textový soubor pojmenovaný přesně
+`AGENTS.md` a vložte do něj obsah z bloku výše (bez první věty „Založ…").
+Čím jasnější pravidla, tím lepší a předvídatelnější výsledky.
 
 ---
 

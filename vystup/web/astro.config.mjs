@@ -45,7 +45,24 @@ export default defineConfig({
         },
         {
           label: 'Vaše data',
-          items: [{ autogenerate: { directory: 'vase-data' } }],
+          translations: { sk: 'Vaše dáta' },
+          items: [
+            { slug: 'vase-data' },
+            { slug: 'vase-data/kde-bezi-vypocet' },
+            {
+              label: 'ZDR',
+              items: [
+                { slug: 'vase-data/zdr' },
+                {
+                  slug: 'vase-data/zdr/tabulka',
+                  badge: { text: 'Živé', variant: 'tip' },
+                },
+              ],
+            },
+            { slug: 'vase-data/gdpr-a-nis2' },
+            { slug: 'vase-data/bezpecnost' },
+            { slug: 'vase-data/openwork-vs-cowork' },
+          ],
         },
         {
           label: 'Kolik to stojí',
@@ -53,7 +70,19 @@ export default defineConfig({
         },
         {
           label: 'Modely a poskytovatelé',
-          items: [{ autogenerate: { directory: 'modely' } }],
+          translations: { sk: 'Modely a poskytovatelia' },
+          items: [
+            { slug: 'modely' },
+            {
+              label: 'Nejlepší AI modely',
+              translations: { sk: 'Najlepšie AI modely' },
+              items: [
+                { slug: 'modely/nejlepsi-pro/kod' },
+                { slug: 'modely/nejlepsi-pro/cestinu' },
+                { slug: 'modely/nejlepsi-pro/domacnost' },
+              ],
+            },
+          ],
         },
         {
           label: 'Práce se složkou',

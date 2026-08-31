@@ -3,6 +3,7 @@ title: "Modely a poskytovatelé: jaký AI model vybrat"
 description: "Model rozhoduje o kvalitě výsledku, poskytovatel o ceně a soukromí. Jak si vybrat, s čím začít a kde hledat model na konkrétní práci."
 sidebar:
   order: 0
+  label: "Přehled"
 last_verified: 2026-08-31
 ---
 

@@ -3,6 +3,7 @@ title: "Vaše data: co zůstává u vás a kdo se k nim dostane"
 description: "Hlavní zásada OpenWorku: vaše data zůstávají u vás. Kde běží výpočet, co znamená nulové uchovávání dat, jak je to s GDPR a jak si pohlídat přístup."
 sidebar:
   order: 0
+  label: "Přehled"
 last_verified: 2026-08-31
 ---
 
