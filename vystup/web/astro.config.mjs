@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: 'OpenWork.cz',
+      favicon: '/favicon.svg',
       // Čeština výchozí (root), slovenština v /sk/. Starlight u chybějících
       // překladů zobrazí český obsah s upozorněním — to je žádoucí.
       defaultLocale: 'root',

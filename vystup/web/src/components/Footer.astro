@@ -13,6 +13,7 @@ const odkazZasady = jeSk ? '/sk/o-webu/zasady/' : '/o-webu/zasady/';
 <div class="ow-nezavislost">
   <p>
     Openwork.cz je nezávislý český průvodce. Nejsme spojeni s OpenWork Labs, Inc.
+    <span class="ow-oddelovac">·</span>
     <a href={odkazZasady}>Zásady webu</a>
   </p>
 </div>
@@ -27,5 +28,9 @@ const odkazZasady = jeSk ? '/sk/o-webu/zasady/' : '/o-webu/zasady/';
   }
   .ow-nezavislost a {
     color: var(--sl-color-accent);
+  }
+  .ow-oddelovac {
+    margin: 0 0.35em;
+    color: var(--sl-color-gray-4);
   }
 </style>

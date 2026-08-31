@@ -30,6 +30,28 @@ Rozhodnutí, která jsem udělal sám při nejednoznačném zadání (dle AGENTS
   s popiskem odvozeným z názvu složky („nejlepsi-pro"). K vyřešení, až se sekce
   Modely bude finalizovat (buď ruční sidebar, nebo přejmenování). Zatím ponecháno.
 
+## Zadání 2 — úvodní stránka (2026-08-31)
+
+- **Hlavní věta (claim):** použil jsem doporučenou z zadání, rozdělenou do hero
+  na titulek + podtitulek: „Všechno, co dnes AI umí." / „Bez předplatného
+  a s daty pod vaší kontrolou." **Dvě alternativy k rozhodnutí člověku:**
+  1. „Umělá inteligence nad vašimi soubory — bez měsíčního paušálu a bez
+     posílání dat na cizí servery."
+  2. „AI, kterou máte pod kontrolou vy: vlastní data, vlastní tempo, vlastní účet."
+- **Ústřední SVG** `DiagramPenezenka.astro` (licence za hlavu vs. společná
+  peněženka). Bez fiktivních čísel — cedulky „paušál", součty slovy
+  („5 × paušál = velká částka" / „platíte jen, co kdo spotřebuje"), aby web
+  nelhal o cenách (AGENTS.md). Barvy přes CSS proměnné, `<title>`+`<desc>`.
+- **Odběr novinek** v závěru zatím `[DOPLNIT: odkaz na odběr novinek]` —
+  mechanismus (formulář/služba) není rozhodnut.
+- **Ověření SVG:** panel diagramu se v náhledovém prohlížeči nedaří sejmout
+  (inline SVG region vychází bílý), ale hit-test v DOM potvrdil, že se prvky
+  malují na správných souřadnicích (circle/rect/text), barvy se resolvují.
+  Pozn.: nadpisy panelů měly původně `--sl-color-white` (ve světlém režimu
+  neviditelné) → opraveno na `--sl-color-text`.
+- **Favicon** `public/favicon.svg` (klíčová dírka, barva značky natvrdo —
+  favicon je jediná povolená grafika a nemá přístup k CSS proměnným webu).
+
 ### Kontrola češtiny (zadání 03) — kostra 2026-08-31
 
 - Prošel jsem vlastní texty (osnovy, slovníček, návod JAK-NAHRAT, komponenty).
