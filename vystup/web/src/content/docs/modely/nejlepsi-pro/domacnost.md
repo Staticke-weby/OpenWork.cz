@@ -26,7 +26,7 @@ jednodušší poskytovatel.
 
 ## Chcete začít úplně zadarmo?
 
-Podívejte se na [bezplatné úrovně](/kolik-to-stoji/bezplatne-urovne/) — spoustu
+Podívejte se na [bezplatné úrovně](/kolik-to-stoji/poskytovatele-ai-zdarma/) — spoustu
 domácích úkolů zvládnete bez placení.
 
 :::note

@@ -19,7 +19,7 @@ podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 - Doporučená výchozí cesta: **OpenCode Go** s modelem **GLM 5.3 Flash**.
 - Ověřeny a naplněny **živé tabulky**: [srovnání poskytovatelů podle nulového
   uchovávání dat](/vase-data/zdr/tabulka/) (OpenCode Zen/Go, Cortecs, lokální)
-  a [bezplatné úrovně](/kolik-to-stoji/bezplatne-urovne/) (Groq, Cerebras,
+  a [bezplatné úrovně](/kolik-to-stoji/poskytovatele-ai-zdarma/) (Groq, Cerebras,
   OpenRouter, OpenCode Zen). Každý řádek má zdroj a datum ověření.
 
 :::note

@@ -19,7 +19,7 @@ podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 - Odporúčaná východisková cesta: **OpenCode Go** s modelom **GLM 5.3 Flash**.
 - Overené a naplnené **živé tabuľky**: [porovnanie poskytovateľov podľa nulového
   uchovávania dát](/sk/vase-data/zdr/tabulka/) a
-  [bezplatné úrovne](/sk/kolik-to-stoji/bezplatne-urovne/).
+  [bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 :::note
 Limity bezplatných úrovní a podmienky poskytovateľov sa menia — tabuľky preto

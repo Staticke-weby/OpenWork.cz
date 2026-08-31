@@ -2,7 +2,7 @@
 title: "Spoločná peňaženka: jedno miesto, z ktorého platí celý tím"
 description: "Namiesto predplatného za každého človeka jedna spoločná peňaženka pre rodinu alebo firmu — každý má svoj kľúč a svoj strop útraty. Ako to funguje."
 sidebar:
-  order: 1
+  order: 3
 last_verified: 2026-08-31
 ---
 

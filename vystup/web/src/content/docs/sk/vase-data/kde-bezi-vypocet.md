@@ -18,7 +18,7 @@ zadanie sa pošle na jeho server, tam sa spracuje a odpoveď sa vám vráti.
 - **Najlepšie modely bez nárokov na váš počítač.** Dosiahnete aj na tie
   najchytrejšie modely, nech máte doma akýkoľvek stroj.
 - **Vyskúšať môžete zadarmo.** Rad modelov má
-  [bezplatnú úroveň](/sk/kolik-to-stoji/bezplatne-urovne/), takže si OpenWork
+  [bezplatnú úroveň](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/), takže si OpenWork
   osaháte bez platenia.
 - **Na každodennú prácu odporúčame platené modely.** Bezplatné modely sú fajn na
   vyskúšanie, ale platené dajú citeľne lepšiu **rýchlosť, kvalitu a stabilitu**.

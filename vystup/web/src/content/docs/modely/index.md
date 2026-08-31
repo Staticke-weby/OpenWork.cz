@@ -36,7 +36,7 @@ Opak jsou modely, ke kterým se dostanete jen přes poskytovatele.
   doma.
 
 Chcete začít zadarmo? Podívejte se na
-[bezplatné úrovně](/kolik-to-stoji/bezplatne-urovne/).
+[bezplatné úrovně](/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 ---
 

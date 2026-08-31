@@ -28,13 +28,14 @@ skutočného využitia, nie podľa počtu ľudí.
 Na každodennú prácu odporúčame **platené modely** — dajú lepšiu rýchlosť,
 kvalitu a stabilitu než bezplatné. Najjednoduchšie je základné predplatné
 [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925); ako východiskový sa hodí
-**GLM 5.3 Flash**.
+**GLM 5.3 Flash**. Prehľad platených brán (vrátane európskeho **Cortecs**) je na
+stránke [Platení poskytovatelia](/sk/kolik-to-stoji/placene-poskytovatele/).
 
 ## Veľa toho zvládnete zadarmo
 
 Rad modelov má **bezplatnú úroveň** — vyskúšať a používať ich môžete bez toho,
 aby ste dali prvú korunu. Prehľad nájdete na stránke
-[Bezplatné úrovne](/sk/kolik-to-stoji/bezplatne-urovne/). A ak siahnete po
+[Bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/). A ak siahnete po
 [lokálnych AI modeloch](/sk/vase-data/kde-bezi-vypocet/), za výpočet neplatíte
 vôbec.
 

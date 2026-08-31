@@ -36,7 +36,7 @@ prevádzkovať sami (napríklad ako [lokálny AI model](/sk/vase-data/kde-bezi-v
   použitie doma.
 
 Chcete začať zadarmo? Pozrite si
-[bezplatné úrovne](/sk/kolik-to-stoji/bezplatne-urovne/).
+[bezplatné úrovne](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 ---
 

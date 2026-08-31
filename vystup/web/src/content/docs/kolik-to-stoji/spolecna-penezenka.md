@@ -2,7 +2,7 @@
 title: "Společná peněženka: jedno místo, ze kterého platí celý tým"
 description: "Místo předplatného za každého člověka jedna společná peněženka pro rodinu nebo firmu — každý má svůj klíč a svůj strop útraty. Jak to funguje."
 sidebar:
-  order: 1
+  order: 3
 last_verified: 2026-08-31
 ---
 
