@@ -64,10 +64,13 @@ Rychlé stránky, které navazují na hero a nosné stránky.
 
 | Stránka | Účel | Klíčová slova |
 |---|---|---|
-| `zaciname/instalace` 🟡 | Stažení a instalace krok za krokem (Win/macOS/Linux) | instalace OpenWork, stáhnout OpenWork |
-| `zaciname/prvni-agent` 🟡 | První agent nad vlastní složkou | první AI agent, jak spustit AI agenta |
-| `zaciname/ekosystem` 🟡 | opencode, OpenCode Zen/Go, Cortecs, MCP a jejich vztahy | opencode, OpenCode Go, MCP |
-| `zaciname/casta-otazky` 🟡 | FAQ nováčka (cena, data, nutnost umět programovat) | OpenWork časté otázky |
+| `zaciname/instalace` ✅ | Stažení a instalace krok za krokem (Win/macOS/Linux) | instalace OpenWork, stáhnout OpenWork |
+| `zaciname/prvni-agent` ✅ | První agent nad vlastní složkou | první AI agent, jak spustit AI agenta |
+| `zaciname/ekosystem` ✅ | opencode, OpenCode Zen/Go, Cortecs, MCP a jejich vztahy | opencode, OpenCode Go, MCP |
+| `zaciname/casta-otazky` ✅ | FAQ nováčka (cena, data, nutnost umět programovat) | OpenWork časté otázky |
+
+> `[DOPLNIT]` z Vlny 2: kroky instalace per OS, názvy obrazovek/tlačítek
+> v aplikaci (instalace, brána+klíč, první agent), příklady k MCP, další FAQ.
 
 ---
 
