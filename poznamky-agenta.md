@@ -88,6 +88,22 @@ změně webu). Použitá tvrzení na homepage:
   hlavu"** — Team plán je per-seat, bylo by to nepřesné. Homepage tvrdí jen:
   aplikace zdarma, za AI platíš poskytovateli za spotřebu, řada modelů zdarma.
 
+## Zdroje, hlídač a odkazy (2026-08-31)
+
+- **OpenCode Go upřednostňujeme** — jde v něm nechat jen ZDR modely (ruční
+  kurace: admin vypne nevyhovující; není to automat). Pravidlo v AGENTS.md.
+- **Čerpat primárně z oficiálních zdrojů** opencode/OpenWork + jejich GitHub.
+  Kanonické zdroje + tabulka v AGENTS.md → „Zdroje a hlídání aktuálnosti".
+  Repos: `different-ai/openwork`, `anomalyco/opencode` (větev `dev`).
+- **Hlídač zdrojů** `vystup/hlidac-zdroju/hlidac.mjs` (bez závislostí) —
+  porovnává poslední vydání/commit repozitářů proti `stav.json`. Účelově
+  řízený (pole `ucel` u zdroje); hlavní účel = katalog ověřených/ZDR modelů
+  a bezplatných úrovní. Seed stavu hotov (openwork v0.18.40, opencode v1.18.25).
+  ⚠ Otevřená otázka: automatické spouštění (GitHub Actions cron + issue) —
+  vyžaduje soubor mimo `vystup/` (`.github/workflows/`), čeká na rozhodnutí.
+- **Odkaz na stažení** `https://openworklabs.com/download` na: hero (primární
+  CTA), karta „Zdarma a s otevřeným kódem", stránka Instalace.
+
 ### Kontrola češtiny (zadání 03) — kostra 2026-08-31
 
 - Prošel jsem vlastní texty (osnovy, slovníček, návod JAK-NAHRAT, komponenty).

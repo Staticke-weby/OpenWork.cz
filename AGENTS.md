@@ -21,6 +21,14 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - **OpenCode Go a OpenCode Zen vždy plným názvem** — nikdy jen „Go" / „Zen".
   Referral odkaz na OpenCode Go: `https://opencode.ai/go?ref=K0VC03J925` —
   používej ho jako CTA „začít / vyzkoušet OpenCode Go" (kanonický zdroj odkazu).
+- **OpenCode Go upřednostňuj** jako doporučenou cestu. Důvod: jde v něm nechat
+  jen modely s nulovým uchováváním dat (ZDR) — nevyhovující modely (např. free
+  modely trénující na datech, nebo OpenAI/Anthropic API s 30denním uchováním)
+  admin ve workspace vypne. ⚠ Není to automatický přepínač „jen ZDR", je to
+  ruční kurace výběru modelů — piš přesně, netvrď víc, než zdroj říká.
+- **Fakta o produktech čerpej primárně z oficiálních zdrojů opencode a OpenWork
+  a jejich GitHubu** (viz sekce „Zdroje a hlídání aktuálnosti" na konci). Když
+  fakt nemáš ověřený z těchto zdrojů, použij `[DOPLNIT: co]`.
 
 ## Co smíš
 
@@ -67,3 +75,25 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - Hotový úkol vždy zakonči kontrolou podle `zadani/03-kontrola-cestiny.md`
   (u textových výstupů) nebo zkušebním sestavením `npm run build`
   (u technických výstupů).
+
+## Zdroje a hlídání aktuálnosti
+
+Kanonické zdroje faktů (odsud čerpej přednostně):
+
+| Co | Kde |
+|---|---|
+| OpenWork — web, docs, roadmap | <https://openworklabs.com/> · `/docs` · `/roadmap` |
+| OpenWork — kód, vydání | GitHub `different-ai/openwork` |
+| opencode — docs | <https://opencode.ai/docs/> |
+| OpenCode Zen — modely, data | <https://opencode.ai/docs/zen/> |
+| opencode — kód, vydání | GitHub `anomalyco/opencode` (výchozí větev `dev`) |
+
+**Hlídač nového obsahu:** skript `vystup/hlidac-zdroju/` kontroluje vydání
+a commity sledovaných repozitářů proti uloženému stavu (`stav.json`) a vypíše,
+co je nového. Detail a spuštění v jeho `README.md`.
+
+**Sledování má mít účel.** Nesleduj zdroje „pro jistotu". Hlavní účel je držet
+aktuální **katalog ověřených / ZDR modelů a bezplatných úrovní** (tabulky
+`data/*.yaml`) a fakta o produktech. Každý zdroj v hlídači má pole `ucel` —
+proč ho sledujeme a co z něj do webu teče. Nový zdroj (např. poskytovatel
+modelů) přidávej jen tehdy, když napojíš na konkrétní potřebu.

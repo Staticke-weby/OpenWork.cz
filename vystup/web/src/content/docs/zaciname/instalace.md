@@ -7,6 +7,9 @@ sidebar:
 
 > Rozpracovaná stránka — finální text přijde v pozdějším úkolu.
 
+Aplikaci OpenWork stáhnete zdarma pro Windows, macOS i Linux na
+**[openworklabs.com/download](https://openworklabs.com/download)**.
+
 ## Osnova
 
 - Co potřebujete předem

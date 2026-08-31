@@ -1,0 +1,10 @@
+{
+  "openwork": {
+    "release": "v0.18.40",
+    "commit": "214c32b"
+  },
+  "opencode": {
+    "release": "v1.18.25",
+    "commit": "9f69463"
+  }
+}
