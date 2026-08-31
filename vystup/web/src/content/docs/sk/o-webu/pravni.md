@@ -1,6 +1,6 @@
 ---
 title: "Právne informácie"
-description: "Prevádzkovateľ webu OpenWork.cz, zodpovednosť za obsah a kontakt."
+description: "Prevádzkovateľ webu OpenWork.cz a zodpovednosť za obsah."
 sidebar:
   order: 4
 last_verified: 2026-08-31
@@ -8,11 +8,17 @@ last_verified: 2026-08-31
 
 ## Prevádzkovateľ
 
-[DOPLNIT: meno / názov prevádzkovateľa, prípadne IČO a sídlo.]
+**ESHOpino s.r.o.**
+Roháčova 145/14
+130 00 Praha 3
 
-## Kontakt
+IČO: 03223485 · DIČ: CZ03223485
 
-[DOPLNIT: kontaktný e-mail alebo formulár.]
+:::note
+OpenWork.cz je **informačný web**, nie zákaznícka podpora. Neprevádzkujeme
+e‑mailovú ani inú podporu k aplikácii OpenWork — s otázkami k samotnej aplikácii
+sa obracajte na jej tvorcu, [openworklabs.com](https://openworklabs.com/).
+:::
 
 ## Zodpovednosť za obsah
 
@@ -33,4 +39,4 @@ v [zásadách webu](/sk/o-webu/zasady/).
 
 ## Autorské práva
 
-[DOPLNIT: podmienky použitia obsahu webu — napr. licencia textov.]
+Obsah webu © ESHOpino s.r.o. Všetky práva vyhradené.
