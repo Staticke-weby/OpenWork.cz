@@ -1,6 +1,6 @@
 ---
 // Vlastní logo v hlavičce (nahrazuje výchozí Starlight SiteTitle).
-// Ikona = klíčová dírka (data pod vaší kontrolou), ladí s faviconou.
+// Ikona = monogram OW: prstenec „O" propletený s tahovým „W", ladí s faviconou.
 // Barvy přes CSS proměnné → funguje ve světlém i tmavém režimu.
 const jeSk = Astro.currentLocale === 'sk';
 const domu = jeSk ? '/sk/' : '/';
@@ -8,8 +8,15 @@ const domu = jeSk ? '/sk/' : '/';
 
 <a href={domu} class="ow-logo" aria-label="OpenWork.cz — domů">
   <svg class="ow-logo__ikona" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
-    <rect width="32" height="32" rx="8" class="ow-logo__ctverec" />
-    <text x="16" y="22" text-anchor="middle" class="ow-logo__mono">OW</text>
+    <defs>
+      <linearGradient id="ow-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" class="ow-logo__stop1" />
+        <stop offset="1" class="ow-logo__stop2" />
+      </linearGradient>
+    </defs>
+    <rect width="32" height="32" rx="8" fill="url(#ow-grad)" />
+    <circle cx="12" cy="16.5" r="5" class="ow-logo__mark" />
+    <path d="M14.6 11.5 L16.8 21 L19 15 L21.2 21 L23.4 11.5" class="ow-logo__mark" />
   </svg>
   <span class="ow-logo__text">
     <span class="ow-logo__name">OpenWork</span><span class="ow-logo__tld">.cz</span>
@@ -30,16 +37,20 @@ const domu = jeSk ? '/sk/' : '/';
     /* jemný stín pro odsazení od pozadí hlavičky */
     filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.15));
   }
-  .ow-logo__ctverec {
-    fill: var(--sl-color-accent);
+  .ow-logo__stop1 {
+    stop-color: var(--sl-color-accent);
   }
-  .ow-logo__mono {
-    /* monogram „prosvítá" barvou pozadí → adaptuje se na motiv */
-    fill: var(--sl-color-bg);
-    font-family: var(--sl-font, system-ui, sans-serif);
-    font-weight: 800;
-    font-size: 14px;
-    letter-spacing: -0.5px;
+  .ow-logo__stop2 {
+    /* jemně tmavší odstín značky dole → hloubka; adaptuje se na motiv */
+    stop-color: color-mix(in srgb, var(--sl-color-accent) 74%, #000);
+  }
+  .ow-logo__mark {
+    /* tahy „prosvítají" barvou pozadí → adaptuje se na motiv */
+    fill: none;
+    stroke: var(--sl-color-bg);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
   }
   .ow-logo__text {
     font-weight: 700;
