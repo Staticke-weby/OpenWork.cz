@@ -127,12 +127,14 @@ lokalizovány pro `sk`. Zbývá jen `sk/o-webu/pravni.md` (reálné údaje).
 
 ---
 
-## Vlna 7 — SEO a technické dotažení 🔧
+## Vlna 7 — SEO a technické dotažení 🔧 ✅ hotovo
 
-- Audit interních prolinků (každá stránka má vstupy i výstupy).
-- Kontrola `title`/`description` napříč webem (klíčová slova, délky).
-- Open Graph / náhledové meta (bez rastrových obrázků — řešit textově/SVG).
-- `sitemap` a `robots` kontrola, ověření po nasazení.
+- ✅ Kontrola interních odkazů — 0 rozbitých (skript proti `dist/`).
+- ✅ `title` + `description` na všech stránkách (CZ i SK).
+- ✅ Open Graph (`og:site_name`) + `twitter:card`; hreflang cs/sk (i18n).
+- ✅ `robots.txt` s odkazem na sitemap; `sitemap-index.xml` generuje Astro.
+- Zbývá po nasazení: ověřit sitemap/robots na doméně, doplnit reálné meta
+  (a případně náhledový obrázek — pozor na pravidlo „žádné rastrové obrázky").
 
 ---
 

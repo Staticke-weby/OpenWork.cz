@@ -16,6 +16,11 @@ export default defineConfig({
     starlight({
       title: 'OpenWork.cz',
       favicon: '/favicon.svg',
+      // Doplňkové meta pro sdílení a vyhledávače (bez obrázků — viz AGENTS.md).
+      head: [
+        { tag: 'meta', attrs: { property: 'og:site_name', content: 'OpenWork.cz' } },
+        { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary' } },
+      ],
       // Čeština výchozí (root), slovenština v /sk/. Starlight u chybějících
       // překladů zobrazí český obsah s upozorněním — to je žádoucí.
       defaultLocale: 'root',
