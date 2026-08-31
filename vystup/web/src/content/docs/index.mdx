@@ -4,9 +4,9 @@ description: Všechno, co dnes AI umí. Bez předplatného a s daty pod vaší k
 template: splash
 hero:
   title: Všechno, co dnes AI umí.
-  tagline: Bez předplatného a s daty pod vaší kontrolou.
+  tagline: Bez předplatného a s daty pod vaší kontrolou. Průvodce pro obyčejné lidi, kteří chtějí nechat počítač pracovat s vlastními soubory — a nechat si data u sebe.
   actions:
-    - text: Začít
+    - text: Začít od začátku
       link: /zaciname/co-je-openwork/
       icon: right-arrow
     - text: Kolik to stojí
@@ -15,61 +15,70 @@ hero:
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
 
-Tenhle web je průvodce pro obyčejné lidi: ukážeme vám, jak nechat počítač
-pracovat s vašimi vlastními soubory pomocí AI — a přitom si nechat data u sebe
-a platit jen za to, co opravdu spotřebujete.
+## Tři věci, které tu děláme jinak
 
-## Vaše data zůstávají u vás
-
-Pracujete nad vlastní složkou souborů na svém počítači. Co jde udělat na
-vlastním počítači, ukazujeme na vlastním počítači. Uložit něco na cizí server
-je volba, ne nutnost — a vždy dopředu víte, kdy k tomu dochází a proč.
-
-## Platíte za to, co spotřebujete — ne za hlavy
-
-Tohle je největší rozdíl proti velkým platformám. Místo měsíčního paušálu za
-každého člověka máte jednu společnou peněženku pro rodinu nebo firmu. Každý má
-svůj klíč — přístupové heslo pro aplikace — a svůj strop útraty. Kdo se ptá
-jednou týdně, stojí koruny.
-
-## Nikde nejste zamčení
-
-Aplikace OpenWork — program, přes který s AI pracujete — umí desítky
-poskytovatelů modelů. Když jeden zdraží nebo se zrovna nehodí, přepnete jedním
-výběrem. Soubory, návyky i nastavení vám zůstanou.
+<CardGrid stagger>
+  <Card title="Vaše data zůstávají u vás" icon="approve-check">
+    Pracujete nad vlastní složkou souborů na svém počítači. Co jde udělat na
+    vlastním počítači, ukazujeme na vlastním počítači. Uložit něco na cizí
+    server je volba, ne nutnost — a vždy dopředu víte, kdy k tomu dochází.
+  </Card>
+  <Card title="Platíte za spotřebu, ne za hlavy" icon="setting">
+    Místo měsíčního paušálu za každého člověka jedna společná peněženka pro
+    rodinu nebo firmu. Každý má svůj klíč — přístupové heslo pro aplikace — a
+    svůj strop útraty. Kdo se ptá jednou týdně, stojí koruny.
+  </Card>
+  <Card title="Nikde nejste zamčení" icon="random">
+    Aplikace OpenWork — program, přes který s AI pracujete — umí desítky
+    poskytovatelů modelů. Když jeden zdraží nebo se nehodí, přepnete jedním
+    výběrem. Soubory, návyky i nastavení vám zůstanou.
+  </Card>
+</CardGrid>
 
 ## Kudy do toho podle vás
 
 <CardGrid>
-  <Card title="Firma nebo živnostník" icon="setting">
-    Chcete platit za skutečnou spotřebu, ne za počet lidí?
-    [Podívejte se, kolik to stojí →](/kolik-to-stoji/)
-  </Card>
-  <Card title="Domácnost" icon="heart">
-    Zajímá vás hlavně, kde vaše data končí?
-    [Začněte u vašich dat →](/vase-data/)
-  </Card>
-  <Card title="Student" icon="open-book">
-    Chcete začít bez placení?
-    [Prohlédněte si bezplatné úrovně →](/kolik-to-stoji/bezplatne-urovne/)
-  </Card>
-  <Card title="Profese s mlčenlivostí" icon="approve-check">
-    Data nesmí nikam odejít?
-    [Přečtěte si o nulovém uchovávání dat →](/vase-data/zdr/)
-  </Card>
+  <LinkCard
+    title="Firma nebo živnostník"
+    href="/kolik-to-stoji/"
+    description="Chcete platit za skutečnou spotřebu, ne za počet lidí? Podívejte se, z čeho se cena skládá."
+  />
+  <LinkCard
+    title="Domácnost"
+    href="/vase-data/"
+    description="Zajímá vás hlavně, kde vaše data končí? Začněte u toho, co zůstává u vás."
+  />
+  <LinkCard
+    title="Student"
+    href="/kolik-to-stoji/bezplatne-urovne/"
+    description="Chcete začít bez placení? Prohlédněte si bezplatné úrovně poskytovatelů."
+  />
+  <LinkCard
+    title="Profese s mlčenlivostí"
+    href="/vase-data/zdr/"
+    description="Data nesmí nikam odejít? Přečtěte si o nulovém uchovávání dat (ZDR)."
+  />
 </CardGrid>
 
 ## Kterou cestou začít
 
+<Aside type="tip" title="Rychlé rozhodnutí">
 Začněte s [Go](/zaciname/ekosystem/) — bránou k modelům od tvůrců základu, na
 kterém OpenWork staví. Sáhněte po [Cortecs](/vase-data/zdr/), evropské bráně
 k modelům, když data nesmí opustit Evropu. A po [vlastním
 počítači](/vase-data/kde-bezi-vypocet/), když nesmí opustit váš stůl.
+</Aside>
 
----
+## Nová tady?
 
+Nevadí. Projděte si [Začínáme](/zaciname/co-je-openwork/) krok za krokem, nebo
+si nechte po ruce [slovníček](/zaciname/slovnicek/) — vysvětlujeme každé cizí
+slovo hned, jak padne.
+
+<Aside type="note" title="Kdo za webem stojí">
 Openwork.cz je nezávislá iniciativa — nejsme spojeni s tvůrci aplikace OpenWork
 a nic vám neprodáváme. Chcete vědět, když přibude něco nového?
 [DOPLNIT: odkaz na odběr novinek] — bez spamu, kdykoli se odhlásíte.
+</Aside>
