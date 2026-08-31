@@ -22,15 +22,17 @@ nad vašimi soubory udělá.
 1. **Vyberte pracovní složku.** Otevřete v OpenWorku složku se soubory, se
    kterými má agent pracovat. Tahle složka je jeho **pracovní prostor** — vidí
    jen to, co je v ní.
-2. **Zadejte úkol vlastními slovy.** Napište, co potřebujete — třeba
+2. **Vyberte model.** V chatu v přepínači modelů (anglicky **model picker**)
+   zvolte, s jakým modelem chcete pracovat (pro start doporučujeme
+   **GLM 5.3 Flash**).
+3. **Zadejte úkol vlastními slovy.** Do chatu napište, co potřebujete — třeba
    „*projdi tyhle faktury a udělej přehled částek po měsících*" nebo
-   „*najdi v těch dokumentech všechny termíny a sepiš je do seznamu*".
-3. **Sledujte, co agent dělá.** Agent vám ukáže, jak postupuje, a u důležitých
+   „*najdi v těch dokumentech všechny termíny a sepiš je do seznamu*" — a
+   odešlete.
+4. **Sledujte, co agent dělá.** Agent vám ukáže, jak postupuje, a u důležitých
    kroků se zeptá. Nic zásadního neudělá bez vašeho vědomí.
-4. **Zkontrolujte výsledek.** Projděte, co agent připravil. Když něco nesedí,
+5. **Zkontrolujte výsledek.** Projděte, co agent připravil. Když něco nesedí,
    klidně mu to řekněte a nechte to upravit.
-
-[DOPLNIT: přesné názvy tlačítek a obrazovek v aplikaci OpenWork.]
 
 ## Co se děje s vašimi soubory
 

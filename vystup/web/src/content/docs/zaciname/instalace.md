@@ -17,24 +17,23 @@ i **Linux**.
 ## 2. Nainstalujte a spusťte
 
 Otevřete stažený soubor a projděte instalací jako u jakékoli jiné aplikace.
-Po dokončení OpenWork spusťte.
-
-[DOPLNIT: konkrétní kroky pro Windows, macOS a Linux — ověřit podle instalátoru
-na openworklabs.com.]
-
-:::note
-Pokud systém u stažené aplikace hlásí varování (že pochází z internetu), je to
-běžné u nově vydaných programů. [DOPLNIT: doporučený postup pro každý systém.]
-:::
+Po dokončení OpenWork spusťte. K prvnímu spuštění nepotřebujete cloud ani účet —
+aplikace běží u vás na počítači.
 
 ## 3. Připojte první bránu k modelům
 
 Aby agent mohl pracovat, potřebuje přístup k nějakému AI modelu. Nejjednodušší
 je nastavit si **[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)** — bránu,
-přes kterou se dostanete k dobrým modelům. Jako výchozí doporučujeme
-**GLM 5.3 Flash**.
+přes kterou se dostanete k dobrým modelům. Aplikace je v angličtině, takže
+názvy tlačítek uvádíme anglicky:
 
-[DOPLNIT: kde přesně se v aplikaci brána a klíč zadávají.]
+1. Klikněte na **svůj profil vlevo dole** a otevřete **Settings** (nastavení).
+2. Přejděte do **AI Providers** a klikněte na **Connect**.
+3. Vyhledejte **opencode** a zvolte **OpenCode Go**.
+4. Klikněte na **Connect** a vložte svůj **OpenCode API key** (klíč = přístupové
+   heslo pro aplikace).
+5. V chatu si pak v přepínači modelů (**model picker**) vyberete model — jako
+   výchozí doporučujeme **GLM 5.3 Flash**.
 
 ## Co budete potřebovat
 

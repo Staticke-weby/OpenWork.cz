@@ -49,7 +49,8 @@ Smysl to dává hlavně tehdy, když **data opravdu nesmí opustit váš stůl**
 u profesí s mlčenlivostí) nebo když chcete běžet **bez internetu** — a zároveň
 máte dost výkonný počítač. OpenWork staví na nástroji **opencode**, který
 lokální modely umí (přes **Ollama**, **LM Studio** nebo **llama.cpp**).
-[DOPLNIT: konkrétní kroky přímo v aplikaci OpenWork.]
+V aplikaci je připojíte jako vlastní model (v angličtině: **Settings → AI
+Providers → Add a custom LLM**), kde zadáte adresu svého lokálního serveru.
 
 ## Jak si vybrat
 

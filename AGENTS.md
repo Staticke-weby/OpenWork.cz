@@ -18,6 +18,10 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - **Nevymýšlej neobvyklá ani krkolomná slova** (např. „změnovník"). Použij
   běžný, zavedený český výraz („historie změn"). Když si nejsi jistý, zvol
   to nejobyčejnější pojmenování.
+- **UI OpenWorku je anglicky** (aplikace nemá češtinu). Názvy tlačítek a
+  obrazovek uváděj **anglicky, jak je uživatel vidí** (Settings, AI Providers,
+  Connect, model picker…), a doplň krátké české vysvětlení. Přesné popisky ber
+  z dokumentace na `openworklabs.com/docs`.
 - Názvy produktů zůstávají v originále: OpenWork, opencode, OpenCode Zen,
   OpenCode Go, Cortecs, MCP, Astro. Při prvním výskytu na stránce je jednou
   větou vysvětli.
@@ -41,6 +45,11 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   3. **Lokální AI modely** — jen okrajově, pro menšinu (citlivá data / offline
      + výkonný počítač). Nenech se jimi unést; většině lidí se nevyplatí.
   Výchozí doporučený model (současný, ověřovat hlídačem): **GLM 5.3 Flash**.
+- **Napojení nástrojů (MCP):** agent připojuje další služby přes MCP. **Nativní
+  MCP preferuj** — kde má služba vlastní MCP server, připojí se přímo. Kde
+  vlastní MCP nemá, doporuč **Composio** (`composio.dev`) jako most (1000+
+  integrací přes MCP, má bezplatný plán). Composio jen jako záloha, ne první
+  volba.
 
 ## Co smíš
 

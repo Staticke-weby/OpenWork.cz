@@ -45,13 +45,20 @@ Když AI používá víc lidí, nemusí mít každý vlastní předplatné. Sta�
 a svůj strop útraty. Jak to funguje, popisuje stránka
 [Společná peněženka](/kolik-to-stoji/spolecna-penezenka/).
 
-:::note
-OpenWork nabízí i placený **týmový plán** s centrální správou (prvních pár míst
-zdarma, pak měsíční poplatek za místo) a firemní variantu s provozem na vlastním
-serveru. [DOPLNIT: aktuální ceny týmového a firemního plánu — ověřit na
-openworklabs.com.] Pro jednotlivce a domácnost je ale desktopová aplikace
-zdarma.
-:::
+### A co placené plány OpenWorku?
+
+Kromě zdarma aplikace nabízí OpenWork i placené plány s centrální správou pro
+týmy a firmy (ceny k 31. srpnu 2026):
+
+| Plán | Cena | Pro koho |
+|---|---|---|
+| **Zdarma** | 0 Kč, do 5 uživatelů | jednotlivci a malé týmy; desktopová aplikace, provoz na vlastním serveru, komunitní podpora |
+| **Team** | 20 $ za místo měsíčně, do 100 uživatelů | týmy; marketplace rozšíření, sdílení klíčů v týmu, standardní podpora |
+| **Enterprise** | 50 $ za uživatele měsíčně | firmy; přihlášení SSO/SAML, správa oprávnění, politiky, vlastní/self-hosted modely |
+
+Cena je stejná pro cloud i provoz na vlastním serveru. **Pro jednotlivce
+a domácnost je ale desktopová aplikace zdarma** — placené plány řeší hlavně
+správu více lidí.
 
 ---
 

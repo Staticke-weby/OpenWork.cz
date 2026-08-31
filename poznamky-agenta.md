@@ -82,11 +82,18 @@ změně webu). Použitá tvrzení na homepage:
   zvolenému poskytovateli; cloud workers volitelné a sandboxované.
 - **Open-source alternativa k Claude Cowork a Codexu**, „feature parity" bez
   svázání s jedním dodavatelem; existuje migrační průvodce pro Cowork.
-- Ceník (NEuvedeno na homepage, ale k dispozici): Team Starter prvních 5 míst
-  zdarma, pak 10 $ / místo / měsíc; Enterprise custom + self-host / vlastní
-  inference. ⚠ Kvůli tomu jsem na homepage **vypustil tvrzení „žádný paušál za
-  hlavu"** — Team plán je per-seat, bylo by to nepřesné. Homepage tvrdí jen:
-  aplikace zdarma, za AI platíš poskytovateli za spotřebu, řada modelů zdarma.
+- Ceník (aktualizováno 2026-08-31 z openworklabs.com/pricing): **Free 0 do 5
+  uživatelů; Team 20 $/místo/měs. do 100 uživatelů; Enterprise 50 $/uživatel/měs.**
+  (SSO/SAML, self-host, vlastní modely). Stejná cena cloud i self-host.
+  ⚠ Ceník se mění (dřívější fetch uváděl jiné hodnoty) — ověřovat.
+  Na homepage jsem **vypustil tvrzení „žádný paušál za hlavu"** — Team plán je
+  per-seat. Homepage tvrdí jen: aplikace zdarma, za AI platíš za spotřebu.
+- **UI OpenWorku je anglicky** — UI popisky psát anglicky + české vysvětlení
+  (pravidlo v AGENTS.md). Zdroj: openworklabs.com/docs.
+- **Napojení nástrojů:** MCP; napojení OpenCode Go = Settings → AI Providers →
+  Connect → opencode → OpenCode Go → API key. Nativní MCP preferovat; kde chybí,
+  **Composio** (composio.dev, 1000+ integrací, free plán). Nová stránka
+  `prace-se-slozkou/napojeni-nastroju`.
 
 ## Zdroje, hlídač a odkazy (2026-08-31)
 

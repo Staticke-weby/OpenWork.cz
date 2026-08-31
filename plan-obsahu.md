@@ -81,7 +81,7 @@ Rychlé stránky, které navazují na hero a nosné stránky.
 | Vaše data | `vase-data/index`, `vase-data/zdr/index` (co je ZDR, prosa), `gdpr-a-nis2`, `bezpecnost` |
 | Kolik to stojí | `kolik-to-stoji/spolecna-penezenka` |
 | Modely | `modely/index`, `modely/nejlepsi-pro/kod`, `.../cestinu`, `.../domacnost` (prosa + doporučení; tvrdá data až ve vlně 4) |
-| Práce se složkou | `prace-se-slozkou/zaklady`, `struktura-slozek`, `agents-md` |
+| Práce se složkou | `prace-se-slozkou/zaklady`, `struktura-slozek`, `agents-md`, ✅ `napojeni-nastroju` (MCP + Composio — nová) |
 
 Klíčová slova této vlny: nulové uchovávání dat / ZDR, GDPR AI, nejlepší AI na
 češtinu, nejlepší AI na kód, lokální AI pro domácnost, soubor AGENTS.md.

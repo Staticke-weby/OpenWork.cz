@@ -16,11 +16,15 @@ připraví přehled. Nemusíte nic programovat, stačí napsat, co potřebujete.
 
 ## K čemu se hodí
 
-- Projít a shrnout vlastní dokumenty, tabulky nebo poznámky.
-- Připravit nebo upravit soubory podle zadání.
-- Zautomatizovat opakovanou práci s vlastními daty.
+- **Projít a shrnout vlastní soubory** — třeba z hromady faktur udělat přehled
+  částek po měsících, nebo z dokumentů vypsat všechny termíny do seznamu.
+- **Ovládnout vestavěný prohlížeč** — OpenWork umí sám otevřít stránku, přečíst
+  její obsah, vyplnit formulář nebo se proklikat na informaci, kterou hledáte.
+- **Připravit texty a oslovení** — návrhy e-mailů nebo zpráv na míru podle
+  vašich podkladů.
 
-[DOPLNIT: 2–3 konkrétní příklady z praxe pro běžného člověka.]
+Chcete agentovi dát přístup i k dalším službám (e-mail, kalendář, GitHub)?
+Připojíte je přes [MCP a Composio](/prace-se-slozkou/napojeni-nastroju/).
 
 ## Na čem stojí
 

@@ -18,12 +18,12 @@ Coworku dokonce nabízí návod na přechod.
 
 | | OpenWork | Claude Cowork / Codex |
 |---|---|---|
-| **Cena aplikace** | zdarma | placené / předplatné [DOPLNIT: ceny] |
+| **Cena aplikace** | zdarma (do 5 uživatelů; tým 20 $/místo, firma 50 $/uživatel měsíčně) | placené — Cowork přes předplatné Claude / účet Anthropic, Codex přes OpenAI |
 | **Otevřený kód** | ano — můžete si ověřit, jak funguje | ne (uzavřené) |
-| **Výběr modelů** | přes 50 modelů od různých poskytovatelů | zpravidla modely jednoho dodavatele |
+| **Výběr modelů** | přes 50 modelů od různých poskytovatelů | modely jednoho dodavatele (Cowork = Anthropic, Codex = OpenAI) |
 | **Lokální AI modely** | ano (běží u vás na počítači) | [DOPLNIT: ověřit] |
-| **Kde jsou data** | v desktop režimu zůstávají u vás | u dodavatele [DOPLNIT: ověřit] |
-| **Účet nutný k začátku** | ne | [DOPLNIT: ověřit] |
+| **Kde jsou data** | v desktop režimu zůstávají u vás | u dodavatele [DOPLNIT: ověřit retenci] |
+| **Účet nutný k začátku** | ne | ano (účet u dodavatele) |
 
 ## Co to znamená v praxi
 
@@ -35,6 +35,21 @@ Coworku dokonce nabízí návod na přechod.
 - **Data máte pod kontrolou.** Můžete zvolit
   [lokální AI modely](/vase-data/kde-bezi-vypocet/) nebo poskytovatele
   s [nulovým uchováváním dat](/vase-data/zdr/).
+
+## Přechod z Coworku je snadný
+
+Používáte Claude Cowork a zvažujete přechod? Podle tvůrců OpenWork **nemusíte
+nic budovat znovu**. Přenese se:
+
+- **Soubory** — otevřete stejnou složku, nic nenahráváte znovu.
+- **Dovednosti (skills)** ve formátu `SKILL.md` a **pluginy** kompatibilní
+  s Claude.
+- **Připojené nástroje (MCP servery)** — znovu je připojíte.
+- **Modely** — můžete dál používat modely od Anthropicu, přidat jiného
+  poskytovatele, nebo je nechat spravovat centrálně (OpenWork je nezávislý na
+  konkrétním dodavateli modelů).
+
+Nepřenáší se automaticky **historie konverzací** — tu je potřeba počítat zvlášť.
 
 ## Kdy zvolit co
 
@@ -50,7 +65,9 @@ bránu k modelům.
 
 ---
 
-**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) (pozice vůči
-Coworku a Codexu, funkce, migrace). Údaje o Claude Cowork a Codexu označené
-`[DOPLNIT]` je potřeba ověřit z jejich oficiálních zdrojů, než je zveřejníme.
-Naposledy ověřeno 31. srpna 2026.
+**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/) — ceník,
+pozice „otevřená alternativa k Claude Cowork" a
+[návod na přechod z Coworku](https://openworklabs.com/docs/start-here/migrate-from-claude-cowork.md).
+Zbylé údaje o Claude Cowork a Codexu označené `[DOPLNIT]` ověříme z jejich
+oficiálních zdrojů. Ceny se mění — naposledy ověřeno 31. srpna 2026,
+změny v [historii změn](/o-webu/historie-zmen/).

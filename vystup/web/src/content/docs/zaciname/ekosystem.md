@@ -36,8 +36,10 @@ potřebujete, aby data nezpracovával server mimo EU. Víc na stránce o
 ## MCP — připojení dalších služeb
 
 **MCP** je způsob, jak agent připojí další službu nebo nástroj — aby uměl víc
-než jen pracovat se soubory ve složce. [DOPLNIT: 1–2 konkrétní příklady, k čemu
-se MCP v OpenWorku hodí.]
+než jen pracovat se soubory ve složce (třeba e-mail, kalendář nebo GitHub).
+Kde má služba **vlastní MCP server**, připojíte ho přímo; kde ho nemá, poslouží
+**Composio** jako most k tisícům služeb. Podrobně na stránce
+[Napojení nástrojů: MCP a Composio](/prace-se-slozkou/napojeni-nastroju/).
 
 ## Jak to zapadá dohromady
 
