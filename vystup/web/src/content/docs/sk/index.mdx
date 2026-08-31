@@ -1,17 +1,95 @@
 ---
-title: OpenWork.sk
-description: Nezávislý sprievodca prácou s AI agentmi nad vlastnými súbormi.
+title: OpenWork.cz
+description: Zadarmo a s otvoreným kódom. AI nad vašimi súbormi, dáta pod vašou kontrolou — otvorená alternatíva k plateným nástrojom ako Claude Cowork.
 template: splash
+head:
+  - tag: title
+    content: OpenWork.cz — AI agenti zadarmo nad vašimi súbormi (alternatíva Claude Cowork alebo Codex)
 hero:
-  tagline: Sprievodca prácou s AI agentmi nad vlastnými súbormi — zrozumiteľne a bez uzamknutia.
+  title: Všetko, čo dnes AI vie.
+  tagline: Zadarmo a s otvoreným kódom. AI pracuje nad vašimi súbormi, dáta zostávajú u vás — a platíte, len keď musíte.
   actions:
-    - text: Začať
+    - text: Stiahnuť OpenWork zadarmo
+      link: https://openworklabs.com/download
+      icon: download
+    - text: Začať od začiatku
       link: /sk/zaciname/co-je-openwork/
       icon: right-arrow
+      variant: minimal
 ---
 
-{/* Ukážková slovenská stránka. Preklady ostatných stránok prídu v neskoršom
-    úkole — Starlight u chýbajúcich prekladov zobrazí český obsah s upozornením. */}
+import { Card, CardGrid, LinkCard, Aside } from '@astrojs/starlight/components';
 
-Toto je slovenská mutácia webu. Zatiaľ je pripravená len úvodná stránka;
-ostatný obsah sa preloží neskôr.
+## Čo robíme inak
+
+<CardGrid>
+  <Card title="Zadarmo a s otvoreným kódom" icon="heart">
+    Aplikácia OpenWork je zadarmo, má otvorený kód a nepotrebujete ani účet,
+    aby ste začali — ktokoľvek si môže overiť, ako funguje a čo robí s vašimi
+    súbormi. Je to otvorená alternatíva k plateným nástrojom ako Claude Cowork
+    alebo Codex, ale bez zviazania s jednou firmou.
+    [Stiahnuť zadarmo →](https://openworklabs.com/download)
+  </Card>
+  <Card title="Vaše dáta zostávajú u vás" icon="approve-check">
+    Pracujete nad vlastnými súbormi na svojom počítači — v tomto režime
+    zostávajú u vás. Vaše zadanie ide rovno vami zvolenému poskytovateľovi AI.
+    Poslať niečo do cloudu je voľba, nie nutnosť.
+  </Card>
+  <Card title="Platíte, len keď musíte" icon="setting">
+    Samotná aplikácia nič nestojí. Za AI platíte až svojmu poskytovateľovi
+    modelu — a len za to, čo naozaj využijete. Kopu práce navyše zvládnete
+    s modelmi, ktoré sú úplne zadarmo.
+  </Card>
+  <Card title="Vyberiete si z mnohých AI modelov" icon="puzzle">
+    OpenWork vie vyše 50 modelov od rôznych poskytovateľov — iný sa hodí na
+    písanie po slovensky, iný na programovanie. Nie ste zviazaní s jednou
+    firmou; [poradíme, ktorý zvoliť](/sk/modely/).
+  </Card>
+</CardGrid>
+
+## Pre koho je OpenWork
+
+<CardGrid>
+  <LinkCard
+    title="Firma alebo živnostník"
+    href="/sk/kolik-to-stoji/"
+    description="Chcete platiť za skutočnú spotrebu, nie za počet ľudí? Pozrite sa, z čoho sa cena skladá."
+  />
+  <LinkCard
+    title="Domácnosť"
+    href="/sk/vase-data/"
+    description="Zaujíma vás hlavne, kde vaše dáta končia? Začnite pri tom, čo zostáva u vás."
+  />
+  <LinkCard
+    title="Študent"
+    href="/sk/kolik-to-stoji/bezplatne-urovne/"
+    description="Chcete začať bez platenia? Pozrite si bezplatné úrovne poskytovateľov."
+  />
+  <LinkCard
+    title="Profesie s mlčanlivosťou"
+    href="/sk/vase-data/zdr/"
+    description="Dáta nesmú nikam odísť? Prečítajte si o nulovom uchovávaní dát (ZDR)."
+  />
+</CardGrid>
+
+## Ktorou cestou začať
+
+<Aside type="tip" title="Rýchle rozhodnutie">
+Začnite s [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) — bránou k modelom
+od tvorcov základu, na ktorom OpenWork stavia. Siahnite po [Cortecs](/sk/vase-data/zdr/),
+európskej bráne k modelom, keď dáta nesmú opustiť Európu. A po [lokálnych AI
+modeloch](/sk/vase-data/kde-bezi-vypocet/) — ktoré bežia priamo u vás na počítači —
+keď dáta nesmú opustiť váš stôl.
+</Aside>
+
+## Nový tu?
+
+Nevadí. Prejdite si [Začíname](/sk/zaciname/co-je-openwork/) krok za krokom, alebo
+si nechajte po ruke [slovník pojmov](/sk/zaciname/slovnik-pojmu/) — vysvetľujeme
+každé cudzie slovo hneď, ako padne.
+
+<Aside type="note" title="Kto za webom stojí">
+OpenWork.cz je nezávislá iniciatíva — nie sme spojení s tvorcami aplikácie
+OpenWork a nič vám nepredávame. Čo je na webe nové, nájdete v
+[histórii zmien](/sk/o-webu/historie-zmen/).
+</Aside>

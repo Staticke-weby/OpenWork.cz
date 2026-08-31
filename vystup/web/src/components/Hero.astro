@@ -10,15 +10,20 @@ const title = hero.title ?? route.entry.data.title;
 const tagline = hero.tagline ?? '';
 const actions = hero.actions ?? [];
 
-// Krátká stvrzení pilířů (jen text + fajfka, ne diagram).
-const chips = ['Zdarma a otevřený kód', 'Data zůstávají u vás', 'Platíte, jen když musíte'];
+const jeSk = Astro.currentLocale === 'sk';
+
+// Nadřádek a krátká stvrzení pilířů — jazyková mutace.
+const eyebrow = jeSk ? 'Sprievodca pre bežných ľudí' : 'Průvodce pro běžné lidi';
+const chips = jeSk
+  ? ['Zdarma a otvorený kód', 'Dáta zostávajú u vás', 'Platíte, len keď musíte']
+  : ['Zdarma a otevřený kód', 'Data zůstávají u vás', 'Platíte, jen když musíte'];
 ---
 
 <div class="ow-hero">
   <div class="ow-hero__glow" aria-hidden="true"></div>
 
   <div class="ow-hero__inner">
-    <p class="ow-hero__eyebrow">Průvodce pro běžné lidi</p>
+    <p class="ow-hero__eyebrow">{eyebrow}</p>
 
     <h1 class="ow-hero__title" set:html={title} />
 
