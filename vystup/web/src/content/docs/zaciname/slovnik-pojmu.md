@@ -43,5 +43,7 @@ Tyto názvy nemá smysl překládat — jen je jednou vysvětlíme.
 - **AGENTS.md** — soubor s pravidly pro agenta.
 - **Markdown (.md)** — obyčejný text s jednoduchými značkami; formát, do
   kterého agent píše výstupy ([víc tady](/prace-se-slozkou/soubory-md/)).
+- **dovednost (skill)** — uložený postup, který si agent načte, když úkol
+  odpovídá ([víc tady](/prace-se-slozkou/dovednosti-skills/)).
 - **token** — kousek textu, po kterých se počítá spotřeba.
 - **GDPR**, **NIS2**, **Astro** a názvy modelů (GLM, Qwen, Llama…) zůstávají také v originále.

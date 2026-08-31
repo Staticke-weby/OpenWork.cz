@@ -33,6 +33,10 @@ můžete rovnou vyzkoušet nad vlastní složkou:
   papírové smlouvy a vizitky převedené na text a tabulky.
 - **[Překlady dokumentů](/co-vytvorite/preklady/)** — smlouvy, manuály
   a korespondence se zachovaným formátem.
+- **[Automatizace v prohlížeči](/co-vytvorite/prohlizec/)** — agent otevře
+  web, přečte ho, klikne a vyplní formulář z vašich podkladů.
+- **[Automatizace činností](/co-vytvorite/automatizace/)** — skripty,
+  připojené systémy a postupy uložené jako dovednosti k opakování.
 
 ## Jak začít
 

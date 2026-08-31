@@ -9,6 +9,16 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 31. augusta 2026 — automatizácia a zručnosti
+
+- [Automatizácia v prehliadači](/sk/co-vytvorite/prohlizec/) — agent
+  otvorí web, prečíta ho, klikne a vyplní formulár z podkladov.
+- [Automatizácia činností](/sk/co-vytvorite/automatizace/) — skripty,
+  pripojené systémy a opakovateľné postupy.
+- [Zručnosti (skills)](/sk/prace-se-slozkou/dovednosti-skills/) — čo sú
+  a ako z hotovej práce urobiť postup na jednu vetu; pojem pridaný do
+  slovníka.
+
 ## 31. augusta 2026 — nová stránka o súboroch .md
 
 - [Súbory .md (Markdown)](/sk/prace-se-slozkou/soubory-md/) — čo to je,

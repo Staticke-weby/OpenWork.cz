@@ -34,6 +34,10 @@ môžete rovno vyskúšať nad vlastným priečinkom:
   papierové zmluvy a vizitky prevedené na text a tabuľky.
 - **[Preklady dokumentov](/sk/co-vytvorite/preklady/)** — zmluvy, manuály
   a korešpondencia so zachovaným formátom.
+- **[Automatizácia v prehliadači](/sk/co-vytvorite/prohlizec/)** — agent
+  otvorí web, prečíta ho, klikne a vyplní formulár z vašich podkladov.
+- **[Automatizácia činností](/sk/co-vytvorite/automatizace/)** — skripty,
+  pripojené systémy a postupy uložené ako zručnosti na opakovanie.
 
 ## Ako začať
 
