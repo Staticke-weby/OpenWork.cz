@@ -74,7 +74,7 @@ Rychlé stránky, které navazují na hero a nosné stránky.
 
 ---
 
-## Vlna 3 — doplňkové stránky (prosa) 🟡→✅
+## Vlna 3 — doplňkové stránky (prosa) ✅ hotovo
 
 | Sekce | Stránky |
 |---|---|
