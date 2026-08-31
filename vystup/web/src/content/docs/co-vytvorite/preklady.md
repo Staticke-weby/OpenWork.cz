@@ -26,21 +26,45 @@ odstavcích. U pracovních dokumentů drží terminologii podle vašeho slovní�
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Dvojjazyčně po odstavcích — kontrola je pak snadná:**
+
 ```text
 Přelož smlouvu smlouvy/contract-en.pdf do češtiny. Zachovej číslování
 článků a vytvoř dvojjazyčnou verzi: originál a překlad po odstavcích
 vedle sebe.
 ```
 
+**Řekněte účel — překlad se mu přizpůsobí:**
+
 ```text
 Přelož manuál manualy/geraet-handbuch.pdf z němčiny a zkrať ho na
 pracovní postup pro obsluhu: jen kroky, které se týkají běžného provozu.
 ```
 
+**Koncepty odpovědí jen ke kontrole, ne k odeslání:**
+
 ```text
 Ve složce korespondence/ je e-mail od italského dodavatele. Přelož mi ho
 a připrav anglicky psanou odpověď: potvrzujeme objednávku, žádáme dodání
-do konce měsíce.
+do konce měsíce. Nikam nic neodesílej — koncept ulož do vystup/.
+```
+
+**Terminologii držte slovníčkem:**
+
+```text
+Přelož dokumenty ve složce podklady-en/ do češtiny a drž se slovníčku
+ve vzory/slovnicek.md (např. „delivery" vždy „dodávka"). Termíny, které
+ve slovníčku nejsou, vypiš zvlášť — doplním je.
+```
+
+**Cizí i vlastní překlad si nechte zkontrolovat proti originálu:**
+
+```text
+Porovnej můj překlad vystup/preklad.md s originálem original-en.md:
+vypiš místa, kde se význam liší nebo kde něco chybí. Nepřepisuj — jen
+seznam s odkazy na odstavce.
 ```
 
 :::caution

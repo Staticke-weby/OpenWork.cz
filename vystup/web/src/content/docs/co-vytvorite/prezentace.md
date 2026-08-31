@@ -23,20 +23,45 @@ Struktura je konzistentní a na nic z podkladů se nezapomene.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Řekněte publikum, rozsah a tón:**
+
 ```text
 Z podkladů ve složce projekt/ udělej prezentaci na 10 slidů pro vedení:
 cíl, stav, čísla, rizika, další kroky. Střídmě, bez ozdob. Ke každému
 slidu přidej poznámky pro řečníka.
 ```
 
+**Jen ze skutečných podkladů — díry označit:**
+
 ```text
 Z ceníku a popisu služeb ve složce nabidka/ připrav prezentaci na
 obchodní schůzku: problém zákazníka, naše řešení, cena, reference.
+Vycházej jen z podkladů — co v nich chybí (třeba reference), označ
+[DOPLNIT], nevymýšlej.
 ```
+
+**Nejdřív struktura, pak výroba:**
 
 ```text
 Navrhni osnovu prezentace o bezpečnosti hesel pro kolegy: 15 minut,
-lidé bez technického vzdělání. Zatím jen strukturu a klíčové body.
+lidé bez technického vzdělání. Zatím jen strukturu a klíčové body —
+slidy vyrobíme, až osnovu schválím.
+```
+
+**Doplnění k hotovému — bez zásahů do zbytku:**
+
+```text
+K hotové prezentaci ve vystup/prezentace-projekt.md doplň poznámky pro
+řečníka: ke každému slidu 3–4 věty a odhad času. Slidy samotné neměň.
+```
+
+**Při krácení chtějte nejdřív návrh škrtů:**
+
+```text
+Potřebuju z 10 slidů udělat 5 na desetiminutovou verzi. Napiš mi
+nejdřív, co navrhuješ vypustit a proč — zkrátíme, až to odsouhlasím.
 ```
 
 :::tip

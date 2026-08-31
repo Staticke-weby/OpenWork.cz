@@ -27,20 +27,46 @@ A rozhodnutie (kúpiť, reklamovať, odvolať sa) má pod sebou čísla, nie poc
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Dajte agentovi všetky podklady a chcite nárok so zdôvodnením:**
+
 ```text
 Chcem reklamovať práčku. V priečinku reklamacia/ je bloček, záručný list
-a fotky závady. Zisti, na čo mám nárok, a priprav text reklamácie.
+a fotky závady. Zisti, na čo mám nárok, a priprav text reklamácie — pri
+nároku napíš, z čoho vychádza. Nikam nič neodosielaj.
 ```
+
+**Varianty počítať s rovnakými predpokladmi — a predpoklady vypísať:**
 
 ```text
 Do vystup/ priprav podklad na rozhodnutie, či auto kúpiť, alebo mať
 na operatívny leasing: použi ponuky v priečinku auto/ a spočítaj
-náklady na tri roky pri oboch variantoch.
+náklady na tri roky pri oboch variantoch. Predpoklady výpočtu (nájazd,
+poistenie, servis) vypíš — nech vidím, čo porovnávam.
 ```
+
+**Časová os s odkazom na každý dokument:**
 
 ```text
 Z korešpondencie v priečinku spor-dodavatel/ poskladaj časovú os: čo kto
 kedy poslal a čo sľúbil. Ku každému bodu odkáž na konkrétny súbor.
+```
+
+**Rešerš so zdrojmi a dátumom — a s označením neovereného:**
+
+```text
+Zisti cez prehliadač aktuálne podmienky troch dodávateľov elektriny pre
+domácnosť a spíš porovnanie. Pri každom údaji uveď zdroj (odkaz)
+a dátum, kedy si ho našiel. Čo sa nepodarilo overiť, označ — neodhaduj.
+```
+
+**Odpoveď úradu: len z podkladov, so zoznamom toho, čo dodať:**
+
+```text
+Z výzvy v urad/vyzva.pdf a našich podkladov priprav koncept odpovede.
+Každé tvrdenie opri o konkrétny dokument; kde podklad chýba, napíš
+zoznam, čo mám dodať. Koncept ulož do vystup/ — nikam ho neodosielaj.
 ```
 
 :::caution

@@ -27,19 +27,47 @@ kedykoľvek zopakovať nad novými dátami.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Presné stĺpce a čo s chýbajúcimi údajmi:**
+
 ```text
 Zo všetkých faktúr v priečinku faktury/2026/ vytvor tabuľku pre Excel:
 dodávateľ, suma, dátum, kategória. Pridaj list so súčtami po mesiacoch.
+Chýbajúce údaje nechaj prázdne a pridaj stĺpec Poznámka — nič nedomýšľaj.
 ```
 
+**Rozdiely označiť, nie rozhodovať naslepo:**
+
 ```text
-Zlúč adresy z kontakty-web.csv a kontakty-telefon.xlsx do jednej tabuľky,
-odstráň duplicity a označ záznamy, kde sa údaje líšia.
+Zlúč adresy z kontakty-web.csv a kontakty-telefon.xlsx do jednej
+tabuľky, odstráň jasné duplicity a záznamy, kde sa údaje líšia, označ
+v stĺpci Rozdiel — rozhodnem o nich sám.
 ```
+
+**Kategórie vymenovať a nezaraditeľné chcieť zvlášť:**
 
 ```text
 Z výpisov v priečinku financie/ urob rozbor výdavkov za polrok po
-kategóriách a pridaj graf vývoja po mesiacoch.
+kategóriách (bývanie, jedlo, doprava, ostatné) a pridaj graf vývoja po
+mesiacoch. Čo sa nedá jednoznačne zaradiť, daj do „nezaradené" a vypíš
+zvlášť.
+```
+
+**Kontrola dát: najprv zoznam nálezov, žiadne tiché opravy:**
+
+```text
+Skontroluj tabuľku klienti.xlsx: nájdi chýbajúce e-maily, zlé formáty
+telefónov a duplicitné riadky. Nič neopravuj — vypíš mi zoznam nálezov
+s číslom riadku a návrhom opravy.
+```
+
+**Opakovaný prehľad podľa hotového vzoru:**
+
+```text
+Z faktúr v priečinku faktury/2026-09/ urob rovnaký prehľad ako vo
+vystup/prehlad-2026-08.xlsx — rovnaké stĺpce, rovnaké listy, rovnaké
+zoradenie, len nové dáta.
 ```
 
 :::tip

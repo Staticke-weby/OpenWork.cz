@@ -26,21 +26,46 @@ v jednej tabuľke.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Rovnaké kritériá pre všetky — a otázky na doptanie:**
+
 ```text
 Porovnaj tri ponuky v priečinku ponuky-okna/ do tabuľky: cena, čo je
 v cene, záruka, termín, platobné podmienky. Pod tabuľku napíš, na čo sa
 pri ktorej ponuke doptať.
 ```
 
+**Každú zmenu s oboma zneniami a odkazom na článok:**
+
 ```text
 Porovnaj novú verziu zmluvy s vlaňajšou (zmluvy/poistenie-2025.pdf
-a poistenie-2026.pdf) a vypíš každú zmenu: čo bolo, čo je a čo to
-pre mňa znamená.
+a poistenie-2026.pdf) a vypíš každú zmenu: číslo článku, čo bolo, čo je
+a čo to pre mňa znamená.
 ```
+
+**Čo chýba, je rovnako dôležité ako čo prebýva:**
 
 ```text
 Porovnaj návrh zmluvy s naším vzorom vo vzory/kupna-zmluva.md
-a vypíš, v čom sa líšia a ktoré ustanovenia v návrhu chýbajú.
+a vypíš, v čom sa líšia, ktoré ustanovenia vzoru v návrhu chýbajú
+a čo je v návrhu navyše.
+```
+
+**Ceny najprv previesť na rovnaký základ — s viditeľným prepočtom:**
+
+```text
+Ponuky v priečinku ponuky-okna/ počítajú cenu každá inak (s DPH, bez
+DPH, za kus, za m²). Prepočítaj všetky na celkovú cenu bez DPH za celú
+zákazku a prepočty ukáž — nech ich môžem skontrolovať.
+```
+
+**Z porovnania vytiahnuť riziká s odkazmi:**
+
+```text
+Z porovnania vo vystup/porovnanie.md vypíš päť najväčších rizík — pri
+každom odkaz na konkrétne ustanovenie a otázku, ktorú mám dodávateľovi
+položiť, než podpíšem.
 ```
 
 :::caution

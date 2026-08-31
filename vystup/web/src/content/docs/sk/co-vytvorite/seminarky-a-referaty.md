@@ -32,21 +32,45 @@ text spoznať a pravidlá akademickej poctivosti platia aj pre AI.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Pri výpiskoch chcite označené zdroje — kvôli citáciám aj kontrole:**
+
 ```text
 Zo zdrojov v priečinku zdroje/ urob výpisky k téme „obnoviteľná energia
 na Slovensku": ku každému zdroju hlavné tvrdenia a čísla, s označením,
 odkiaľ sú.
 ```
 
+**Osnova s väzbou na zdroje — nech sa potom dobre píše:**
+
 ```text
 Navrhni osnovu referátu na 10 minút z výpiskov vo vystup/vypisky.md:
-úvod, tri hlavné body, záver. Ku každému bodu napíš, čo zo zdrojov použiť.
+úvod, tri hlavné body, záver. Ku každému bodu napíš, čo zo zdrojov
+použiť.
 ```
+
+**Kontrola bez prepisovania — text je váš:**
 
 ```text
 Prečítaj si môj text v seminarky/praca.md a navrhni: čo chýba
 v štruktúre, kde je text nejasný a ktoré tvrdenie nemá zdroj. Text sám
-neprepisuj.
+neprepisuj — len zoznam pripomienok s odkazom na odseky.
+```
+
+**Nechajte si spísať protiargumenty — obhajoba neprekvapí:**
+
+```text
+K argumentácii v seminarky/praca.md spíš najsilnejšie protiargumenty
+a ku každému napíš, kde v texte naň odpovedám — a kde odpoveď chýba.
+```
+
+**Literatúra len z toho, čo je v texte naozaj použité:**
+
+```text
+Prejdi seminarky/praca.md a zdroje v priečinku zdroje/. Zostav zoznam
+literatúry (STN ISO 690) len zo zdrojov, na ktoré sa v texte odkazujem.
+Chýbajúce údaje (rok, vydavateľ) označ — nedomýšľaj ich.
 ```
 
 ## Kadiaľ ďalej

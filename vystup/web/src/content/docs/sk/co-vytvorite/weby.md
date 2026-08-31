@@ -25,21 +25,46 @@ u dodávateľa.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Formát a obmedzenia povedzte vopred:**
+
 ```text
 Z textov v priečinku krcma/ vytvor jednostránkový web: otváracie hodiny,
 menu, kontakt a mapa. Čisté HTML a CSS, žiadny framework — jeden súbor,
 ktorý otvorím v prehliadači. Vzhľad jednoduchý a čitateľný aj na mobile.
 ```
 
+**Všetko v jednom súbore, nič sa nesťahuje z internetu:**
+
 ```text
-Vytvor pozvánku na svadbu ako jednu webovú stránku z podkladov v svadba/:
-miesto, čas, program, ako sa tam dostať, kontakt na svedkov. Čisté HTML
-a CSS, žiadny framework.
+Vytvor pozvánku na svadbu ako jednu webovú stránku z podkladov
+v svadba/: miesto, čas, program, ako sa tam dostať, kontakt na svedkov.
+Čisté HTML a CSS, žiadny framework — a nič, čo by sa načítavalo
+z cudzích serverov.
 ```
+
+**Presne vymedzte, čo sa smie meniť:**
 
 ```text
 V priečinku web/ je náš súčasný web. Pridaj sekciu s novou službou podľa
-podkladov v nova-sluzba.md a nič iné nemeň.
+podkladov v nova-sluzba.md a nič iné nemeň — vzhľad, texty ani odkazy
+ostatných sekcií.
+```
+
+**Najprv rozloženie, potom výroba:**
+
+```text
+Navrhni mi najprv rozloženie stránky ako zoznam sekcií s tým, čo v každej
+bude. HTML vytvor, až rozloženie schválim.
+```
+
+**Hotový web nechajte skontrolovať proti podkladom:**
+
+```text
+Prejdi hotový web/index.html a skontroluj: fungujú všetky odkazy? Sedia
+telefónne čísla, e-maily a otváracie hodiny s podkladmi v kontakty.md?
+Rozdiely vypíš, nič nemeň.
 ```
 
 :::tip

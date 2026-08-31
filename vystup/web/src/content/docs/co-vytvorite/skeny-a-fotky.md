@@ -26,21 +26,47 @@ je v tabulce — dá se prohledat, sečíst a doložit.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Nečitelné označit, ne odhadnout:**
+
 ```text
 Ve složce uctenky/ jsou fotky účtenek ze služební cesty. Vytvoř tabulku
 pro vyúčtování: datum, obchod, částka, co bylo koupeno. Nečitelné
-položky označ.
+položky označ — neodhaduj je.
 ```
 
+**Přejmenování a přesuny: nejdřív návrh, pak provedení:**
+
 ```text
-Projdi skeny ve složce sken-archiv/, každý soubor pojmenuj podle obsahu
-(typ dokumentu, protistrana, rok) a roztřiď je do složek smlouvy/,
-faktury/ a ostatni/.
+Projdi skeny ve složce sken-archiv/ a navrhni, jak každý soubor
+pojmenovat (typ dokumentu, protistrana, rok) a kam ho roztřídit
+(smlouvy/, faktury/, ostatni/). Ukaž mi seznam co → kam; přejmenuj
+a přesuň, až to schválím.
 ```
+
+**Přesné sloupce i pro kontakty:**
 
 ```text
 Z fotek vizitek ve složce vizitky/ udělej tabulku kontaktů: jméno,
-firma, funkce, telefon, e-mail.
+firma, funkce, telefon, e-mail. Kde údaj na vizitce není, nech buňku
+prázdnou.
+```
+
+**U důležitých čísel chtějte druhou kontrolu proti předloze:**
+
+```text
+Zkontroluj přepis ve vystup/uctenky.xlsx proti fotkám ve složce
+uctenky/: u částek nad 1 000 Kč porovnej každou s fotkou a označ řádky,
+kde si nejsi jistý — zkontroluju je sám.
+```
+
+**Ruční poznámky: co nejde přečíst, dostane otazník:**
+
+```text
+Přepiš ručně psané poznámky z fotek ve složce poznamky/ do jednoho
+textu ve vystup/. Slova, která nejdou spolehlivě přečíst, označ
+otazníkem — nedomýšlej je.
 ```
 
 :::tip

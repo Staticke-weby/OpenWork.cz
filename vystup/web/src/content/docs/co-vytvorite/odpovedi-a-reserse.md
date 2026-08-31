@@ -26,20 +26,46 @@ A rozhodnutí (koupit, reklamovat, odvolat se) má pod sebou čísla, ne pocit.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Dejte agentovi všechny podklady a chtějte nárok se zdůvodněním:**
+
 ```text
 Chci reklamovat pračku. Ve složce reklamace/ je účtenka, záruční list
-a fotky závady. Zjisti, na co mám nárok, a připrav text reklamace.
+a fotky závady. Zjisti, na co mám nárok, a připrav text reklamace —
+u nároku napiš, z čeho vychází. Nikam nic neodesílej.
 ```
+
+**Varianty počítat se stejnými předpoklady — a předpoklady vypsat:**
 
 ```text
 Do vystup/ připrav podklad pro rozhodnutí, zda auto koupit, nebo mít
 na operativní leasing: použij nabídky ve složce auto/ a spočítej
-náklady na tři roky u obou variant.
+náklady na tři roky u obou variant. Předpoklady výpočtu (nájezd,
+pojištění, servis) vypiš — ať vidím, co srovnávám.
 ```
+
+**Časová osa s odkazem na každý dokument:**
 
 ```text
 Z korespondence ve složce spor-dodavatel/ poskládej časovou osu: co kdo
 kdy poslal a co slíbil. Ke každému bodu odkaž na konkrétní soubor.
+```
+
+**Rešerše se zdroji a datem — a s označením neověřeného:**
+
+```text
+Zjisti přes prohlížeč aktuální podmínky tří dodavatelů elektřiny pro
+domácnost a sepiš srovnání. U každého údaje uveď zdroj (odkaz) a datum,
+kdy jsi ho našel. Co se nepodařilo ověřit, označ — neodhaduj.
+```
+
+**Odpověď úřadu: jen z podkladů, se seznamem toho, co dodat:**
+
+```text
+Z výzvy v urad/vyzva.pdf a našich podkladů připrav koncept odpovědi.
+Každé tvrzení opři o konkrétní dokument; kde podklad chybí, napiš
+seznam, co mám dodat. Koncept ulož do vystup/ — nikam ho neodesílej.
 ```
 
 :::caution

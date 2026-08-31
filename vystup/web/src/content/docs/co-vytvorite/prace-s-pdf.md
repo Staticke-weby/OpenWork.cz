@@ -27,20 +27,47 @@ nebo výroční zprávy přečte agent — vy dostanete to podstatné.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Popište přesné sloupce a co s nejistými údaji:**
+
 ```text
 Ve složce vypisy-pdf/ jsou výpisy z účtu za celý rok v PDF. Vytáhni
 všechny pohyby do jedné tabulky pro Excel: datum, protistrana, částka,
-poznámka.
+poznámka. Položky, u kterých si nejsi jistý, označ ve sloupci Poznámka —
+nic nedomýšlej.
 ```
+
+**U shrnutí chtějte odkazy na stránky, ať jde vše dohledat:**
 
 ```text
 Shrň PDF pojistne-podminky.pdf na jednu stranu: co je kryté, co je
-vyloučené, jaké jsou lhůty a na co si dát pozor.
+vyloučené, jaké jsou lhůty a na co si dát pozor. U každého bodu uveď
+číslo stránky, ze které vychází.
 ```
+
+**Originály nechte být — nový soubor vedle:**
 
 ```text
 Ze složky podklady-pdf/ vytáhni stránky s cenovými tabulkami do jednoho
-nového PDF a přidej úvodní stranu s obsahem.
+nového PDF a přidej úvodní stranu s obsahem. Původní soubory neměň,
+výsledek ulož do vystup/.
+```
+
+**Hledání napříč PDF — s citací přesného znění:**
+
+```text
+Ve složce smlouvy-pdf/ najdi všechny dokumenty, kde se mluví
+o automatickém prodloužení smlouvy. Vypiš soubor, stránku a přesné znění
+ustanovení — ať to můžu ověřit.
+```
+
+**Převod skenu na text — s označením nečitelných míst:**
+
+```text
+Převeď sken-smlouva.pdf na text do vystup/, zachovej členění článků.
+Špatně čitelná místa označ [NEČITELNÉ] a vypiš je na konec — doplním je
+ručně, nedomýšlej je.
 ```
 
 :::tip

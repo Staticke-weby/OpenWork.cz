@@ -31,19 +31,43 @@ text poznat a pravidla akademické poctivosti platí i pro AI.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**U výpisků chtějte označené zdroje — kvůli citacím i kontrole:**
+
 ```text
 Ze zdrojů ve složce zdroje/ udělej výpisky k tématu „obnovitelná energie
 v ČR": ke každému zdroji hlavní tvrzení a čísla, s označením, odkud jsou.
 ```
+
+**Osnova s vazbou na zdroje — ať se pak dobře píše:**
 
 ```text
 Navrhni osnovu referátu na 10 minut z výpisků ve vystup/vypisky.md:
 úvod, tři hlavní body, závěr. Ke každému bodu napiš, co ze zdrojů použít.
 ```
 
+**Kontrola bez přepisování — text je váš:**
+
 ```text
 Přečti si můj text v seminarky/prace.md a navrhni: co chybí ve struktuře,
-kde je text nejasný a které tvrzení nemá zdroj. Text sám nepřepisuj.
+kde je text nejasný a které tvrzení nemá zdroj. Text sám nepřepisuj —
+jen seznam připomínek s odkazem na odstavce.
+```
+
+**Nechte si sepsat protiargumenty — obhajoba nepřekvapí:**
+
+```text
+K argumentaci v seminarky/prace.md sepiš nejsilnější protiargumenty
+a ke každému napiš, kde v textu na něj odpovídám — a kde odpověď chybí.
+```
+
+**Literatura jen z toho, co je v textu opravdu použité:**
+
+```text
+Projdi seminarky/prace.md a zdroje ve složce zdroje/. Sestav seznam
+literatury (ČSN ISO 690) jen ze zdrojů, na které se v textu odkazuji.
+Chybějící údaje (rok, vydavatel) označ — nedomýšlej je.
 ```
 
 ## Kudy dál

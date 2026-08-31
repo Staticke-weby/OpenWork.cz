@@ -28,21 +28,47 @@ je v tabuľke — dá sa prehľadať, spočítať a doložiť.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Nečitateľné označiť, nie odhadnúť:**
+
 ```text
 V priečinku blocky/ sú fotky bločkov zo služobnej cesty. Vytvor tabuľku
 na vyúčtovanie: dátum, obchod, suma, čo bolo kúpené. Nečitateľné položky
-označ.
+označ — neodhaduj ich.
 ```
 
+**Premenovanie a presuny: najprv návrh, potom vykonanie:**
+
 ```text
-Prejdi skeny v priečinku sken-archiv/, každý súbor pomenuj podľa obsahu
-(typ dokumentu, protistrana, rok) a roztrieď ich do priečinkov zmluvy/,
-faktury/ a ostatne/.
+Prejdi skeny v priečinku sken-archiv/ a navrhni, ako každý súbor
+pomenovať (typ dokumentu, protistrana, rok) a kam ho roztriediť
+(zmluvy/, faktury/, ostatne/). Ukáž mi zoznam čo → kam; premenuj
+a presuň, až to schválim.
 ```
+
+**Presné stĺpce aj pre kontakty:**
 
 ```text
 Z fotiek vizitiek v priečinku vizitky/ urob tabuľku kontaktov: meno,
-firma, funkcia, telefón, e-mail.
+firma, funkcia, telefón, e-mail. Kde údaj na vizitke nie je, nechaj
+bunku prázdnu.
+```
+
+**Pri dôležitých číslach chcite druhú kontrolu proti predlohe:**
+
+```text
+Skontroluj prepis vo vystup/blocky.xlsx proti fotkám v priečinku
+blocky/: pri sumách nad 50 € porovnaj každú s fotkou a označ riadky,
+kde si nie si istý — skontrolujem ich sám.
+```
+
+**Ručné poznámky: čo sa nedá prečítať, dostane otáznik:**
+
+```text
+Prepíš ručne písané poznámky z fotiek v priečinku poznamky/ do jedného
+textu vo vystup/. Slová, ktoré sa nedajú spoľahlivo prečítať, označ
+otáznikom — nedomýšľaj ich.
 ```
 
 :::tip

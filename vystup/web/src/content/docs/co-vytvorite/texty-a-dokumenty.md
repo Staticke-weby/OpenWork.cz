@@ -25,20 +25,47 @@ vzorů a nic se neztratí — všechno vzniká z vašich podkladů, ne z hlavy.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Řekněte, kam uložit a co s tím, co v podkladech chybí:**
+
 ```text
 Z poznámek ve složce porady/ napiš zápis z dnešní porady: co se rozhodlo,
-kdo má jaký úkol a dokdy. Ulož jako vystup/zapis-porady.md.
+kdo má jaký úkol a dokdy. Ulož jako vystup/zapis-porady.md. Kde
+z poznámek není jasné, kdo úkol dostal nebo dokdy, dej otazník —
+nedomýšlej.
 ```
+
+**Nejasné údaje nechte označit, ne doplnit odhadem:**
 
 ```text
 Podle vzoru ve vzory/objednavka.md připrav objednávku pro dodavatele
-z podkladů v poptavky/truhlar.md. Nejasné údaje označ k doplnění.
+z podkladů v poptavky/truhlar.md. Nejasné údaje označ [DOPLNIT]
+a vypiš je na konec.
 ```
+
+**Originály neměnit — upravené verze vedle:**
 
 ```text
 Projdi tři popisy služeb ve složce web-texty/ a sjednoť je: stejná
 struktura, stejný tón, každý max. na půl strany. Původní soubory nech,
 upravené ulož do vystup/.
+```
+
+**Koncepty jen ke kontrole — nikdy rovnou odesílat:**
+
+```text
+Napiš odpověď na dotaz v poste/dotaz-klienta.md podle našeho ceníku
+a tónu starších e-mailů ve vzory/. Nikam nic neodesílej — koncept ulož
+do vystup/ ke kontrole.
+```
+
+**Při krácení řekněte, co se zkrátit nesmí:**
+
+```text
+Zkrať report vystup/report-srpen.md na polovinu pro vedení: všechna
+čísla a závěry zachovej, škrtej jen popisné pasáže. Původní verzi nech,
+zkrácenou ulož vedle jako report-srpen-kratky.md.
 ```
 
 :::tip

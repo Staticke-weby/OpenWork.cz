@@ -24,20 +24,46 @@ slajdov. Štruktúra je konzistentná a na nič z podkladov sa nezabudne.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Povedzte publikum, rozsah a tón:**
+
 ```text
 Z podkladov v priečinku projekt/ urob prezentáciu na 10 slajdov pre
 vedenie: cieľ, stav, čísla, riziká, ďalšie kroky. Striedmo, bez ozdôb.
 Ku každému slajdu pridaj poznámky pre rečníka.
 ```
 
+**Len zo skutočných podkladov — diery označiť:**
+
 ```text
 Z cenníka a popisu služieb v priečinku ponuka/ priprav prezentáciu na
 obchodné stretnutie: problém zákazníka, naše riešenie, cena, referencie.
+Vychádzaj len z podkladov — čo v nich chýba (napríklad referencie),
+označ [DOPLNIŤ], nevymýšľaj.
 ```
+
+**Najprv štruktúra, potom výroba:**
 
 ```text
 Navrhni osnovu prezentácie o bezpečnosti hesiel pre kolegov: 15 minút,
-ľudia bez technického vzdelania. Zatiaľ len štruktúru a kľúčové body.
+ľudia bez technického vzdelania. Zatiaľ len štruktúru a kľúčové body —
+slajdy vyrobíme, až osnovu schválim.
+```
+
+**Doplnenie k hotovému — bez zásahov do zvyšku:**
+
+```text
+K hotovej prezentácii vo vystup/prezentacia-projekt.md doplň poznámky
+pre rečníka: ku každému slajdu 3–4 vety a odhad času. Slajdy samotné
+nemeň.
+```
+
+**Pri krátení chcite najprv návrh škrtov:**
+
+```text
+Potrebujem z 10 slajdov urobiť 5 na desaťminútovú verziu. Napíš mi
+najprv, čo navrhuješ vypustiť a prečo — skrátime, až to odsúhlasím.
 ```
 
 :::tip

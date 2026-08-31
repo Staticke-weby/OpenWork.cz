@@ -26,21 +26,46 @@ odsekoch. Pri pracovných dokumentoch drží terminológiu podľa vášho slovn�
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Dvojjazyčne po odsekoch — kontrola je potom jednoduchá:**
+
 ```text
 Prelož zmluvu zmluvy/contract-en.pdf do slovenčiny. Zachovaj číslovanie
 článkov a vytvor dvojjazyčnú verziu: originál a preklad po odsekoch
 vedľa seba.
 ```
 
+**Povedzte účel — preklad sa mu prispôsobí:**
+
 ```text
 Prelož manuál manualy/geraet-handbuch.pdf z nemčiny a skráť ho na
 pracovný postup pre obsluhu: len kroky, ktoré sa týkajú bežnej prevádzky.
 ```
 
+**Koncepty odpovedí len na kontrolu, nie na odoslanie:**
+
 ```text
 V priečinku korespondencia/ je e-mail od talianskeho dodávateľa. Prelož
-mi ho a priprav anglicky písanú odpoveď: potvrdzujeme objednávku, žiadame
-dodanie do konca mesiaca.
+mi ho a priprav anglicky písanú odpoveď: potvrdzujeme objednávku,
+žiadame dodanie do konca mesiaca. Nikam nič neodosielaj — koncept ulož
+do vystup/.
+```
+
+**Terminológiu držte slovníčkom:**
+
+```text
+Prelož dokumenty v priečinku podklady-en/ do slovenčiny a drž sa
+slovníčka vo vzory/slovnicek.md (napr. „delivery" vždy „dodávka").
+Termíny, ktoré v slovníčku nie sú, vypíš zvlášť — doplním ich.
+```
+
+**Cudzí aj vlastný preklad si nechajte skontrolovať proti originálu:**
+
+```text
+Porovnaj môj preklad vystup/preklad.md s originálom original-en.md:
+vypíš miesta, kde sa význam líši alebo kde niečo chýba. Neprepisuj —
+len zoznam s odkazmi na odseky.
 ```
 
 :::caution

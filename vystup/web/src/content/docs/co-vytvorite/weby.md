@@ -25,21 +25,46 @@ u dodavatele.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Formát a omezení řekněte předem:**
+
 ```text
 Z textů ve složce hospoda/ vytvoř jednostránkový web: otevírací doba,
 menu, kontakt a mapa. Čisté HTML a CSS, žádný framework — jeden soubor,
 který otevřu v prohlížeči. Vzhled jednoduchý a čitelný i na mobilu.
 ```
 
+**Vše v jednom souboru, nic se nestahuje z internetu:**
+
 ```text
 Vytvoř pozvánku na svatbu jako jednu webovou stránku z podkladů ve
 svatba/: místo, čas, program, jak se tam dostat, kontakt na svědky.
-Čisté HTML a CSS, žádný framework.
+Čisté HTML a CSS, žádný framework — a nic, co by se načítalo z cizích
+serverů.
 ```
+
+**Přesně vymezte, co se smí měnit:**
 
 ```text
 Ve složce web/ je náš současný web. Přidej sekci s novou službou podle
-podkladů v nova-sluzba.md a nic jiného neměň.
+podkladů v nova-sluzba.md a nic jiného neměň — vzhled, texty ani odkazy
+ostatních sekcí.
+```
+
+**Nejdřív rozvržení, pak výroba:**
+
+```text
+Navrhni mi nejdřív rozvržení stránky jako seznam sekcí s tím, co v každé
+bude. HTML vytvoř, až rozvržení schválím.
+```
+
+**Hotový web nechte zkontrolovat proti podkladům:**
+
+```text
+Projdi hotový web/index.html a zkontroluj: fungují všechny odkazy? Sedí
+telefonní čísla, e-maily a otevírací doba s podklady v kontakty.md?
+Rozdíly vypiš, nic neměň.
 ```
 
 :::tip

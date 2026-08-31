@@ -27,20 +27,47 @@ alebo výročnej správy prečíta agent — vy dostanete to podstatné.
 
 ## Ukážkové zadania
 
+Každé zadanie ukazuje jeden dobrý zvyk — všimnite si ich, oplatí sa.
+
+**Popíšte presné stĺpce a čo s neistými údajmi:**
+
 ```text
 V priečinku vypisy-pdf/ sú výpisy z účtu za celý rok v PDF. Vytiahni
 všetky pohyby do jednej tabuľky pre Excel: dátum, protistrana, suma,
-poznámka.
+poznámka. Položky, pri ktorých si nie si istý, označ v stĺpci Poznámka —
+nič nedomýšľaj.
 ```
+
+**Pri zhrnutí chcite odkazy na strany, nech sa dá všetko dohľadať:**
 
 ```text
 Zhrň PDF poistne-podmienky.pdf na jednu stranu: čo je kryté, čo je
-vylúčené, aké sú lehoty a na čo si dať pozor.
+vylúčené, aké sú lehoty a na čo si dať pozor. Pri každom bode uveď
+číslo strany, z ktorej vychádza.
 ```
+
+**Originály nechajte tak — nový súbor vedľa:**
 
 ```text
 Z priečinka podklady-pdf/ vytiahni strany s cenovými tabuľkami do
-jedného nového PDF a pridaj úvodnú stranu s obsahom.
+jedného nového PDF a pridaj úvodnú stranu s obsahom. Pôvodné súbory
+nemeň, výsledok ulož do vystup/.
+```
+
+**Hľadanie naprieč PDF — s citáciou presného znenia:**
+
+```text
+V priečinku zmluvy-pdf/ nájdi všetky dokumenty, kde sa hovorí
+o automatickom predĺžení zmluvy. Vypíš súbor, stranu a presné znenie
+ustanovenia — nech to môžem overiť.
+```
+
+**Prevod skenu na text — s označením nečitateľných miest:**
+
+```text
+Preveď sken-zmluva.pdf na text do vystup/, zachovaj členenie článkov.
+Zle čitateľné miesta označ [NEČITATEĽNÉ] a vypíš ich na koniec —
+doplním ich ručne, nedomýšľaj ich.
 ```
 
 :::tip

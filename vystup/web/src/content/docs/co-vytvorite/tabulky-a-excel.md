@@ -27,19 +27,47 @@ zopakovat nad novými daty.
 
 ## Ukázková zadání
 
+Každé zadání ukazuje jeden dobrý zvyk — všimněte si jich, vyplatí se.
+
+**Přesné sloupce a co s chybějícími údaji:**
+
 ```text
 Ze všech faktur ve složce faktury/2026/ vytvoř tabulku pro Excel:
 dodavatel, částka, datum, kategorie. Přidej list se součty po měsících.
+Chybějící údaje nech prázdné a přidej sloupec Poznámka — nic nedomýšlej.
 ```
+
+**Rozdíly označit, ne rozhodovat naslepo:**
 
 ```text
 Sluč adresy z kontakty-web.csv a kontakty-telefon.xlsx do jedné tabulky,
-odstraň duplicity a označ záznamy, kde se údaje liší.
+odstraň jasné duplicity a záznamy, kde se údaje liší, označ ve sloupci
+Rozdíl — rozhodnu o nich sám.
 ```
+
+**Kategorie vyjmenovat a nezařaditelné chtít zvlášť:**
 
 ```text
 Z výpisů ve složce finance/ udělej rozbor výdajů za pololetí po
-kategoriích a přidej graf vývoje po měsících.
+kategoriích (bydlení, jídlo, doprava, ostatní) a přidej graf vývoje po
+měsících. Co nejde jednoznačně zařadit, dej do „nezařazeno" a vypiš
+zvlášť.
+```
+
+**Kontrola dat: nejdřív seznam nálezů, žádné tiché opravy:**
+
+```text
+Zkontroluj tabulku klienti.xlsx: najdi chybějící e-maily, špatné formáty
+telefonů a duplicitní řádky. Nic neopravuj — vypiš mi seznam nálezů
+s číslem řádku a návrhem opravy.
+```
+
+**Opakovaný přehled podle hotového vzoru:**
+
+```text
+Z faktur ve složce faktury/2026-09/ udělej stejný přehled jako ve
+vystup/prehled-2026-08.xlsx — stejné sloupce, stejné listy, stejné
+řazení, jen nová data.
 ```
 
 :::tip
