@@ -1,0 +1,22 @@
+---
+title: "Porovnanie poskytovateľov (ZDR)"
+description: "Kto trénuje na dátach, ako dlho drží záznamy a kde beží výpočet."
+sidebar:
+  order: 3
+  badge:
+    text: Živé
+    variant: tip
+---
+
+import TabulkaZDat from '../../../../../components/TabulkaZDat.astro';
+
+Tabuľka oddeľuje tri veci, ktoré sa často pletú: **tréning na dátach**,
+**uchovávanie záznamov** a **kde fyzicky beží výpočet**. Dáta sa priebežne
+overujú; sporné údaje označujeme, nikdy nehádame.
+
+<TabulkaZDat zdroj="zdr-poskytovatele.yaml" />
+
+:::caution
+Podmienky poskytovateľov sa menia. Riadky sme overili k dátumu pri tabuľke, ale
+pred rozhodnutím si kľúčový údaj overte priamo pri zdroji (odkaz v stĺpci Zdroj).
+:::
