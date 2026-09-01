@@ -75,6 +75,39 @@
   margin-bottom: 0.5rem;
 }
 
+/* Kompaktní mřížka témat na úvodní stránce. */
+.ow-tema-mrizka {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.ow-tema-mrizka a {
+  display: block;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid var(--sl-color-gray-5);
+  border-radius: 0.5rem;
+  color: var(--sl-color-white);
+  text-decoration: none;
+  font-size: var(--sl-text-sm);
+  line-height: 1.35;
+}
+.ow-tema-mrizka a:hover {
+  border-color: var(--sl-color-accent);
+  color: var(--sl-color-accent-high);
+  background: var(--sl-color-accent-low);
+}
+.ow-tema-mrizka a strong {
+  display: block;
+}
+.ow-tema-mrizka a span {
+  color: var(--sl-color-gray-3);
+  font-size: var(--sl-text-xs);
+}
+.ow-tema-mrizka a:hover span {
+  color: inherit;
+}
+
 /* Screenshot aplikace na úvodní stránce. */
 .ow-screen {
   display: block;
