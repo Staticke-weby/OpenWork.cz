@@ -9,6 +9,13 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 1. září 2026 — témata: bydlení, zdraví, jazyky a zápisy
+
+- Nová témata [bydlení](/temata/domacnost/bydleni/)
+  a [zdraví](/temata/domacnost/zdravi/) (citlivá data — lokální AI
+  a ZDR na prvním místě), [cizí jazyky](/temata/skola/jazyky/)
+  a [zápisy z porad](/temata/dokumenty/zapisy/).
+
 ## 1. září 2026 — česká témata: datovka, ARES a daně
 
 - Tři témata, která zahraniční návody nepokryjí:

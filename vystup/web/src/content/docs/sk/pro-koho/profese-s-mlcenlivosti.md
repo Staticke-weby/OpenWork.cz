@@ -3,7 +3,7 @@ title: "OpenWork pre profesie s mlčanlivosťou"
 description: "Ako s AI pracovať nad citlivými dokumentmi — advokáti, lekári, účtovníci. Lokálna AI, nulové uchovávanie dát (ZDR) a ukážkové prompty."
 sidebar:
   order: 4
-tagy: [dokumenty/smlouvy]
+tagy: [dokumenty/smlouvy, domacnost/zdravi]
 ---
 
 Advokáti, lekári, účtovníci a ďalšie profesie viazané mlčanlivosťou majú jasné

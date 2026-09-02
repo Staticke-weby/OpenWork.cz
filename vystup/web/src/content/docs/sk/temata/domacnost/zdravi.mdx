@@ -1,0 +1,80 @@
+---
+title: "AI a zdravie: lekárske správy zrozumiteľne a citlivé dáta u vás"
+description: "Ako AI agent v OpenWorku pomôže so zdravotnými dokumentmi: vysvetlí lekársku správu zrozumiteľne, udrží prehľad vyšetrení a pripraví otázky k lekárovi — dáta zostávajú u vás."
+sidebar:
+  label: "Zdravie (dokumenty)"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Lekárska správa plná skratiek, kopa výsledkov z rôznych rokov a desať
+otázok, ktoré vám napadnú až doma. S tým všetkým agent pomôže —
+**vysvetlí, utriedi a pripraví vás na návštevu lekára.** Nediagnostikuje
+a nelieči; prekladá a organizuje. A pretože ide o najcitlivejšie dáta
+vôbec, začnite pri tom, kde pobeží výpočet.
+
+## Najprv rozhodnite o dátach
+
+Zdravotné dokumenty sú citlivé osobné údaje. Najprísnejšia voľba je
+[lokálny AI model](/sk/vase-data/lokalni-ai/) — nič neopustí váš počítač.
+Praktický kompromis je poskytovateľ
+s [nulovým uchovávaním dát](/sk/vase-data/zdr/). A vždy platí: posielajte
+len to, čo je nutné.
+
+## Čo so zdravotnými dokumentmi zvládne
+
+- **Vysvetliť správu zrozumiteľne** — čo skratky a nálezy znamenajú,
+  ľudsky a bez dramatizovania.
+- **Prehľad vyšetrení v čase** — z kopy správ a výsledkov časová os:
+  kedy, čo, s akým výsledkom.
+- **Otázky k lekárovi** — čo sa na kontrole spýtať, spísané vopred podľa
+  vašich správ.
+- **Prehľad liekov a termínov** — čo kto v rodine berie a kedy sú
+  kontroly či očkovania.
+- **Podklady pre poisťovňu** — doklady k preplateniu či žiadosti
+  pokope.
+
+## Ukážkové zadania
+
+**Správa zrozumiteľne — bez diagnóz navyše:**
+
+```text
+V zdravie/sprava-2026-08.pdf je lekárska správa. Vysvetli mi
+zrozumiteľne, čo jednotlivé skratky a nálezy znamenajú. Nič
+nediagnostikuj a nehodnoť — len prelož odborné výrazy. Čo je nejasné,
+označ ako otázku na lekára.
+```
+
+**Časová os vyšetrení:**
+
+```text
+Prejdi priečinok zdravie/ a urob časovú os vyšetrení: dátum, lekár, čo
+sa vyšetrovalo, záver jednou vetou, odkaz na súbor. Zoraď od
+najnovšieho.
+```
+
+**Príprava na kontrolu:**
+
+```text
+O týždeň mám kontrolu. Z posledných dvoch správ v zdravie/ priprav
+zoznam otázok: čo znamenajú zmeny vo výsledkoch a na čo sa spýtať
+ohľadom ďalšieho postupu. Formuluj krátko — vezmem si to na papieri
+so sebou.
+```
+
+:::caution
+**Agent nie je lekár.** Vysvetlenie pojmov nie je diagnóza a nikdy podľa
+neho nemeňte liečbu — zdravotné rozhodnutia patria lekárovi, ktorý vás
+vidí. Vysvetlená správa a pripravené otázky slúžia na to, aby ste
+u lekára rozumeli a pýtali sa lepšie.
+:::
+
+<StrankyTematu tema="domacnost/zdravi" />
+
+## Kadiaľ ďalej
+
+- **[Domácnosť a rodina](/sk/temata/domacnost/)** — celá kategória.
+- **[Lokálna AI](/sk/vase-data/lokalni-ai/)** — keď dáta nemajú opustiť
+  počítač.
+- **[Nulové uchovávanie dát](/sk/vase-data/zdr/)** — ako vybrať
+  poskytovateľa pre citlivé dáta.

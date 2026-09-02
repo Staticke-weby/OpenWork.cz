@@ -1,0 +1,71 @@
+---
+title: "AI zápisy z porad a schůzek: úkoly, termíny a nic se neztratí"
+description: "Jak AI agent v OpenWorku dělá zápisy z porad: z poznámek či přepisu strukturovaný zápis s úkoly a termíny, hlídání nesplněných úkolů napříč poradami."
+sidebar:
+  label: "Zápisy z porad"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Zápis z porady píše vždycky ten, kdo se nestihl vymluvit — a tak nevzniká
+vůbec, nebo večer a děravý. Agent to otočí: **hodíte mu poznámky (nebo
+přepis nahrávky) a do minuty je zápis se strukturou, úkoly a termíny.**
+A protože zápisy leží ve složce, umí i to cennější: hlídat, co se od
+minule nesplnilo.
+
+## Co se zápisy zvládne
+
+- **Zápis z poznámek** — i z hesel a odrážek strukturovaný zápis:
+  rozhodnutí, úkoly (kdo, co, dokdy), otevřené body.
+- **Zápis z nahrávky** — model se
+  [zvukovým vstupem](/modely/vstupy/) zpracuje i záznam schůzky.
+- **Hlídání úkolů napříč poradami** — co bylo minule uloženo a dnes se
+  o tom nemluvilo; nic nezapadne.
+- **Agenda na příště** — z otevřených bodů a nesplněných úkolů návrh
+  programu další porady.
+- **Souhrn pro nepřítomné** — krátká verze zápisu k rozeslání, koncept
+  ke kontrole.
+
+## Ukázková zadání
+
+**Zápis s otazníky místo domyslů:**
+
+```text
+Z poznámek v porady/2026-09-02.md udělej zápis: rozhodnutí, úkoly
+(kdo, co, dokdy), otevřené body. Kde z poznámek není jasné, kdo úkol
+dostal nebo termín, dej otazník — doplním. Ulož do
+porady/zapisy/2026-09-02.md.
+```
+
+**Kontrola úkolů z minula:**
+
+```text
+Porovnej úkoly ze zápisu porady/zapisy/2026-08-26.md s dnešními
+poznámkami: které úkoly jsou splněné, o kterých se nemluvilo a které
+se posunuly. Nesplněné a nezmíněné vypiš nahoru do dnešního zápisu.
+```
+
+**Souhrn pro ty, kdo chyběli:**
+
+```text
+Z dnešního zápisu udělej souhrn na 5 vět pro kolegy, kteří chyběli:
+jen rozhodnutí a úkoly, které se jich týkají (seznam lidí v tymu.md).
+Koncept ulož do vystup/ — rozešlu sám.
+```
+
+:::tip
+Držte jednotný formát zápisů (šablonu dejte do
+[AGENTS.md](/prace-se-slozkou/agents-md/)) — pak jdou zápisy strojově
+porovnávat a hlídání úkolů funguje samo. Nahráváte-li schůzky, dejte
+o tom účastníkům vědět.
+:::
+
+<StrankyTematu tema="dokumenty/zapisy" />
+
+## Kudy dál
+
+- **[Dokumenty](/temata/dokumenty/)** — celá kategorie.
+- **[Texty a dokumenty](/co-vytvorite/texty-a-dokumenty/)** — psaní
+  z podkladů obecně.
+- **[Automatizace činností](/co-vytvorite/automatizace/)** — zápisy jako
+  opakovaný postup.

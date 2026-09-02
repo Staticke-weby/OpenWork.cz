@@ -4,6 +4,7 @@ description: "Pro většinu lidí je nejpraktičtější poskytovatel modelů �
 sidebar:
   order: 1
 last_verified: 2026-08-31
+tagy: [domacnost/zdravi]
 ---
 
 Když AI zpracovává vaše zadání, říká se tomu **výpočet** (anglicky *inference*).

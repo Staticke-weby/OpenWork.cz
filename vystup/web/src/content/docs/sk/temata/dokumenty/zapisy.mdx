@@ -1,0 +1,71 @@
+---
+title: "AI zápisy z porád a stretnutí: úlohy, termíny a nič sa nestratí"
+description: "Ako AI agent v OpenWorku robí zápisy z porád: z poznámok či prepisu štruktúrovaný zápis s úlohami a termínmi, stráženie nesplnených úloh naprieč poradami."
+sidebar:
+  label: "Zápisy z porád"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Zápis z porady píše vždy ten, kto sa nestihol vyhovoriť — a tak nevzniká
+vôbec, alebo večer a deravý. Agent to otočí: **hodíte mu poznámky (alebo
+prepis nahrávky) a do minúty je zápis so štruktúrou, úlohami
+a termínmi.** A pretože zápisy ležia v priečinku, vie aj to cennejšie:
+strážiť, čo sa od minula nesplnilo.
+
+## Čo so zápismi zvládne
+
+- **Zápis z poznámok** — aj z hesiel a odrážok štruktúrovaný zápis:
+  rozhodnutia, úlohy (kto, čo, dokedy), otvorené body.
+- **Zápis z nahrávky** — model so
+  [zvukovým vstupom](/sk/modely/vstupy/) spracuje aj záznam stretnutia.
+- **Stráženie úloh naprieč poradami** — čo bolo minule uložené a dnes sa
+  o tom nehovorilo; nič nezapadne.
+- **Agenda na nabudúce** — z otvorených bodov a nesplnených úloh návrh
+  programu ďalšej porady.
+- **Súhrn pre neprítomných** — krátka verzia zápisu na rozoslanie,
+  koncept na kontrolu.
+
+## Ukážkové zadania
+
+**Zápis s otáznikmi namiesto domyslov:**
+
+```text
+Z poznámok v porady/2026-09-02.md urob zápis: rozhodnutia, úlohy
+(kto, čo, dokedy), otvorené body. Kde z poznámok nie je jasné, kto
+úlohu dostal alebo termín, daj otáznik — doplním. Ulož do
+porady/zapisy/2026-09-02.md.
+```
+
+**Kontrola úloh z minula:**
+
+```text
+Porovnaj úlohy zo zápisu porady/zapisy/2026-08-26.md s dnešnými
+poznámkami: ktoré úlohy sú splnené, o ktorých sa nehovorilo a ktoré sa
+posunuli. Nesplnené a nespomenuté vypíš hore do dnešného zápisu.
+```
+
+**Súhrn pre tých, ktorí chýbali:**
+
+```text
+Z dnešného zápisu urob súhrn na 5 viet pre kolegov, ktorí chýbali:
+len rozhodnutia a úlohy, ktoré sa ich týkajú (zoznam ľudí v time.md).
+Koncept ulož do vystup/ — rozošlem sám.
+```
+
+:::tip
+Držte jednotný formát zápisov (šablónu dajte do
+[AGENTS.md](/sk/prace-se-slozkou/agents-md/)) — potom sa zápisy dajú
+strojovo porovnávať a stráženie úloh funguje samo. Ak stretnutia
+nahrávate, dajte o tom účastníkom vedieť.
+:::
+
+<StrankyTematu tema="dokumenty/zapisy" />
+
+## Kadiaľ ďalej
+
+- **[Dokumenty](/sk/temata/dokumenty/)** — celá kategória.
+- **[Texty a dokumenty](/sk/co-vytvorite/texty-a-dokumenty/)** — písanie
+  z podkladov všeobecne.
+- **[Automatizácia činností](/sk/co-vytvorite/automatizace/)** — zápisy
+  ako opakovaný postup.

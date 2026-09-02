@@ -1,0 +1,77 @@
+---
+title: "AI a zdraví: lékařské zprávy srozumitelně a citlivá data u vás"
+description: "Jak AI agent v OpenWorku pomůže se zdravotními dokumenty: vysvětlí lékařskou zprávu srozumitelně, udrží přehled vyšetření a připraví otázky k lékaři — data zůstávají u vás."
+sidebar:
+  label: "Zdraví (dokumenty)"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Lékařská zpráva plná zkratek, hromada výsledků z různých let a deset
+otázek, které vás napadnou až doma. S tím vším agent pomůže — **vysvětlí,
+utřídí a připraví vás na návštěvu lékaře.** Nediagnostikuje a neléčí;
+překládá a organizuje. A protože jde o nejcitlivější data vůbec, začněte
+u toho, kde poběží výpočet.
+
+## Nejdřív rozhodněte o datech
+
+Zdravotní dokumenty jsou citlivé osobní údaje. Nejpřísnější volba je
+[lokální AI model](/vase-data/lokalni-ai/) — nic neopustí váš počítač.
+Praktický kompromis je poskytovatel
+s [nulovým uchováváním dat](/vase-data/zdr/). A vždy platí: posílejte jen
+to, co je nutné.
+
+## Co se zdravotními dokumenty zvládne
+
+- **Vysvětlit zprávu srozumitelně** — co zkratky a nálezy znamenají,
+  lidsky a bez dramatizace.
+- **Přehled vyšetření v čase** — z hromady zpráv a výsledků časová osa:
+  kdy, co, s jakým výsledkem.
+- **Otázky k lékaři** — co se na kontrole zeptat, sepsané předem podle
+  vašich zpráv.
+- **Přehled léků a termínů** — co kdo v rodině bere a kdy jsou kontroly
+  či očkování.
+- **Podklady pro pojišťovnu** — doklady k proplacení či žádosti pohromadě.
+
+## Ukázková zadání
+
+**Zpráva srozumitelně — bez diagnóz navíc:**
+
+```text
+V zdravi/zprava-2026-08.pdf je lékařská zpráva. Vysvětli mi srozumitelně,
+co jednotlivé zkratky a nálezy znamenají. Nic nediagnostikuj a nehodnoť
+— jen přelož odborné výrazy. Co je nejasné, označ jako otázku na lékaře.
+```
+
+**Časová osa vyšetření:**
+
+```text
+Projdi složku zdravi/ a udělej časovou osu vyšetření: datum, lékař, co
+se vyšetřovalo, závěr jednou větou, odkaz na soubor. Seřaď od
+nejnovějšího.
+```
+
+**Příprava na kontrolu:**
+
+```text
+Za týden mám kontrolu. Z posledních dvou zpráv ve zdravi/ připrav seznam
+otázek: co znamenají změny ve výsledcích a na co se zeptat ohledně
+dalšího postupu. Formuluj krátce — vezmu si to na papíře s sebou.
+```
+
+:::caution
+**Agent není lékař.** Vysvětlení pojmů není diagnóza a nikdy podle něj
+neměňte léčbu — zdravotní rozhodnutí patří lékaři, který vás vidí.
+Vysvětlená zpráva a připravené otázky slouží k tomu, abyste u lékaře
+rozuměli a ptali se líp.
+:::
+
+<StrankyTematu tema="domacnost/zdravi" />
+
+## Kudy dál
+
+- **[Domácnost a rodina](/temata/domacnost/)** — celá kategorie.
+- **[Lokální AI](/vase-data/lokalni-ai/)** — když data nemají opustit
+  počítač.
+- **[Nulové uchovávání dat](/vase-data/zdr/)** — jak vybrat poskytovatele
+  pro citlivá data.

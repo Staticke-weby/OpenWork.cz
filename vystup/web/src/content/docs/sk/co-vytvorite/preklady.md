@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku preloží dokumenty vo vašom priečinku — 
 sidebar:
   order: 10
   label: "Preklady dokumentov"
-tagy: [dokumenty/smlouvy, dokumenty/e-maily]
+tagy: [dokumenty/smlouvy, dokumenty/e-maily, skola/jazyky]
 ---
 
 Zmluva od zahraničného dodávateľa, manuál v nemčine, e-mail po anglicky.

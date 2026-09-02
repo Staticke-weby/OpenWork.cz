@@ -9,6 +9,13 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 1. septembra 2026 — témy: bývanie, zdravie, jazyky a zápisy
+
+- Nové témy [bývanie](/sk/temata/domacnost/bydleni/)
+  a [zdravie](/sk/temata/domacnost/zdravi/) (citlivé dáta — lokálna AI
+  a ZDR na prvom mieste), [cudzie jazyky](/sk/temata/skola/jazyky/)
+  a [zápisy z porád](/sk/temata/dokumenty/zapisy/).
+
 ## 1. septembra 2026 — témy: schránka, registre a dane
 
 - Tri témy, ktoré zahraničné návody nepokryjú:
