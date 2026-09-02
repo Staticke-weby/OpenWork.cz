@@ -4,6 +4,7 @@ description: "Ako sa európske pravidlá GDPR a NIS2 stretávajú s používaní
 sidebar:
   order: 4
 last_verified: 2026-08-31
+tagy: [podnikani/gdpr-dokumentace]
 ---
 
 Keď pracujete s AI a ide pritom o osobné alebo citlivé údaje, do hry vstupujú

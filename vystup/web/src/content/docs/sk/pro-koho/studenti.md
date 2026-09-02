@@ -3,7 +3,7 @@ title: "OpenWork pre študentov"
 description: "Čo AI agent urobí nad priečinkom s poznámkami a materiálmi k štúdiu: výpisky, príprava na skúšku, podklady k seminárke. A ako začať úplne zadarmo."
 sidebar:
   order: 3
-tagy: [skola/zkouska, skola/jazyky]
+tagy: [skola/zkouska, skola/jazyky, dokumenty/pohovor, skola/prijimacky, skola/diplomka]
 ---
 
 Priečinok s prednáškami, skriptami a poznámkami je pre AI agenta ideálne

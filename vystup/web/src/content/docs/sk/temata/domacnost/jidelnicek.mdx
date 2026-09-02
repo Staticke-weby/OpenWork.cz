@@ -1,0 +1,69 @@
+---
+title: "AI jedálniček na týždeň: z toho, čo je doma, plus nákupný zoznam"
+description: "Ako s AI agentom v OpenWorku plánovať jedlo: jedálniček na týždeň z vlastných receptov a zásob, nákupný zoznam podľa obchodu a varenie bez večernej otázky „čo dnes“."
+sidebar:
+  label: "Jedálniček a nákupy"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+„Čo bude na večeru?" je otázka, ktorá sa pýta 365-krát do roka. Agent ju
+vyrieši na týždeň dopredu: **z vašich receptov, zásob a preferencií
+poskladá jedálniček a rovno k nemu nákupný zoznam.** Žiadne cudzie
+recepty z internetu, ak nechcete — varí sa to, čo vaša rodina naozaj je.
+
+## Čo s jedálničkom zvládne
+
+- **Týždenný plán z vašich receptov** — priečinok s osvedčenými receptami
+  + preferencie rodiny = jedálniček, ktorý prejde.
+- **Nákupný zoznam** — sčítaný cez celý týždeň, zoradený podľa oddelení
+  obchodu, bez toho, čo už je doma.
+- **Varenie zo zvyškov** — „čo uvarím z toho, čo je v chladničke" podľa
+  zoznamu zásob.
+- **Obmedzenia a alergie** — bez lepku, bez laktózy, diéta — stráži sa
+  v každom návrhu.
+- **Opakovaný postup** — raz vyladené zadanie spúšťať každú nedeľu;
+  ideálny kandidát na [zručnosť](/sk/prace-se-slozkou/dovednosti-skills/).
+
+## Ukážkové zadania
+
+**Jedálniček z vlastných receptov:**
+
+```text
+Z priečinka recepty/ a preferencií v rodina.md (2 dospelí, 2 deti,
+mladšie neje huby) zostav jedálniček na budúci týždeň: 5× večera
+varíme, 2× rýchlovka do 20 minút. Každé jedlo max. raz, k jedálničku
+odkazy na recepty.
+```
+
+**Nákupný zoznam podľa obchodu:**
+
+```text
+K jedálničku vo vystup/jedalnicek.md urob nákupný zoznam: sčítaj
+suroviny cez celý týždeň, odčítaj zásoby zo spajza.md a zoraď podľa
+oddelení (zelenina, mäso, mliečne, trvanlivé). Množstvá pri všetkom.
+```
+
+**Večera zo zvyškov:**
+
+```text
+V chladničke je: polovica pečeného kurčaťa, smotana, zemiaky, paprika
+a vajcia (zoznam v spajza.md). Navrhni 3 večere len z týchto zásob +
+základ zo špajze. Pri každej čas prípravy — vyberiem si.
+```
+
+:::tip
+Držte priečinok `recepty/` a súbor `spajza.md` aktuálne a nedeľné
+plánovanie je otázka jednej vety. A keď recepty nemáte spísané — odfoťte
+babkin zošit, agent [rukopis prepíše](/sk/co-vytvorite/skeny-a-fotky/).
+:::
+
+<StrankyTematu tema="domacnost/jidelnicek" />
+
+## Kadiaľ ďalej
+
+- **[Domácnosť a rodina](/sk/temata/domacnost/)** — celá kategória.
+- **[Rodinný rozpočet](/sk/temata/finance/rozpocet/)** — koľko za jedlo
+  míňate.
+- **[Automatizácia činností](/sk/co-vytvorite/automatizace/)** — nedeľa
+  ako opakovaný postup.

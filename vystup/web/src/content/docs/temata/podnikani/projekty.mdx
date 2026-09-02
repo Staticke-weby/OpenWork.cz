@@ -1,0 +1,70 @@
+---
+title: "AI řízení zakázek: harmonogram, stav rozpracovanosti a předání"
+description: "Jak AI agent v OpenWorku pomáhá řídit malé zakázky a projekty: harmonogram z podkladů, týdenní přehled stavu ze složek, checklisty předání a hlídání termínů."
+sidebar:
+  label: "Zakázky a projekty"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Malá firma neřídí projekty v drahém nástroji — řídí je ve složkách,
+e-mailech a hlavě. Agent umí právě tohle prostředí: **ze složek zakázek
+vyčte stav, poskládá harmonogram a ohlídá termíny.** Žádný nový systém;
+pořádek vznikne nad tím, co už máte.
+
+## Co se zakázkami zvládne
+
+- **Harmonogram z podkladů** — z nabídky a zadání fáze zakázky s termíny
+  a závislostmi (co musí být hotové dřív).
+- **Týdenní přehled stavu** — projít složky zakázek a sepsat: co se
+  pohnulo, co stojí a proč, co je po termínu.
+- **Checklisty předání** — co všechno předat u dokončené zakázky
+  (dokumentace, revize, faktura), odškrtávané.
+- **Hlídání termínů napříč zakázkami** — všechny milníky v jedné
+  tabulce, seřazené, se zvýrazněním blízkých.
+- **Podklady na kontrolní den** — stav, změny a otevřené body pro
+  jednání se zákazníkem.
+
+## Ukázková zadání
+
+**Harmonogram se závislostmi:**
+
+```text
+Z nabídky zakazky/novak-koupelna/nabidka.md udělej harmonogram: fáze,
+odhad dní, co na čem závisí (obklady až po rozvodech). Začátek 15. 9.,
+řemeslníci nepracují o víkendech. Ulož do zakazky/novak-koupelna/plan.md.
+```
+
+**Týdenní stav ze složek — jen fakta:**
+
+```text
+Projdi složky v zakazky/ a udělej přehled stavu k dnešku: u každé
+zakázky poslední změna, ve které fázi podle plánu je, co je po termínu.
+Piš jen to, co je vidět ze souborů — co nejde poznat, označ „nutno
+ověřit".
+```
+
+**Checklist předání:**
+
+```text
+Podle šablony vzory/predani.md připrav checklist předání pro zakázku
+novak-koupelna: doplň položky specifické z nabídky (spárování, revize
+elektro) a vypiš, které dokumenty ve složce ještě chybí.
+```
+
+:::tip
+Sjednoťte strukturu složek zakázek (viz
+[struktura složek](/prace-se-slozkou/struktura-slozek/)) a týdenní stav
+se stane jednou větou — ideální
+[opakovaný postup](/co-vytvorite/automatizace/). Pravidla, co má přehled
+obsahovat, patří do AGENTS.md.
+:::
+
+<StrankyTematu tema="podnikani/projekty" />
+
+## Kudy dál
+
+- **[Podnikání](/temata/podnikani/)** — celá kategorie.
+- **[Cenové nabídky](/temata/podnikani/nabidky/)** — kde zakázka začíná.
+- **[Zápisy z porad](/temata/dokumenty/zapisy/)** — úkoly z porad
+  k zakázkám.

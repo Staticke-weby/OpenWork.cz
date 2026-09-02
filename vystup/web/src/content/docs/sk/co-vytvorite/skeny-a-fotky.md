@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku prečíta skeny a fotky dokumentov — bločk
 sidebar:
   order: 9
   label: "Skeny a fotky dokumentov"
-tagy: [finance/faktury, finance/uctenky, urady/reklamace]
+tagy: [finance/faktury, finance/uctenky, urady/reklamace, finance/pojisteni]
 ---
 
 Bločky v škatuli, papierové zmluvy v šanóne, vizitky v šuplíku. Stačí ich

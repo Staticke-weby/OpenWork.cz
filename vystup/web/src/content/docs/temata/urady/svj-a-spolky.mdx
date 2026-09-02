@@ -1,0 +1,71 @@
+---
+title: "AI pro SVJ a spolky: zápisy ze schůzí, vyúčtování a stanovy"
+description: "Jak AI agent v OpenWorku pomáhá výborům SVJ a spolkům: zápisy ze shromáždění s usneseními, kontrola vyúčtování, práce se stanovami a pozvánky s náležitostmi."
+sidebar:
+  label: "SVJ a spolky"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Výbor SVJ nebo spolku dělá skoro vždy někdo „vedle práce" — a papírování
+je přesně to, co ho vyčerpává: zápisy, pozvánky, vyúčtování, stanovy.
+Agent tuhle režii umí vzít na sebe: **dokumenty podle náležitostí,
+usnesení dohledatelná a čísla zkontrolovaná** — z podkladů, které výbor
+stejně má.
+
+## Co pro SVJ a spolky zvládne
+
+- **Zápisy ze shromáždění** — z poznámek zápis s usneseními, výsledky
+  hlasování a úkoly; viz i [zápisy z porad](/temata/dokumenty/zapisy/).
+- **Pozvánky s náležitostmi** — program, podklady k bodům a lhůty podle
+  stanov; co stanovy vyžadují, agent pohlídá.
+- **Kontrola vyúčtování** — vyúčtování služeb proti fakturám a měřidlům;
+  nesrovnalosti s odkazem na doklad.
+- **Práce se stanovami** — co stanovy říkají ke konkrétní situaci
+  (kvorum, svolání, hlasování per rollam), s citací článku.
+- **Přehled usnesení** — všechna usnesení napříč lety v jedné tabulce:
+  co bylo schváleno, kdy a co z toho je splněno.
+
+## Ukázková zadání
+
+**Zápis se vším, co má mít:**
+
+```text
+Z poznámek v svj/shromazdeni-2026-09.md udělej zápis podle šablony
+vzory/zapis.md: usnesení s přesným zněním a poměrem hlasů, úkoly
+(kdo, dokdy), přílohy. Kde v poznámkách chybí poměr hlasů, dej otazník.
+```
+
+**Kontrola vyúčtování proti dokladům:**
+
+```text
+Porovnej vyuctovani-2025.pdf s fakturami ve svj/faktury-2025/: sedí
+celkové náklady po kapitolách (teplo, voda, úklid, správa)? Rozdíly
+vypiš s odkazem na doklad. Nic nepřepočítávej na jednotky — jen srovnej
+celky.
+```
+
+**Co říkají stanovy:**
+
+```text
+V svj/stanovy.pdf najdi, co platí pro hlasování per rollam: kdo ho může
+vyhlásit, jaká je lhůta a jaké kvorum. Cituj přesné znění článků
+a napiš srozumitelné shrnutí — půjde do pozvánky.
+```
+
+:::caution
+Zápisy a pozvánky SVJ mají zákonné náležitosti a chyby se u soudu
+nepromíjejí — u sporných kroků (per rollam, změna stanov) nechte
+dokument zkontrolovat právníkem. Agent připraví podklad a citace;
+odpovědnost nese výbor.
+:::
+
+<StrankyTematu tema="urady/svj-a-spolky" />
+
+## Kudy dál
+
+- **[Úřady a práva](/temata/urady/)** — celá kategorie.
+- **[Zápisy z porad](/temata/dokumenty/zapisy/)** — technika zápisů
+  obecně.
+- **[Tabulky a Excel](/co-vytvorite/tabulky-a-excel/)** — vyúčtování
+  a přehledy.

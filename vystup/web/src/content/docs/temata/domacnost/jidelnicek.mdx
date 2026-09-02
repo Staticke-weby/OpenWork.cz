@@ -1,0 +1,69 @@
+---
+title: "AI jídelníček na týden: z toho, co je doma, plus nákupní seznam"
+description: "Jak s AI agentem v OpenWorku plánovat jídlo: jídelníček na týden z vlastních receptů a zásob, nákupní seznam podle obchodu a vaření bez večerní otázky „co dnes“."
+sidebar:
+  label: "Jídelníček a nákupy"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+„Co bude k večeři?" je otázka, která se ptá 365krát do roka. Agent ji
+vyřeší na týden dopředu: **z vašich receptů, zásob a preferencí poskládá
+jídelníček a rovnou k němu nákupní seznam.** Žádné cizí recepty z internetu,
+pokud nechcete — vaří se to, co vaše rodina opravdu jí.
+
+## Co s jídelníčkem zvládne
+
+- **Týdenní plán z vašich receptů** — složka s osvědčenými recepty +
+  preference rodiny = jídelníček, který projde.
+- **Nákupní seznam** — sečtený přes celý týden, seřazený podle oddělení
+  obchodu, bez toho, co už je doma.
+- **Vaření ze zbytků** — „co uvařím z toho, co je v lednici" podle
+  seznamu zásob.
+- **Omezení a alergie** — bez lepku, bez laktózy, dieta — hlídá se
+  v každém návrhu.
+- **Opakovaný postup** — jednou vyladěné zadání spouštět každou neděli;
+  ideální kandidát na [dovednost](/prace-se-slozkou/dovednosti-skills/).
+
+## Ukázková zadání
+
+**Jídelníček z vlastních receptů:**
+
+```text
+Ze složky recepty/ a preferencí v rodina.md (2 dospělí, 2 děti, mladší
+nejí houby) sestav jídelníček na příští týden: 5× večeře vaříme, 2×
+rychlovka do 20 minut. Každé jídlo max. jednou, k jídelníčku odkazy na
+recepty.
+```
+
+**Nákupní seznam podle obchodu:**
+
+```text
+K jídelníčku ve vystup/jidelnicek.md udělej nákupní seznam: sečti
+suroviny přes celý týden, odečti zásoby ze spiz.md a seřaď podle
+oddělení (zelenina, maso, mléčné, trvanlivé). Množství u všeho.
+```
+
+**Večeře ze zbytků:**
+
+```text
+V lednici je: půlka pečeného kuřete, smetana, brambory, kapie a vejce
+(seznam v spiz.md). Navrhni 3 večeře jen z těchto zásob + základ ze
+spíže. U každé čas přípravy — vyberu si.
+```
+
+:::tip
+Držte složku `recepty/` a soubor `spiz.md` aktuální a nedělní plánování
+je otázka jedné věty. A když recepty nemáte sepsané — vyfoťte babiččin
+sešit, agent [rukopis přepíše](/co-vytvorite/skeny-a-fotky/).
+:::
+
+<StrankyTematu tema="domacnost/jidelnicek" />
+
+## Kudy dál
+
+- **[Domácnost a rodina](/temata/domacnost/)** — celá kategorie.
+- **[Rodinný rozpočet](/temata/finance/rozpocet/)** — kolik za jídlo
+  utrácíte.
+- **[Automatizace činností](/co-vytvorite/automatizace/)** — neděle jako
+  opakovaný postup.

@@ -1,0 +1,69 @@
+---
+title: "AI a verejné obstarávanie: súťažné podklady, checklist príloh a lehoty"
+description: "Ako AI agent v OpenWorku pomôže s ponukou do verejného obstarávania: rozoberie súťažné podklady, ustráži podmienky účasti, zostaví checklist príloh a termínov."
+sidebar:
+  label: "Verejné obstarávanie"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Verejné obstarávania prehrávajú malé firmy najčastejšie nie cenou, ale
+**formálnou chybou**: chýbajúca príloha, zle doložené podmienky účasti,
+zmeškaná lehota. Agent je na túto prácu stavaný — prečíta celé súťažné
+podklady, vypíše každú požiadavku a odškrtáva, čo už v ponuke máte.
+
+## Čo s obstarávaním zvládne
+
+- **Rozbor súťažných podkladov** — všetky požiadavky na jednom mieste:
+  podmienky účasti, technické podmienky, kritériá hodnotenia; s odkazom
+  na stranu.
+- **Checklist príloh** — čo všetko ponuka musí obsahovať a v akej forme;
+  priebežne odškrtávať proti priečinku.
+- **Podmienky účasti z vašich podkladov** — ktoré referencie
+  a osvedčenia z vášho archívu požiadavky spĺňajú a čo chýba.
+- **Lehoty a otázky** — termín predloženia, lehota na žiadosti
+  o vysvetlenie; kalendár zákazky.
+- **Kontrola pred predložením** — ponuka proti checklistu naposledy:
+  čo chýba, čo nesedí s podkladmi.
+
+## Ukážkové zadania
+
+**Rozbor podkladov so stranami:**
+
+```text
+Prečítaj sutazne-podklady.pdf a vypíš do vystup/poziadavky.md všetky
+požiadavky: podmienky účasti, technické, obsah ponuky, kritériá
+hodnotenia s váhami, lehoty. Pri každej číslo strany. Nejasné
+formulácie označ — zvážime žiadosť o vysvetlenie.
+```
+
+**Podmienky účasti proti vášmu archívu:**
+
+```text
+Porovnaj podmienky účasti z vystup/poziadavky.md s naším archívom
+referencie/: ktoré referencie spĺňajú požiadavky (objem, vek, odbor)
+a čo doložiť nevieme. Pri referenciách uveď zdrojový súbor.
+```
+
+**Posledná kontrola pred predložením:**
+
+```text
+Prejdi priečinok ponuka-predlozenie/ proti checklistu
+vystup/checklist.md: čo chýba, čo je bez podpisu či dátumu a kde sa
+hodnoty líšia od súťažných podkladov. Vypíš zoznam — opravím a predložím.
+```
+
+:::caution
+Zákon o verejnom obstarávaní je spletitý a chyby nevratné — pri veľkých
+či sporných zákazkách spolupracujte s odborníkom na VO alebo právnikom.
+Agent zaistí, že im na stôl príde kompletný a prehľadný podklad.
+:::
+
+<StrankyTematu tema="podnikani/verejne-zakazky" />
+
+## Kadiaľ ďalej
+
+- **[Podnikanie](/sk/temata/podnikani/)** — celá kategória.
+- **[Cenové ponuky](/sk/temata/podnikani/nabidky/)** — kalkulácia ponuky.
+- **[Práca s PDF](/sk/co-vytvorite/prace-s-pdf/)** — dlhé dokumentácie
+  pod kontrolou.

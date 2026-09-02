@@ -1,0 +1,72 @@
+---
+title: "AI pre spoločenstvá vlastníkov a spolky: zápisy, vyúčtovania a stanovy"
+description: "Ako AI agent v OpenWorku pomáha výborom spoločenstiev vlastníkov bytov a spolkom: zápisy zo schôdzí s uzneseniami, kontrola vyúčtovania, práca so stanovami a pozvánky s náležitosťami."
+sidebar:
+  label: "Spoločenstvá a spolky"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Výbor spoločenstva vlastníkov alebo spolku robí takmer vždy niekto „popri
+práci" — a papierovanie je presne to, čo ho vyčerpáva: zápisy, pozvánky,
+vyúčtovania, stanovy. Agent túto réžiu vie vziať na seba: **dokumenty
+podľa náležitostí, uznesenia dohľadateľné a čísla skontrolované** —
+z podkladov, ktoré výbor aj tak má.
+
+## Čo pre spoločenstvá a spolky zvládne
+
+- **Zápisy zo schôdzí** — z poznámok zápis s uzneseniami, výsledkami
+  hlasovania a úlohami; viď aj [zápisy z porád](/sk/temata/dokumenty/zapisy/).
+- **Pozvánky s náležitosťami** — program, podklady k bodom a lehoty podľa
+  stanov; čo stanovy vyžadujú, agent postráži.
+- **Kontrola vyúčtovania** — vyúčtovanie služieb proti faktúram
+  a meradlám; nezrovnalosti s odkazom na doklad.
+- **Práca so stanovami** — čo stanovy hovoria ku konkrétnej situácii
+  (kvórum, zvolanie, písomné hlasovanie), s citáciou článku.
+- **Prehľad uznesení** — všetky uznesenia naprieč rokmi v jednej tabuľke:
+  čo bolo schválené, kedy a čo z toho je splnené.
+
+## Ukážkové zadania
+
+**Zápis so všetkým, čo má mať:**
+
+```text
+Z poznámok v svb/schodza-2026-09.md urob zápis podľa šablóny
+vzory/zapis.md: uznesenia s presným znením a pomerom hlasov, úlohy
+(kto, dokedy), prílohy. Kde v poznámkach chýba pomer hlasov, daj
+otáznik.
+```
+
+**Kontrola vyúčtovania proti dokladom:**
+
+```text
+Porovnaj vyuctovanie-2025.pdf s faktúrami v svb/faktury-2025/: sedia
+celkové náklady po kapitolách (teplo, voda, upratovanie, správa)?
+Rozdiely vypíš s odkazom na doklad. Nič neprepočítavaj na jednotky —
+len porovnaj celky.
+```
+
+**Čo hovoria stanovy:**
+
+```text
+V svb/stanovy.pdf nájdi, čo platí pre písomné hlasovanie: kto ho môže
+vyhlásiť, aká je lehota a aké kvórum. Cituj presné znenie článkov
+a napíš zrozumiteľné zhrnutie — pôjde do pozvánky.
+```
+
+:::caution
+Zápisy a pozvánky spoločenstiev majú zákonné náležitosti a chyby sa na
+súde neodpúšťajú — pri sporných krokoch (písomné hlasovanie, zmena
+stanov) nechajte dokument skontrolovať právnikom. Agent pripraví podklad
+a citácie; zodpovednosť nesie výbor.
+:::
+
+<StrankyTematu tema="urady/svj-a-spolky" />
+
+## Kadiaľ ďalej
+
+- **[Úrady a práva](/sk/temata/urady/)** — celá kategória.
+- **[Zápisy z porád](/sk/temata/dokumenty/zapisy/)** — technika zápisov
+  všeobecne.
+- **[Tabuľky a Excel](/sk/co-vytvorite/tabulky-a-excel/)** — vyúčtovania
+  a prehľady.

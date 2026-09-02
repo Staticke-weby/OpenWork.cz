@@ -3,7 +3,7 @@ title: "OpenWork pre firmy a živnostníkov"
 description: "Čo AI agent urobí nad priečinkom s faktúrami, zmluvami a ponukami — ukážkové prompty pre firmy a SZČO. Platíte za spotrebu, nie za počet ľudí."
 sidebar:
   order: 1
-tagy: [finance/faktury, podnikani/nabidky, podnikani/overeni-firmy, finance/dane]
+tagy: [finance/faktury, podnikani/nabidky, podnikani/overeni-firmy, finance/dane, podnikani/projekty, podnikani/gdpr-dokumentace, podnikani/verejne-zakazky]
 ---
 
 Máte priečinok s faktúrami, zmluvami a podkladmi? Presne nad takým priečinkom

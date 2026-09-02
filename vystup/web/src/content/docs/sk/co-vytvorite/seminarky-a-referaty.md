@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku pomôže so seminárkou aj referátom: utried
 sidebar:
   order: 6
   label: "Seminárky a referáty"
-tagy: [skola/zkouska]
+tagy: [skola/zkouska, skola/diplomka]
 ---
 
 Pri seminárke a referáte zaberie najviac času všetko okolo: utriediť zdroje,

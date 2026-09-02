@@ -1,0 +1,71 @@
+---
+title: "AI riadenie zákaziek: harmonogram, stav rozpracovanosti a odovzdanie"
+description: "Ako AI agent v OpenWorku pomáha riadiť malé zákazky a projekty: harmonogram z podkladov, týždenný prehľad stavu z priečinkov, checklisty odovzdania a stráženie termínov."
+sidebar:
+  label: "Zákazky a projekty"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Malá firma neriadi projekty v drahom nástroji — riadi ich v priečinkoch,
+e-mailoch a hlave. Agent vie práve toto prostredie: **z priečinkov
+zákaziek vyčíta stav, poskladá harmonogram a ustráži termíny.** Žiadny
+nový systém; poriadok vznikne nad tým, čo už máte.
+
+## Čo so zákazkami zvládne
+
+- **Harmonogram z podkladov** — z ponuky a zadania fázy zákazky
+  s termínmi a závislosťami (čo musí byť hotové skôr).
+- **Týždenný prehľad stavu** — prejsť priečinky zákaziek a spísať: čo sa
+  pohlo, čo stojí a prečo, čo je po termíne.
+- **Checklisty odovzdania** — čo všetko odovzdať pri dokončenej zákazke
+  (dokumentácia, revízie, faktúra), odškrtávané.
+- **Stráženie termínov naprieč zákazkami** — všetky míľniky v jednej
+  tabuľke, zoradené, so zvýraznením blízkych.
+- **Podklady na kontrolný deň** — stav, zmeny a otvorené body na
+  rokovanie so zákazníkom.
+
+## Ukážkové zadania
+
+**Harmonogram so závislosťami:**
+
+```text
+Z ponuky zakazky/novak-kupelna/ponuka.md urob harmonogram: fázy, odhad
+dní, čo na čom závisí (obklady až po rozvodoch). Začiatok 15. 9.,
+remeselníci nepracujú cez víkendy. Ulož do zakazky/novak-kupelna/plan.md.
+```
+
+**Týždenný stav z priečinkov — len fakty:**
+
+```text
+Prejdi priečinky v zakazky/ a urob prehľad stavu k dnešku: pri každej
+zákazke posledná zmena, v ktorej fáze podľa plánu je, čo je po termíne.
+Píš len to, čo je vidieť zo súborov — čo sa nedá spoznať, označ
+„nutné overiť".
+```
+
+**Checklist odovzdania:**
+
+```text
+Podľa šablóny vzory/odovzdanie.md priprav checklist odovzdania pre
+zákazku novak-kupelna: doplň položky špecifické z ponuky (škárovanie,
+revízia elektro) a vypíš, ktoré dokumenty v priečinku ešte chýbajú.
+```
+
+:::tip
+Zjednoťte štruktúru priečinkov zákaziek (viď
+[štruktúra priečinkov](/sk/prace-se-slozkou/struktura-slozek/))
+a týždenný stav sa stane jednou vetou — ideálny
+[opakovaný postup](/sk/co-vytvorite/automatizace/). Pravidlá, čo má
+prehľad obsahovať, patria do AGENTS.md.
+:::
+
+<StrankyTematu tema="podnikani/projekty" />
+
+## Kadiaľ ďalej
+
+- **[Podnikanie](/sk/temata/podnikani/)** — celá kategória.
+- **[Cenové ponuky](/sk/temata/podnikani/nabidky/)** — kde zákazka
+  začína.
+- **[Zápisy z porád](/sk/temata/dokumenty/zapisy/)** — úlohy z porád
+  k zákazkám.

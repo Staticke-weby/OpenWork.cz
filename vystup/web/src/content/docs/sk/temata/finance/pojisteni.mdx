@@ -1,0 +1,70 @@
+---
+title: "AI a poistenie: kontrola zmluvy, výluky a podklady k poistnej udalosti"
+description: "Ako AI agent v OpenWorku pomôže s poistením: prečíta poistnú zmluvu vrátane výluk, porovná ponuky na rovnakom základe a pripraví podklady k poistnej udalosti z fotiek a dokladov."
+sidebar:
+  label: "Poistenie"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Pri poistení rozhoduje to, čo nikto nečíta: **výluky, limity a podmienky
+písané drobným.** Agent prečíta celú zmluvu, vypíše, čo kryje a čo nie,
+porovná ponuky s rovnakým obsahom — a keď sa niečo stane, poskladá
+podklady k poistnej udalosti tak, aby likvidátorovi nič nechýbalo.
+
+## Čo s poistením zvládne
+
+- **Kontrola zmluvy** — čo je kryté, čo je vylúčené, limity plnenia
+  a spoluúčasť; vždy s odkazom na článok.
+- **Porovnanie ponúk** — rovnaké krytie vedľa seba: cena, limity, výluky,
+  asistencia; prepočty viditeľne.
+- **Prehľad poistiek domácnosti** — čo máte dojednané, za koľko, výročia
+  zmlúv a výpovedné okná v jednej tabuľke.
+- **Podklady k poistnej udalosti** — fotky, doklady a popis udalosti
+  pokope, s checklistom toho, čo poisťovňa chce.
+- **Kontrola plnenia** — porovnať, čo poisťovňa uznala, s tým, čo zmluva
+  sľubuje; podklad pre námietku.
+
+## Ukážkové zadania
+
+**Zmluva pred podpisom — výluky hore:**
+
+```text
+Prečítaj poistne-podmienky.pdf a vypíš: čo je kryté, VŠETKY výluky,
+limity plnenia a spoluúčasť. Pri každom bode číslo článku. Na koniec
+napíš tri otázky, ktoré mám poisťovni položiť, než podpíšem.
+```
+
+**Ponuky na rovnakom základe:**
+
+```text
+Porovnaj tri ponuky poistenia domácnosti v priečinku poistenie-ponuky/:
+tabuľka cena/rok, limity pre vodu, požiar a krádež, spoluúčasť, výluky
+navyše. Kde sa krytie líši, zvýrazni — nech neporovnávam jablká
+s hruškami.
+```
+
+**Podklady k udalosti kompletne:**
+
+```text
+V priečinku udalost-2026-09/ sú fotky vytopenej kúpeľne, bločky za
+vysúšanie a naša poistka. Priprav podklad na hlásenie: popis udalosti,
+zoznam škôd s dokladmi a čo podľa zmluvy uplatňujeme (s odkazom na
+článok). Nič neodosielaj.
+```
+
+:::caution
+Agent číta zmluvu, ktorú máte — poisťovacie poradenstvo ani likvidáciu
+nenahradí. Pri veľkých škodách jednajte s poisťovňou písomne a odkladajte
+všetko; s poskladanými podkladmi je aj prípadný spor jednoduchší.
+:::
+
+<StrankyTematu tema="finance/pojisteni" />
+
+## Kadiaľ ďalej
+
+- **[Financie a účtovníctvo](/sk/temata/finance/)** — celá kategória.
+- **[Porovnanie zmlúv a ponúk](/sk/co-vytvorite/porovnani-smluv-a-nabidek/)** —
+  technika porovnania.
+- **[Reklamácie](/sk/temata/urady/reklamace/)** — keď poisťovňa kráti
+  plnenie.

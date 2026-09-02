@@ -1,0 +1,69 @@
+---
+title: "AI a pojištění: kontrola smlouvy, výluky a podklady k pojistné události"
+description: "Jak AI agent v OpenWorku pomůže s pojištěním: přečte pojistnou smlouvu včetně výluk, srovná nabídky na stejném základu a připraví podklady k pojistné události z fotek a dokladů."
+sidebar:
+  label: "Pojištění"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+U pojištění rozhoduje to, co nikdo nečte: **výluky, limity a podmínky
+psané drobně.** Agent přečte celou smlouvu, vypíše, co kryje a co ne,
+srovná nabídky se stejným obsahem — a když se něco stane, poskládá
+podklady k pojistné události tak, aby likvidátorovi nic nechybělo.
+
+## Co s pojištěním zvládne
+
+- **Kontrola smlouvy** — co je kryté, co je vyloučené, limity plnění
+  a spoluúčast; vždy s odkazem na článek.
+- **Srovnání nabídek** — stejné krytí vedle sebe: cena, limity, výluky,
+  asistence; přepočty viditelně.
+- **Přehled pojistek domácnosti** — co máte sjednané, za kolik, výročí
+  smluv a výpovědní okna v jedné tabulce.
+- **Podklady k pojistné události** — fotky, doklady a popis události
+  pohromadě, s checklistem toho, co pojišťovna chce.
+- **Kontrola plnění** — porovnat, co pojišťovna uznala, s tím, co smlouva
+  slibuje; podklad pro námitku.
+
+## Ukázková zadání
+
+**Smlouva před podpisem — výluky nahoru:**
+
+```text
+Přečti pojistne-podminky.pdf a vypiš: co je kryté, VŠECHNY výluky,
+limity plnění a spoluúčast. U každého bodu číslo článku. Na konec
+napiš tři otázky, které mám pojišťovně položit, než podepíšu.
+```
+
+**Nabídky na stejném základu:**
+
+```text
+Srovnej tři nabídky pojištění domácnosti ve složce pojisteni-nabidky/:
+tabulka cena/rok, limity pro vodu, požár a krádež, spoluúčast, výluky
+navíc. Kde se krytí liší, zvýrazni — ať nesrovnávám jablka s hruškami.
+```
+
+**Podklady k události kompletně:**
+
+```text
+Ve složce udalost-2026-09/ jsou fotky vytopené koupelny, účtenky za
+vysoušení a naše pojistka. Připrav podklad pro hlášení: popis události,
+seznam škod s doklady a co podle smlouvy uplatňujeme (s odkazem na
+článek). Nic neodesílej.
+```
+
+:::caution
+Agent čte smlouvu, kterou máte — pojišťovací poradenství ani likvidaci
+nenahradí. U velkých škod jednejte s pojišťovnou písemně a schovávejte
+vše; s poskládanými podklady je i případný spor snazší.
+:::
+
+<StrankyTematu tema="finance/pojisteni" />
+
+## Kudy dál
+
+- **[Finance a účetnictví](/temata/finance/)** — celá kategorie.
+- **[Porovnání smluv a nabídek](/co-vytvorite/porovnani-smluv-a-nabidek/)** —
+  technika srovnání.
+- **[Reklamace](/temata/urady/reklamace/)** — když pojišťovna krátí
+  plnění.

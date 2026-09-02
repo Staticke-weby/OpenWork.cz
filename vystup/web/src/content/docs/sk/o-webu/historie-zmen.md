@@ -9,6 +9,21 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 2. septembra 2026 — dvanásť nových tém
+
+- **Dokumenty:** [žiadosti a splnomocnenia](/sk/temata/dokumenty/zadosti-a-plne-moci/),
+  [príprava na pohovor](/sk/temata/dokumenty/pohovor/).
+- **Financie:** [poistenie](/sk/temata/finance/pojisteni/),
+  [energie](/sk/temata/finance/energie/).
+- **Škola:** [prijímačky](/sk/temata/skola/prijimacky/),
+  [diplomovka](/sk/temata/skola/diplomka/).
+- **Domácnosť:** [jedálniček](/sk/temata/domacnost/jidelnicek/),
+  [sťahovanie](/sk/temata/domacnost/stehovani/).
+- **Podnikanie:** [zákazky a projekty](/sk/temata/podnikani/projekty/),
+  [GDPR dokumentácia](/sk/temata/podnikani/gdpr-dokumentace/),
+  [verejné obstarávanie](/sk/temata/podnikani/verejne-zakazky/).
+- **Úrady:** [spoločenstvá a spolky](/sk/temata/urady/svj-a-spolky/).
+
 ## 1. septembra 2026 — témy: bývanie, zdravie, jazyky a zápisy
 
 - Nové témy [bývanie](/sk/temata/domacnost/bydleni/)

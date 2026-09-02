@@ -1,0 +1,71 @@
+---
+title: "AI a GDPR dokumentace: zásady, souhlasy a záznamy pro malou firmu"
+description: "Jak AI agent v OpenWorku připraví podklady GDPR dokumentace malé firmy: zásady zpracování, texty souhlasů, záznamy o činnostech a odpovědi na žádosti subjektů údajů."
+sidebar:
+  label: "GDPR dokumentace"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+GDPR neskončilo v roce 2018 — malé firmy ho jen odsunuly. Přitom základ
+dokumentace není věda, je to **popsat poctivě, co s osobními údaji opravdu
+děláte.** A přesně v tom agent pomůže: projde, jaká data ve firmě máte,
+a připraví koncepty dokumentů, které pak projdete (ideálně s právníkem)
+a přijmete za své.
+
+## Co s GDPR dokumentací zvládne
+
+- **Mapa osobních údajů** — projít složky a systémy podle vašeho popisu
+  a sepsat: jaká data, o kom, kde leží a proč je máte.
+- **Zásady zpracování** — koncept informace pro zákazníky srozumitelnou
+  češtinou, ne kopie cizího webu.
+- **Texty souhlasů** — jen tam, kde je souhlas opravdu potřeba; kde stačí
+  jiný právní titul, agent upozorní.
+- **Záznamy o činnostech zpracování** — tabulka podle čl. 30 z mapy
+  údajů.
+- **Odpovědi na žádosti** — podklad pro odpověď na žádost o výmaz či
+  přístup, s termínem nahoře.
+
+## Ukázková zadání
+
+**Mapa údajů jako základ všeho:**
+
+```text
+Podle popisu firmy v podklady/firma.md a struktury složek sepiš mapu
+osobních údajů: kategorie (zákazníci, zaměstnanci, dodavatelé), jaká
+data, kde jsou uložená, proč je máme a jak dlouho. Co nevíš, vypiš
+jako otázku — nedomýšlej.
+```
+
+**Zásady zpracování lidsky:**
+
+```text
+Z vystup/mapa-udaju.md připrav koncept zásad zpracování pro web:
+srozumitelně, po kategoriích, s právními tituly a dobami uložení
+z mapy. Žádné vaty a strašení — půl strany až strana.
+```
+
+**Odpověď na žádost o výmaz:**
+
+```text
+Přišla žádost o výmaz údajů (podklady/zadost.md). Podle mapy údajů
+vypiš: co vymazat můžeme, co musíme držet (účetnictví!) a proč,
+a připrav koncept odpovědi s termínem. Nic nemaž a neodesílej.
+```
+
+:::caution
+GDPR dokumentace je právní dokument — koncepty od agenta nechte projít
+právníkem, zvlášť u citlivých údajů a velkých objemů. A dokumentace musí
+odpovídat realitě: popsat, co neděláte, je horší než nemít nic. Souvisí
+s přehledem [GDPR a NIS2](/vase-data/gdpr-a-nis2/).
+:::
+
+<StrankyTematu tema="podnikani/gdpr-dokumentace" />
+
+## Kudy dál
+
+- **[Podnikání](/temata/podnikani/)** — celá kategorie.
+- **[GDPR a NIS2](/vase-data/gdpr-a-nis2/)** — co pravidla znamenají
+  při práci s AI.
+- **[Profese s mlčenlivostí](/pro-koho/profese-s-mlcenlivosti/)** — práce
+  s citlivými daty v praxi.

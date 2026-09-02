@@ -9,6 +9,21 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 2. září 2026 — dvanáct nových témat
+
+- **Dokumenty:** [žádosti a plné moci](/temata/dokumenty/zadosti-a-plne-moci/),
+  [příprava na pohovor](/temata/dokumenty/pohovor/).
+- **Finance:** [pojištění](/temata/finance/pojisteni/),
+  [energie](/temata/finance/energie/).
+- **Škola:** [přijímačky](/temata/skola/prijimacky/),
+  [diplomka](/temata/skola/diplomka/).
+- **Domácnost:** [jídelníček](/temata/domacnost/jidelnicek/),
+  [stěhování](/temata/domacnost/stehovani/).
+- **Podnikání:** [zakázky a projekty](/temata/podnikani/projekty/),
+  [GDPR dokumentace](/temata/podnikani/gdpr-dokumentace/),
+  [veřejné zakázky](/temata/podnikani/verejne-zakazky/).
+- **Úřady:** [SVJ a spolky](/temata/urady/svj-a-spolky/).
+
 ## 1. září 2026 — témata: bydlení, zdraví, jazyky a zápisy
 
 - Nová témata [bydlení](/temata/domacnost/bydleni/)

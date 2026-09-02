@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku napíše zápis z porady, report, e-mail aleb
 sidebar:
   order: 1
   label: "Texty a dokumenty"
-tagy: [dokumenty/zivotopis, dokumenty/e-maily, podnikani/marketing, dokumenty/zapisy]
+tagy: [dokumenty/zivotopis, dokumenty/e-maily, podnikani/marketing, dokumenty/zapisy, dokumenty/zadosti-a-plne-moci, urady/svj-a-spolky]
 ---
 
 Písanie „okolo práce" — zápisy, reporty, odpovede, listy — zaberie často viac

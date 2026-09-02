@@ -1,0 +1,70 @@
+---
+title: "AI a veřejné zakázky: zadávací dokumentace, checklist příloh a lhůty"
+description: "Jak AI agent v OpenWorku pomůže s nabídkou do veřejné zakázky: rozebere zadávací dokumentaci, ohlídá kvalifikační požadavky, sestaví checklist příloh a termínů."
+sidebar:
+  label: "Veřejné zakázky"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Veřejné zakázky prohrávají malé firmy nejčastěji ne cenou, ale **formální
+chybou**: chybějící příloha, špatně doložená kvalifikace, zmeškaná lhůta.
+Agent je na tuhle práci stavěný — přečte celou zadávací dokumentaci,
+vypíše každý požadavek a odškrtává, co už v nabídce máte.
+
+## Co s veřejnými zakázkami zvládne
+
+- **Rozbor zadávací dokumentace** — všechny požadavky na jednom místě:
+  kvalifikace, technické podmínky, hodnoticí kritéria; s odkazem na
+  stranu.
+- **Checklist příloh** — co všechno nabídka musí obsahovat a v jaké
+  formě; průběžně odškrtávat proti složce.
+- **Kvalifikace z vašich podkladů** — které reference a osvědčení
+  z vašeho archivu požadavky splňují a co chybí.
+- **Lhůty a dotazy** — termín podání, lhůta pro dotazy zadavateli
+  a vysvětlení; kalendář zakázky.
+- **Kontrola před podáním** — nabídka proti checklistu naposledy:
+  co chybí, co nesedí s dokumentací.
+
+## Ukázková zadání
+
+**Rozbor dokumentace se stránkami:**
+
+```text
+Přečti zadavaci-dokumentace.pdf a vypiš do vystup/pozadavky.md všechny
+požadavky: kvalifikační, technické, obsah nabídky, hodnoticí kritéria
+s váhami, lhůty. U každého číslo strany. Nejasné formulace označ —
+zvážíme dotaz zadavateli.
+```
+
+**Kvalifikace proti vašemu archivu:**
+
+```text
+Porovnej kvalifikační požadavky z vystup/pozadavky.md s naším archivem
+reference/: které reference splňují požadavky (objem, stáří, obor)
+a co doložit neumíme. U referencí uveď zdrojový soubor.
+```
+
+**Poslední kontrola před podáním:**
+
+```text
+Projdi složku nabidka-podani/ proti checklistu vystup/checklist.md:
+co chybí, co je bez podpisu či data a kde se hodnoty liší od zadávací
+dokumentace. Vypiš seznam — opravím a podám.
+```
+
+:::caution
+Zákon o zadávání veřejných zakázek je spletitý a chyby nevratné —
+u velkých či sporných zakázek spolupracujte s administrátorem VZ nebo
+právníkem. Agent zajistí, že jim na stůl přijde kompletní a přehledný
+podklad.
+:::
+
+<StrankyTematu tema="podnikani/verejne-zakazky" />
+
+## Kudy dál
+
+- **[Podnikání](/temata/podnikani/)** — celá kategorie.
+- **[Cenové nabídky](/temata/podnikani/nabidky/)** — kalkulace nabídky.
+- **[Práce s PDF](/co-vytvorite/prace-s-pdf/)** — dlouhé dokumentace
+  pod kontrolou.
