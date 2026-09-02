@@ -9,6 +9,16 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 1. septembra 2026 — témy: dokumenty, úrady a rozpočet
+
+- Nové kategórie [Dokumenty](/sk/temata/dokumenty/)
+  ([zmluvy](/sk/temata/dokumenty/smlouvy/),
+  [životopis](/sk/temata/dokumenty/zivotopis/),
+  [e-maily](/sk/temata/dokumenty/e-maily/))
+  a [Úrady a práva](/sk/temata/urady/)
+  ([reklamácie](/sk/temata/urady/reklamace/)).
+- Financie rozšírené o [rodinný rozpočet](/sk/temata/finance/rozpocet/).
+
 ## 31. augusta 2026 — nová sekcia Témy
 
 - Nový pohľad na obsah **podľa situácií**: rázcestník [Témy](/sk/temata/),

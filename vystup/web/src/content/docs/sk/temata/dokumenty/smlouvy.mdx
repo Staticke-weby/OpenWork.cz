@@ -1,0 +1,68 @@
+---
+title: "AI na zmluvy: kontrola pred podpisom, lehoty a porovnanie verzií"
+description: "Ako AI agent v OpenWorku pomôže so zmluvami: vypíše lehoty a riziká, porovná návrh so vzorom, ustráži výpovedné termíny a pripraví podklady pre právnika. S ukážkovými zadaniami."
+sidebar:
+  label: "Zmluvy"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Zmluvy sú dlhé, písané drobným písmom — a presne preto sa v nich prehliada
+to podstatné. Agent prečíta **každú vetu s rovnakou pozornosťou**, vypíše
+lehoty a povinnosti, porovná verzie a upozorní na riziká. Rozhodnutie
+a podpis zostávajú na vás; s prehľadom v ruke sú ale rýchlejšie a istejšie.
+
+## Čo so zmluvami zvládne
+
+- **Kontrola pred podpisom** — vypísať lehoty, povinnosti, sankcie
+  a automatické predĺženia, vždy s odkazom na článok.
+- **Porovnanie verzií** — čo sa zmenilo medzi návrhom a protinávrhom,
+  po bodoch s oboma zneniami.
+- **Kontrola proti vzoru** — čím sa návrh líši od vášho vzoru a ktoré
+  ustanovenia chýbajú.
+- **Stráženie termínov** — výpovedné lehoty a konce záväzkov zo všetkých
+  zmlúv v jednom prehľade.
+- **Podklady pre právnika** — prehľad sporných bodov dopredu; konzultácia
+  je potom kratšia a lacnejšia.
+
+## Ukážkové zadania
+
+**Kontrola pred podpisom — s odkazom na každé riziko:**
+
+```text
+Prečítaj zmluvy/najomna-zmluva-navrh.pdf a vypíš: všetky lehoty, moje
+povinnosti, sankcie a čo sa predlžuje automaticky. Pri každom bode uveď
+číslo článku. Na koniec napíš, na čo sa doptať, než podpíšem.
+```
+
+**Porovnanie návrhu so vzorom:**
+
+```text
+Porovnaj návrh v zmluvy/navrh.pdf s naším vzorom vo vzory/zmluva.md:
+čo je inak, čo zo vzoru chýba a čo je navyše. Pri každom rozdiele obe
+znenia vedľa seba.
+```
+
+**Prehľad výpovedných lehôt naprieč zmluvami:**
+
+```text
+Prejdi priečinok zmluvy/ a vytvor tabuľku: zmluva, koniec záväzku,
+výpovedná lehota a posledný deň, kedy sa dá vypovedať. Zoraď podľa
+dátumu a zvýrazni, čo je skôr než o 60 dní.
+```
+
+:::caution
+Agent pripraví prehľad a upozorní na riziká — právne posúdenie nenahradí.
+Pri dôležitých zmluvách dajte výstup právnikovi; a citlivé zmluvy klientov
+najprv [anonymizujte](/sk/pro-koho/profese-s-mlcenlivosti/).
+:::
+
+<StrankyTematu tema="dokumenty/smlouvy" />
+
+## Kadiaľ ďalej
+
+- **[Dokumenty](/sk/temata/dokumenty/)** — celá kategória.
+- **[Porovnanie zmlúv a ponúk](/sk/co-vytvorite/porovnani-smluv-a-nabidek/)** —
+  technika porovnávania podrobne.
+- **[Nulové uchovávanie dát (ZDR)](/sk/vase-data/zdr/)** — kam smie citlivá
+  zmluva odísť.

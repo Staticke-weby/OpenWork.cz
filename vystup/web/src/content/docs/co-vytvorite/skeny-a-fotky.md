@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku přečte skeny a fotky dokumentů — účten
 sidebar:
   order: 9
   label: "Skeny a fotky dokumentů"
-tagy: [finance/faktury, finance/uctenky]
+tagy: [finance/faktury, finance/uctenky, urady/reklamace]
 ---
 
 Účtenky v krabici, papírové smlouvy v šanonu, vizitky v šuplíku. Stačí je

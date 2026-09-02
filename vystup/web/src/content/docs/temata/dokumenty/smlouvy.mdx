@@ -1,0 +1,68 @@
+---
+title: "AI na smlouvy: kontrola před podpisem, lhůty a porovnání verzí"
+description: "Jak AI agent v OpenWorku pomůže se smlouvami: vypíše lhůty a rizika, porovná návrh se vzorem, ohlídá výpovědní termíny a připraví podklady pro právníka. S ukázkovými zadáními."
+sidebar:
+  label: "Smlouvy"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Smlouvy jsou dlouhé, psané drobným písmem — a přesně proto se v nich
+přehlíží to podstatné. Agent přečte **každou větu se stejnou pozorností**,
+vypíše lhůty a povinnosti, srovná verze a upozorní na rizika. Rozhodnutí
+a podpis zůstávají na vás; s přehledem v ruce jsou ale rychlejší a jistější.
+
+## Co se smlouvami zvládne
+
+- **Kontrola před podpisem** — vypsat lhůty, povinnosti, sankce a
+  automatická prodloužení, vždy s odkazem na článek.
+- **Porovnání verzí** — co se změnilo mezi návrhem a protinávrhem, po
+  bodech s oběma zněními.
+- **Kontrola proti vzoru** — čím se návrh liší od vašeho vzoru a která
+  ustanovení chybí.
+- **Hlídání termínů** — výpovědní lhůty a konce závazků ze všech smluv
+  v jednom přehledu.
+- **Podklady pro právníka** — přehled sporných bodů dopředu; konzultace je
+  pak kratší a levnější.
+
+## Ukázková zadání
+
+**Kontrola před podpisem — s odkazem na každé riziko:**
+
+```text
+Přečti smlouvy/najemni-smlouva-navrh.pdf a vypiš: všechny lhůty, moje
+povinnosti, sankce a co se prodlužuje automaticky. U každého bodu uveď
+číslo článku. Na konec napiš, na co se doptat, než podepíšu.
+```
+
+**Porovnání návrhu se vzorem:**
+
+```text
+Porovnej návrh v smlouvy/navrh.pdf s naším vzorem ve vzory/smlouva.md:
+co je jinak, co ze vzoru chybí a co je navíc. U každého rozdílu obě
+znění vedle sebe.
+```
+
+**Přehled výpovědních lhůt napříč smlouvami:**
+
+```text
+Projdi složku smlouvy/ a vytvoř tabulku: smlouva, konec závazku,
+výpovědní lhůta a poslední den, kdy jde vypovědět. Seřaď podle data
+a zvýrazni, co je dřív než za 60 dní.
+```
+
+:::caution
+Agent připraví přehled a upozorní na rizika — právní posouzení nenahradí.
+U důležitých smluv dejte výstup právníkovi; a citlivé smlouvy klientů
+nejdřív [anonymizujte](/pro-koho/profese-s-mlcenlivosti/).
+:::
+
+<StrankyTematu tema="dokumenty/smlouvy" />
+
+## Kudy dál
+
+- **[Dokumenty](/temata/dokumenty/)** — celá kategorie.
+- **[Porovnání smluv a nabídek](/co-vytvorite/porovnani-smluv-a-nabidek/)** —
+  technika porovnávání podrobně.
+- **[Nulové uchovávání dat (ZDR)](/vase-data/zdr/)** — kam smí citlivá
+  smlouva odejít.

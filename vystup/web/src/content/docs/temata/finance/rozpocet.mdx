@@ -1,0 +1,68 @@
+---
+title: "AI na rodinný rozpočet: přehled výdajů z výpisů bez přepisování"
+description: "Jak s AI agentem v OpenWorku udržet rodinný rozpočet: výdaje z výpisů po kategoriích, srovnání měsíců, plán větších výdajů — a nezařazené položky vždy zvlášť."
+sidebar:
+  label: "Rodinný rozpočet"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Rodinný rozpočet většinou padne na tom, že nikoho nebaví přepisovat výpisy.
+S agentem odpadá právě tohle: **výpisy z banky nasypete do složky a přehled
+po kategoriích se udělá sám** — každý měsíc stejně, takže čísla jde
+srovnávat. Kam peníze tečou, přestane být dojem a začne být tabulka.
+
+## Co s rozpočtem zvládne
+
+- **Výdaje po kategoriích** — z výpisů přehled: bydlení, jídlo, doprava,
+  děti, ostatní; nezařazené vždy zvlášť.
+- **Srovnání měsíců** — kde výdaje rostou a o kolik, s odkazem na konkrétní
+  pohyby.
+- **Odhalit tiché úniky** — předplatná a pravidelné platby, které už nikdo
+  nepoužívá.
+- **Plán většího výdaje** — co udělá dovolená nebo nové auto s rozpočtem
+  na příští rok.
+- **Přehled smluvních plateb** — nájem, energie, pojistky a jejich výročí
+  v jedné tabulce.
+
+## Ukázková zadání
+
+**Měsíční přehled — nezařazené zvlášť, ne odhadem:**
+
+```text
+Z výpisů ve složce finance/2026-08/ udělej přehled výdajů po kategoriích
+(bydlení, jídlo, doprava, děti, ostatní). Co nejde jednoznačně zařadit,
+dej do „nezařazeno" a vypiš zvlášť — kategorie nedomýšlej.
+```
+
+**Srovnání s minulým měsícem s odkazy:**
+
+```text
+Porovnej vystup/rozpocet-2026-08.xlsx s červencem: u kategorií, kde se
+výdaje změnily o víc než 10 %, vypiš konkrétní pohyby z výpisu, které
+rozdíl způsobily.
+```
+
+**Hon na zapomenutá předplatná:**
+
+```text
+Projdi výpisy za posledních 6 měsíců a vypiš všechny opakující se platby:
+komu, kolik, jak často a kdy naposledy. Seřaď od nejdražších — projdeme,
+co zrušit.
+```
+
+:::tip
+Nechte si postup uložit jako [dovednost](/prace-se-slozkou/dovednosti-skills/)
+„měsíční rozpočet" — pak stačí každý měsíc nahrát výpis a napsat jednu
+větu. A výpisy zůstávají u vás: agent posílá poskytovateli jen zadání,
+u citlivých dat viz [Vaše data](/vase-data/).
+:::
+
+<StrankyTematu tema="finance/rozpocet" />
+
+## Kudy dál
+
+- **[Finance a účetnictví](/temata/finance/)** — celá kategorie.
+- **[Tabulky a Excel](/co-vytvorite/tabulky-a-excel/)** — technika přehledů
+  podrobně.
+- **[Účtenky](/temata/finance/uctenky/)** — hotovostní výdaje z fotek.

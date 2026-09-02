@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku napíše zápis z porady, report, e-mail nebo
 sidebar:
   order: 1
   label: "Texty a dokumenty"
+tagy: [dokumenty/zivotopis, dokumenty/e-maily]
 ---
 
 Psaní „kolem práce" — zápisy, reporty, odpovědi, dopisy — zabere často víc

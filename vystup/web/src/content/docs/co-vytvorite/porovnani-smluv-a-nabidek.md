@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku porovná nabídky dodavatelů nebo verze smlu
 sidebar:
   order: 5
   label: "Porovnání smluv a nabídek"
+tagy: [dokumenty/smlouvy]
 ---
 
 Tři nabídky, každá v jiném formátu, každá „nejvýhodnější". Agent je přečte

@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku si na opakovanou práci napíše skript, při
 sidebar:
   order: 12
   label: "Automatizace činností"
+tagy: [dokumenty/e-maily]
 ---
 
 Největší úspora není v tom, že agent udělá úkol jednou — ale že ho pak

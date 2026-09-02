@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku vytáhne data z PDF faktur a smluv, sloučí 
 sidebar:
   order: 8
   label: "Práce s PDF"
-tagy: [finance/faktury]
+tagy: [finance/faktury, dokumenty/smlouvy]
 ---
 
 PDF je formát, ve kterém dokumenty chodí — a ve kterém se s nimi nejhůř
