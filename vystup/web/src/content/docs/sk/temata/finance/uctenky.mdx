@@ -1,0 +1,70 @@
+---
+title: "AI na bločky: z fotiek rovno do tabuľky a vyúčtovania"
+description: "Ako AI agent v OpenWorku spracuje bločky: prečíta fotky, vyťaží sumy do tabuľky, pripraví vyúčtovanie služobnej cesty aj prehľad výdavkov domácnosti. S ukážkovými zadaniami."
+sidebar:
+  label: "Bločky (účtenky)"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Bločky sa hromadia v peňaženke, v škatuli aj v e-maile — a prepisovať ich
+ručne nechce nikto. Stačí ich **odfotiť do priečinka**: agent ich prečíta,
+sumy vyťaží do tabuľky a neisté položky poctivo označí, namiesto toho, aby
+ich odhadoval. Potrebuje na to model s
+[obrázkovým vstupom](/sk/modely/vstupy/) — východiskové odporúčanie webu ho
+má.
+
+## Čo s bločkami zvládne
+
+- **Fotky do tabuľky** — dátum, obchod, suma, kategória; z kopy fotiek
+  jeden prehľad.
+- **Vyúčtovanie služobnej cesty** — tabuľka podľa pravidiel firmy,
+  s odkazom na fotku pri každej položke.
+- **Prehľad výdavkov domácnosti** — kam peniaze tečú, po kategóriách
+  a mesiacoch.
+- **Podklady k reklamácii** — bloček + záruka + fotka závady na jednom
+  mieste.
+- **Druhá kontrola** — porovnať prepísané sumy proti fotkám a označiť,
+  kde si nie je istý.
+
+## Ukážkové zadania
+
+**Vyťaženie s označením nečitateľného:**
+
+```text
+V priečinku blocky/ sú fotky bločkov za august. Vytvor tabuľku pre
+Excel: dátum, obchod, suma, kategória (jedlo, doprava, ostatné).
+Nečitateľné položky označ — neodhaduj ich.
+```
+
+**Vyúčtovanie cesty s doložiteľnosťou:**
+
+```text
+Z fotiek v sluzobka-kosice/ priprav vyúčtovanie služobnej cesty:
+tabuľka dátum, účel, suma, a pri každej položke názov súboru s fotkou
+bločka. Na koniec spočítaj celkom a zvlášť stravu.
+```
+
+**Druhá kontrola dôležitých súm:**
+
+```text
+Skontroluj vystup/vyuctovanie.xlsx proti fotkám: pri sumách nad 20 €
+porovnaj každú s bločkom a označ riadky, kde si nie si istý —
+skontrolujem ich sám.
+```
+
+:::tip
+Foťte bločky priebežne do jedného priečinka (napríklad z telefónu)
+a vyúčtovanie si nechajte robiť raz mesačne rovnakým zadaním — alebo si
+postup uložte ako [zručnosť](/sk/prace-se-slozkou/dovednosti-skills/).
+:::
+
+<StrankyTematu tema="finance/uctenky" />
+
+## Kadiaľ ďalej
+
+- **[Financie a účtovníctvo](/sk/temata/finance/)** — celá kategória.
+- **[Skeny a fotky dokumentov](/sk/co-vytvorite/skeny-a-fotky/)** — ako
+  agent číta papier.
+- **[OpenWork pre domácnosť](/sk/pro-koho/domacnost/)** — ďalšie domáce
+  použitie.

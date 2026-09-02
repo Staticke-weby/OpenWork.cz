@@ -55,7 +55,53 @@ for (const cesta of soubory(slozkaObsahu)) {
   }
 }
 
-// 3. Stáří živých dat — varování po 60 dnech.
+// 3. Tematické stránky (tagy). Každý tag ve frontmatteru musí mít kvalitní
+//    stránku v temata/ (CZ i SK zrcadlo) — viz šablona v AGENTS.md.
+const pocetOdkazu = new Map(); // tag -> počet CZ článků, které na něj odkazují
+for (const cesta of soubory(slozkaObsahu)) {
+  const text = readFileSync(cesta, 'utf8');
+  const kratka = relative(koren, cesta).replace(/\\/g, '/');
+  const shodaTagy = text.match(/^tagy:\s*\[([^\]]*)\]/m);
+  if (!shodaTagy) continue;
+  const tagy = shodaTagy[1].split(',').map((t) => t.trim()).filter(Boolean);
+  const jeSk = kratka.includes('/docs/sk/');
+  for (const tag of tagy) {
+    const cil = join(slozkaObsahu, ...(jeSk ? ['sk'] : []), 'temata', ...tag.split('/'));
+    const existuje = ['.md', '.mdx'].some((p) => {
+      try { return statSync(cil + p).isFile(); } catch { return false; }
+    });
+    if (!existuje) {
+      chyby.push(`${kratka}: tag „${tag}" nemá stránku v temata/ — nejdřív napiš kvalitní tematickou stránku, pak taguj.`);
+    }
+    if (!jeSk) pocetOdkazu.set(tag, (pocetOdkazu.get(tag) ?? 0) + 1);
+  }
+}
+
+// Kvalita tematických stránek: dost vlastního textu (ne jen výpis odkazů).
+const slozkaTemat = join(slozkaObsahu, 'temata');
+try {
+  for (const cesta of soubory(slozkaTemat)) {
+    const kratka = relative(koren, cesta).replace(/\\/g, '/');
+    const jeRozcestnik = /temata[\\/]index\.mdx?$/.test(cesta);
+    const telo = readFileSync(cesta, 'utf8')
+      .replace(/^---[\s\S]*?---/, '')
+      .replace(/^import .*$/gm, '')
+      .replace(/<[^>]+>/g, '');
+    const minimum = jeRozcestnik ? 300 : 900;
+    if (telo.replace(/\s+/g, ' ').trim().length < minimum) {
+      chyby.push(`${kratka}: tematická stránka má míň než ${minimum} znaků vlastního textu — každý tag musí být kvalitně zpracovaný (šablona v AGENTS.md).`);
+    }
+  }
+} catch { /* složka temat ještě nemusí existovat */ }
+
+// Varování: téma, na které odkazuje méně než 2 články (kromě kategorií).
+for (const [tag, pocet] of pocetOdkazu) {
+  if (tag.includes('/') && pocet < 2) {
+    console.warn(`kontrola-obsahu: VAROVÁNÍ — téma „${tag}" má jen ${pocet} otagovaný článek; ať má výpis smysl, otaguj aspoň dva.`);
+  }
+}
+
+// 4. Stáří živých dat — varování po 60 dnech.
 for (const nazev of readdirSync(slozkaDat)) {
   if (!nazev.endsWith('.yaml') || nazev === 'konstanty.yaml') continue;
   const data = load(readFileSync(join(slozkaDat, nazev), 'utf8'));

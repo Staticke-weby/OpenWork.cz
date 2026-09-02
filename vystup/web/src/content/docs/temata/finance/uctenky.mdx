@@ -1,0 +1,68 @@
+---
+title: "AI na účtenky: z fotek rovnou do tabulky a vyúčtování"
+description: "Jak AI agent v OpenWorku zpracuje účtenky: přečte fotky, vytěží částky do tabulky, připraví vyúčtování služební cesty i přehled výdajů domácnosti. S ukázkovými zadáními."
+sidebar:
+  label: "Účtenky"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Účtenky se hromadí v peněžence, v krabici i v e-mailu — a přepisovat je
+ručně nechce nikdo. Stačí je **vyfotit do složky**: agent je přečte, částky
+vytěží do tabulky a nejisté položky poctivě označí, místo aby je odhadoval.
+Potřebuje k tomu model s [obrázkovým vstupem](/modely/vstupy/) — výchozí
+doporučení webu ho má.
+
+## Co s účtenkami zvládne
+
+- **Fotky do tabulky** — datum, obchod, částka, kategorie; z hromady fotek
+  jeden přehled.
+- **Vyúčtování služební cesty** — tabulka podle pravidel firmy, s odkazem
+  na fotku u každé položky.
+- **Přehled výdajů domácnosti** — kam peníze tečou, po kategoriích
+  a měsících.
+- **Podklady k reklamaci** — účtenka + záruka + fotka závady na jednom
+  místě.
+- **Druhá kontrola** — porovnat přepsané částky proti fotkám a označit,
+  kde si není jistý.
+
+## Ukázková zadání
+
+**Vytěžení s označením nečitelného:**
+
+```text
+Ve složce uctenky/ jsou fotky účtenek za srpen. Vytvoř tabulku pro
+Excel: datum, obchod, částka, kategorie (jídlo, doprava, ostatní).
+Nečitelné položky označ — neodhaduj je.
+```
+
+**Vyúčtování cesty s doložitelností:**
+
+```text
+Z fotek ve sluzebka-brno/ připrav vyúčtování služební cesty: tabulka
+datum, účel, částka, a u každé položky název souboru s fotkou účtenky.
+Na konec sečti celkem a zvlášť stravu.
+```
+
+**Druhá kontrola důležitých částek:**
+
+```text
+Zkontroluj vystup/vyuctovani.xlsx proti fotkám: u částek nad 500 Kč
+porovnej každou s účtenkou a označ řádky, kde si nejsi jistý —
+zkontroluju je sám.
+```
+
+:::tip
+Foťte účtenky průběžně do jedné složky (třeba z telefonu) a vyúčtování
+si nechte dělat jednou měsíčně stejným zadáním — nebo si postup uložte
+jako [dovednost](/prace-se-slozkou/dovednosti-skills/).
+:::
+
+<StrankyTematu tema="finance/uctenky" />
+
+## Kudy dál
+
+- **[Finance a účetnictví](/temata/finance/)** — celá kategorie.
+- **[Skeny a fotky dokumentů](/co-vytvorite/skeny-a-fotky/)** — jak agent
+  čte papír.
+- **[OpenWork pro domácnost](/pro-koho/domacnost/)** — další domácí použití.

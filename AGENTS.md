@@ -91,6 +91,14 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - Každá stránka s proměnlivými údaji má ve frontmatteru `last_verified`
   (datum poslední kontroly) a šablona ho zobrazuje pod nadpisem.
 - Tmavý i světlý režim přes CSS proměnné; barvy nikdy natvrdo v SVG.
+- **Tematické stránky (`temata/`):** tagy ve frontmatteru (`tagy:`) jsou cesty
+  stránek v `temata/` (max. dvě úrovně: kategorie/téma). Každý tag musí mít
+  **kvalitně zpracovanou** stránku — povinná šablona: úvod cílený na hledanou
+  frázi, „Co zvládne" (odrážky), 2–3 ukázková zadání s dobrými zvyky,
+  upozornění, komponenta `<StrankyTematu>` a „Kudy dál". Nejdřív stránka, pak
+  tagování — vynucuje `scripts/kontrola-obsahu.mjs` (existence tagu, minimum
+  vlastního textu). Témata se nedávají do sidebaru (počítáme se stovkami);
+  navigace jde přes štítky pod nadpisy, rozcestník `/temata/` a patičku.
 - Odkazy mimo náš web (http/https) vždy `target="_blank"` + `rel="noopener
   noreferrer"`. V Markdownu/MDX to řeší plugin `rehype-external-links`
   (v `astro.config.mjs`); ve vlastních `.astro` komponentách to nastav ručně

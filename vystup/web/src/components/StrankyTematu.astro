@@ -1,0 +1,68 @@
+---
+// Výpis k tematické stránce (temata/…): podtémata dané větve a články
+// otagované tímto tématem (frontmatter `tagy`). Jazyková mutace se řeší
+// automaticky podle aktuální stránky.
+import { getCollection } from 'astro:content';
+
+interface Props {
+  /** Cesta tématu bez prefixu "temata/", např. "finance" nebo "finance/faktury". */
+  tema: string;
+}
+const { tema } = Astro.props;
+
+const jeSk = Astro.currentLocale === 'sk';
+const prefix = jeSk ? 'sk/' : '';
+const vse = await getCollection('docs');
+
+// Jen stránky aktuální mutace.
+const mutace = vse.filter((e) =>
+  jeSk ? e.id.startsWith('sk/') : !e.id.startsWith('sk/')
+);
+
+// Přímá podtémata (o jednu úroveň hlubší stránky v temata/).
+const zaklad = `${prefix}temata/${tema}/`;
+const podtemata = mutace
+  .filter((e) => e.id.startsWith(zaklad) && !e.id.slice(zaklad.length).includes('/'))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, jeSk ? 'sk' : 'cs'));
+
+// Články otagované tímto tématem.
+const clanky = mutace
+  .filter((e) => ((e.data as any).tagy ?? []).includes(tema))
+  .sort((a, b) => a.data.title.localeCompare(b.data.title, jeSk ? 'sk' : 'cs'));
+
+const t = jeSk
+  ? { podtemata: 'Podtémy', clanky: 'Stránky k téme' }
+  : { podtemata: 'Podtémata', clanky: 'Stránky k tématu' };
+
+function popisek(e: (typeof vse)[number]): string {
+  return (e.data.sidebar as any)?.label ?? e.data.title;
+}
+---
+
+{podtemata.length > 0 && (
+  <>
+    <h2 id="podtemata">{t.podtemata}</h2>
+    <div class="ow-tema-mrizka">
+      {podtemata.map((e) => (
+        <a href={`/${e.id}/`}>
+          <strong>{popisek(e)}</strong>
+          <span>{e.data.description}</span>
+        </a>
+      ))}
+    </div>
+  </>
+)}
+
+{clanky.length > 0 && (
+  <>
+    <h2 id="stranky-k-tematu">{t.clanky}</h2>
+    <div class="ow-tema-mrizka">
+      {clanky.map((e) => (
+        <a href={`/${e.id}/`}>
+          <strong>{popisek(e)}</strong>
+          <span>{e.data.description}</span>
+        </a>
+      ))}
+    </div>
+  </>
+)}

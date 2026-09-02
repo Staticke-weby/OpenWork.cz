@@ -1,0 +1,67 @@
+---
+title: "AI na faktury: vytěžení, přehledy a podklady pro účetní"
+description: "Jak AI agent v OpenWorku pracuje s fakturami: vytěží PDF i skeny do tabulky, ohlídá splatnosti, připraví podklady pro účetní. Ukázková zadání a na co si dát pozor."
+sidebar:
+  label: "Faktury"
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Faktury jsou pro agenta ideální úloha: přicházejí v různých podobách (PDF,
+sken, fotka), ale vždy z nich potřebujete totéž — **čísla v tabulce, termíny
+pod kontrolou a doklady na svém místě.** To celé zvládne agent nad vaší
+složkou, aniž by jediné číslo opisoval člověk.
+
+## Co s fakturami zvládne
+
+- **Vytěžit do tabulky** — z hromady PDF a skenů tabulka pro Excel: číslo,
+  dodavatel, částka, DUZP, splatnost. U skenů potřebuje model
+  s [obrázkovým vstupem](/modely/vstupy/).
+- **Ohlídat splatnosti** — vypsat, co je po splatnosti a co se blíží,
+  seřazené podle data.
+- **Roztřídit a pojmenovat** — doklady do složek po měsících a typech,
+  jednotné názvy souborů.
+- **Připravit podklady pro účetní** — kompletní složka za měsíc, se
+  seznamem toho, co chybí.
+- **Zkontrolovat náležitosti** — chybějící IČO, DUZP nebo částka se
+  neztratí v hromadě, ale skončí na seznamu k doplnění.
+
+## Ukázková zadání
+
+**Vytěžení s pravidlem „nedomýšlet":**
+
+```text
+Projdi složku faktury/2026-09/ (PDF i fotky) a vytvoř tabulku pro Excel:
+číslo faktury, dodavatel, částka s DPH, DUZP, splatnost. Nečitelné nebo
+chybějící údaje nech prázdné a přidej sloupec Poznámka — nic nedomýšlej.
+```
+
+**Hlídání splatností s odkazem na doklad:**
+
+```text
+Z tabulky vystup/faktury.xlsx vypiš faktury po splatnosti a faktury
+splatné do 14 dnů. U každé uveď soubor dokladu, ať ji hned najdu.
+```
+
+**Podklady pro účetní — a seznam děr:**
+
+```text
+Připrav složku vystup/ucetni-2026-09/ pro účetní: roztřiď doklady na
+přijaté a vydané, přejmenuj je na vzor cislo-dodavatel a napiš seznam
+dokladů, kterým chybí náležitosti (IČO, DUZP, částka).
+```
+
+:::caution
+Agent připraví podklady a upozorní na nesrovnalosti — účetní a daňovou
+odpovědnost nenahradí. Vytěžené částky si u důležitých dokladů zkontrolujte
+proti originálu, zvlášť u skenů.
+:::
+
+<StrankyTematu tema="finance/faktury" />
+
+## Kudy dál
+
+- **[Finance a účetnictví](/temata/finance/)** — celá kategorie.
+- **[OpenWork pro firmy](/pro-koho/firmy/)** — ukázková složka pro podnikání.
+- **[Vstupy modelů](/modely/vstupy/)** — proč skeny přečte jen model
+  s obrázkovým vstupem.

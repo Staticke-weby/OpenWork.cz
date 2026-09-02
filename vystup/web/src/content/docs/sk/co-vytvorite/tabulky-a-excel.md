@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku vytvorí tabuľku pre Excel z faktúr alebo v
 sidebar:
   order: 2
   label: "Tabuľky a Excel"
+tagy: [finance/faktury, finance/uctenky]
 ---
 
 Dáta väčšinou nechýbajú — len sú rozhádzané po faktúrach, výpisoch a starých

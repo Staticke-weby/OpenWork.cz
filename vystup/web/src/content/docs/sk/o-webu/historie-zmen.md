@@ -9,6 +9,15 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 31. augusta 2026 — nová sekcia Témy
+
+- Nový pohľad na obsah **podľa situácií**: rázcestník [Témy](/sk/temata/),
+  prvá kategória [Financie a účtovníctvo](/sk/temata/finance/) so stránkami
+  [Faktúry](/sk/temata/finance/faktury/)
+  a [Bločky](/sk/temata/finance/uctenky/).
+- Súvisiace články majú pod nadpisom štítky, ktoré na témy vedú; témy budú
+  postupne pribúdať.
+
 ## 31. augusta 2026 — Discord komunita
 
 - Spustený Discord server

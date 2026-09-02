@@ -1,0 +1,69 @@
+---
+title: "AI na faktúry: vyťaženie, prehľady a podklady pre účtovníka"
+description: "Ako AI agent v OpenWorku pracuje s faktúrami: vyťaží PDF aj skeny do tabuľky, ustráži splatnosti, pripraví podklady pre účtovníka. Ukážkové zadania a na čo si dať pozor."
+sidebar:
+  label: "Faktúry"
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Faktúry sú pre agenta ideálna úloha: prichádzajú v rôznych podobách (PDF,
+sken, fotka), ale vždy z nich potrebujete to isté — **čísla v tabuľke,
+termíny pod kontrolou a doklady na svojom mieste.** To celé zvládne agent
+nad vaším priečinkom bez toho, aby jediné číslo opisoval človek.
+
+## Čo s faktúrami zvládne
+
+- **Vyťažiť do tabuľky** — z kopy PDF a skenov tabuľka pre Excel: číslo,
+  dodávateľ, suma, dátum dodania, splatnosť. Pri skenoch potrebuje model
+  s [obrázkovým vstupom](/sk/modely/vstupy/).
+- **Ustrážiť splatnosti** — vypísať, čo je po splatnosti a čo sa blíži,
+  zoradené podľa dátumu.
+- **Roztriediť a pomenovať** — doklady do priečinkov po mesiacoch a typoch,
+  jednotné názvy súborov.
+- **Pripraviť podklady pre účtovníka** — kompletný priečinok za mesiac, so
+  zoznamom toho, čo chýba.
+- **Skontrolovať náležitosti** — chýbajúce IČO, dátum alebo suma sa
+  nestratia v kope, ale skončia na zozname na doplnenie.
+
+## Ukážkové zadania
+
+**Vyťaženie s pravidlom „nedomýšľať":**
+
+```text
+Prejdi priečinok faktury/2026-09/ (PDF aj fotky) a vytvor tabuľku pre
+Excel: číslo faktúry, dodávateľ, suma s DPH, dátum dodania, splatnosť.
+Nečitateľné alebo chýbajúce údaje nechaj prázdne a pridaj stĺpec
+Poznámka — nič nedomýšľaj.
+```
+
+**Stráženie splatností s odkazom na doklad:**
+
+```text
+Z tabuľky vystup/faktury.xlsx vypíš faktúry po splatnosti a faktúry
+splatné do 14 dní. Pri každej uveď súbor dokladu, nech ju hneď nájdem.
+```
+
+**Podklady pre účtovníka — a zoznam dier:**
+
+```text
+Priprav priečinok vystup/uctovnik-2026-09/ pre účtovníka: roztrieď
+doklady na prijaté a vydané, premenuj ich na vzor cislo-dodavatel
+a napíš zoznam dokladov, ktorým chýbajú náležitosti (IČO, dátum, suma).
+```
+
+:::caution
+Agent pripraví podklady a upozorní na nezrovnalosti — účtovnú a daňovú
+zodpovednosť nenahradí. Vyťažené sumy si pri dôležitých dokladoch
+skontrolujte proti originálu, zvlášť pri skenoch.
+:::
+
+<StrankyTematu tema="finance/faktury" />
+
+## Kadiaľ ďalej
+
+- **[Financie a účtovníctvo](/sk/temata/finance/)** — celá kategória.
+- **[OpenWork pre firmy](/sk/pro-koho/firmy/)** — ukážkový priečinok pre
+  podnikanie.
+- **[Vstupy modelov](/sk/modely/vstupy/)** — prečo skeny prečíta len model
+  s obrázkovým vstupom.

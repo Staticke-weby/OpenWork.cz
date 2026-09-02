@@ -103,6 +103,10 @@
 .ow-tema-mrizka a span {
   color: var(--sl-color-gray-3);
   font-size: var(--sl-text-xs);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .ow-tema-mrizka a:hover span {
   color: inherit;

@@ -3,6 +3,7 @@ title: "OpenWork pre domácnosť"
 description: "Čo AI agent urobí nad priečinkom domácnosti: zmluvy, rodinný rozpočet, plánovanie. Ukážkové prompty — a dáta pritom zostávajú u vás."
 sidebar:
   order: 2
+tagy: [finance/uctenky]
 ---
 
 Doma sa papiere hromadia rovnako ako vo firme: zmluvy, výpisy, vyúčtovania,

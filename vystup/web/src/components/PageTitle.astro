@@ -1,11 +1,13 @@
 ---
-// Nadpis stránky + datum poslední kontroly údajů (frontmatter `last_verified`).
+// Nadpis stránky + datum poslední kontroly údajů (frontmatter `last_verified`)
+// + štítky témat (frontmatter `tagy` → stránky v temata/).
 // Jediný zdroj data ověření — ruční věty v textu stránek nepíšeme (AGENTS.md).
 import Default from '@astrojs/starlight/components/PageTitle.astro';
+import { getCollection } from 'astro:content';
 
-const lastVerified = (Astro.locals.starlightRoute.entry.data as any).last_verified as
-  | Date
-  | undefined;
+const data = Astro.locals.starlightRoute.entry.data as any;
+const lastVerified = data.last_verified as Date | undefined;
+const tagy = (data.tagy ?? []) as string[];
 
 const jeSk = Astro.currentLocale === 'sk';
 const popisek = jeSk ? 'Naposledy overené' : 'Naposledy ověřeno';
@@ -14,21 +16,62 @@ const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
   month: 'long',
   year: 'numeric',
 });
+
+// Štítky: dohledáme tematické stránky kvůli názvu a odkazu.
+const prefix = jeSk ? 'sk/' : '';
+let stitky: { href: string; nazev: string }[] = [];
+if (tagy.length > 0) {
+  const vse = await getCollection('docs');
+  stitky = tagy
+    .map((t) => vse.find((e) => e.id === `${prefix}temata/${t}`))
+    .filter((e): e is NonNullable<typeof e> => Boolean(e))
+    .map((e) => ({
+      href: `/${e.id}/`,
+      nazev: (e.data.sidebar as any)?.label ?? e.data.title,
+    }));
+}
 ---
 
 <Default><slot /></Default>
 {
-  lastVerified instanceof Date && !Number.isNaN(lastVerified.getTime()) && (
-    <p class="ow-overeno">
-      {popisek}: {datumFormat.format(lastVerified)}
-    </p>
-  )
+  (lastVerified instanceof Date && !Number.isNaN(lastVerified.getTime())) || stitky.length > 0 ? (
+    <div class="ow-pod-nadpisem">
+      {lastVerified instanceof Date && !Number.isNaN(lastVerified.getTime()) && (
+        <span class="ow-overeno">
+          {popisek}: {datumFormat.format(lastVerified)}
+        </span>
+      )}
+      {stitky.map((s) => (
+        <a class="ow-stitek" href={s.href}>{s.nazev}</a>
+      ))}
+    </div>
+  ) : null
 }
 
 <style>
-  .ow-overeno {
-    margin-top: 0.35rem;
+  .ow-pod-nadpisem {
+    margin-top: 0.45rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.4rem 0.6rem;
     font-size: var(--sl-text-sm);
+  }
+  .ow-overeno {
     color: var(--sl-color-gray-3);
+  }
+  .ow-stitek {
+    display: inline-block;
+    padding: 0.05rem 0.55rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 999px;
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+    font-size: var(--sl-text-xs);
+  }
+  .ow-stitek:hover {
+    border-color: var(--sl-color-accent);
+    color: var(--sl-color-accent-high);
+    background: var(--sl-color-accent-low);
   }
 </style>
