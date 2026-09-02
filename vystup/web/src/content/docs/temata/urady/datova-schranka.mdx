@@ -1,0 +1,72 @@
+---
+title: "AI a datová schránka: pořádek ve zprávách a koncepty podání"
+description: "Jak AI agent v OpenWorku pomůže s datovou schránkou: archiv stažených zpráv (než je systém smaže), přehled lhůt z doručených písemností a koncepty podání ke kontrole."
+sidebar:
+  label: "Datová schránka"
+last_verified: 2026-09-01
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Datová schránka má jeden zákeřný rys: **zprávy se po čase automaticky
+mažou** (běžně po 90 dnech, pokud nemáte placený Datový trezor). Kdo si je
+nestahuje, přijde o ně. Agent z toho udělá rutinu: stažené zprávy uloží,
+pojmenuje, vytáhne z nich lhůty a připraví koncepty odpovědí — všechno
+lokálně, ve vaší složce.
+
+## Co s datovkou zvládne
+
+- **Archiv stažených zpráv** — soubory ZFO/PDF pojmenovat (datum,
+  odesílatel, věc) a roztřídit po letech a úřadech.
+- **Lhůty z doručených písemností** — z každé písemnosti vytáhnout, co se
+  po vás chce a dokdy; přehled seřazený podle termínů.
+- **Koncepty odpovědí a podání** — reakce na výzvu
+  [jen z vašich podkladů](/temata/urady/), uložená ke kontrole.
+- **Srozumitelný překlad úředničiny** — co písemnost skutečně říká
+  a co znamená pro vás.
+- **Postupy k datovce** — dohledat v prohlížeči oficiální návod (zřízení,
+  přístup, trezor) a udělat z něj srozumitelný checklist.
+
+## Ukázková zadání
+
+**Pořádek v archivu — než se zprávy smažou:**
+
+```text
+Ve složce datovka-stazene/ jsou stažené zprávy z datové schránky.
+Přejmenuj je na vzor rok-mesic-den_odesilatel_vec, roztřiď do složek
+podle roku a vytvoř index.md se seznamem všech zpráv. Nejdřív mi ukaž
+návrh, pak proveď.
+```
+
+**Lhůty z písemností na jedno místo:**
+
+```text
+Projdi písemnosti v datovka-stazene/2026/ a vypiš do vystup/lhuty.md:
+od koho, co se po mně chce, dokdy a z jakého dokumentu to plyne.
+Seřaď podle termínu a zvýrazni, co je dřív než za 14 dní.
+```
+
+**Koncept odpovědi na výzvu:**
+
+```text
+V datovka-stazene/2026/vyzva-fu.pdf je výzva finančního úřadu. Vysvětli
+mi srozumitelně, co chtějí, a připrav koncept odpovědi jen z podkladů
+ve složce ucetnictvi/. Co doložit neumíme, vypiš zvlášť. Nikam nic
+neodesílej.
+```
+
+:::caution
+**Přihlašovací údaje k datové schránce agentovi nikdy nedávejte** — do
+schránky se přihlašujte sami a agentovi předávejte už stažené soubory.
+Pravidla mazání zpráv a ceny trezoru se mohou měnit; aktuální stav ověřte
+na oficiálním webu datových schránek.
+:::
+
+<StrankyTematu tema="urady/datova-schranka" />
+
+## Kudy dál
+
+- **[Úřady a práva](/temata/urady/)** — celá kategorie.
+- **[Bezpečnost](/vase-data/bezpecnost/)** — proč přístupy zůstávají u vás.
+- **[Práce s PDF](/co-vytvorite/prace-s-pdf/)** — vytěžení úředních
+  písemností.

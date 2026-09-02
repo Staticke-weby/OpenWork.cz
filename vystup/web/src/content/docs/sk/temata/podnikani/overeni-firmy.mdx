@@ -1,0 +1,71 @@
+---
+title: "AI overenie firmy: obchodný register, platca DPH a úpadok pred obchodom"
+description: "Ako AI agent v OpenWorku overí obchodného partnera vo verejných registroch: obchodný register (ORSR), zoznam platiteľov DPH a register úpadcov — so zdrojmi a dátumom."
+sidebar:
+  label: "Overenie firmy"
+last_verified: 2026-09-01
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Než pošlete tovar novému odberateľovi alebo zálohu neznámemu dodávateľovi,
+oplatí sa päť minút vo verejných registroch. Agent ich prejde
+[vstavaným prehliadačom](/sk/co-vytvorite/prohlizec/) za vás: **obchodný
+register (orsr.sk), zoznam platiteľov DPH Finančnej správy, register
+úpadcov** — a vráti prehľad so zdrojom a dátumom pri každom údaji.
+
+## Čo pri overení zvládne
+
+- **Základné údaje** — IČO, DIČ, sídlo, právna forma, dátum vzniku; sedia
+  s tým, čo partner uvádza?
+- **Obchodný register** — konatelia, spôsob konania (kto smie podpísať!),
+  základné imanie.
+- **Platiteľ DPH** — je v zozname platiteľov a nefiguruje v zozname
+  rizikových subjektov Finančnej správy?
+- **Úpadok a reštrukturalizácia** — nebeží konkurz alebo
+  reštrukturalizácia?
+- **Priebežné stráženie** — zoznam partnerov prejsť raz mesačne rovnakým
+  postupom a hlásiť zmeny.
+
+## Ukážkové zadania
+
+**Kompletná previerka pred obchodom:**
+
+```text
+Over v prehliadači firmu s IČO 12345678: základné údaje, obchodný
+register (konatelia a spôsob konania), zoznam platiteľov DPH a register
+úpadcov. Výsledky do vystup/previerka.md — pri každom údaji zdroj
+(odkaz) a dátum. Čo sa nepodarilo overiť, označ.
+```
+
+**Kontrola údajov na zmluve proti registru:**
+
+```text
+Porovnaj hlavičku zmluvy zmluvy/navrh.pdf s údajmi z obchodného
+registra: názov, sídlo, IČO a či osoba podpísaná za firmu smie podľa
+spôsobu konania podpisovať sama. Rozdiely vypíš.
+```
+
+**Mesačné stráženie partnerov:**
+
+```text
+Prejdi firmy zo zoznamu partneri.xlsx (stĺpec IČO) a pri každej over
+register úpadcov a zoznam platiteľov DPH. Do vystup/ zapíš len zmeny
+oproti minulej kontrole vystup/kontrola-2026-08.md.
+```
+
+:::caution
+Registre hovoria, čo je zapísané — nie, aký partner naozaj je. Čerstvá
+firma bez histórie alebo časté zmeny sídla sú signál k opatrnosti, nie
+rozsudok. Pri veľkých obchodoch doplňte referencie a zálohové podmienky.
+:::
+
+<StrankyTematu tema="podnikani/overeni-firmy" />
+
+## Kadiaľ ďalej
+
+- **[Podnikanie](/sk/temata/podnikani/)** — celá kategória.
+- **[Automatizácia v prehliadači](/sk/co-vytvorite/prohlizec/)** — ako
+  agent s registrami pracuje.
+- **[Zmluvy](/sk/temata/dokumenty/smlouvy/)** — kontrola návrhu pred
+  podpisom.

@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku připraví odpověď, která vyžaduje projí
 sidebar:
   order: 7
   label: "Odpovědi a rešerše"
-tagy: [dokumenty/zivotopis, urady/reklamace, finance/rozpocet, domacnost/auto, domacnost/dovolena]
+tagy: [dokumenty/zivotopis, urady/reklamace, finance/rozpocet, domacnost/auto, domacnost/dovolena, urady/datova-schranka]
 ---
 
 Některé odpovědi nejde napsat z hlavy — je potřeba projít účtenky, smlouvy,

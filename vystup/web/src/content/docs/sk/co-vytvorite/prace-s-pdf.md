@@ -4,7 +4,7 @@ description: "AI agent v OpenWorku vytiahne dáta z PDF faktúr a zmlúv, zlúč
 sidebar:
   order: 8
   label: "Práca s PDF"
-tagy: [finance/faktury, dokumenty/smlouvy]
+tagy: [finance/faktury, dokumenty/smlouvy, urady/datova-schranka]
 ---
 
 PDF je formát, v ktorom dokumenty chodia — a v ktorom sa s nimi najhoršie

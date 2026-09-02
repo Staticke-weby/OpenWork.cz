@@ -9,6 +9,14 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 1. září 2026 — česká témata: datovka, ARES a daně
+
+- Tři témata, která zahraniční návody nepokryjí:
+  [datová schránka](/temata/urady/datova-schranka/),
+  [ověření firmy v rejstřících](/temata/podnikani/overeni-firmy/)
+  a [podklady k daním](/temata/finance/dane/). Slovenská verze pracuje
+  se slovenskými protějšky (slovensko.sk, ORSR).
+
 ## 1. září 2026 — témata: škola, podnikání a domácnost
 
 - Nové kategorie [Škola a studium](/temata/skola/)

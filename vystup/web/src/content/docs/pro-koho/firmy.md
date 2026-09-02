@@ -3,7 +3,7 @@ title: "OpenWork pro firmy a živnostníky"
 description: "Co AI agent udělá nad složkou s fakturami, smlouvami a nabídkami — ukázkové prompty pro firmy a OSVČ. Platíte za spotřebu, ne za počet lidí."
 sidebar:
   order: 1
-tagy: [finance/faktury, podnikani/nabidky]
+tagy: [finance/faktury, podnikani/nabidky, podnikani/overeni-firmy, finance/dane]
 ---
 
 Máte složku s fakturami, smlouvami a podklady? Přesně nad takovou složkou umí

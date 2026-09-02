@@ -1,0 +1,74 @@
+---
+title: "AI a elektronická schránka: poriadok v správach a koncepty podaní"
+description: "Ako AI agent v OpenWorku pomôže s elektronickou schránkou (slovensko.sk): archív stiahnutých správ, prehľad lehôt z doručených písomností a koncepty podaní na kontrolu."
+sidebar:
+  label: "Elektronická schránka"
+last_verified: 2026-09-01
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Úradná pošta dnes chodí do **elektronickej schránky na slovensko.sk** —
+a kto si správy nesťahuje a nearchivuje, ťažko sa k nim neskôr vracia.
+Agent z toho urobí rutinu: stiahnuté správy uloží, pomenuje, vytiahne
+z nich lehoty a pripraví koncepty odpovedí — všetko lokálne, vo vašom
+priečinku.
+
+## Čo so schránkou zvládne
+
+- **Archív stiahnutých správ** — súbory pomenovať (dátum, odosielateľ,
+  vec) a roztriediť po rokoch a úradoch.
+- **Lehoty z doručených písomností** — z každej písomnosti vytiahnuť, čo
+  sa od vás chce a dokedy; prehľad zoradený podľa termínov.
+- **Koncepty odpovedí a podaní** — reakcia na výzvu
+  [len z vašich podkladov](/sk/temata/urady/), uložená na kontrolu.
+- **Zrozumiteľný preklad úradníčiny** — čo písomnosť skutočne hovorí
+  a čo znamená pre vás.
+- **Postupy k schránke** — dohľadať v prehliadači oficiálny návod
+  (aktivácia, prístup) a urobiť z neho zrozumiteľný checklist.
+
+## Ukážkové zadania
+
+**Poriadok v archíve:**
+
+```text
+V priečinku schranka-stiahnute/ sú stiahnuté správy z elektronickej
+schránky. Premenuj ich na vzor rok-mesiac-den_odosielatel_vec, roztrieď
+do priečinkov podľa roka a vytvor index.md so zoznamom všetkých správ.
+Najprv mi ukáž návrh, potom vykonaj.
+```
+
+**Lehoty z písomností na jedno miesto:**
+
+```text
+Prejdi písomnosti v schranka-stiahnute/2026/ a vypíš do
+vystup/lehoty.md: od koho, čo sa odo mňa chce, dokedy a z akého
+dokumentu to plynie. Zoraď podľa termínu a zvýrazni, čo je skôr než
+o 14 dní.
+```
+
+**Koncept odpovede na výzvu:**
+
+```text
+V schranka-stiahnute/2026/vyzva-du.pdf je výzva daňového úradu. Vysvetli
+mi zrozumiteľne, čo chcú, a priprav koncept odpovede len z podkladov
+v priečinku uctovnictvo/. Čo doložiť nevieme, vypíš zvlášť. Nikam nič
+neodosielaj.
+```
+
+:::caution
+**Prihlasovacie údaje k schránke (eID, BOK) agentovi nikdy nedávajte** —
+do schránky sa prihlasujte sami a agentovi odovzdávajte už stiahnuté
+súbory. Pravidlá uchovávania správ sa môžu meniť; aktuálny stav overte
+na slovensko.sk.
+:::
+
+<StrankyTematu tema="urady/datova-schranka" />
+
+## Kadiaľ ďalej
+
+- **[Úrady a práva](/sk/temata/urady/)** — celá kategória.
+- **[Bezpečnosť](/sk/vase-data/bezpecnost/)** — prečo prístupy zostávajú
+  u vás.
+- **[Práca s PDF](/sk/co-vytvorite/prace-s-pdf/)** — vyťaženie úradných
+  písomností.

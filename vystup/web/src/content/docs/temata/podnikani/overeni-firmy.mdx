@@ -1,0 +1,71 @@
+---
+title: "AI ověření firmy: ARES, plátce DPH a insolvence před obchodem"
+description: "Jak AI agent v OpenWorku ověří obchodního partnera ve veřejných rejstřících: ARES, obchodní rejstřík, registr plátců DPH a insolvenční rejstřík — se zdroji a datem."
+sidebar:
+  label: "Ověření firmy (ARES)"
+last_verified: 2026-09-01
+---
+
+import StrankyTematu from '../../../../components/StrankyTematu.astro';
+
+Než pošlete zboží novému odběrateli nebo zálohu neznámému dodavateli,
+vyplatí se pět minut ve veřejných rejstřících. Agent je projde
+[vestavěným prohlížečem](/co-vytvorite/prohlizec/) za vás: **ARES,
+obchodní rejstřík, registr plátců DPH, insolvenční rejstřík** — a vrátí
+přehled se zdrojem a datem u každého údaje. Česká specialita, kterou
+zahraniční nástroje neumí.
+
+## Co při ověření zvládne
+
+- **Základní údaje z ARES** — IČO, DIČ, sídlo, právní forma, datum vzniku;
+  sedí s tím, co partner uvádí?
+- **Obchodní rejstřík** — jednatelé, způsob jednání (kdo smí podepsat!),
+  základní kapitál, sbírka listin.
+- **Spolehlivost plátce DPH** — je v registru plátců a není nespolehlivý?
+  (U nespolehlivého ručíte za jeho DPH.)
+- **Insolvenční rejstřík** — neběží insolvence nebo konkurz?
+- **Průběžné hlídání** — seznam partnerů projít jednou měsíčně stejným
+  postupem a hlásit změny.
+
+## Ukázková zadání
+
+**Kompletní prověrka před obchodem:**
+
+```text
+Ověř v prohlížeči firmu s IČO 12345678: ARES (základní údaje), obchodní
+rejstřík (jednatelé a způsob jednání), registr plátců DPH (spolehlivost)
+a insolvenční rejstřík. Výsledky do vystup/proverka.md — u každého
+údaje zdroj (odkaz) a datum. Co se nepodařilo ověřit, označ.
+```
+
+**Kontrola údajů na smlouvě proti rejstříku:**
+
+```text
+Porovnej hlavičku smlouvy smlouvy/navrh.pdf s údaji z obchodního
+rejstříku: název, sídlo, IČO a jestli osoba podepsaná za firmu smí
+podle způsobu jednání podepisovat sama. Rozdíly vypiš.
+```
+
+**Měsíční hlídání partnerů:**
+
+```text
+Projdi firmy ze seznamu partneri.xlsx (sloupec IČO) a u každé ověř
+insolvenční rejstřík a spolehlivost plátce DPH. Do vystup/ zapiš jen
+změny proti minulé kontrole vystup/kontrola-2026-08.md.
+```
+
+:::caution
+Rejstříky říkají, co je zapsáno — ne, jaký partner opravdu je. Čerstvá
+firma bez historie nebo časté změny sídla jsou signál k opatrnosti, ne
+rozsudek. U velkých obchodů doplňte reference a zálohové podmínky.
+:::
+
+<StrankyTematu tema="podnikani/overeni-firmy" />
+
+## Kudy dál
+
+- **[Podnikání](/temata/podnikani/)** — celá kategorie.
+- **[Automatizace v prohlížeči](/co-vytvorite/prohlizec/)** — jak agent
+  s rejstříky pracuje.
+- **[Smlouvy](/temata/dokumenty/smlouvy/)** — kontrola návrhu před
+  podpisem.

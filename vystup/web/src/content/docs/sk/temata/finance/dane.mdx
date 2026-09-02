@@ -1,0 +1,72 @@
+---
+title: "AI a dane: podklady k priznaniu a DPH bez prepisovania"
+description: "Ako AI agent v OpenWorku pripraví podklady k daniam: súhrn príjmov a výdavkov z dokladov, podklady k DPH, kontrola úplnosti dokladov a stráženie termínov. Podklady — nie daňové poradenstvo."
+sidebar:
+  label: "Dane (podklady)"
+last_verified: 2026-09-01
+---
+
+import StrankyTematu from '../../../../../components/StrankyTematu.astro';
+
+Na daniach je najhorší zber podkladov: doklady za celý rok, súčty po
+kategóriách, čo chýba a koho urgovať. Presne toto agent zvládne nad vaším
+priečinkom — **pozbiera, spočíta a vypíše diery.** Jedno rovno: pripravuje
+**podklady**, nie daňové poradenstvo; priznanie zostavujete vy alebo váš
+daňový poradca, ale s hotovými číslami namiesto škatule bločkov.
+
+## Čo s daňami zvládne
+
+- **Súhrn príjmov a výdavkov** — z faktúr a výpisov ročný prehľad po
+  kategóriách, s odkazom na doklad pri každej sume.
+- **Podklady k DPH** — prijaté a vydané plnenia za obdobie do tabuľky,
+  rozdelené podľa sadzieb; nezrovnalosti označené.
+- **Kontrola úplnosti** — vydané faktúry bez spárovanej platby, platby
+  bez dokladu, chýbajúce čísla v rade.
+- **Termíny** — prehľad daňových termínov, ktoré sa vás týkajú, s tým,
+  čo k nim nachystať.
+- **Priečinok pre poradcu** — kompletné podklady odovzdané v poriadku:
+  poradca účtuje menej hodín.
+
+## Ukážkové zadania
+
+**Ročný súhrn s dohľadateľnosťou:**
+
+```text
+Z faktúr a výpisov v priečinku uctovnictvo/2026/ urob ročný súhrn:
+príjmy a výdavky po mesiacoch a kategóriách. Každá suma s odkazom na
+doklad. Čo sa nedá zaradiť, daj do „nezaradené" — rozhodnem sám.
+```
+
+**Kontrola úplnosti pred priznaním:**
+
+```text
+Skontroluj priečinok uctovnictvo/2026/: vydané faktúry bez prijatej
+platby, platby na výpise bez dokladu a diery v číselnom rade faktúr.
+Vypíš zoznam s číslami a sumami — nič nedopočítavaj.
+```
+
+**Podklady k DPH za obdobie:**
+
+```text
+Z dokladov za 3. štvrťrok priprav podklad k DPH: prijaté a vydané
+plnenia zvlášť, rozdelené podľa sadzby, so súčtami. Pri dokladoch, kde
+sadzba nie je jasná, nechaj pole prázdne a označ ich — prejdem ich
+s poradcom.
+```
+
+:::caution
+Daňové zákony sa menia a výnimiek je neúrekom — **agent nenahrádza
+daňového poradcu ani aktuálne znenie zákona.** Čísla z podkladov si
+skontrolujte a sporné položky (sadzby, odpočty, paušály) riešte
+s poradcom; s pripravenými podkladmi to bude rýchle.
+:::
+
+<StrankyTematu tema="finance/dane" />
+
+## Kadiaľ ďalej
+
+- **[Financie a účtovníctvo](/sk/temata/finance/)** — celá kategória.
+- **[Faktúry](/sk/temata/finance/faktury/)** — doklady do tabuliek
+  priebežne, nie až v marci.
+- **[Elektronická schránka](/sk/temata/urady/datova-schranka/)** —
+  komunikácia s daňovým úradom.

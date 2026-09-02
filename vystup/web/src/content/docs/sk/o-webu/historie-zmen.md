@@ -9,6 +9,13 @@ last_verified: 2026-08-31
 Prehľad toho, čo sa na webe menilo. Pri premenlivých údajoch (ceny, modely,
 podmienky) sem pridávame aj to, kedy sme ich naposledy overovali.
 
+## 1. septembra 2026 — témy: schránka, registre a dane
+
+- Tri témy, ktoré zahraničné návody nepokryjú:
+  [elektronická schránka](/sk/temata/urady/datova-schranka/),
+  [overenie firmy v registroch](/sk/temata/podnikani/overeni-firmy/)
+  a [podklady k daniam](/sk/temata/finance/dane/).
+
 ## 1. septembra 2026 — témy: škola, podnikanie a domácnosť
 
 - Nové kategórie [Škola a štúdium](/sk/temata/skola/)
