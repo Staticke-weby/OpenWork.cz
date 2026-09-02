@@ -16,11 +16,11 @@
   <!-- Název webu -->
   <text x="90" y="310" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
         font-size="96" font-weight="700" fill="#ffffff">OpenWork.cz</text>
-  <!-- Tagline -->
+  <!-- Tagline (motto webu) -->
   <text x="90" y="400" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
-        font-size="40" fill="#d7ede9">AI nad vašimi soubory — zdarma</text>
+        font-size="40" fill="#d7ede9">Díky OpenWork zvládnete vše,</text>
   <text x="90" y="455" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
-        font-size="40" fill="#d7ede9">a s otevřeným kódem</text>
+        font-size="40" fill="#d7ede9">co dnes AI umí.</text>
   <!-- Spodní linka -->
   <rect x="90" y="520" width="220" height="8" rx="4" fill="#d9b44a"/>
 </svg>
