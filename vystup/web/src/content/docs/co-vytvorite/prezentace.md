@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku připraví prezentaci z podkladů ve složce:
 sidebar:
   order: 3
   label: "Prezentace"
+tagy: [podnikani/nabidky, podnikani/marketing]
 ---
 
 Prezentace je většinou jen jiný tvar toho, co už máte ve složce: čísla,

@@ -3,6 +3,7 @@ title: "OpenWork pro studenty"
 description: "Co AI agent udělá nad složkou s poznámkami a materiály ke studiu: výpisky, příprava na zkoušku, podklady k seminárce. A jak začít úplně zdarma."
 sidebar:
   order: 3
+tagy: [skola/zkouska]
 ---
 
 Složka s přednáškami, skripty a poznámkami je pro AI agenta ideální hřiště:

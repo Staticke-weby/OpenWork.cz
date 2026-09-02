@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku ovládá vestavěný prohlížeč: otevře st
 sidebar:
   order: 11
   label: "Automatizace v prohlížeči"
+tagy: [domacnost/auto, domacnost/dovolena]
 ---
 
 Spousta práce nekončí ve složce — je na webu. Agent v OpenWorku má

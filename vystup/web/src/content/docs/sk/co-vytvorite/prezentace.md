@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku pripraví prezentáciu z podkladov v priečin
 sidebar:
   order: 3
   label: "Prezentácie"
+tagy: [podnikani/nabidky, podnikani/marketing]
 ---
 
 Prezentácia je väčšinou len iný tvar toho, čo už máte v priečinku: čísla,

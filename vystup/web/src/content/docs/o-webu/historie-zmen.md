@@ -9,6 +9,17 @@ last_verified: 2026-08-31
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
 
+## 1. září 2026 — témata: škola, podnikání a domácnost
+
+- Nové kategorie [Škola a studium](/temata/skola/)
+  ([příprava na zkoušku](/temata/skola/zkouska/)),
+  [Podnikání](/temata/podnikani/)
+  ([cenové nabídky](/temata/podnikani/nabidky/),
+  [marketing](/temata/podnikani/marketing/))
+  a [Domácnost a rodina](/temata/domacnost/)
+  ([auto](/temata/domacnost/auto/),
+  [dovolená](/temata/domacnost/dovolena/)).
+
 ## 1. září 2026 — témata: dokumenty, úřady a rozpočet
 
 - Nové kategorie [Dokumenty](/temata/dokumenty/)

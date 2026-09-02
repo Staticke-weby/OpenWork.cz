@@ -4,6 +4,7 @@ description: "AI agent v OpenWorku vytvorí jednostránkový web z vašich texto
 sidebar:
   order: 4
   label: "Jednoduché weby"
+tagy: [podnikani/marketing]
 ---
 
 Jednoduchý web nemusí znamenať agentúru ani stavebnicu s predplatným. Agent
