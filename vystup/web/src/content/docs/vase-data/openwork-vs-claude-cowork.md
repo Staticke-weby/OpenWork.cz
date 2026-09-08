@@ -18,7 +18,7 @@ Coworku dokonce nabízí návod na přechod.
 
 | | OpenWork | Claude Cowork / Codex |
 |---|---|---|
-| **Cena aplikace** | zdarma (do 5 uživatelů; tým 20 $/místo, firma 50 $/uživatel měsíčně) | placené předplatné — Cowork v rámci plánů Claude (Team od 20 $/člen měsíčně při roční platbě), Codex přes OpenAI |
+| **Cena aplikace** | zdarma — platí se jen spotřeba AI | placené předplatné — Cowork v rámci plánů Claude (Team od 20 $/člen měsíčně při roční platbě), Codex přes OpenAI |
 | **Otevřený kód** | ano — můžete si ověřit, jak funguje | ne (uzavřené) |
 | **Kde jsou data** | v desktop režimu zůstávají u vás; na server jde jen zadání | u dodavatele — Cowork uchovává zadání i výstupy **30 dní**; datové centrum v EU jen v plánu Enterprise |
 | **Výběr modelů** | přes 50 modelů od různých poskytovatelů | Cowork nově umí i cizí a lokální modely (dřív jen Claude); jinak modely daného dodavatele |
