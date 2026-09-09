@@ -24,9 +24,11 @@ export default defineConfig({
       // Doplňkové meta pro sdílení a vyhledávače. Náhledový obrázek og.png je
       // povolená výjimka z pravidla „žádné rastrové obrázky" (viz AGENTS.md).
       head: [
+        // Parametr ?v=N obchází cache náhledů na sociálních sítích (X drží
+        // starý obrázek i týden) — při změně og.png zvyš číslo verze.
         {
           tag: 'meta',
-          attrs: { property: 'og:image', content: 'https://openwork.cz/og.png' },
+          attrs: { property: 'og:image', content: 'https://openwork.cz/og.png?v=2' },
         },
         { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
         { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
@@ -34,6 +36,19 @@ export default defineConfig({
           tag: 'meta',
           attrs: {
             property: 'og:image:alt',
+            content: 'OpenWork.cz — nezávislý průvodce aplikací OpenWork',
+          },
+        },
+        // X/Twitter umí spadnout na og:image, ale s explicitním twitter:image
+        // je náhled spolehlivější (twitter:card doplňuje Starlight sám).
+        {
+          tag: 'meta',
+          attrs: { name: 'twitter:image', content: 'https://openwork.cz/og.png?v=2' },
+        },
+        {
+          tag: 'meta',
+          attrs: {
+            name: 'twitter:image:alt',
             content: 'OpenWork.cz — nezávislý průvodce aplikací OpenWork',
           },
         },

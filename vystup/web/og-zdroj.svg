@@ -5,22 +5,94 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="pozadi" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0f4437"/>
-      <stop offset="1" stop-color="#187a63"/>
+      <stop offset="0" stop-color="#0b352b"/>
+      <stop offset="0.55" stop-color="#10493b"/>
+      <stop offset="1" stop-color="#17604e"/>
     </linearGradient>
+    <radialGradient id="zare" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#35b48f" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#35b48f" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="tecky" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.8" fill="#ffffff"/>
+    </pattern>
   </defs>
+
+  <!-- Pozadí -->
   <rect width="1200" height="630" fill="url(#pozadi)"/>
-  <!-- Značka [OW] -->
-  <text x="90" y="200" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
-        font-size="64" font-weight="700" fill="#b6e6d8">[OW]</text>
+  <rect width="1200" height="630" fill="url(#tecky)" opacity="0.05"/>
+  <ellipse cx="946" cy="320" rx="330" ry="300" fill="url(#zare)"/>
+
+  <!-- ===== Levý sloupec: značka a sdělení ===== -->
+  <!-- Značka [OW] v rámečku -->
+  <rect x="84" y="100" width="122" height="58" rx="13" fill="#ffffff" fill-opacity="0.06"
+        stroke="#35b48f" stroke-opacity="0.7" stroke-width="1.5"/>
+  <text x="145" y="141" text-anchor="middle"
+        font-family="Consolas, 'Cascadia Code', Menlo, monospace"
+        font-size="38" font-weight="700" fill="#7fd8bf">[OW]</text>
+
   <!-- Název webu -->
-  <text x="90" y="310" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
-        font-size="96" font-weight="700" fill="#ffffff">OpenWork.cz</text>
-  <!-- Tagline (motto webu) -->
-  <text x="90" y="400" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
-        font-size="40" fill="#d7ede9">Díky OpenWork zvládnete vše,</text>
-  <text x="90" y="455" font-family="system-ui, 'Segoe UI', Arial, sans-serif"
-        font-size="40" fill="#d7ede9">co dnes AI umí.</text>
-  <!-- Spodní linka -->
-  <rect x="90" y="520" width="220" height="8" rx="4" fill="#d9b44a"/>
+  <text x="84" y="272" font-family="'Segoe UI', system-ui, Arial, sans-serif"
+        font-size="92" font-weight="700" fill="#ffffff">OpenWork.cz</text>
+  <rect x="88" y="304" width="170" height="8" rx="4" fill="#d9b44a"/>
+
+  <!-- Tagline -->
+  <text x="84" y="384" font-family="'Segoe UI', system-ui, Arial, sans-serif"
+        font-size="42" font-weight="600" fill="#e6f4ef">AI agenti nad vašimi soubory.</text>
+  <text x="84" y="440" font-family="'Segoe UI', system-ui, Arial, sans-serif"
+        font-size="42" fill="#a9d3c6">Zdarma a s otevřeným kódem.</text>
+
+  <!-- Štítky: co na webu je -->
+  <g font-family="'Segoe UI', system-ui, Arial, sans-serif" font-size="23">
+    <rect x="84" y="496" width="206" height="46" rx="23" fill="#ffffff" fill-opacity="0.08"
+          stroke="#ffffff" stroke-opacity="0.22"/>
+    <text x="187" y="527" text-anchor="middle" fill="#dff0ea">Návody a témata</text>
+    <rect x="304" y="496" width="184" height="46" rx="23" fill="#ffffff" fill-opacity="0.08"
+          stroke="#ffffff" stroke-opacity="0.22"/>
+    <text x="396" y="527" text-anchor="middle" fill="#dff0ea">Modely a ceny</text>
+    <rect x="502" y="496" width="140" height="46" rx="23" fill="#ffffff" fill-opacity="0.08"
+          stroke="#ffffff" stroke-opacity="0.22"/>
+    <text x="572" y="527" text-anchor="middle" fill="#dff0ea">Vaše data</text>
+  </g>
+
+  <!-- ===== Pravý sloupec: stylizované okno aplikace ===== -->
+  <g>
+    <rect x="758" y="108" width="376" height="414" rx="18" fill="#0a2b23"
+          stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+    <!-- Titulní lišta -->
+    <circle cx="790" cy="144" r="7" fill="#e0655a"/>
+    <circle cx="816" cy="144" r="7" fill="#e6b73f"/>
+    <circle cx="842" cy="144" r="7" fill="#57bf7a"/>
+    <line x1="758" y1="166" x2="1134" y2="166" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1.5"/>
+
+    <!-- Složka -->
+    <path d="M788 192 h26 l8 8 h30 a5 5 0 0 1 5 5 v20 a5 5 0 0 1 -5 5 h-64 a5 5 0 0 1 -5 -5 v-28 a5 5 0 0 1 5 -5 z"
+          fill="#d9b44a"/>
+    <text x="872" y="218" font-family="Consolas, 'Cascadia Code', Menlo, monospace"
+          font-size="23" font-weight="700" fill="#b6e6d8">Dokumenty/</text>
+
+    <!-- Soubory -->
+    <g font-family="Consolas, 'Cascadia Code', Menlo, monospace" font-size="20" fill="#8fc4b6">
+      <path d="M792 246 h13 l6 6 v18 h-19 z" fill="none" stroke="#8fc4b6" stroke-width="1.8"/>
+      <text x="824" y="266">smlouva-stara.pdf</text>
+      <path d="M792 282 h13 l6 6 v18 h-19 z" fill="none" stroke="#8fc4b6" stroke-width="1.8"/>
+      <text x="824" y="302">smlouva-nova.pdf</text>
+    </g>
+
+    <!-- Dotaz uživatele -->
+    <rect x="788" y="326" width="318" height="50" rx="14" fill="#187a63"/>
+    <text x="806" y="359" font-family="'Segoe UI', system-ui, Arial, sans-serif"
+          font-size="22" fill="#ffffff">Porovnej ty dvě smlouvy</text>
+
+    <!-- Odpověď AI -->
+    <rect x="788" y="394" width="318" height="98" rx="14" fill="#ffffff" fill-opacity="0.06"
+          stroke="#ffffff" stroke-opacity="0.14"/>
+    <circle cx="814" cy="426" r="13" fill="#35b48f"/>
+    <path d="M808 426 l4.5 4.5 l8 -9" fill="none" stroke="#ffffff" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="838" y="434" font-family="'Segoe UI', system-ui, Arial, sans-serif"
+          font-size="21" font-weight="600" fill="#e8f4f0">Hotovo — rozdíly:</text>
+    <text x="806" y="470" font-family="Consolas, 'Cascadia Code', Menlo, monospace"
+          font-size="20" fill="#b6e6d8">cena, výpověď, bod 7.3</text>
+  </g>
 </svg>

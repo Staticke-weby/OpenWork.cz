@@ -146,7 +146,10 @@ změně webu). Použitá tvrzení na homepage:
   ve `vystup/web/src/data/`; odkazy v README/AGENTS.md/hlídači opraveny.
 - **SEO:** `og:title` na úvodních stránkách; náhledový obrázek `public/og.png`
   (1200×630, zdroj návrhu `vystup/web/og-zdroj.svg` — povolená výjimka
-  z pravidla „žádné rastrové obrázky", zapsána v AGENTS.md); JSON-LD WebSite +
+  z pravidla „žádné rastrové obrázky", zapsána v AGENTS.md; PNG se generuje
+  přes `sharp` z node_modules: `sharp(svg).resize(1200, 630).png()`; meta URL
+  nese `?v=N` kvůli cache sociálních sítí — při změně obrázku zvýšit verzi
+  v `astro.config.mjs` u `og:image` i `twitter:image`); JSON-LD WebSite +
   Organization site-wide a FAQPage na častých otázkách (CZ i SK, ve frontmatter
   `head:` — při změně otázek aktualizovat i JSON-LD).
 - **Parita CZ/SK:** doplněny vypuštěné pasáže v `sk/vase-data/openwork-vs-cowork`
