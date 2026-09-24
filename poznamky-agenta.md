@@ -247,3 +247,10 @@ u každého doporučení uveden háček. Opraveno při psaní: 3 nepřesná
 cenová srovnání (Mistral přes Cortecs, „haléře" místo eurocentů, poměr
 Kimi K3), 2 nepodložená tvrzení o kvalitě (Apertus — stránka později
 vyřazena).
+
+**Přesun na GitHub Pages (24. 9. 2026):** repozitář `Staticke-weby/OpenWork.cz`
+(remote `origin`; původní `petrbaloun/openwork.cz` zůstává jako `puvodni`).
+Nasazuje `.github/workflows/nasazeni.yml` při pushi do `main`. Kanonická adresa
+je `https://www.openwork.cz` (pokyn provozovatele) — `site`, og:image, JSON-LD,
+`robots.txt` a `public/CNAME` přepsány na www. Ukázkový odkaz v textu stránky
+o Markdownu (`soubory-md.md`) ponechán bez www — je to jen příklad syntaxe.

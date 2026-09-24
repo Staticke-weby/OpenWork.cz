@@ -1,0 +1,48 @@
+# Sestaví web (vystup/web) a nasadí ho na GitHub Pages.
+# Spouští se při každém pushi do main, nebo ručně z karty Actions.
+name: Nasazení na GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Běží vždy jen jedno nasazení; rozběhnuté se nepřerušuje.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: vystup/web
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: vystup/web/package-lock.json
+      - run: npm ci
+      # Zahrnuje i kontrolu obsahu (scripts/kontrola-obsahu.mjs).
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: vystup/web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

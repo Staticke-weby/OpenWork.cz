@@ -5,7 +5,7 @@ import rehypeExternalLinks from 'rehype-external-links';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://openwork.cz',
+  site: 'https://www.openwork.cz',
   // Zrušené stránky — statické přesměrování (meta refresh) na náhradu.
   redirects: {
     '/zaciname/ekosystem/': '/modely/poskytovatele/',
@@ -28,7 +28,7 @@ export default defineConfig({
         // starý obrázek i týden) — při změně og.png zvyš číslo verze.
         {
           tag: 'meta',
-          attrs: { property: 'og:image', content: 'https://openwork.cz/og.png?v=2' },
+          attrs: { property: 'og:image', content: 'https://www.openwork.cz/og.png?v=2' },
         },
         { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
         { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
@@ -43,7 +43,7 @@ export default defineConfig({
         // je náhled spolehlivější (twitter:card doplňuje Starlight sám).
         {
           tag: 'meta',
-          attrs: { name: 'twitter:image', content: 'https://openwork.cz/og.png?v=2' },
+          attrs: { name: 'twitter:image', content: 'https://www.openwork.cz/og.png?v=2' },
         },
         {
           tag: 'meta',
@@ -62,14 +62,14 @@ export default defineConfig({
               {
                 '@type': 'WebSite',
                 name: 'OpenWork.cz',
-                url: 'https://openwork.cz/',
+                url: 'https://www.openwork.cz/',
                 inLanguage: ['cs', 'sk'],
               },
               {
                 '@type': 'Organization',
                 name: 'OpenWork.cz',
-                url: 'https://openwork.cz/',
-                logo: 'https://openwork.cz/og.png',
+                url: 'https://www.openwork.cz/',
+                logo: 'https://www.openwork.cz/og.png',
               },
             ],
           }),

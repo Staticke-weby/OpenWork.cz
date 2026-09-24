@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://openwork.cz/sitemap-index.xml
+Sitemap: https://www.openwork.cz/sitemap-index.xml
