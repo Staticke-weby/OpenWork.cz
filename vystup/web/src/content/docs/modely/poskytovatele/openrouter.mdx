@@ -1,0 +1,67 @@
+---
+title: "OpenRouter: stovky AI modelů a bezplatné modely na vyzkoušení"
+description: "OpenRouter jako poskytovatel pro OpenWork: stovky modelů na jednom účtu, bezplatné modely :free, zapnutí nulového uchovávání dat (ZDR) a výpočet v EU v tarifu Business. Limity, poplatky a háčky."
+sidebar:
+  order: 13
+  label: "OpenRouter"
+  badge:
+    text: "Spíš na zkoušku"
+    variant: caution
+last_verified: 2026-09-24
+---
+
+import PoskytovatelKarta from '../../../../components/PoskytovatelKarta.astro';
+import PoskytovatelModely from '../../../../components/PoskytovatelModely.astro';
+
+**OpenRouter** je americká brána ke **stovkám AI modelů od desítek
+poskytovatelů** na jednom účtu. Nejvíc se hodí na **vyzkoušení zdarma** —
+řada modelů má bezplatnou variantu s příponou `:free`. Pro každodenní práci
+s citlivými daty dáváme přednost [evropským poskytovatelům](/modely/poskytovatele/).
+
+<PoskytovatelKarta slug="openrouter" />
+
+## Kdy se hodí
+
+- **Chcete si zdarma vyzkoušet různé modely** — bez karty, s limitem
+  50 požadavků denně (po nákupu kreditu za 10 $ 1 000 denně).
+- **Potřebujete model, který nikde jinde není.**
+
+## Na co si dát pozor
+
+- **Podmínky se liší model od modelu.** Každý model obsluhuje jiný
+  poskytovatel s jinými pravidly. Bezplatné modely na datech často trénují.
+- **Nulové uchovávání musíte zapnout.** V **Settings → Privacy** zapněte
+  nulové uchovávání (ZDR) pro všechny skupiny modelů a zakažte poskytovatele,
+  kteří trénují na datech. Pak vám OpenRouter nabídne jen vyhovující.
+- **Výpočet v EU jen za příplatek.** Evropská adresa `eu.openrouter.ai`
+  funguje jen v tarifu **Business** — poplatek z dobití je pak 8 % místo 5,5 %.
+  Pro tento tarif se přepnete sami v nastavení účtu. V EU je dnes dostupných
+  asi 61 modelů.
+- **Poplatky z dobití** 5,5 % (nejméně 0,80 $). Nevyužitý kredit vrací
+  jen do 24 hodin a poplatky nevrací.
+
+## Modely s výpočtem v EU
+
+OpenRouter má stovky modelů, proto tu neuvádíme celý ceník. V tarifu
+Business běží v EU mimo jiné tyto modely z našeho katalogu — počítá je
+švédsko-finský poskytovatel Inceptron. Ceny se liší podle poskytovatele,
+aktuální najdete na [openrouter.ai/models](https://openrouter.ai/models?region=eu).
+
+<PoskytovatelModely slug="openrouter" />
+
+## Jak OpenRouter připojit v OpenWorku
+
+1. Na [openrouter.ai](https://openrouter.ai/) si založte účet a vytvořte
+   **klíč** (přístupové heslo pro aplikace).
+2. V **Settings → Privacy** zapněte nulové uchovávání dat.
+3. V OpenWorku otevřete **Settings** → **AI Providers** → **Connect**
+   a vyhledejte **OpenRouter**.
+4. Vložte klíč a v přepínači modelů (**model picker**) zvolte model.
+
+## Kudy dál
+
+- **[Poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/)** —
+  aktuální bezplatné modely.
+- **[Melious](/modely/poskytovatele/melious/)** — evropský bezplatný účet
+  bez karty.
+- **[Přehled poskytovatelů](/modely/poskytovatele/)** — všichni vedle sebe.

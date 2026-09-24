@@ -14,8 +14,9 @@ nad vašimi soubory udělá.
 
 - Nainstalovaný OpenWork (viz [Instalace](/zaciname/instalace/)).
 - Připojenou bránu k modelům, třeba
+  [Melious](/modely/poskytovatele/melious/) nebo
   [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) s modelem
-  **GLM 5.3 Flash**.
+  **DeepSeek V4.1 Flash**.
 
 ## Krok za krokem
 
@@ -24,7 +25,7 @@ nad vašimi soubory udělá.
    jen to, co je v ní.
 2. **Vyberte model.** V chatu v přepínači modelů (anglicky **model picker**)
    zvolte, s jakým modelem chcete pracovat (pro start doporučujeme
-   **GLM 5.3 Flash**).
+   **DeepSeek V4.1 Flash**).
 3. **Zadejte úkol vlastními slovy.** Do chatu napište, co potřebujete — třeba
    „*projdi tyhle faktury a udělej přehled částek po měsících*" nebo
    „*najdi v těch dokumentech všechny termíny a sepiš je do seznamu*" — a

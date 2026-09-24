@@ -1,0 +1,491 @@
+# Poskytovatelé AI modelů — zdroj dat pro /modely/poskytovatele/ (přehled
+# i podstránky), srovnání ZDR a stránky modelů (kde model vezmete + cena).
+# Každý poskytovatel má stránku src/content/docs/modely/poskytovatele/<slug>.mdx
+# (CZ i SK) — hlídá scripts/kontrola-obsahu.mjs.
+#
+# Zásady:
+# - Záměrně jen pět bran, které se v OpenWorku snadno připojí a má je
+#   smysl doporučit běžným lidem: evropské Melious a Cortecs (evropsky: true)
+#   a zahraniční OpenCode Go, OpenCode Zen a OpenRouter. Další evropské
+#   cloudy (Scaleway, OVHcloud, IONOS…) jsme vyřadili — pro snadné použití
+#   se nehodí (viz poznamky-agenta.md).
+# - Každé tvrzení má zdroj v poli `zdroje`. Sporné → „nejasné", nikdy dohad.
+# - Ceny: za 1 milion tokenů (vstup / výstup) v měně poskytovatele, bez DPH.
+#   `model` = slug z modely-eu.yaml (pak se model propojí se svou stránkou),
+#   nebo volný název u modelů mimo evropský katalog.
+# - doporuceni: stejné úrovně jako u modelů (viz modely-eu.yaml).
+# - Pole s příponou _sk jsou slovenské varianty (volitelné).
+
+last_verified: 2026-09-24
+zmenovnik:
+  - datum: 2026-09-24
+    zmena: "Založení souboru: evropské brány Melious a Cortecs, zahraniční OpenCode Go, OpenCode Zen a OpenRouter — s podmínkami ZDR a ceníky. Nahrazuje zdr-poskytovatele.yaml."
+
+poskytovatele:
+  # ─────────────────────────── Evropští poskytovatelé ───────────────────────────
+
+  - slug: melious
+    nazev: "Melious"
+    web: "https://melious.ai/"
+    evropsky: true
+    sidlo: "Saarbrücken, Německo (Melious AI GmbH, založeno 2025)"
+    sidlo_sk: "Saarbrücken, Nemecko (Melious AI GmbH, založená 2025)"
+    region_vypoctu: "jen Evropa (EU/EHP) — síť 12 evropských výpočetních partnerů"
+    region_vypoctu_sk: "len Európa (EÚ/EHP) — sieť 12 európskych výpočtových partnerov"
+    vlastni_hw: "ne v pravém smyslu — část modelů provozuje sám na pronajatých grafických kartách u firmy Verda ve Finsku a Švédsku, zbytek u partnerů"
+    vlastni_hw_sk: "nie v pravom zmysle — časť modelov prevádzkuje sám na prenajatých grafických kartách u firmy Verda vo Fínsku a Švédsku, zvyšok u partnerov"
+    trenink: "ne — podmínka pro každého partnera v síti"
+    trenink_sk: "nie — podmienka pre každého partnera v sieti"
+    uchovavani: "obsah zadání a odpovědí Melious neukládá (jen údaje k vyúčtování); partneři mohou držet krátkodobé provozní záznamy, délku neuvádějí"
+    uchovavani_sk: "obsah zadaní a odpovedí Melious neukladá (len údaje na vyúčtovanie); partneri môžu držať krátkodobé prevádzkové záznamy, dĺžku neuvádzajú"
+    zdr: "ano, ve výchozím stavu — uvádí ho ale jen v dokumentaci a blogu, ne ve smluvních podmínkách"
+    zdr_sk: "áno, vo východiskovom stave — uvádza ho však len v dokumentácii a blogu, nie v zmluvných podmienkach"
+    zdr_kratce: "ano (výchozí)"
+    zdr_kratce_sk: "áno (východiskovo)"
+    dpa: "ano, veřejná smlouva podle čl. 28 GDPR"
+    dpa_sk: "áno, verejná zmluva podľa čl. 28 GDPR"
+    certifikace: "ISO 27001 teprve získává; certifikace mají partnerská datová centra"
+    certifikace_sk: "ISO 27001 ešte len získava; certifikácie majú partnerské dátové centrá"
+    platba: "za spotřebu z předplaceného kreditu v eurech; kredit nepropadá. Předplatné pro programátory (od 49 € měsíčně) jen pro firmy"
+    platba_sk: "za spotrebu z predplateného kreditu v eurách; kredit nepropadá. Predplatné pre programátorov (od 49 € mesačne) len pre firmy"
+    mena: EUR
+    zdarma: "ano — bezplatný účet bez platební karty s malými limity; bez registrace nesmíte zadávat osobní údaje"
+    zdarma_sk: "áno — bezplatný účet bez platobnej karty s malými limitmi; bez registrácie nesmiete zadávať osobné údaje"
+    zdarma_kratce: "ano, malé limity"
+    zdarma_kratce_sk: "áno, malé limity"
+    pripojeni: "je v katalogu models.dev, ze kterého OpenWork bere seznam poskytovatelů; jinak podle návodu Melious pro opencode"
+    pripojeni_sk: "je v katalógu models.dev, z ktorého OpenWork berie zoznam poskytovateľov; inak podľa návodu Melious pre opencode"
+    doporuceni: doporucujeme
+    shrnuti: "Mladá německá brána jen k otevřeným modelům a jen v Evropě. Má výchozí doporučený model GLM 5.3 Flash za nejnižší cenu."
+    zdroje:
+      - "https://melious.ai/docs/concepts/privacy"
+      - "https://melious.ai/legal/subprocessors"
+      - "https://melious.ai/legal/dpa"
+      - "https://melious.ai/pricing"
+      - "https://melious.ai/integrations/opencode"
+    overeno: 2026-09-24
+    modely:
+      - model: glm-5-3-flash
+        vstup: 0.10
+        vystup: 0.40
+        poznamka: "běží i na vlastním nasazení ve Finsku"
+        poznamka_sk: "beží aj na vlastnom nasadení vo Fínsku"
+      - model: glm-5-3
+        vstup: 1.00
+        vystup: 3.00
+      - model: glm-5-2
+        vstup: 1.00
+        vystup: 4.00
+      - model: deepseek-v4-flash
+        vstup: 0.10
+        vystup: 0.25
+        poznamka: "verze 0731"
+        poznamka_sk: "verzia 0731"
+      - model: deepseek-v4-1-flash
+        vstup: 0.20
+        vystup: 1.00
+      - model: kimi-k2-7-code
+        vstup: 0.70
+        vystup: 3.00
+      - model: kimi-k2-6
+        vstup: 0.70
+        vystup: 3.50
+      - model: kimi-k3
+        vstup: 2.80
+        vystup: 14.00
+      - model: minimax-m3
+        vstup: 0.40
+        vystup: 2.00
+      - model: qwen3-8-27b
+        vstup: 0.40
+        vystup: 2.40
+      - model: qwen3-6-35b-a3b
+        vstup: 0.15
+        vystup: 0.50
+      - model: qwen3-5-397b
+        vstup: 0.60
+        vystup: 3.60
+      - model: deepseek-v4-pro
+        vstup: 1.00
+        vystup: 3.00
+        poznamka: "verze 0813 na vlastním nasazení ve Finsku; starší verze 1,65 / 3,30 €"
+        poznamka_sk: "verzia 0813 na vlastnom nasadení vo Fínsku; staršia verzia 1,65 / 3,30 €"
+      - model: qwen3-coder-next
+        vstup: 0.17
+        vystup: 0.90
+      - model: qwen3-8-max
+        vstup: 2.35
+        vystup: 5.55
+
+  - slug: cortecs
+    nazev: "Cortecs"
+    web: "https://cortecs.ai/"
+    evropsky: true
+    sidlo: "Vídeň, Rakousko (Cortecs GmbH)"
+    sidlo_sk: "Viedeň, Rakúsko (Cortecs GmbH)"
+    region_vypoctu: "EU — po zapnutí volby Sovereign Cloud jen u evropských firem"
+    region_vypoctu_sk: "EÚ — po zapnutí voľby Sovereign Cloud len u európskych firiem"
+    vlastni_hw: "ne — rozesílá požadavky k 16 poskytovatelům (Scaleway, OVH, Mistral, IONOS, Berget a další, ale i Amazon, Google a Microsoft v evropských regionech)"
+    vlastni_hw_sk: "nie — rozosiela požiadavky k 16 poskytovateľom (Scaleway, OVH, Mistral, IONOS, Berget a ďalší, ale aj Amazon, Google a Microsoft v európskych regiónoch)"
+    trenink: "ne"
+    trenink_sk: "nie"
+    uchovavani: "u všech poskytovatelů 0 dní kromě Microsoftu (30 dní)"
+    uchovavani_sk: "u všetkých poskytovateľov 0 dní okrem Microsoftu (30 dní)"
+    zdr: "ano, po zapnutí volby Zero Data Retention v projektu — pak se požadavky posílají jen tam, kde se nic neukládá"
+    zdr_sk: "áno, po zapnutí voľby Zero Data Retention v projekte — potom sa požiadavky posielajú len tam, kde sa nič neukladá"
+    zdr_kratce: "ano (po zapnutí)"
+    zdr_kratce_sk: "áno (po zapnutí)"
+    dpa: "ano, je součástí obchodních podmínek"
+    dpa_sk: "áno, je súčasťou obchodných podmienok"
+    certifikace: "ISO 27001"
+    certifikace_sk: "ISO 27001"
+    platba: "za spotřebu z předplaceného kreditu v eurech; při dobití poplatek 5 %"
+    platba_sk: "za spotrebu z predplateného kreditu v eurách; pri dobití poplatok 5 %"
+    mena: EUR
+    zdarma: "ne"
+    zdarma_sk: "nie"
+    zdarma_kratce: "ne"
+    zdarma_kratce_sk: "nie"
+    pripojeni: "nativně — v OpenWorku ho najdete v seznamu poskytovatelů"
+    pripojeni_sk: "natívne — v OpenWorku ho nájdete v zozname poskytovateľov"
+    doporuceni: doporucujeme
+    shrnuti: "Rakouská brána s největší nabídkou modelů v EU. Pro nulové uchovávání a čistě evropské zpracování musíte zapnout dvě volby."
+    zdroje:
+      - "https://docs.cortecs.ai/security-and-compliance/zero-data-retention-zdr.md"
+      - "https://docs.cortecs.ai/security-and-compliance/sovereign-cloud.md"
+      - "https://docs.cortecs.ai/security-and-compliance/data-governance-and-controls.md"
+      - "https://cortecs.ai/pricing"
+      - "https://api.cortecs.ai/v1/models"
+    overeno: 2026-09-24
+    modely:
+      - model: glm-5-3-flash
+        vstup: 0.09
+        vystup: 0.314
+        poznamka: "nejnižší cena je u zmenšené verze (Entrim); jinde 0,18–0,25 € vstup"
+        poznamka_sk: "najnižšia cena je pri zmenšenej verzii (Entrim); inde 0,18–0,25 € vstup"
+      - model: glm-5-3
+        vstup: 1.00
+        vystup: 3.50
+      - model: glm-5-2
+        vstup: 0.987
+        vystup: 2.684
+      - model: deepseek-v4-flash
+        vstup: 0.049
+        vystup: 0.156
+        poznamka: "verze 0731"
+        poznamka_sk: "verzia 0731"
+      - model: deepseek-v4-1-flash
+        vstup: 0.449
+        vystup: 1.346
+      - model: kimi-k2-7-code
+        vstup: 0.634
+        vystup: 2.88
+      - model: kimi-k2-6
+        vstup: 0.463
+        vystup: 2.575
+      - model: kimi-k3
+        vstup: 2.693
+        vystup: 13.464
+      - model: minimax-m3
+        vstup: 0.355
+        vystup: 1.775
+      - model: qwen3-8-27b
+        vstup: 0.09
+        vystup: 0.359
+      - model: qwen3-6-35b-a3b
+        vstup: 0.15
+        vystup: 0.50
+      - model: qwen3-5-397b
+        vstup: 0.60
+        vystup: 3.60
+      - model: deepseek-v4-pro
+        vstup: 1.553
+        vystup: 3.106
+        poznamka: "verze 0813 za 1,795 / 3,59 €"
+        poznamka_sk: "verzia 0813 za 1,795 / 3,59 €"
+      - model: qwen3-coder-next
+        vstup: 0.15
+        vystup: 0.80
+      - model: "Claude Sonnet 5"
+        vstup: 1.975
+        vystup: 9.874
+        poznamka: "přes Amazon a Google v EU; s volbou Sovereign Cloud není k dispozici"
+        poznamka_sk: "cez Amazon a Google v EÚ; s voľbou Sovereign Cloud nie je k dispozícii"
+      - model: "GPT 6 Luna"
+        vstup: 0.108
+        vystup: 0.539
+        poznamka: "jen přes Microsoft (30 dní uchovávání); se ZDR není k dispozici"
+        poznamka_sk: "len cez Microsoft (30 dní uchovávania); so ZDR nie je k dispozícii"
+
+  - slug: opencode-go
+    nazev: "OpenCode Go"
+    web: "https://opencode.ai/go?ref=K0VC03J925"
+    evropsky: false
+    sidlo: "USA (tvůrci opencode)"
+    sidlo_sk: "USA (tvorcovia opencode)"
+    region_vypoctu: "USA; po ručním povolení některé modely i v Číně"
+    region_vypoctu_sk: "USA; po ručnom povolení niektoré modely aj v Číne"
+    vlastni_hw: "ne — kteří poskytovatelé modely obsluhují, nezveřejňuje"
+    vlastni_hw_sk: "nie — ktorí poskytovatelia modely obsluhujú, nezverejňuje"
+    trenink: "ne, kromě modelů Muse Spark (trénují na datech)"
+    trenink_sk: "nie, okrem modelov Muse Spark (trénujú na dátach)"
+    uchovavani: "žádné u většiny modelů; GPT a Grok 30 dní"
+    uchovavani_sk: "žiadne pri väčšine modelov; GPT a Grok 30 dní"
+    zdr: "ano u většiny modelů; výjimky jsou uvedené u modelů. Modely trénující na datech a modely z Číny vyřadí dvě volby v nastavení pracovního prostoru"
+    zdr_sk: "áno pri väčšine modelov; výnimky sú uvedené pri modeloch. Modely trénujúce na dátach a modely z Číny vyradia dve voľby v nastaveniach pracovného priestoru"
+    zdr_kratce: "u většiny modelů"
+    zdr_kratce_sk: "pri väčšine modelov"
+    dpa: "nejasné"
+    dpa_sk: "nejasné"
+    certifikace: "nejasné"
+    certifikace_sk: "nejasné"
+    platba: "předplatné 10 $ měsíčně; každý model má měsíční limit 15–60 $ ve spotřebních cenách"
+    platba_sk: "predplatné 10 $ mesačne; každý model má mesačný limit 15–60 $ v spotrebných cenách"
+    mena: USD
+    zdarma: "Big Pickle a akční modely, 200 požadavků denně (i bez předplatného)"
+    zdarma_sk: "Big Pickle a akciové modely, 200 požiadaviek denne (aj bez predplatného)"
+    zdarma_kratce: "vybrané modely"
+    zdarma_kratce_sk: "vybrané modely"
+    pripojeni: "nativně — Settings → AI Providers → Connect → opencode"
+    pripojeni_sk: "natívne — Settings → AI Providers → Connect → opencode"
+    doporuceni: dobra-volba
+    shrnuti: "Nejjednodušší start s předplatným od tvůrců opencode. Výpočet ale běží v USA."
+    zdroje:
+      - "https://opencode.ai/docs/go/"
+      - "https://opencode.ai/go?ref=K0VC03J925"
+    overeno: 2026-09-24
+    modely:
+      - model: glm-5-3-flash
+        vstup: 0.15
+        vystup: 0.50
+        poznamka: "limit 60 $ měsíčně"
+        poznamka_sk: "limit 60 $ mesačne"
+      - model: glm-5-3
+        vstup: 1.40
+        vystup: 4.40
+        poznamka: "limit 15 $"
+        poznamka_sk: "limit 15 $"
+      - model: glm-5-2
+        vstup: 1.40
+        vystup: 4.40
+      - model: kimi-k2-7-code
+        vstup: 0.95
+        vystup: 4.00
+      - model: kimi-k2-6
+        vstup: 0.95
+        vystup: 4.00
+      - model: kimi-k3
+        vstup: 3.00
+        vystup: 15.00
+        poznamka: "limit 15 $"
+        poznamka_sk: "limit 15 $"
+      - model: minimax-m3
+        vstup: 0.30
+        vystup: 1.20
+      - model: deepseek-v4-flash
+        vstup: 0.30
+        vystup: 1.20
+        poznamka: "ve špičce; mimo špičku zhruba za polovinu"
+        poznamka_sk: "v špičke; mimo špičky zhruba za polovicu"
+      - model: deepseek-v4-1-flash
+        vstup: 0.30
+        vystup: 1.20
+        poznamka: "ve špičce; limit jen 15 $ měsíčně (do 27. 9. 2026 akčně 60 $)"
+        poznamka_sk: "v špičke; limit len 15 $ mesačne (do 27. 9. 2026 akciovo 60 $)"
+      - model: "MiMo-V2.6-Flash"
+        vstup: 0.14
+        vystup: 0.28
+      - model: "Qwen3.8 Flash"
+        vstup: 0.15
+        vystup: 0.47
+      - model: qwen3-8-max
+        vstup: 2.00
+        vystup: 6.00
+        poznamka: "limit 15 $"
+        poznamka_sk: "limit 15 $"
+      - model: deepseek-v4-pro
+        vstup: 1.32
+        vystup: 3.96
+        poznamka: "ve špičce"
+        poznamka_sk: "v špičke"
+      - model: "GPT 6 Luna"
+        vstup: 0.10
+        vystup: 0.50
+        poznamka: "uchovává 30 dní"
+        poznamka_sk: "uchováva 30 dní"
+      - model: "Grok 4.7"
+        vstup: 2.00
+        vystup: 6.00
+        poznamka: "uchovává 30 dní"
+        poznamka_sk: "uchováva 30 dní"
+      - model: "Muse Spark 1.3 Contributor"
+        vstup: 0.10
+        vystup: 0.20
+        poznamka: "trénuje na datech — nepoužívat na citlivá data"
+        poznamka_sk: "trénuje na dátach — nepoužívať na citlivé dáta"
+
+  - slug: opencode-zen
+    nazev: "OpenCode Zen"
+    web: "https://opencode.ai/docs/zen/"
+    evropsky: false
+    sidlo: "USA (tvůrci opencode)"
+    sidlo_sk: "USA (tvorcovia opencode)"
+    region_vypoctu: "USA"
+    region_vypoctu_sk: "USA"
+    vlastni_hw: "ne"
+    vlastni_hw_sk: "nie"
+    trenink: "ne, kromě bezplatných modelů (Big Pickle, MiMo Free, Ling Free, Muse Spark Free) — ty mohou trénovat"
+    trenink_sk: "nie, okrem bezplatných modelov (Big Pickle, MiMo Free, Ling Free, Muse Spark Free) — tie môžu trénovať"
+    uchovavani: "žádné u většiny modelů; Claude, GPT a Grok 30 dní; bezplatné Nemotron logují"
+    uchovavani_sk: "žiadne pri väčšine modelov; Claude, GPT a Grok 30 dní; bezplatné Nemotron logujú"
+    zdr: "ano u většiny modelů; správce může nevyhovující modely v pracovním prostoru vypnout"
+    zdr_sk: "áno pri väčšine modelov; správca môže nevyhovujúce modely v pracovnom priestore vypnúť"
+    zdr_kratce: "u většiny modelů"
+    zdr_kratce_sk: "pri väčšine modelov"
+    dpa: "nejasné"
+    dpa_sk: "nejasné"
+    certifikace: "nejasné"
+    certifikace_sk: "nejasné"
+    platba: "za spotřebu v dolarech bez přirážky; poplatek za platbu kartou 4,4 % + 0,30 $"
+    platba_sk: "za spotrebu v dolároch bez prirážky; poplatok za platbu kartou 4,4 % + 0,30 $"
+    mena: USD
+    zdarma: "ano — několik bezplatných modelů, většina z nich ale trénuje na datech nebo loguje"
+    zdarma_sk: "áno — niekoľko bezplatných modelov, väčšina z nich však trénuje na dátach alebo loguje"
+    zdarma_kratce: "ano, s háčky"
+    zdarma_kratce_sk: "áno, s háčikmi"
+    pripojeni: "nativně — Settings → AI Providers → Connect → opencode"
+    pripojeni_sk: "natívne — Settings → AI Providers → Connect → opencode"
+    doporuceni: specialni
+    shrnuti: "Platba za spotřebu u tvůrců opencode, včetně uzavřených modelů Claude, GPT a Gemini. Výpočet v USA."
+    zdroje:
+      - "https://opencode.ai/docs/zen/"
+    overeno: 2026-09-24
+    modely:
+      - model: glm-5-3-flash
+        vstup: 0.15
+        vystup: 0.50
+      - model: glm-5-3
+        vstup: 1.40
+        vystup: 4.40
+      - model: glm-5-2
+        vstup: 1.40
+        vystup: 4.40
+      - model: kimi-k2-7-code
+        vstup: 0.95
+        vystup: 4.00
+      - model: kimi-k2-6
+        vstup: 0.95
+        vystup: 4.00
+      - model: kimi-k3
+        vstup: 3.00
+        vystup: 15.00
+      - model: minimax-m3
+        vstup: 0.30
+        vystup: 1.20
+      - model: deepseek-v4-flash
+        vstup: 0.14
+        vystup: 0.28
+      - model: deepseek-v4-1-flash
+        vstup: 0.30
+        vystup: 1.20
+      - model: deepseek-v4-pro
+        vstup: 1.74
+        vystup: 3.48
+      - model: "Qwen3.8 Flash"
+        vstup: 0.15
+        vystup: 0.47
+      - model: "Claude Sonnet 5"
+        vstup: 2.00
+        vystup: 10.00
+        poznamka: "uchovává 30 dní"
+        poznamka_sk: "uchováva 30 dní"
+      - model: "Claude Opus 5.5"
+        vstup: 4.00
+        vystup: 20.00
+        poznamka: "uchovává 30 dní"
+        poznamka_sk: "uchováva 30 dní"
+      - model: "GPT 6 Sol"
+        vstup: 2.00
+        vystup: 10.00
+        poznamka: "uchovává 30 dní"
+        poznamka_sk: "uchováva 30 dní"
+      - model: "GPT 6 Luna"
+        vstup: 0.10
+        vystup: 0.50
+        poznamka: "uchovává 30 dní"
+        poznamka_sk: "uchováva 30 dní"
+      - model: "Gemini 3.8 Flash"
+        vstup: 1.50
+        vystup: 7.50
+      - model: "Big Pickle"
+        vstup: 0
+        vystup: 0
+        poznamka: "zdarma; může trénovat na datech"
+        poznamka_sk: "zadarmo; môže trénovať na dátach"
+
+  - slug: openrouter
+    nazev: "OpenRouter"
+    web: "https://openrouter.ai/"
+    evropsky: false
+    sidlo: "USA"
+    sidlo_sk: "USA"
+    region_vypoctu: "celosvětově; jen EU přes eu.openrouter.ai v tarifu Business (poplatek z dobití 8 % místo 5,5 %)"
+    region_vypoctu_sk: "celosvetovo; len EÚ cez eu.openrouter.ai v tarife Business (poplatok z dobitia 8 % namiesto 5,5 %)"
+    vlastni_hw: "ne — brána ke stovkám modelů od desítek poskytovatelů"
+    vlastni_hw_sk: "nie — brána k stovkám modelov od desiatok poskytovateľov"
+    trenink: "OpenRouter sám ne; u poskytovatelů modelů se liší — v nastavení je můžete vyřadit"
+    trenink_sk: "OpenRouter sám nie; u poskytovateľov modelov sa líši — v nastaveniach ich môžete vyradiť"
+    uchovavani: "OpenRouter obsah ve výchozím stavu neukládá; u poskytovatelů se liší"
+    uchovavani_sk: "OpenRouter obsah vo východiskovom stave neukladá; u poskytovateľov sa líši"
+    zdr: "zapínáte v nastavení soukromí (Settings → Privacy) — pak jen poskytovatelé s nulovým uchováváním"
+    zdr_sk: "zapínate v nastaveniach súkromia (Settings → Privacy) — potom len poskytovatelia s nulovým uchovávaním"
+    zdr_kratce: "po zapnutí"
+    zdr_kratce_sk: "po zapnutí"
+    dpa: "nejasné"
+    dpa_sk: "nejasné"
+    certifikace: "nejasné"
+    certifikace_sk: "nejasné"
+    platba: "za spotřebu v dolarech; poplatek z dobití kartou 5,5 % (Business 8 %)"
+    platba_sk: "za spotrebu v dolároch; poplatok z dobitia kartou 5,5 % (Business 8 %)"
+    mena: USD
+    zdarma: "ano — modely s příponou :free, 20 požadavků za minutu a 50 denně (po nákupu kreditu za 10 $ 1 000 denně)"
+    zdarma_sk: "áno — modely s príponou :free, 20 požiadaviek za minútu a 50 denne (po nákupe kreditu za 10 $ 1 000 denne)"
+    zdarma_kratce: "modely :free"
+    zdarma_kratce_sk: "modely :free"
+    pripojeni: "nativně — v OpenWorku ho najdete v seznamu poskytovatelů"
+    pripojeni_sk: "natívne — v OpenWorku ho nájdete v zozname poskytovateľov"
+    doporuceni: na-zkousku
+    shrnuti: "Brána ke stovkám modelů s bezplatnou řadou na vyzkoušení. Výpočet v EU jen v dražším tarifu Business."
+    zdroje:
+      - "https://openrouter.ai/docs/guides/features/zdr"
+      - "https://openrouter.ai/docs/guides/privacy/provider-logging"
+      - "https://openrouter.ai/docs/guides/features/in-region-routing"
+      - "https://openrouter.ai/pricing"
+      - "https://openrouter.ai/docs/api_reference/limits"
+    overeno: 2026-09-24
+    modely:
+      - model: glm-5-3
+        vstup: null
+        vystup: null
+        poznamka: "v EU přes Inceptron (Švédsko/Finsko), jen tarif Business"
+        poznamka_sk: "v EÚ cez Inceptron (Švédsko/Fínsko), len tarif Business"
+      - model: glm-5-2
+        vstup: null
+        vystup: null
+        poznamka: "v EU přes Inceptron, jen tarif Business"
+        poznamka_sk: "v EÚ cez Inceptron, len tarif Business"
+      - model: kimi-k2-7-code
+        vstup: null
+        vystup: null
+        poznamka: "v EU přes Inceptron, jen tarif Business"
+        poznamka_sk: "v EÚ cez Inceptron, len tarif Business"
+      - model: kimi-k2-6
+        vstup: null
+        vystup: null
+        poznamka: "v EU přes Inceptron, jen tarif Business"
+        poznamka_sk: "v EÚ cez Inceptron, len tarif Business"
+      - model: deepseek-v4-flash
+        vstup: null
+        vystup: null
+        poznamka: "v EU přes Inceptron, jen tarif Business"
+        poznamka_sk: "v EÚ cez Inceptron, len tarif Business"

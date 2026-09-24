@@ -1,0 +1,243 @@
+# Čínské otevřené modely hostované v EU — zdroj dat pro /modely/eu/
+# a stránky modelů.
+# Každý model má svou stránku src/content/docs/modely/eu/<slug>.mdx (CZ i SK),
+# hlídá scripts/kontrola-obsahu.mjs. Ceny NEJSOU tady — drží je
+# poskytovatele.yaml (u každého poskytovatele, s odkazem na slug modelu).
+#
+# Záměrně jen čínské otevřené modely (GLM, DeepSeek, Kimi, MiniMax, Qwen):
+# za svou cenu jsou dnes nejsilnější a evropské brány Melious a Cortecs je
+# provozují v EU s nulovým uchováváním dat (ZDR) — data do Číny nejdou.
+# Evropské a americké otevřené modely (Mistral, Gemma, gpt-oss, Llama…)
+# jsme vyřadili: pro práci v OpenWorku za stejné peníze zaostávají.
+# Základnou katalogu je nabídka Melious: model patří do katalogu, jen když
+# ho Melious nabízí. Cortecs a zahraniční brány uvádíme pro srovnání ceny.
+# Starší generace z nabídky Melious (GLM 5.1/5, Kimi K2.5, MiniMax M2.x,
+# DeepSeek V3.2/R1, Qwen3 a Qwen2.5) do katalogu záměrně nedáváme.
+#
+# doporuceni — jak moc model doporučujeme (štítek na webu):
+#   doporucujeme  — první volba pro většinu lidí v dané kategorii
+#   dobra-volba   — spolehlivá alternativa, sáhněte po ní podle potřeby
+#   specialni     — „Pro určité případy": úzký účel, vyšší cena nebo háček
+#   na-zkousku    — „Spíš na zkoušku": starší nebo slabší, máme lepší volby
+# Hodnocení skládáme z ověřených údajů (vstupy, kontext, cena, počet
+# evropských poskytovatelů se ZDR), ne z vlastních testů kvality.
+#
+# Pole s příponou _sk jsou slovenské varianty (volitelné).
+
+last_verified: 2026-09-24
+zmenovnik:
+  - datum: 2026-09-24
+    zmena: "Výchozí doporučený model změněn na DeepSeek V4.1 Flash (dříve GLM 5.3 Flash)."
+  - datum: 2026-09-24
+    zmena: "Založení katalogu: 15 čínských otevřených modelů z nabídky Melious (výpočet v EU, nulové uchovávání dat), se štítkem doporučení, vstupy a kontextem."
+
+modely:
+  - slug: deepseek-v4-1-flash
+    nazev: "DeepSeek V4.1 Flash"
+    vyrobce: "DeepSeek"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek"
+    vstupy_sk: "text + obrázok"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: doporucujeme
+    vhodne_pro: "výchozí volba na každý den: rychlý, přečte obrázky, dobře česky a spolehlivě s nástroji"
+    vhodne_pro_sk: "predvolená voľba na každý deň: rýchly, prečíta obrázky, dobre po slovensky a spoľahlivo s nástrojmi"
+
+  - slug: glm-5-3-flash
+    nazev: "GLM 5.3 Flash"
+    vyrobce: "Z.ai"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek + video"
+    vstupy_sk: "text + obrázok + video"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: doporucujeme
+    vhodne_pro: "nejlevnější model s obrázky i videem; alternativa k výchozímu modelu"
+    vhodne_pro_sk: "najlacnejší model s obrázkami aj videom; alternatíva k predvolenému modelu"
+
+  - slug: qwen3-8-27b
+    nazev: "Qwen3.8 27B"
+    vyrobce: "Alibaba (Qwen)"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek + video"
+    vstupy_sk: "text + obrázok + video"
+    kontext: "262 tisíc tokenů"
+    kontext_sk: "262 tisíc tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "běžná práce s dokumenty a obrázky; u Cortecs za cenu GLM 5.3 Flash"
+    vhodne_pro_sk: "bežná práca s dokumentmi a obrázkami; u Cortecs za cenu GLM 5.3 Flash"
+
+  - slug: deepseek-v4-flash
+    nazev: "DeepSeek V4 Flash"
+    vyrobce: "DeepSeek"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "jen text"
+    vstupy_sk: "len text"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: doporucujeme
+    vhodne_pro: "nejlevnější práce s textem ve velkém objemu"
+    vhodne_pro_sk: "najlacnejšia práca s textom vo veľkom objeme"
+
+  - slug: kimi-k2-7-code
+    nazev: "Kimi K2.7 Code"
+    vyrobce: "Moonshot AI"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek"
+    vstupy_sk: "text + obrázok"
+    kontext: "262 tisíc tokenů"
+    kontext_sk: "262 tisíc tokenov"
+    doporuceni: doporucujeme
+    vhodne_pro: "programování a skripty; přečte i snímek obrazovky s chybou"
+    vhodne_pro_sk: "programovanie a skripty; prečíta aj snímku obrazovky s chybou"
+
+  - slug: glm-5-3
+    nazev: "GLM 5.3"
+    vyrobce: "Z.ai"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "jen text"
+    vstupy_sk: "len text"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "silnější sourozenec GLM 5.3 Flash na náročné texty a programování"
+    vhodne_pro_sk: "silnejší súrodenec GLM 5.3 Flash na náročné texty a programovanie"
+
+  - slug: minimax-m3
+    nazev: "MiniMax M3"
+    vyrobce: "MiniMax"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek + video"
+    vstupy_sk: "text + obrázok + video"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "obrázky a video za rozumnou cenu, dlouhé podklady"
+    vhodne_pro_sk: "obrázky a video za rozumnú cenu, dlhé podklady"
+
+  - slug: kimi-k2-6
+    nazev: "Kimi K2.6"
+    vyrobce: "Moonshot AI"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek"
+    vstupy_sk: "text + obrázok"
+    kontext: "256 tisíc tokenů"
+    kontext_sk: "256 tisíc tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "univerzál na delší úkoly o více krocích, s obrázky"
+    vhodne_pro_sk: "univerzál na dlhšie úlohy o viacerých krokoch, s obrázkami"
+
+  - slug: qwen3-5-397b
+    nazev: "Qwen3.5 397B"
+    vyrobce: "Alibaba (Qwen)"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek"
+    vstupy_sk: "text + obrázok"
+    kontext: "256 tisíc tokenů"
+    kontext_sk: "256 tisíc tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "velký model na náročnější rozbory s obrázky"
+    vhodne_pro_sk: "veľký model na náročnejšie rozbory s obrázkami"
+
+  - slug: qwen3-6-35b-a3b
+    nazev: "Qwen3.6 35B A3B"
+    vyrobce: "Alibaba (Qwen)"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek"
+    vstupy_sk: "text + obrázok"
+    kontext: "256 tisíc tokenů"
+    kontext_sk: "256 tisíc tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "rychlé a levné drobné úkoly, třídění a přepisy"
+    vhodne_pro_sk: "rýchle a lacné drobné úlohy, triedenie a prepisy"
+
+  - slug: glm-5-2
+    nazev: "GLM 5.2"
+    vyrobce: "Z.ai"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "jen text"
+    vstupy_sk: "len text"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: specialni
+    vhodne_pro: "předchůdce GLM 5.3; u Cortecs má levnější výstup"
+    vhodne_pro_sk: "predchodca GLM 5.3; u Cortecs má lacnejší výstup"
+
+  - slug: kimi-k3
+    nazev: "Kimi K3"
+    vyrobce: "Moonshot AI"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "text + obrázek"
+    vstupy_sk: "text + obrázok"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: specialni
+    vhodne_pro: "nejtěžší úlohy, kde nevadí vysoká cena"
+    vhodne_pro_sk: "najťažšie úlohy, kde neprekáža vysoká cena"
+
+  - slug: deepseek-v4-pro
+    nazev: "DeepSeek V4 Pro"
+    vyrobce: "DeepSeek"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "jen text"
+    vstupy_sk: "len text"
+    kontext: "1 milion tokenů"
+    kontext_sk: "1 milión tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "silný DeepSeek na náročné texty a programování za rozumnou cenu"
+    vhodne_pro_sk: "silný DeepSeek na náročné texty a programovanie za rozumnú cenu"
+
+  - slug: qwen3-coder-next
+    nazev: "Qwen3 Coder Next"
+    vyrobce: "Alibaba (Qwen)"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "jen text"
+    vstupy_sk: "len text"
+    kontext: "256 tisíc tokenů"
+    kontext_sk: "256 tisíc tokenov"
+    doporuceni: dobra-volba
+    vhodne_pro: "levné programování a skripty"
+    vhodne_pro_sk: "lacné programovanie a skripty"
+
+  - slug: qwen3-8-max
+    nazev: "Qwen3.8 Max"
+    vyrobce: "Alibaba (Qwen)"
+    zeme_vyrobce: "Čína"
+    zeme_vyrobce_sk: "Čína"
+    otevreny: true
+    vstupy: "jen text"
+    vstupy_sk: "len text"
+    kontext: "256 tisíc tokenů"
+    kontext_sk: "256 tisíc tokenov"
+    doporuceni: specialni
+    vhodne_pro: "největší Qwen na nejtěžší textové úlohy; drahý"
+    vhodne_pro_sk: "najväčší Qwen na najťažšie textové úlohy; drahý"

@@ -1,0 +1,56 @@
+---
+// Kde model vezmete: poskytovatelé, kteří ho nabízejí, s cenou, regionem
+// výpočtu a ZDR. Evropští poskytovatelé jsou první.
+import DoporuceniStitek from './DoporuceniStitek.astro';
+import { modelPovinne, nabidkyModelu, formatCena, text } from '../lib/katalog';
+
+interface Props {
+  slug: string;
+}
+const m = modelPovinne(Astro.props.slug);
+const jeSk = Astro.currentLocale === 'sk';
+const prefix = jeSk ? '/sk' : '';
+
+const nabidky = nabidkyModelu(m.slug).sort(
+  (a, b) => Number(b.poskytovatel.evropsky) - Number(a.poskytovatel.evropsky)
+);
+
+const t = jeSk
+  ? { posk: 'Poskytovateľ', region: 'Kde beží výpočet', zdr: 'ZDR', vstup: 'Vstup / 1 mil. tokenov',
+      vystup: 'Výstup / 1 mil. tokenov', pozn: 'Poznámka', popis: 'Kde model vezmete' }
+  : { posk: 'Poskytovatel', region: 'Kde běží výpočet', zdr: 'ZDR', vstup: 'Vstup / 1 mil. tokenů',
+      vystup: 'Výstup / 1 mil. tokenů', pozn: 'Poznámka', popis: 'Kde model vezmete' };
+---
+
+<div class="zdat-obal">
+  <table class="zdat-tabulka">
+    <caption class="sr-only">{t.popis} — {m.nazev}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{t.posk}</th>
+        <th scope="col">{t.region}</th>
+        <th scope="col">{t.zdr}</th>
+        <th scope="col">{t.vstup}</th>
+        <th scope="col">{t.vystup}</th>
+        <th scope="col">{t.pozn}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        nabidky.map(({ poskytovatel: p, cena }) => (
+          <tr>
+            <td>
+              <a href={`${prefix}/modely/poskytovatele/${p.slug}/`}>{p.nazev}</a>{' '}
+              <DoporuceniStitek uroven={p.doporuceni} />
+            </td>
+            <td>{text(p, 'region_vypoctu', jeSk)}</td>
+            <td>{text(p, 'zdr_kratce', jeSk)}</td>
+            <td>{formatCena(cena.vstup, p.mena, jeSk)}</td>
+            <td>{formatCena(cena.vystup, p.mena, jeSk)}</td>
+            <td>{text(cena, 'poznamka', jeSk)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

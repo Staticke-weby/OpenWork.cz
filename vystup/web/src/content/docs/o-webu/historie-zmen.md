@@ -3,11 +3,33 @@ title: "Historie změn"
 description: "Co a kdy jsme na webu OpenWork.cz změnili — nový obsah, opravy a aktualizace ověřených údajů."
 sidebar:
   order: 3
-last_verified: 2026-08-31
+last_verified: 2026-09-24
 ---
 
 Přehled toho, co se na webu měnilo. U proměnlivých údajů (ceny, modely,
 podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
+
+## 24. září 2026 — katalog čínských modelů v EU a evropské brány
+
+- **Nový [katalog modelů](/modely/katalog/):** 15 čínských otevřených
+  modelů (GLM, DeepSeek, Kimi, MiniMax, Qwen), které běží na serverech
+  v EU s nulovým uchováváním dat. Základem je nabídka evropské brány
+  [Melious](/modely/poskytovatele/melious/). Každý model má vlastní stránku
+  se štítkem, jak moc ho doporučujeme, a srovnáním cen.
+- **Podstránky poskytovatelů:** [Melious](/modely/poskytovatele/melious/),
+  [Cortecs](/modely/poskytovatele/cortecs/),
+  [OpenCode Go](/modely/poskytovatele/opencode-go/),
+  [OpenCode Zen](/modely/poskytovatele/opencode-zen/)
+  a [OpenRouter](/modely/poskytovatele/openrouter/) — podmínky ZDR,
+  modely a ceny, háčky a připojení v OpenWorku.
+- **Doporučená cesta** je nově Melious s výchozím modelem
+  [DeepSeek V4.1 Flash](/modely/eu/deepseek-v4-1-flash/) (výpočet v Evropě,
+  rychlý, čte obrázky); dosavadní GLM 5.3 Flash zůstává jako levnější
+  alternativa s videem. OpenCode Go zůstává jako předplatné s výpočtem v USA.
+- [Srovnání poskytovatelů (ZDR)](/vase-data/zdr/srovnani-poskytovatelu/)
+  a [poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/)
+  aktualizovány k 24. září 2026. Starý katalog se zahraničními modely
+  jsme zrušili.
 
 ## 2. září 2026 — dvanáct nových témat
 

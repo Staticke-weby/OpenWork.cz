@@ -3,7 +3,7 @@ title: "ZDR — nulové uchovávanie dát: čo to je a ako ho spoznáte"
 description: "Nulové uchovávanie dát (zero data retention, ZDR) znamená, že poskytovateľ vaše zadania neukladá ani na nich netrénuje. Ako to spoznáte a na čo sa pýtať."
 sidebar:
   order: 2
-last_verified: 2026-08-31
+last_verified: 2026-09-24
 ---
 
 **ZDR** znamená **nulové uchovávanie dát** (anglicky *zero data retention*).
@@ -29,7 +29,8 @@ Než si vyberiete, oddeľte si tri rôzne veci:
 - **Pozrite sa do podmienok poskytovateľa** na slová ako „zero data retention",
   „no training" alebo „dáta sa neukladajú".
 - **Vyberte bránu, ktorá to má východiskovo.** Európska brána
-  [Cortecs](/sk/modely/poskytovatele/) spracúva dáta len v Európe a bez uchovávania.
+  [Melious](/sk/modely/poskytovatele/melious/) spracúva dáta len v Európe
+  a obsah zadaní neukladá.
 - **Nechcete riešiť vôbec nič?** Siahnite po
   [lokálnych AI modeloch](/sk/vase-data/lokalni-ai/) — dáta potom nikam
   neodídu.

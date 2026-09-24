@@ -1,0 +1,58 @@
+---
+// Karta modelu: štítek doporučení, výrobce, vstupy, kontext a průměrná
+// cena u evropských poskytovatelů. Data: src/data/modely-eu.yaml
+// + ceny z poskytovatele.yaml.
+import DoporuceniStitek from './DoporuceniStitek.astro';
+import { modelPovinne, prumernaCenaModelu, cenaUZakladny, formatCena, text } from '../lib/katalog';
+
+interface Props {
+  slug: string;
+}
+const m = modelPovinne(Astro.props.slug);
+const cena = prumernaCenaModelu(m.slug);
+const zakladna = cenaUZakladny(m.slug);
+const jeSk = Astro.currentLocale === 'sk';
+
+const t = jeSk
+  ? { hodnoceni: 'Ako veľmi ho odporúčame', vyrobce: 'Výrobca', otevreny: 'Otvorený model',
+      ano: 'áno — dá sa stiahnuť a prevádzkovať aj u seba', ne: 'nie',
+      vstupy: 'Vstupy', kontext: 'Kontext (koľko textu naraz prečíta)', hodi: 'Hodí sa na',
+      melious: 'Cena u Melious', cena: 'Priemerná cena v EÚ', zaMil: 'za 1 mil. tokenov vstupu / výstupu',
+      pocet: 'u', posk: 'poskytovateľov', popis: 'Základné údaje o modeli' }
+  : { hodnoceni: 'Jak moc ho doporučujeme', vyrobce: 'Výrobce', otevreny: 'Otevřený model',
+      ano: 'ano — dá se stáhnout a provozovat i u sebe', ne: 'ne',
+      vstupy: 'Vstupy', kontext: 'Kontext (kolik textu najednou přečte)', hodi: 'Hodí se na',
+      melious: 'Cena u Melious', cena: 'Průměrná cena v EU', zaMil: 'za 1 mil. tokenů vstupu / výstupu',
+      pocet: 'u', posk: 'poskytovatelů', popis: 'Základní údaje o modelu' };
+
+const meliousText =
+  zakladna === null || zakladna.vstup === null
+    ? '—'
+    : `${formatCena(zakladna.vstup, zakladna.mena, jeSk)} / ${formatCena(zakladna.vystup, zakladna.mena, jeSk)} ${t.zaMil}`;
+
+const cenaText =
+  cena.vstup === null
+    ? '—'
+    : `≈ ${formatCena(cena.vstup, 'EUR', jeSk)} / ${formatCena(cena.vystup, 'EUR', jeSk)} ${t.zaMil} (${t.pocet} ${cena.pocet} ${t.posk})`;
+---
+
+<div class="ow-karta">
+  <p class="ow-karta__stitek">
+    <span>{t.hodnoceni}:</span>
+    <DoporuceniStitek uroven={m.doporuceni} velky />
+  </p>
+  <div class="zdat-obal">
+    <table class="zdat-tabulka ow-karta__fakta">
+      <caption class="sr-only">{t.popis} — {m.nazev}</caption>
+      <tbody>
+        <tr><th scope="row">{t.vyrobce}</th><td>{m.vyrobce} ({text(m, 'zeme_vyrobce', jeSk)})</td></tr>
+        <tr><th scope="row">{t.otevreny}</th><td>{m.otevreny ? t.ano : t.ne}</td></tr>
+        <tr><th scope="row">{t.vstupy}</th><td>{text(m, 'vstupy', jeSk)}</td></tr>
+        <tr><th scope="row">{t.kontext}</th><td>{text(m, 'kontext', jeSk)}</td></tr>
+        <tr><th scope="row">{t.hodi}</th><td>{text(m, 'vhodne_pro', jeSk)}</td></tr>
+        <tr><th scope="row">{t.melious}</th><td>{meliousText}</td></tr>
+        <tr><th scope="row">{t.cena}</th><td>{cenaText}</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

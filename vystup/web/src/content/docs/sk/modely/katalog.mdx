@@ -1,70 +1,90 @@
 ---
-title: "Katalóg AI modelov: porovnanie s overenými údajmi"
-description: "Porovnanie najlepších AI modelov pre OpenWork: aké vstupy prijmú (text, obrázok, zvuk, video), na čo sa hodia a kde ich vezmete — OpenCode Go/Zen alebo OpenRouter. Overené ku dňu pri tabuľke."
+title: "Katalóg AI modelov: čínske otvorené modely hostované v EÚ"
+description: "Katalóg AI modelov pre OpenWork: GLM, DeepSeek, Kimi, MiniMax a Qwen s výpočtom v EÚ a nulovým uchovávaním dát (ZDR) u Melious. Štítok, ako veľmi model odporúčame, vstupy a priemerná cena."
 sidebar:
-  order: 3
+  order: 2
   label: "Katalóg modelov"
   badge:
     text: Živé
     variant: tip
+last_verified: 2026-09-24
 ---
 
-import TabulkaZDat from '../../../../components/TabulkaZDat.astro';
+import PrehledModeluEu from '../../../../components/PrehledModeluEu.astro';
 
-Vybraných trinásť modelov, ktoré dávajú v OpenWorku zmysel — od bezplatných
-po najsilnejšie. Pri každom uvádzame **vstupy** (čo model prijme — práve tým
-sa modely najviac líšia, viď [Text, obrázok, video](/sk/modely/vstupy/)),
-na čo sa hodí a kde ho vezmete.
+Katalóg obsahuje **čínske otvorené modely, ktoré bežia na serveroch v EÚ**
+a nič si z vašich zadaní neukladajú — majú nulové uchovávanie dát, anglicky
+*zero data retention* (ZDR). Základom katalógu je ponuka európskej brány
+**[Melious](/sk/modely/poskytovatele/melious/)**: každý model tu vezmete
+u nej, na porovnanie cien uvádzame aj [Cortecs](/sk/modely/poskytovatele/cortecs/)
+a zahraničné brány. Pri každom modeli nájdete štítok, **ako veľmi ho
+odporúčame**, na čo sa hodí a koľko stojí.
 
-## Porovnanie modelov
+## Modely v katalógu
 
-<TabulkaZDat zdroj="modely.yaml" popisek="Katalóg AI modelov: vstupy, vhodnosť a dostupnosť" />
+<PrehledModeluEu />
 
-**Kde modely vezmete:**
-[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) (predplatné 10 $ mesačne)
-· [OpenCode Zen](https://opencode.ai/go?ref=K0VC03J925) (platba za spotrebu)
-· [OpenRouter](/sk/modely/poskytovatele/)
-· [Cortecs](/sk/modely/poskytovatele/) (výpočet len v EÚ) —
-viac v [prehľade poskytovateľov](/sk/modely/poskytovatele/)
-
-:::caution
-Ponuka aj ceny sa menia. Celú tabuľku overujeme naraz — dátum je nad ňou.
-Pred rozhodnutím si kľúčový údaj overte priamo pri bráne (odkazy vyššie).
-Popisy v tabuľke sú v češtine — údaje platia rovnako.
-:::
-
-## Ako tabuľku čítať
-
-- **Vstupy** — čo modelu môžete poslať. „Jen text" znamená, že fotky bločkov
-  ani skeny neprečíta; na tie potrebujete model s obrázkovým vstupom.
-- **Hodí sa na** — naše stručné odporúčanie; podrobnejšie na stránkach
-  [najlepších modelov](/sk/modely/nejlepsi-pro/programovani/).
-- **Kde ho vezmete** — *Go* je predplatné, *Zen* platba za spotrebu,
-  *OpenRouter* samostatná brána. Európska brána
-  [Cortecs](/sk/modely/poskytovatele/) ponúka vyše 150 modelov s výpočtom
-  len v EÚ — všetky brány popisuje
-  [prehľad poskytovateľov](/sk/modely/poskytovatele/).
+Ceny sú priemer v eurách za **1 milión tokenov** vstupu (čo modelu pošlete)
+a výstupu (čo vám napíše) u európskych poskytovateľov; token je kúsok
+textu, podľa ktorých sa počíta spotreba. Presné ceny u Melious a ďalších
+poskytovateľov nájdete na stránke každého modelu.
 
 ## S čím začať
 
-- **Východisková voľba:** GLM 5.3 Flash — lacný, s dlhým kontextom a vstupom
-  obrázkov aj videa.
-- **Kopa práce prakticky zadarmo:** MiMo-V2.5 — v Go má zďaleka najvyššie
-  limity a berie aj zvuk a video.
-- **Lacno na obrázky a video:** MiniMax M3.
-- **Najlacnejší čistý text:** DeepSeek V4 Flash.
-- **Keď ide o veľa:** Claude Sonnet 5 alebo GPT 5.6 Sol; na najťažšie úlohy
-  Claude Opus 5.
+- **Na každý deň:** [DeepSeek V4.1 Flash](/sk/modely/eu/deepseek-v4-1-flash/) — rýchly,
+  dobre po slovensky, spoľahlivo s nástrojmi a prečíta obrázky.
+- **Lacnejšie a s videom:** [GLM 5.3 Flash](/sk/modely/eu/glm-5-3-flash/).
+- **Najlacnejší text:** [DeepSeek V4 Flash](/sk/modely/eu/deepseek-v4-flash/).
+- **Programovanie:** [Kimi K2.7 Code](/sk/modely/eu/kimi-k2-7-code/),
+  lacnejšie [Qwen3 Coder Next](/sk/modely/eu/qwen3-coder-next/).
+- **Keď lacný model nestačí:** [GLM 5.3](/sk/modely/eu/glm-5-3/) alebo
+  [DeepSeek V4 Pro](/sk/modely/eu/deepseek-v4-pro/).
 
-Ponuka sa mení prakticky denne a mnohé modely sú zameniteľné — čo je práve
-nové a lacnejšie, uvidíte na
-[aktuálnom zozname modelov OpenCode Go](https://opencode.ai/go?ref=K0VC03J925).
+## Prečo čínske modely
+
+Otvorené modely od čínskych firiem (Z.ai, DeepSeek, Moonshot AI, MiniMax,
+Alibaba) sú dnes **za svoju cenu najsilnejšie** — na prácu v OpenWorku
+dávajú najviac muziky za málo peňazí. Európske a americké otvorené modely
+(Mistral, Gemma, Llama…) za rovnaké peniaze zaostávajú, preto ich
+v katalógu nemáme.
+
+## Čínsky model, ale dáta v Európe?
+
+**Otvorený model** je len súbor, ktorý si ktokoľvek stiahne a spustí
+na vlastnom serveri. Keď ho prevádzkuje európsky poskytovateľ, **vaše dáta
+do Číny ani k výrobcovi nejdú** — spracujú sa v Európe a zase sa zahodia.
+Melious posiela požiadavky len na servery v Európe a na dátach nesmie nikto
+trénovať.
+
+Inak je to pri zahraničných bránach: [OpenCode Go](/sk/modely/poskytovatele/opencode-go/)
+počíta rovnaké modely v USA a po ručnom povolení aj v Číne.
+
+## Čo znamenajú štítky
+
+- **Odporúčame** — prvá voľba pre väčšinu ľudí v danej kategórii.
+- **Dobrá voľba** — spoľahlivá alternatíva; siahnite po nej podľa potreby.
+- **Pre určité prípady** — úzky účel, vysoká cena alebo staršia verzia.
+- **Skôr na skúšku** — hodí sa na vyskúšanie, nie na každodennú prácu.
+
+Štítky skladáme z **overených údajov**: aké vstupy model prijme, koľko
+textu naraz prečíta a koľko stojí. Vlastné testy kvality nerobíme —
+ako dobre model zvláda vaše úlohy a slovenčinu, posúdite najlepšie sami.
+
+## Čo v katalógu nie je
+
+- **Staršie generácie**, ktoré Melious ešte ponúka (GLM vo verziách 5.1 a 5, Kimi K2.5,
+  MiniMax M2.x, DeepSeek V3.2 a R1, staršie Qwen3 a Qwen2.5). Novšie modely
+  v katalógu ich nahrádzajú za podobnú cenu.
+- **Uzavreté modely Claude, GPT a Gemini** — v Európe s nulovým uchovávaním
+  ich nenájdete. Keď ich potrebujete, pozrite sa na
+  [OpenCode Zen](/sk/modely/poskytovatele/opencode-zen/); počítajte však
+  s 30-dňovým uchovávaním dát.
 
 ## Kadiaľ ďalej
 
+- **[Melious](/sk/modely/poskytovatele/melious/)** — ako si založiť účet
+  a pripojiť ho v OpenWorku.
 - **[Vstupy: text, obrázok, video](/sk/modely/vstupy/)** — prečo je to hlavný
   rozdiel medzi modelmi.
-- **[Najlepšie modely podľa situácie](/sk/modely/nejlepsi-pro/programovani/)** —
-  odporúčania pre programovanie, slovenčinu aj domácnosť.
-- **[Poskytovatelia AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/)** —
-  vyskúšanie bez platenia.
+- **[Poskytovatelia AI modelov](/sk/modely/poskytovatele/)** — Melious, Cortecs
+  a zahraničné brány vedľa seba.

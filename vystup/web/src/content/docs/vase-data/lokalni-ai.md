@@ -62,9 +62,9 @@ Providers → Add a custom LLM**), kde zadáte adresu svého lokálního serveru
 - Nejste svázaní s jednou volbou — v OpenWorku model kdykoli vyměníte.
 
 :::tip
-Nevíte, kde začít? Nastavte si [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)
-jako první bránu k modelům. Jako výchozí doporučujeme **GLM 5.3 Flash** — dobrý poměr
-rychlosti, kvality a ceny.
+Nevíte, kde začít? Nastavte si evropskou bránu [Melious](/modely/poskytovatele/melious/)
+— počítá jen v Evropě a z vašich zadání si nic neukládá. Jako výchozí
+doporučujeme **DeepSeek V4.1 Flash** — dobrý poměr rychlosti, kvality a ceny.
 :::
 
 ## Kudy dál

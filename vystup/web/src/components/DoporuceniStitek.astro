@@ -1,0 +1,18 @@
+---
+// Štítek „jak moc model / poskytovatele doporučujeme". Úrovně a barvy
+// drží src/lib/katalog.ts (DOPORUCENI); vysvětlení úrovní je na
+// /modely/eu/ v sekci „Co znamenají štítky".
+import { Badge } from '@astrojs/starlight/components';
+import { DOPORUCENI, type Doporuceni } from '../lib/katalog';
+
+interface Props {
+  uroven: Doporuceni;
+  velky?: boolean;
+}
+const { uroven, velky = false } = Astro.props;
+const d = DOPORUCENI[uroven];
+if (!d) throw new Error(`DoporuceniStitek: neznámá úroveň „${uroven}".`);
+const jeSk = Astro.currentLocale === 'sk';
+---
+
+<Badge text={jeSk ? d.sk : d.cs} variant={d.varianta} size={velky ? 'medium' : 'small'} />

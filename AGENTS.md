@@ -30,22 +30,39 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
 - **OpenCode Go a OpenCode Zen vždy plným názvem** — nikdy jen „Go" / „Zen".
   **Každý odkaz na OpenCode Go směřuj vždy na referral URL**
   `https://opencode.ai/go?ref=K0VC03J925` — nejen jako CTA, ale kdekoli
-  OpenCode Go odkazuješ (kanonický zdroj odkazu).
-- **OpenCode Go upřednostňuj** jako doporučenou cestu. Důvod: jde v něm nechat
-  jen modely s nulovým uchováváním dat (ZDR) — nevyhovující modely (např. free
-  modely trénující na datech, nebo OpenAI/Anthropic API s 30denním uchováním)
-  admin ve workspace vypne. ⚠ Není to automatický přepínač „jen ZDR", je to
-  ruční kurace výběru modelů — piš přesně, netvrď víc, než zdroj říká.
+  OpenCode Go odkazuješ (kanonický zdroj odkazu). Výjimka: interní odkazy
+  na naši podstránku `/modely/poskytovatele/opencode-go/`.
+- **Poskytovatelé — sledujeme jen pět bran**, které se v OpenWorku snadno
+  připojí: evropské **Melious** a **Cortecs**, zahraniční **OpenCode Go**,
+  **OpenCode Zen** a **OpenRouter**. Další evropské cloudy (Scaleway,
+  OVHcloud, IONOS, Mistral, STACKIT, Berget…) na web nepřidávej — pro snadné
+  použití se nehodí (jen pro firmy, ruční nastavení, malá nabídka).
+- **Melious je doporučená cesta a základna katalogu modelů.** Počítá jen
+  v Evropě a obsah zadání neukládá. ⚠ Piš přesně: vlastní hardware v pravém
+  smyslu nemá (zprostředkovatel; část modelů na pronajatých GPU u Verda ve
+  Finsku), ZDR slibuje v dokumentaci, ne ve smlouvě. OpenCode Go zůstává jako
+  předplatné s výpočtem v USA; správci v něm vyřadí modely trénující na datech
+  a modely z Číny dvěma volbami v nastavení — jednotlivé modely lze vypnout
+  jen u OpenCode Zen.
+- **Katalog modelů = čínské otevřené modely hostované v EU z nabídky Melious**
+  (`src/data/modely-eu.yaml`, stránky `modely/eu/<slug>`). Každý model má
+  štítek doporučení (Doporučujeme / Dobrá volba / Pro určité případy /
+  Spíš na zkoušku) — stejný v datech i v `sidebar.badge`, hlídá
+  `scripts/kontrola-obsahu.mjs`. Ceny drží `src/data/poskytovatele.yaml`.
 - **Fakta o produktech čerpej primárně z oficiálních zdrojů opencode a OpenWork
   a jejich GitHubu** (viz sekce „Zdroje a hlídání aktuálnosti" na konci). Když
   fakt nemáš ověřený z těchto zdrojů, použij `[DOPLNIT: co]`.
 - **Doporučovaná cesta pro čtenáře** (pořadí důrazu):
-  1. **Placené modely přes základní předplatné OpenCode Go** — pro každodenní
-     práci; dají lepší rychlost, kvalitu a stabilitu. Toto je hlavní cesta.
+  1. **Placené modely z katalogu přes evropskou bránu Melious** (platba
+     za spotřebu) — pro každodenní práci; dají lepší rychlost, kvalitu
+     a stabilitu. Toto je hlavní cesta. Kdo chce pevnou měsíční částku,
+     má předplatné OpenCode Go (výpočet v USA).
   2. **Bezplatné modely** — na vyzkoušení a lehké použití, ne jako cíl.
   3. **Lokální AI modely** — jen okrajově, pro menšinu (citlivá data / offline
      + výkonný počítač). Nenech se jimi unést; většině lidí se nevyplatí.
-  Výchozí doporučený model (současný, ověřovat hlídačem): **GLM 5.3 Flash**.
+  Výchozí doporučený model (současný, ověřovat hlídačem): **DeepSeek V4.1 Flash**
+  (rychlý, čte obrázky, dobrá čeština i práce s nástroji — podle zkušeností
+  provozovatele webu; na webu to tak i uvádět, ne jako ověřený fakt).
 - **Napojení nástrojů (MCP):** agent připojuje další služby přes MCP. **Nativní
   MCP preferuj** — kde má služba vlastní MCP server, připojí se přímo. Kde
   vlastní MCP nemá, doporuč **Composio** (`composio.dev`) jako most (1000+
@@ -141,6 +158,10 @@ Kanonické zdroje faktů (odsud čerpej přednostně):
 | OpenWork — kód, vydání | GitHub `different-ai/openwork` |
 | opencode — docs | <https://opencode.ai/docs/> |
 | OpenCode Zen — modely, data | <https://opencode.ai/docs/zen/> |
+| OpenCode Go — modely, limity, data | <https://opencode.ai/docs/go/> |
+| Melious — modely, ceny, data | <https://melious.ai/pricing> · `/docs/concepts/privacy` · `/legal/subprocessors` |
+| Cortecs — modely, ZDR | <https://api.cortecs.ai/v1/models> · <https://docs.cortecs.ai/> |
+| OpenRouter — ZDR, EU | <https://openrouter.ai/docs/guides/features/zdr> |
 | opencode — kód, vydání | GitHub `anomalyco/opencode` (výchozí větev `dev`) |
 
 **Hlídač nového obsahu:** skript `vystup/hlidac-zdroju/` kontroluje vydání
@@ -148,7 +169,8 @@ a commity sledovaných repozitářů proti uloženému stavu (`stav.json`) a vyp
 co je nového. Detail a spuštění v jeho `README.md`.
 
 **Sledování má mít účel.** Nesleduj zdroje „pro jistotu". Hlavní účel je držet
-aktuální **katalog ověřených / ZDR modelů a bezplatných úrovní** (tabulky
-`vystup/web/src/data/*.yaml`) a fakta o produktech. Každý zdroj v hlídači má pole `ucel` —
+aktuální **katalog modelů z nabídky Melious, ceníky poskytovatelů a bezplatné
+úrovně** (`vystup/web/src/data/modely-eu.yaml`, `poskytovatele.yaml`,
+`bezplatne-urovne.yaml`) a fakta o produktech. Každý zdroj v hlídači má pole `ucel` —
 proč ho sledujeme a co z něj do webu teče. Nový zdroj (např. poskytovatel
 modelů) přidávej jen tehdy, když napojíš na konkrétní potřebu.

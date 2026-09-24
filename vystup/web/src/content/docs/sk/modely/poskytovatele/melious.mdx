@@ -1,0 +1,90 @@
+---
+title: "Melious: európska AI brána s nulovým uchovávaním dát"
+description: "Melious je nemecká brána k otvoreným AI modelom s výpočtom len v Európe a nulovým uchovávaním dát. Modely a ceny (DeepSeek V4.1 Flash od 0,20 €), podmienky ZDR, háčiky a pripojenie v OpenWorku."
+sidebar:
+  order: 1
+  label: "Melious"
+  badge:
+    text: "Odporúčame"
+    variant: success
+last_verified: 2026-09-24
+---
+
+import PoskytovatelKarta from '../../../../../components/PoskytovatelKarta.astro';
+import PoskytovatelModely from '../../../../../components/PoskytovatelModely.astro';
+
+**Melious** je mladá nemecká firma zo Saarbrückenu, ktorá vás pustí
+k otvoreným AI modelom — a posiela vaše zadania **len na servery v Európe**.
+Sama si z nich nič neukladá a partnerom zakazuje na dátach trénovať.
+Melious je **základom nášho [katalógu modelov](/sk/modely/katalog/)** —
+každý model z katalógu u neho vezmete, vrátane východiskového odporúčania
+webu **DeepSeek V4.1 Flash** za najnižšiu cenu, akú sme našli.
+
+<PoskytovatelKarta slug="melious" />
+
+## Prečo ho odporúčame
+
+- **Len Európa.** Melious nemá záložné servery v USA ani v Ázii. Zadanie
+  spracuje niektorý z 12 európskych partnerov. Sídlia vo Fínsku, Švédsku,
+  Nemecku, Francúzsku, Taliansku, Írsku, Holandsku a Luxembursku.
+- **Nič sa neukladá.** Melious si drží len údaje na vyúčtovanie (počet
+  tokenov, model, cenu), nie obsah vašich zadaní a odpovedí.
+- **Lacno a v eurách.** DeepSeek V4.1 Flash stojí 0,20 € za milión tokenov
+  vstupu — menej ako pri [OpenCode Go](/sk/modely/poskytovatele/opencode-go/)
+  aj Cortecs.
+- **Bezplatný účet bez karty.** Na vyskúšanie nemusíte nič platiť.
+- **Len otvorené modely** — teda modely, ktoré si ktokoľvek môže stiahnuť
+  a prevádzkovať. Nie ste závislí od jedného výrobcu.
+
+## Na čo si dať pozor
+
+- **Vlastný hardvér v pravom zmysle nemá.** Melious je hlavne
+  sprostredkovateľ. Časť modelov prevádzkuje sám, ale na grafických kartách
+  prenajatých u firmy Verda vo Fínsku a Švédsku. Zvyšok obsluhujú partneri.
+- **Nulové uchovávanie je sľub z dokumentácie, nie zo zmluvy.** V zmluvných
+  podmienkach ani v zmluve o spracovaní (DPA) to výslovne nie je. Partneri
+  navyše môžu krátko držať prevádzkové záznamy — ako dlho, neuvádzajú.
+- **Mladá firma.** Melious vznikol v roku 2025 a certifikáciu ISO 27001 ešte
+  len získava. Firmy s prísnymi pravidlami by si mali podmienky prejsť
+  s právnikom.
+- **Nevyberiete si krajinu.** Ktorý partner vašu požiadavku spracuje, zatiaľ
+  neovplyvníte — vždy to však bude Európa.
+
+## Modely a ceny
+
+Ceny sú v eurách za 1 milión tokenov, bez DPH. Modely s odkazom sú
+v našom katalógu a majú vlastnú stránku s hodnotením. Melious ponúka
+aj ďalšie modely (staršie generácie, európske a americké otvorené modely) —
+celý cenník je na [melious.ai/pricing](https://melious.ai/pricing).
+
+<PoskytovatelModely slug="melious" />
+
+Melious má aj **predplatné pre programátorov** (od 49 € mesačne bez DPH).
+To je však určené výhradne firmám.
+
+## Ako Melious pripojiť v OpenWorku
+
+Aplikácia je v angličtine, názvy tlačidiel preto uvádzame anglicky.
+
+1. Na [melious.ai](https://melious.ai/) si založte účet a vytvorte
+   **kľúč** (prístupové heslo pre aplikácie; začína sa `sk-mel-`).
+2. V OpenWorku otvorte **Settings** (nastavenia) → **AI Providers** →
+   **Connect**.
+3. Vyhľadajte **Melious**. Je v katalógu models.dev, z ktorého aplikácia
+   zoznam poskytovateľov berie.
+4. Vložte kľúč a v prepínači modelov (**model picker**) zvoľte napríklad
+   **DeepSeek V4.1 Flash**.
+
+Ak by aplikácia Melious neponúkla, použite ručné nastavenie podľa
+[návodu Melious pre opencode](https://melious.ai/integrations/opencode) —
+opencode je základ, na ktorom OpenWork stavia.
+
+## Kadiaľ ďalej
+
+- **[Katalóg modelov](/sk/modely/katalog/)** — všetky modely, ktoré
+  u Melious odporúčame.
+- **[DeepSeek V4.1 Flash](/sk/modely/eu/deepseek-v4-1-flash/)** — východiskový
+  model, ktorý u Melious vezmete najlacnejšie.
+- **[Cortecs](/sk/modely/poskytovatele/cortecs/)** — podobná európska brána
+  s väčšou ponukou.
+- **[Prehľad poskytovateľov](/sk/modely/poskytovatele/)** — všetci vedľa seba.

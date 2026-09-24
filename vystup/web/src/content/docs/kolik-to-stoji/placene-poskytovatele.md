@@ -1,66 +1,73 @@
 ---
-title: "Placení poskytovatelé AI"
-description: "Placené brány k AI modelům: doporučená OpenCode Go a evropský Cortecs (výpočet výhradně v EU). Za co platíte a koho zvolit podle potřeby."
+title: "Placení poskytovatelé AI: Melious, Cortecs a OpenCode Go"
+description: "Placené brány k AI modelům: evropský Melious a Cortecs (výpočet v EU, nulové uchovávání dat) a předplatné OpenCode Go. Za co platíte, kolik to stojí a koho zvolit podle potřeby."
 sidebar:
   order: 1
-last_verified: 2026-08-31
+last_verified: 2026-09-24
 ---
 
-Když sáhnete po výkonnějších modelech, platíte **poskytovateli za spotřebu**.
-Tady jsou dvě brány, které doporučujeme — a kdy sáhnout po které.
+Když sáhnete po výkonnějších modelech, platíte **poskytovateli za spotřebu**
+nebo předplatné. Tady jsou tři brány, které doporučujeme — a kdy sáhnout
+po které.
 
-## OpenCode Go (doporučená volba)
+## Melious (doporučená volba)
 
-Brána od tvůrců opencode a pro většinu lidí nejjednodušší dobrá cesta.
-Základní předplatné vám dá kvalitní modely s rychlostí a stabilitou; jako
-výchozí se hodí **GLM 5.3 Flash**. Platíte za spotřebu.
+Evropská brána z Německa a **základna našeho [katalogu modelů](/modely/katalog/)**.
+Výpočet běží **jen v Evropě** a z vašich zadání si nic neukládá.
 
-- **Za co platíte:** za využité tokeny (co spotřebujete).
-- **Nulové uchovávání dat:** u většiny modelů ano (výjimky u některých modelů —
-  viz [srovnávací tabulka](/vase-data/zdr/srovnani-poskytovatelu/)).
-- **Kde běží výpočet:** USA.
-- **Kdy zvolit:** ve většině případů — je to nejjednodušší start.
+- **Za co platíte:** za spotřebu z předplaceného kreditu v eurech; kredit
+  nepropadá. Výchozí model **DeepSeek V4.1 Flash** stojí 0,20 € za milion tokenů
+  vstupu a 1,00 € za milion tokenů výstupu (token = kousek textu, po kterých
+  se počítá spotřeba).
+- **Zdarma:** bezplatný účet bez platební karty s malými limity.
+- **Háček:** mladá firma (založená 2025); nulové uchovávání slibuje
+  v dokumentaci, ne ve smlouvě.
 
+[Melious podrobně →](/modely/poskytovatele/melious/)
+
+## Cortecs (evropská brána s největší nabídkou)
+
+Rakouská brána k více než stovce modelů s **výpočtem v EU**. U řady modelů
+je levnější než Melious.
+
+- **Za co platíte:** za spotřebu z kreditu v eurech plus **5 % z každého
+  dobití**. Bezplatnou úroveň nemá.
+- **Háček:** nulové uchovávání a čistě evropské zpracování musíte **zapnout**
+  v nastavení projektu.
+
+[Cortecs podrobně →](/modely/poskytovatele/cortecs/)
+
+## OpenCode Go (předplatné, výpočet v USA)
+
+Předplatné od tvůrců opencode (základu, na kterém OpenWork staví) za
+**10 $ měsíčně** s přístupem ke stejným čínským modelům.
+
+- **Za co platíte:** pevnou měsíční částku; každý model má měsíční limit.
+- **Háček:** výpočet běží **v USA**. U většiny modelů platí nulové
+  uchovávání, výjimky (GPT, Grok) drží data 30 dní.
+
+[OpenCode Go podrobně →](/modely/poskytovatele/opencode-go/) ·
 [Vyzkoušet OpenCode Go →](https://opencode.ai/go?ref=K0VC03J925)
-
-## Cortecs (evropská brána, EU inference)
-
-**Cortecs** je brána k modelům, jejíž výpočet běží **výhradně v Evropě**. Hodí
-se, když data nesmí opustit EU — třeba kvůli [GDPR](/vase-data/gdpr-a-nis2/)
-nebo interním pravidlům.
-
-- **Za co platíte:** cena tokenů poskytovatele + malý servisní poplatek při
-  dobití. Nemá bezplatnou úroveň.
-- **Nulové uchovávání dat:** ano — data se zpracují jen v paměti a po požadavku
-  se smažou. Nabízí i **DPA** (smlouvu o zpracování), je **GDPR-native** a
-  certifikovaná podle **ISO 27001**.
-- **Kde běží výpočet:** výhradně v EU. Nabízí přes 150 modelů od více
-  poskytovatelů.
-- **Kdy zvolit:** když potřebujete evropské zpracování a data pod přísnější
-  kontrolou.
-
-[Víc o Cortecs v přehledu poskytovatelů →](/modely/poskytovatele/)
 
 ## Jak se rozhodnout
 
-- **Většina lidí:** OpenCode Go — začnete rychle a platíte za spotřebu.
-- **Data musí zůstat v EU:** Cortecs.
+- **Většina lidí:** Melious — data v Evropě, platíte jen za to, co spotřebujete.
+- **Chcete nejnižší cenu nebo širší výběr:** Cortecs.
+- **Chcete pevnou měsíční částku a nevadí vám USA:** OpenCode Go.
 - **Chcete začít bez placení:** podívejte se na
-  [Poskytovatele AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/).
-
-Podrobné srovnání podle uchovávání dat a regionu najdete ve
-[srovnávací tabulce (ZDR)](/vase-data/zdr/srovnani-poskytovatelu/).
+  [poskytovatele AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/).
 
 ## Kudy dál
 
-- **[Poskytovatelé AI zdarma](/kolik-to-stoji/poskytovatele-ai-zdarma/)** — start
-  bez placení.
+- **[Poskytovatelé AI modelů](/modely/poskytovatele/)** — všech pět bran
+  vedle sebe, i s OpenCode Zen a OpenRouter.
 - **[Srovnání poskytovatelů (ZDR)](/vase-data/zdr/srovnani-poskytovatelu/)** —
   podle nakládání s daty.
-- **[Katalog modelů](/modely/katalog/)** — co u bran vezmete.
+- **[Katalog modelů](/modely/katalog/)** — co u bran vezmete a za kolik.
 
 ---
 
-**Odkud čerpáme:** [openworklabs.com](https://openworklabs.com/),
-[OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925) a [cortecs.ai](https://cortecs.ai/).
+**Odkud čerpáme:** [melious.ai](https://melious.ai/pricing),
+[cortecs.ai](https://cortecs.ai/pricing) a
+[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925).
 Ceny a podmínky se mění — změny sledujeme v [historii změn](/o-webu/historie-zmen/).

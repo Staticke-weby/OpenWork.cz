@@ -1,45 +1,58 @@
-# Bezplatné úrovně — zdroj dat pro /kolik-to-stoji/bezplatne-urovne
+# Bezplatné úrovně — zdroj dat pro /kolik-to-stoji/poskytovatele-ai-zdarma
 # Struktura: bloky poskytovatelů, pod každým ukázky bezplatných modelů.
 # Bezplatné modely rotují — názvy uvádět vždy s datem ověření.
 
-last_verified: 2026-08-31
+last_verified: 2026-09-24
 zmenovnik:
+  - datum: 2026-09-24
+    zmena: "Přidán blok Melious (evropský bezplatný účet). Aktualizovány bezplatné modely od tvůrců opencode (OpenCode Zen) a jejich limit 200 požadavků denně."
   - datum: 2026-08-31
     zmena: "Přepracováno na bloky OpenCode Go a OpenRouter s ukázkami bezplatných modelů k 31. 8. 2026."
 
 bloky:
-  - poskytovatel: "OpenCode Go"
+  - poskytovatel: "Melious"
+    odkaz: "/modely/poskytovatele/melious/"
+    popis: "Evropská brána a základna našeho katalogu modelů. Bezplatný účet bez platební karty — výpočet jen v Evropě, na datech se netrénuje. Bez registrace nezadávejte osobní údaje."
+    limit: "malé limity za minutu a za den; přesná čísla Melious nezveřejňuje"
+    karta_nutna: "ne"
+    zdroj: "https://melious.ai/pricing"
+    overeno: 2026-09-24
+    modely:
+      - nazev: "Qwen3.6 27B"
+        poznamka: "jediný model výslovně označený pro bezplatný účet"
+
+  - poskytovatel: "OpenCode Zen / Go"
     odkaz: "https://opencode.ai/go?ref=K0VC03J925"
-    popis: "Brána od tvůrců opencode a naše doporučená cesta. Část modelů je zdarma; nabídka se mění."
-    limit: "neuvádí se veřejně — ověřte u poskytovatele"
+    popis: "Bezplatné modely od tvůrců opencode, dostupné i bez předplatného OpenCode Go. Výpočet v USA; většina bezplatných modelů smí na datech trénovat — nepoužívejte je na citlivou práci."
+    limit: "200 požadavků denně"
     karta_nutna: "nejasné"
-    zdroj: "https://opencode.ai/go?ref=K0VC03J925"
-    overeno: 2026-08-31
+    zdroj: "https://opencode.ai/docs/zen/"
+    overeno: 2026-09-24
     modely:
       - nazev: "Big Pickle"
-        poznamka: "v období zdarma může trénovat na datech"
-      - nazev: "MiMo-V2.5 Free"
+        poznamka: "může trénovat na datech"
+      - nazev: "Space Bunny Free"
+        poznamka: "nulové uchovávání, netrénuje; jen po omezenou dobu"
+      - nazev: "MiMo-V2.6-Flash Free"
         poznamka: "může trénovat na datech"
       - nazev: "Ling 3.0 Flash Fin Free"
         poznamka: "může trénovat na datech"
       - nazev: "Nemotron 3 Ultra Free"
-        poznamka: "loguje záznamy (NVIDIA)"
-      - nazev: "Muse Spark 1.2 Contributor Free"
-        poznamka: "může trénovat na datech"
+        poznamka: "loguje záznamy (NVIDIA) — žádné osobní údaje"
+      - nazev: "Muse Spark 1.3 Contributor Free"
+        poznamka: "trénuje budoucí modely Meta"
 
   - poskytovatel: "OpenRouter"
-    odkaz: "/modely/poskytovatele/"
-    popis: "Brána k desítkám modelů. Bezplatná řada má u názvu příponu :free a průběžně se obměňuje."
-    limit: "20 požadavků/min; 50 požadavků/den (do útraty 10 $), pak 1 000/den"
+    odkaz: "/modely/poskytovatele/openrouter/"
+    popis: "Brána ke stovkám modelů. Bezplatná řada má u názvu příponu :free a průběžně se obměňuje; podmínky se liší model od modelu."
+    limit: "20 požadavků/min; 50 požadavků/den (po nákupu kreditu za 10 $ 1 000/den)"
     karta_nutna: "ne"
-    zdroj: "https://openrouter.ai/models"
-    overeno: 2026-08-31
+    zdroj: "https://openrouter.ai/docs/api_reference/limits"
+    overeno: 2026-09-24
     modely:
       - nazev: "Qwen3-Coder :free"
         poznamka: "vhodný na kód"
       - nazev: "Llama 3.3 70B Instruct :free"
         poznamka: "obecný, vícejazyčný"
-      - nazev: "Poolside Laguna :free"
-        poznamka: "vhodný na kód a návrhy v editoru"
       - nazev: "Nemotron / GPT-OSS / Gemma :free"
         poznamka: "další z rotující bezplatné nabídky"

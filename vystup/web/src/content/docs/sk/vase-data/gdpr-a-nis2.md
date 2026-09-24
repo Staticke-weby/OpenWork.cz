@@ -37,8 +37,9 @@ v dôležitých odvetviach (energetika, zdravotníctvo, doprava, verejná správ
 - **Dáta východiskovo u vás.** V desktopovom režime súbory neopúšťajú váš
   počítač — viď [Kde beží výpočet](/sk/vase-data/lokalni-ai/).
 - **Európske spracovanie.** Keď výpočet zveríte poskytovateľovi, môžete zvoliť
-  európsku bránu [Cortecs](/sk/modely/poskytovatele/), ktorá spracúva dáta len
-  v EÚ.
+  európsku bránu [Melious](/sk/modely/poskytovatele/melious/)
+  alebo [Cortecs](/sk/modely/poskytovatele/cortecs/), ktoré spracúvajú dáta
+  len v EÚ.
 - **Nulové uchovávanie dát.** Vyberte poskytovateľa, ktorý si vaše zadania
   neukladá — viď [ZDR](/sk/vase-data/zdr/).
 - **Najcitlivejšie dáta lokálne.** Čo nesmie opustiť váš stôl, spracujte

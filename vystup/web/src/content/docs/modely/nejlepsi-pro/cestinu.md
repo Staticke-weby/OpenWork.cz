@@ -3,7 +3,7 @@ title: "Nejlepší AI model na češtinu"
 description: "Který AI model dobře zvládá češtinu — psaní, shrnutí i práci s českými dokumenty a skeny. Levný start, volba na náročné texty a jak si model otestovat."
 sidebar:
   order: 2
-last_verified: 2026-08-31
+last_verified: 2026-09-24
 ---
 
 Ne každý model umí česky stejně dobře. U některých je čeština znát jako
@@ -13,19 +13,22 @@ kus vlastního textu a posoudit, jestli zní česky.
 
 ## Doporučení podle situace
 
-- **Start a běžné psaní: GLM 5.3 Flash** přes
-  [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) — poradí si
-  i s češtinou, je rychlý a levný a díky obrázkovému vstupu přečte i skeny
-  českých dokumentů.
-- **Každodenní čeština levně: GPT 5.6 Luna** — model od velkého výrobce
-  s cenou drobných; na e-maily, shrnutí a běžné dokumenty víc nepotřebujete.
-- **Náročné texty: Claude Sonnet 5 nebo GPT 5.6 Sol** (přes OpenCode Zen
-  za spotřebu) — na texty, kde záleží na každé větě: důležité dopisy,
-  delší dokumenty, jemné rozdíly v tónu.
-- **Velký objem levně: DeepSeek V4 Flash** — hromadné shrnování a třídění
-  českého textu za nejnižší cenu; skeny ale nepřečte (jen text).
+- **Start a běžné psaní: [DeepSeek V4.1 Flash](/modely/eu/deepseek-v4-1-flash/)** přes
+  evropskou bránu [Melious](/modely/poskytovatele/melious/) — podle našich
+  zkušeností píše česky přirozeně, je rychlý a díky obrázkovému vstupu
+  přečte i skeny českých dokumentů.
+- **Druhý názor: [Qwen3.8 27B](/modely/eu/qwen3-8-27b/)** — když vám
+  čeština jednoho modelu nesedí, zkuste stejné zadání s jiným.
+- **Náročné texty: [GLM 5.3](/modely/eu/glm-5-3/)
+  nebo [DeepSeek V4 Pro](/modely/eu/deepseek-v4-pro/)** — na texty, kde
+  záleží na každé větě: důležité dopisy, delší dokumenty.
+- **Velký objem levně: [DeepSeek V4 Flash](/modely/eu/deepseek-v4-flash/)**
+  — hromadné shrnování a třídění českého textu za nejnižší cenu; skeny ale
+  nepřečte (jen text).
 
-Přesné vstupy a dostupnost drží [katalog modelů](/modely/katalog/).
+Všechny běží u Melious v Evropě bez ukládání dat. Když chcete Claude nebo
+GPT, nabízí je [OpenCode Zen](/modely/poskytovatele/opencode-zen/) — s výpočtem
+v USA a 30denním uchováváním dat.
 
 ## Na co si dát pozor
 
@@ -40,18 +43,18 @@ Přesné vstupy a dostupnost drží [katalog modelů](/modely/katalog/).
 
 Papírové smlouvy, účtenky a úřední dopisy bývají skeny — a ty přečte jen
 model s **obrázkovým vstupem** ([proč na vstupech
-záleží](/modely/vstupy/)). GLM 5.3 Flash obrázky přijme; u jiných modelů si
-to ověřte v [katalogu modelů](/modely/katalog/).
+záleží](/modely/vstupy/)). DeepSeek V4.1 Flash obrázky přijme; u jiných modelů si
+to ověřte v [katalogu modelů](/modely/katalog/) (sloupec Vstupy).
 
 :::note
 Jak dobře model zní česky, posoudíte nejlíp sami na vlastním textu — dnešní
 špičkové modely jsou dobré skoro všechny. Ověřené údaje o vstupech
-a dostupnosti drží [katalog modelů](/modely/katalog/).
+a cenách drží [katalog modelů](/modely/katalog/).
 :::
 
 ## Kudy dál
 
-- **[Katalog modelů](/modely/katalog/)** — vstupy a dostupnost s datem ověření.
+- **[Katalog modelů](/modely/katalog/)** — vstupy a ceny s datem ověření.
 - **[Překlady dokumentů](/co-vytvorite/preklady/)** — čeština a cizí jazyky
   v praxi.
 - **[Texty a dokumenty](/co-vytvorite/texty-a-dokumenty/)** — co všechno jde

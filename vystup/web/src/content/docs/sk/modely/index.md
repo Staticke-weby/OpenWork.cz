@@ -4,7 +4,7 @@ description: "Dnešné AI modely sú skvelé takmer všetky — prakticky sa lí
 sidebar:
   order: 0
   label: "Prehľad"
-last_verified: 2026-08-31
+last_verified: 2026-09-24
 ---
 
 Dve veci sa pletú: **model** a **poskytovateľ**.
@@ -32,19 +32,22 @@ neoplatí tráviť hodiny nad rebríčkami. Prakticky rozhodujú dve veci:
 
 ## S čím začať
 
-Pre väčšinu ľudí je najjednoduchšia brána
-[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) a ako východiskový model
-**GLM 5.3 Flash** — lacný, s dlhým kontextom, a prijme text, obrázky aj
-video. Rozbehnite sa s ním a meňte, až keď narazíte na jeho hranice.
+Odporúčame európsku bránu **[Melious](/sk/modely/poskytovatele/melious/)**
+— počíta len v Európe a z vašich zadaní si nič neukladá — a ako východiskový
+model **[DeepSeek V4.1 Flash](/sk/modely/eu/deepseek-v4-1-flash/)**: rýchly, dobre píše po slovensky,
+spoľahlivo pracuje s nástrojmi a prečíta aj obrázky. Rozbehnite sa s ním a meňte,
+až keď narazíte na jeho hranice.
 
-Dobre poslúži aj **MiMo-V2.5** (v Go zďaleka najvyššie limity, berie aj
-zvuk), **MiniMax M3** (lacno na obrázky a video) a na čistý text najlacnejší
-**DeepSeek V4 Flash**. Všetky nájdete
-v **[katalógu modelov](/sk/modely/katalog/)** aj so vstupmi a dátumom
-overenia.
+Dobre poslúži aj **[GLM 5.3 Flash](/sk/modely/eu/glm-5-3-flash/)** (lacnejší,
+prečíta aj video), **[DeepSeek V4 Flash](/sk/modely/eu/deepseek-v4-flash/)**
+(najlacnejší na čistý text), **[Kimi K2.7 Code](/sk/modely/eu/kimi-k2-7-code/)**
+(programovanie) a **[MiniMax M3](/sk/modely/eu/minimax-m3/)** (obrázky a video).
+Všetky nájdete v **[katalógu modelov](/sk/modely/katalog/)** — čínskych
+otvorených modelov hostovaných v EÚ, so štítkom, ako veľmi ich odporúčame.
 
-Ponuka aj ceny sa menia prakticky denne — čo je práve nové a lacnejšie,
-ukazuje [aktuálny zoznam modelov OpenCode Go](https://opencode.ai/go?ref=K0VC03J925).
+Chcete radšej pevnú mesačnú sumu a nevadí vám výpočet v USA? Rovnaké
+modely ponúka predplatné
+[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925).
 
 ## Otvorené modely
 
@@ -57,10 +60,10 @@ dostanete len cez poskytovateľa.
 
 - **[Vstupy: text, obrázok, video](/sk/modely/vstupy/)** — prečo je to hlavný
   rozdiel medzi modelmi a ako si vybrať.
-- **[Katalóg modelov](/sk/modely/katalog/)** — živé porovnanie s overenými
-  údajmi.
-- **[Poskytovatelia AI modelov](/sk/modely/poskytovatele/)** — prehľad brán
-  a kedy ktorú zvoliť.
+- **[Katalóg modelov](/sk/modely/katalog/)** — čínske otvorené modely v EÚ
+  so štítkom odporúčania a cenou.
+- **[Poskytovatelia AI modelov](/sk/modely/poskytovatele/)** — Melious, Cortecs,
+  OpenCode Go, OpenCode Zen a OpenRouter vedľa seba.
 - **[Najlepší na programovanie](/sk/modely/nejlepsi-pro/programovani/)**,
   **[na slovenčinu](/sk/modely/nejlepsi-pro/cestinu/)**
   a **[pre domácnosť](/sk/modely/nejlepsi-pro/domacnost/)**.
@@ -70,6 +73,7 @@ Chcete začať zadarmo? Pozrite si
 
 ---
 
-**Odkiaľ čerpáme:** [OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925),
+**Odkiaľ čerpáme:** [Melious](https://melious.ai/pricing),
+[Cortecs](https://cortecs.ai/), [OpenCode Zen/Go](https://opencode.ai/go?ref=K0VC03J925),
 [OpenRouter](https://openrouter.ai/models) a
 [openworklabs.com](https://openworklabs.com/).

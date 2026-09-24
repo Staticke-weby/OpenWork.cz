@@ -146,7 +146,18 @@ export default defineConfig({
               slug: 'modely/katalog',
               badge: { text: 'Živé', variant: 'tip' },
             },
-            { slug: 'modely/poskytovatele' },
+            {
+              label: 'Modely z katalogu',
+              translations: { sk: 'Modely z katalógu' },
+              collapsed: true,
+              items: [{ autogenerate: { directory: 'modely/eu' } }],
+            },
+            {
+              label: 'Poskytovatelé',
+              translations: { sk: 'Poskytovatelia' },
+              collapsed: true,
+              items: [{ autogenerate: { directory: 'modely/poskytovatele' } }],
+            },
             {
               label: 'Nejlepší AI modely',
               translations: { sk: 'Najlepšie AI modely' },

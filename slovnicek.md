@@ -31,6 +31,7 @@ se stejnou logikou). Levý sloupec se na webu nepoužívá, pravý ano.
 - **opencode** — motor, na kterém OpenWork staví (zmiňovat jen na stránce o ekosystému)
 - **OpenCode Zen**, **OpenCode Go** — brány k modelům od tvůrců opencode. **Vždy plným názvem „OpenCode Go" / „OpenCode Zen", nikdy jen „Go" / „Zen".** OpenCode Go referral odkaz: https://opencode.ai/go?ref=K0VC03J925 (použít jako CTA „začít")
 - **Cortecs** — evropská brána k modelům
+- **Melious** — evropská brána k otevřeným modelům s výpočtem jen v Evropě; základna katalogu modelů
 - **MCP** — způsob, jak agent připojuje další služby
 - **ZDR** — rozepsat: „nulové uchovávání dat (zero data retention)"
 - **AGENTS.md** — soubor s pravidly pro agenta

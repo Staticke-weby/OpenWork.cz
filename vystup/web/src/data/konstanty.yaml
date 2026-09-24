@@ -3,4 +3,11 @@
 # Při změně modelu: uprav hodnotu tady a hromadně nahraď starý název
 # ve všech souborech v src/content/docs/ (skript vypíše, kde zůstal).
 
-doporuceny_model: "GLM 5.3 Flash"
+doporuceny_model: "DeepSeek V4.1 Flash"
+
+# Orientační kurzy pro přepočet cen na eura (jen průměry v přehledech;
+# u poskytovatelů se ceny zobrazují v jejich původní měně).
+# USD: Melious v katalogu models.dev přepočítává svoje eurové ceny
+# koeficientem 1,1592 → 1 $ ≈ 0,86 €. CHF: orientační, ověřit u ČNB.
+kurz_usd_eur: 0.86
+kurz_chf_eur: 1.07

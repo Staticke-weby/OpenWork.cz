@@ -39,6 +39,8 @@ Tieto názvy nemá zmysel prekladať — len ich raz vysvetlíme.
 - **[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)**, **OpenCode Zen** —
   brány k modelom od tvorcov opencode. Vždy celým názvom.
 - **Cortecs** — európska brána k modelom.
+- **Melious** — európska brána k otvoreným modelom s výpočtom len v Európe;
+  základ nášho [katalógu modelov](/sk/modely/katalog/).
 - **MCP** — spôsob, ako agent pripája ďalšie služby.
 - **ZDR** — nulové uchovávanie dát (zero data retention).
 - **AGENTS.md** — súbor s pravidlami pre agenta.

@@ -62,9 +62,10 @@ model.
 1. **Pozrite sa do priečinka.** Samý text? Stačí textový model (najlacnejší
    je DeepSeek V4 Flash). Sú tam fotky, skeny alebo nahrávky? Chcete
    multimodálny model.
-2. **Východiskové odporúčanie webu — GLM 5.3 Flash — berie text, obrázky aj
-   video,** takže sa s ním väčšina domácností aj firiem nemusí rozhodovať.
-   Kopu práce zvládne prakticky zadarmo aj MiMo-V2.5 (berie aj zvuk).
+2. **Východiskové odporúčanie webu — DeepSeek V4.1 Flash — berie text aj obrázky,**
+   takže sa s ním väčšina domácností aj firiem nemusí rozhodovať. Na video
+   siahnite po GLM 5.3 Flash. Zvuk modely z nášho katalógu neprijmú —
+   nahrávku najprv nechajte prepísať na text (Melious to vie lacno modelom Whisper).
 3. Presné vstupy každého modelu nájdete
    v **[katalógu modelov](/sk/modely/katalog/)** — stĺpec Vstupy, s dátumom
    overenia.
@@ -78,6 +79,6 @@ model.
 
 ---
 
-**Odkiaľ čerpáme:** prehľad modelov a vstupov na
-[OpenRouter](https://openrouter.ai/models) a dokumentácia
+**Odkiaľ čerpáme:** cenník a vstupy modelov u [Melious](https://melious.ai/pricing),
+prehľad modelov na [OpenRouter](https://openrouter.ai/models) a dokumentácia
 [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925).

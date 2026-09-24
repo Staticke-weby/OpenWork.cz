@@ -1,0 +1,67 @@
+---
+title: "OpenCode Zen: Claude, GPT aj otvorené modely za spotrebu"
+description: "OpenCode Zen od tvorcov opencode: platba za spotrebu bez prirážky, otvorené modely aj Claude, GPT a Gemini. Ceny, ktoré modely uchovávajú dáta 30 dní, bezplatné modely a ich háčiky."
+sidebar:
+  order: 12
+  label: "OpenCode Zen"
+  badge:
+    text: "Pre určité prípady"
+    variant: note
+last_verified: 2026-09-24
+---
+
+import PoskytovatelKarta from '../../../../../components/PoskytovatelKarta.astro';
+import PoskytovatelModely from '../../../../../components/PoskytovatelModely.astro';
+
+**OpenCode Zen** je sesterská služba [OpenCode Go](/sk/modely/poskytovatele/opencode-go/)
+od tvorcov **opencode** (základu, na ktorom OpenWork stavia). Namiesto
+predplatného platíte **za spotrebu**, bez prirážky. A okrem otvorených
+modelov ponúka aj **uzavreté špičkové modely** — Claude, GPT a Gemini.
+Všetko však počíta **v USA**.
+
+<PoskytovatelKarta slug="opencode-zen" />
+
+## Kedy sa hodí
+
+- **Potrebujete občas Claude, GPT alebo Gemini** — napríklad na obzvlášť
+  náročný text. Tieto modely európski poskytovatelia s nulovým uchovávaním
+  neponúkajú.
+- **Chcete doplácať za OpenCode Go**, keď vyčerpáte limit predplatného.
+
+## Prečo „len pre určité prípady"
+
+- **Výpočet v USA**, európsku variantu nemá.
+- **Claude a GPT držia dáta 30 dní** (podmienky Anthropic a OpenAI). Grok
+  podľa dokumentácie OpenCode Go tiež.
+- **Bezplatné modely majú háčiky.** Big Pickle, MiMo Free, Ling Free
+  a Muse Spark Free môžu trénovať na vašich dátach. Bezplatné Nemotron
+  od NVIDIA zadania logujú — nevkladajte do nich osobné ani dôverné údaje.
+- **Poplatok za platbu kartou** 4,4 % + 0,30 $. Automatické dobíjanie
+  pridá 20 $, keď kredit klesne pod 5 $ — môžete ho vypnúť.
+
+Správca pracovného priestoru môže nevyhovujúce modely **vypnúť** — požiadavka
+na vypnutý model potom skončí chybou. Hodí sa to vo firmách.
+
+## Modely a ceny
+
+Výber z ponuky, ceny v dolároch za 1 milión tokenov. Celá ponuka je na
+[opencode.ai/docs/zen](https://opencode.ai/docs/zen/).
+
+<PoskytovatelModely slug="opencode-zen" />
+
+## Ako OpenCode Zen pripojiť v OpenWorku
+
+1. Na [opencode.ai](https://opencode.ai/docs/zen/) si dobite kredit
+   a skopírujte **kľúč** (prístupové heslo pre aplikácie).
+2. V OpenWorku otvorte **Settings** → **AI Providers** → **Connect**,
+   vyhľadajte **opencode** a zvoľte **OpenCode Zen**.
+3. Vložte kľúč a v prepínači modelov (**model picker**) zvoľte model.
+
+## Kadiaľ ďalej
+
+- **[OpenCode Go](/sk/modely/poskytovatele/opencode-go/)** — predplatné
+  od rovnakých tvorcov.
+- **[Cortecs](/sk/modely/poskytovatele/cortecs/)** — Claude cez európske
+  dátové centrá Amazonu a Googlu.
+- **[Porovnanie poskytovateľov (ZDR)](/sk/vase-data/zdr/srovnani-poskytovatelu/)** —
+  kto čo ukladá.

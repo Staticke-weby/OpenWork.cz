@@ -185,3 +185,58 @@ zrcadla, sidebar, všechny interní odkazy):
 „bezplatné úrovně" → „poskytovatelé AI zdarma", popisky Zen odkazů na referral
 přejmenovány na „OpenCode Zen/Go" a oslovení na úvodu je neutrální
 („Jste tu poprvé?" / „Ste tu prvýkrát?").
+
+## Katalog modelů z nabídky Melious a podstránky poskytovatelů (2026-09-24)
+
+**Zadání (upřesněné během práce):** sledujeme jen OpenCode Go/Zen, OpenRouter,
+Melious a Cortecs; katalog = čínské otevřené modely hostované v EU; základnou
+katalogu je nabídka Melious. Ostatní evropské cloudy (Scaleway, OVHcloud,
+Regolo, Infomaniak, Mistral, Berget, IONOS, STACKIT) byly po rešerši
+vyřazeny — pro snadné použití se nehodí (jen firmy, ruční nastavení, malá
+nabídka čínských modelů). Nebius vyřazen: sdílené modely neslibují region.
+
+**Co vzniklo:**
+- Data: `src/data/poskytovatele.yaml` (5 bran, podmínky ZDR, ceníky, zdroje;
+  pole `_sk` pro slovenštinu) a `src/data/modely-eu.yaml` (15 modelů se
+  štítkem doporučení). Zrušeny `modely.yaml` (starý katalog) a
+  `zdr-poskytovatele.yaml` (srovnání ZDR teď čte `poskytovatele.yaml`
+  přes `SrovnaniZdr.astro` — údaje se nerozejdou).
+- Komponenty: `src/lib/katalog.ts` (načítání, průměry, přepočet měn),
+  `DoporuceniStitek`, `PoskytovatelKarta`, `PoskytovatelModely`,
+  `ModelKarta`, `ModelNabidky`, `PrehledModeluEu`, `PrehledPoskytovatelu`,
+  `SrovnaniZdr`.
+- Stránky: `/modely/katalog/` (katalog), `/modely/eu/<model>/` (15),
+  `/modely/poskytovatele/` (přehled) + 5 podstránek. CZ i SK.
+- `scripts/kontrola-obsahu.mjs` nově hlídá: stránky CZ+SK ke každému modelu
+  a poskytovateli, shodu štítku v menu s daty, že každý model z katalogu
+  nabízí Melious, a názvy GLM proti datům (místo jediné konstanty).
+
+**Rozhodnutí na zvážení člověkem:**
+- **Melious nemá vlastní hardware** v pravém smyslu (zadání tvrdilo opak).
+  Je to zprostředkovatel; část modelů běží na pronajatých GPU u Verda ve
+  Finsku. Na webu napsáno přesně. ZDR slibuje v dokumentaci, ne ve smlouvě.
+- **Doporučená cesta** změněna z OpenCode Go na Melious (AGENTS.md
+  upraveno). Návod v `zaciname/instalace.md` a `prvni-agent.md` ale stále
+  vede přes OpenCode Go — připojení Melious v OpenWorku jsme neověřili
+  (je v katalogu models.dev, měl by být v seznamu AI Providers).
+  [DOPLNIT: ověřit v aplikaci a případně přepsat instalaci na Melious.]
+- **Štítky doporučení** skládáme z ověřených údajů (vstupy, kontext, cena),
+  ne z testů kvality — napsáno i na webu.
+- **Kurz CHF** v `konstanty.yaml` je orientační (dnes nepoužitý, žádný
+  poskytovatel neplatí ve francích); kurz USD odvozen z přepočtu Melious.
+- Starší generace z nabídky Melious (GLM 5.1/5, Kimi K2.5, MiniMax M2.x,
+  DeepSeek V3.2/R1, Qwen3/2.5) do katalogu záměrně nedány.
+
+**Výchozí model změněn na DeepSeek V4.1 Flash** (pokyn provozovatele:
+rychlý, čte obrázky, dobrá čeština i práce s nástroji). Tato tvrzení nejsou
+z oficiálních zdrojů — na webu uvedena jako „podle našich zkušeností".
+GLM 5.3 Flash zůstává se štítkem Doporučujeme jako levnější alternativa
+s videem. Háček: v OpenCode Go má DeepSeek V4.1 Flash limit jen 15 $
+měsíčně (do 27. 9. 2026 akčně 60 $) — uvedeno na stránce OpenCode Go.
+
+**Kontrola češtiny:** nové stránky psány krátkými větami v činném rodě,
+výrazy ze slovníčku (poskytovatel, platba za spotřebu, klíč, výpočet),
+u každého doporučení uveden háček. Opraveno při psaní: 3 nepřesná
+cenová srovnání (Mistral přes Cortecs, „haléře" místo eurocentů, poměr
+Kimi K3), 2 nepodložená tvrzení o kvalitě (Apertus — stránka později
+vyřazena).

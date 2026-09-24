@@ -1,0 +1,80 @@
+---
+title: "Cortecs: evropská AI brána s největší nabídkou modelů v EU"
+description: "Cortecs je rakouská brána k více než stovce AI modelů s výpočtem v EU. Jak zapnout nulové uchovávání dat (ZDR) a evropské zpracování, ceny modelů a připojení v OpenWorku."
+sidebar:
+  order: 2
+  label: "Cortecs"
+  badge:
+    text: "Doporučujeme"
+    variant: success
+last_verified: 2026-09-24
+---
+
+import PoskytovatelKarta from '../../../../components/PoskytovatelKarta.astro';
+import PoskytovatelModely from '../../../../components/PoskytovatelModely.astro';
+
+**Cortecs** je rakouská firma z Vídně. Sama modely neprovozuje — vaše
+zadání posílá k jednomu z šestnácti poskytovatelů, se kterými má smlouvu,
+a vybere toho nejlevnějšího. Výhoda: **největší nabídka modelů s výpočtem
+v EU**, od levných otevřených modelů po Claude. Háček: pro nejpřísnější
+ochranu dat musíte **zapnout dvě volby**.
+
+<PoskytovatelKarta slug="cortecs" />
+
+## Proč ho doporučujeme
+
+- **Obrovský výběr.** Přes sto modelů na jednom účtu, včetně
+  [GLM 5.3 Flash](/modely/eu/glm-5-3-flash/) a skoro celého našeho
+  [katalogu](/modely/katalog/).
+- **Nejnižší ceny.** Cortecs vybírá nejlevnějšího poskytovatele, proto
+  vychází řada modelů levněji než jinde.
+- **Pro jednotlivce i firmy.** Účet si založí domácnost i firma; firmy
+  dostanou smlouvu o zpracování (DPA) jako součást podmínek.
+- **Nativně v OpenWorku** — žádné ruční nastavování.
+
+## Dvě volby, které musíte zapnout
+
+Ve výchozím stavu Cortecs **na datech netrénuje a drží je v Evropě**. Pro
+plnou ochranu ale zapněte v nastavení projektu:
+
+1. **Zero Data Retention** — požadavky pak půjdou jen k poskytovatelům,
+   kteří nic neukládají. Vypadnou tím modely GPT: Cortecs je bere jen
+   od Microsoftu, který data drží 30 dní.
+2. **Sovereign Cloud** — požadavky pak půjdou jen k evropským firmám.
+   Bez ní může model počítat Amazon, Google nebo Microsoft — sice
+   v evropském datovém centru, ale jde o americké firmy. Se zapnutou volbou
+   zmizí z nabídky Claude, Gemini a GPT.
+
+## Na co si dát pozor
+
+- **Poplatek 5 % z každého dobití** kreditu. Ceny tokenů jsou jinak stejné
+  jako u poskytovatele.
+- **Uvedená cena je ta nejnižší.** Když nejlevnější poskytovatel vypadne,
+  zaplatíte víc. U GLM 5.3 Flash je nejnižší cena navíc za zmenšenou verzi
+  modelu; plná verze stojí 0,18–0,25 € za milion tokenů vstupu.
+- **Nemá bezplatnou úroveň.** Na vyzkoušení zdarma sáhněte po
+  [Melious](/modely/poskytovatele/melious/).
+
+## Modely a ceny
+
+Modely z našeho katalogu a pro srovnání dva uzavřené modely. Ceny v eurech
+za 1 milion tokenů (u nejlevnějšího poskytovatele), bez poplatku za dobití.
+
+<PoskytovatelModely slug="cortecs" />
+
+## Jak Cortecs připojit v OpenWorku
+
+1. Na [cortecs.ai](https://cortecs.ai/) si založte účet, dobijte kredit
+   a vytvořte **klíč** (přístupové heslo pro aplikace).
+2. V nastavení projektu zapněte **Zero Data Retention** a **Sovereign Cloud**.
+3. V OpenWorku otevřete **Settings** → **AI Providers** → **Connect**
+   a vyhledejte **Cortecs**.
+4. Vložte klíč a v přepínači modelů (**model picker**) zvolte model.
+
+## Kudy dál
+
+- **[Katalog modelů](/modely/katalog/)** — co u Cortecs vzít.
+- **[Melious](/modely/poskytovatele/melious/)** — podobná brána
+  s nulovým uchováváním bez přepínání.
+- **[Profese s mlčenlivostí](/pro-koho/profese-s-mlcenlivosti/)** — kdy se
+  vyplatí nejpřísnější nastavení.

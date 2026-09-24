@@ -1,0 +1,91 @@
+---
+// Karta poskytovatele: štítek doporučení a klíčová fakta (sídlo, kde běží
+// výpočet, ZDR, DPA, platba…). Data: src/data/poskytovatele.yaml.
+import DoporuceniStitek from './DoporuceniStitek.astro';
+import { poskytovatel, text } from '../lib/katalog';
+
+interface Props {
+  slug: string;
+}
+const p = poskytovatel(Astro.props.slug);
+const jeSk = Astro.currentLocale === 'sk';
+
+const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const t = jeSk
+  ? {
+      hodnoceni: 'Naše hodnotenie', sidlo: 'Sídlo', region: 'Kde beží výpočet',
+      hw: 'Vlastný hardvér', trenink: 'Tréning na dátach', uchovavani: 'Uchovávanie záznamov',
+      zdr: 'Nulové uchovávanie (ZDR)', dpa: 'Zmluva o spracovaní (DPA)', cert: 'Certifikácie',
+      platba: 'Platba', zdarma: 'Zadarmo', pripojeni: 'Pripojenie v OpenWorku',
+      zdroje: 'Zdroje', overeno: 'Overené', popis: 'Kľúčové fakty',
+    }
+  : {
+      hodnoceni: 'Naše hodnocení', sidlo: 'Sídlo', region: 'Kde běží výpočet',
+      hw: 'Vlastní hardware', trenink: 'Trénink na datech', uchovavani: 'Uchovávání záznamů',
+      zdr: 'Nulové uchovávání (ZDR)', dpa: 'Smlouva o zpracování (DPA)', cert: 'Certifikace',
+      platba: 'Platba', zdarma: 'Zdarma', pripojeni: 'Připojení v OpenWorku',
+      zdroje: 'Zdroje', overeno: 'Ověřeno', popis: 'Klíčová fakta',
+    };
+
+const radky: [string, string][] = [
+  [t.sidlo, text(p, 'sidlo', jeSk)],
+  [t.region, text(p, 'region_vypoctu', jeSk)],
+  [t.hw, text(p, 'vlastni_hw', jeSk)],
+  [t.trenink, text(p, 'trenink', jeSk)],
+  [t.uchovavani, text(p, 'uchovavani', jeSk)],
+  [t.zdr, text(p, 'zdr', jeSk)],
+  [t.dpa, text(p, 'dpa', jeSk)],
+  [t.cert, text(p, 'certifikace', jeSk)],
+  [t.platba, text(p, 'platba', jeSk)],
+  [t.zdarma, text(p, 'zdarma', jeSk)],
+  [t.pripojeni, text(p, 'pripojeni', jeSk)],
+];
+
+function zkracenyOdkaz(url: string): string {
+  try {
+    const u = new URL(url);
+    return (u.hostname + u.pathname).replace(/\/$/, '');
+  } catch {
+    return url;
+  }
+}
+---
+
+<div class="ow-karta">
+  <p class="ow-karta__stitek">
+    <span>{t.hodnoceni}:</span>
+    <DoporuceniStitek uroven={p.doporuceni} velky />
+  </p>
+  <div class="zdat-obal">
+    <table class="zdat-tabulka ow-karta__fakta">
+      <caption class="sr-only">{t.popis} — {p.nazev}</caption>
+      <tbody>
+        {
+          radky.map(([k, v]) => (
+            <tr>
+              <th scope="row">{k}</th>
+              <td>{v ?? '—'}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+  <p class="ow-karta__zdroje">
+    {t.zdroje}:{' '}
+    {
+      p.zdroje.map((z, i) => (
+        <>
+          {i > 0 && ' · '}
+          <a href={z} target="_blank" rel="noopener noreferrer">{zkracenyOdkaz(z)}</a>
+        </>
+      ))
+    }
+    {' '}· {t.overeno}: {datumFormat.format(p.overeno)}
+  </p>
+</div>

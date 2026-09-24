@@ -1,0 +1,77 @@
+---
+// Katalog modelů (čínské otevřené modely hostované v EU z nabídky Melious):
+// štítek doporučení, vstupy, cena u Melious a průměr u evropských
+// poskytovatelů. Řazeno od nejvíc doporučených.
+import DoporuceniStitek from './DoporuceniStitek.astro';
+import { modelyEu, DOPORUCENI, prumernaCenaModelu, cenaUZakladny, formatCena, overenoModely, text } from '../lib/katalog';
+
+const jeSk = Astro.currentLocale === 'sk';
+const prefix = jeSk ? '/sk' : '';
+
+// Řazení: podle štítku, uvnitř štítku v pořadí z modely-eu.yaml.
+const radky = modelyEu
+  .map((m, i) => ({ m, i }))
+  .sort(
+    (a, b) =>
+      DOPORUCENI[a.m.doporuceni].poradi - DOPORUCENI[b.m.doporuceni].poradi || a.i - b.i
+  )
+  .map(({ m }) => ({ m, cena: prumernaCenaModelu(m.slug), zakladna: cenaUZakladny(m.slug) }));
+
+const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const t = jeSk
+  ? { model: 'Model', hodnoceni: 'Hodnotenie', vyrobce: 'Výrobca', vstupy: 'Vstupy', hodi: 'Hodí sa na',
+      melious: 'Cena u Melious (vstup / výstup za 1 mil. tokenov)', cena: 'Priemer v EÚ',
+      overeno: 'Naposledy overené', zmeny: 'história zmien', popis: 'Modely hostované v Európe' }
+  : { model: 'Model', hodnoceni: 'Hodnocení', vyrobce: 'Výrobce', vstupy: 'Vstupy', hodi: 'Hodí se na',
+      melious: 'Cena u Melious (vstup / výstup za 1 mil. tokenů)', cena: 'Průměr v EU',
+      overeno: 'Naposledy ověřeno', zmeny: 'historie změn', popis: 'Modely hostované v Evropě' };
+---
+
+<p class="zdat-overeno">
+  {t.overeno}: {overenoModely ? datumFormat.format(overenoModely) : '—'} ·{' '}
+  <a href={`${prefix}/o-webu/historie-zmen/`}>{t.zmeny}</a>
+</p>
+<div class="zdat-obal">
+  <table class="zdat-tabulka">
+    <caption class="sr-only">{t.popis}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{t.model}</th>
+        <th scope="col">{t.hodnoceni}</th>
+        <th scope="col">{t.vyrobce}</th>
+        <th scope="col">{t.vstupy}</th>
+        <th scope="col">{t.hodi}</th>
+        <th scope="col">{t.melious}</th>
+        <th scope="col">{t.cena}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        radky.map(({ m, cena, zakladna }) => (
+          <tr>
+            <td><a href={`${prefix}/modely/eu/${m.slug}/`}>{m.nazev}</a></td>
+            <td><DoporuceniStitek uroven={m.doporuceni} /></td>
+            <td>{m.vyrobce}</td>
+            <td>{text(m, 'vstupy', jeSk)}</td>
+            <td>{text(m, 'vhodne_pro', jeSk)}</td>
+            <td>
+              {zakladna === null || zakladna.vstup === null
+                ? '—'
+                : `${formatCena(zakladna.vstup, zakladna.mena, jeSk)} / ${formatCena(zakladna.vystup, zakladna.mena, jeSk)}`}
+            </td>
+            <td>
+              {cena.vstup === null
+                ? '—'
+                : `${formatCena(cena.vstup, 'EUR', jeSk)} / ${formatCena(cena.vystup, 'EUR', jeSk)}`}
+            </td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

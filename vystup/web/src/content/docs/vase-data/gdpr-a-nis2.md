@@ -40,8 +40,9 @@ víc dává smysl mít nad daty kontrolu.
 - **Data ve výchozím stavu u vás.** V desktopovém režimu soubory neopouštějí váš
   počítač — viz [Kde běží výpočet](/vase-data/lokalni-ai/).
 - **Evropské zpracování.** Když výpočet svěříte poskytovateli, můžete zvolit
-  evropskou bránu [Cortecs](/modely/poskytovatele/), která zpracovává data jen
-  v EU.
+  evropskou bránu [Melious](/modely/poskytovatele/melious/)
+  nebo [Cortecs](/modely/poskytovatele/cortecs/), které zpracovávají data
+  jen v EU.
 - **Nulové uchovávání dat.** Vyberte poskytovatele, který si vaše zadání
   neukládá — viz [ZDR](/vase-data/zdr/).
 - **Nejcitlivější data lokálně.** Co nesmí opustit váš stůl, zpracujte

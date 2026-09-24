@@ -14,7 +14,7 @@ head:
       {"@type":"Question","name":"Je OpenWork opravdu zdarma?","acceptedAnswer":{"@type":"Answer","text":"Samotná aplikace ano — OpenWork je zdarma a má otevřený kód. Za AI platíte poskytovateli za spotřebu; vyzkoušet to jde i s bezplatnými modely."}},
       {"@type":"Question","name":"Musím umět programovat?","acceptedAnswer":{"@type":"Answer","text":"Ne. Úkol zadáte vlastními slovy a agent ho udělá za vás."}},
       {"@type":"Question","name":"Odcházejí moje data někam pryč?","acceptedAnswer":{"@type":"Answer","text":"V desktopovém režimu vaše soubory zůstávají na počítači. Poskytovateli modelu se posílá jen vaše zadání; s lokálními modely neodchází nic."}},
-      {"@type":"Question","name":"Jaký model si mám vybrat?","acceptedAnswer":{"@type":"Answer","text":"Pro start doporučujeme GLM 5.3 Flash přes OpenCode Go. Podle typu práce se hodí různé modely."}},
+      {"@type":"Question","name":"Jaký model si mám vybrat?","acceptedAnswer":{"@type":"Answer","text":"Pro start doporučujeme DeepSeek V4.1 Flash přes evropskou bránu Melious, která počítá jen v Evropě. Podle typu práce se hodí různé modely."}},
       {"@type":"Question","name":"Potřebuju výkonný počítač?","acceptedAnswer":{"@type":"Answer","text":"Pro běžné použití ne — když necháte výpočet na poskytovateli, stačí obyčejný počítač. Výkonný stroj je potřeba jen pro lokální AI modely."}},
       {"@type":"Question","name":"Čím se OpenWork liší od Claude Cowork nebo Codexu?","acceptedAnswer":{"@type":"Answer","text":"Dělá v jádru totéž, ale je zdarma, s otevřeným kódem a bez svázání s jedním dodavatelem."}},
       {"@type":"Question","name":"Na čem OpenWork běží?","acceptedAnswer":{"@type":"Answer","text":"Na Windows, macOS i Linuxu. Stáhnete ho zdarma na openworklabs.com."}},
@@ -49,9 +49,10 @@ zvolíte. Když nechcete posílat nic, můžete použít
 
 ## Jaký model si mám vybrat?
 
-Pro start doporučujeme **GLM 5.3 Flash** přes
-[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925). Podle typu práce se hodí
-různé modely — přehled na stránce [Modely a poskytovatelé](/modely/).
+Pro start doporučujeme **[DeepSeek V4.1 Flash](/modely/eu/deepseek-v4-1-flash/)** přes evropskou
+bránu [Melious](/modely/poskytovatele/melious/), která počítá jen v Evropě.
+Podle typu práce se hodí různé modely — přehled je v
+[katalogu modelů](/modely/katalog/).
 
 ## Potřebuju výkonný počítač?
 

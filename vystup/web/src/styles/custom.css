@@ -122,3 +122,27 @@
   border-radius: 0.75rem;
   box-shadow: 0 8px 32px rgb(0 0 0 / 0.12);
 }
+
+/* Karty poskytovatelů a modelů (štítek doporučení + tabulka faktů). */
+.ow-karta__stitek {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-weight: 600;
+}
+.ow-karta__fakta th {
+  width: 34%;
+  background: var(--sl-color-gray-6);
+  font-weight: 600;
+}
+.ow-karta__zdroje {
+  font-size: var(--sl-text-xs);
+  color: var(--sl-color-gray-3);
+  margin-top: 0.4rem;
+  overflow-wrap: anywhere;
+}
+.zdat-tabulka tfoot th,
+.zdat-tabulka tfoot td {
+  background: var(--sl-color-gray-6);
+}

@@ -14,7 +14,7 @@ head:
       {"@type":"Question","name":"Je OpenWork naozaj zadarmo?","acceptedAnswer":{"@type":"Answer","text":"Samotná aplikácia áno — OpenWork je zadarmo a má otvorený kód. Za AI platíte poskytovateľovi za spotrebu; vyskúšať to ide aj s bezplatnými modelmi."}},
       {"@type":"Question","name":"Musím vedieť programovať?","acceptedAnswer":{"@type":"Answer","text":"Nie. Úlohu zadáte vlastnými slovami a agent ju urobí za vás."}},
       {"@type":"Question","name":"Odchádzajú moje dáta niekam preč?","acceptedAnswer":{"@type":"Answer","text":"V desktopovom režime vaše súbory zostávajú na počítači. Poskytovateľovi modelu sa posiela len vaše zadanie; s lokálnymi modelmi neodchádza nič."}},
-      {"@type":"Question","name":"Aký model si mám vybrať?","acceptedAnswer":{"@type":"Answer","text":"Na štart odporúčame GLM 5.3 Flash cez OpenCode Go. Podľa typu práce sa hodia rôzne modely."}},
+      {"@type":"Question","name":"Aký model si mám vybrať?","acceptedAnswer":{"@type":"Answer","text":"Na štart odporúčame DeepSeek V4.1 Flash cez európsku bránu Melious, ktorá počíta len v Európe. Podľa typu práce sa hodia rôzne modely."}},
       {"@type":"Question","name":"Potrebujem výkonný počítač?","acceptedAnswer":{"@type":"Answer","text":"Na bežné použitie nie — keď necháte výpočet na poskytovateľovi, stačí obyčajný počítač. Výkonný stroj je potrebný len pre lokálne AI modely."}},
       {"@type":"Question","name":"Čím sa OpenWork líši od Claude Cowork alebo Codexu?","acceptedAnswer":{"@type":"Answer","text":"Robí v jadre to isté, ale je zadarmo, s otvoreným kódom a bez zviazania s jedným dodávateľom."}},
       {"@type":"Question","name":"Na čom OpenWork beží?","acceptedAnswer":{"@type":"Answer","text":"Na Windows, macOS aj Linuxe. Stiahnete ho zadarmo na openworklabs.com."}},
@@ -48,9 +48,10 @@ zvolíte. Keď nechcete posielať nič, môžete použiť
 
 ## Aký model si mám vybrať?
 
-Na štart odporúčame **GLM 5.3 Flash** cez
-[OpenCode Go](https://opencode.ai/go?ref=K0VC03J925). Podľa typu práce sa hodia
-rôzne modely — prehľad na stránke [Modely a poskytovatelia](/sk/modely/).
+Na štart odporúčame **[DeepSeek V4.1 Flash](/sk/modely/eu/deepseek-v4-1-flash/)** cez európsku
+bránu [Melious](/sk/modely/poskytovatele/melious/), ktorá počíta len v Európe.
+Podľa typu práce sa hodia rôzne modely — prehľad je
+v [katalógu modelov](/sk/modely/katalog/).
 
 ## Potrebujem výkonný počítač?
 

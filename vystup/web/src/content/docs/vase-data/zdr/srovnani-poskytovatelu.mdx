@@ -1,26 +1,29 @@
 ---
-title: Srovnání poskytovatelů (ZDR)
-description: Kdo trénuje na datech, jak dlouho drží záznamy a kde běží výpočet.
+title: "Srovnání poskytovatelů AI podle ZDR a regionu výpočtu"
+description: "Kdo z poskytovatelů AI modelů trénuje na datech, jak dlouho drží záznamy, zda má nulové uchovávání dat (ZDR) a kde běží výpočet — Melious, Cortecs, OpenCode Go, OpenCode Zen a OpenRouter."
 sidebar:
   order: 3
+  label: "Srovnání poskytovatelů (ZDR)"
   badge:
     text: Živé
     variant: tip
 ---
 
-import TabulkaZDat from '../../../../components/TabulkaZDat.astro';
+import SrovnaniZdr from '../../../../components/SrovnaniZdr.astro';
 
 Tabulka odděluje tři věci, které se často pletou: **trénink na datech**,
-**uchovávání záznamů** a **kde fyzicky běží výpočet**. Data se průběžně
-ověřují; sporné údaje označujeme, nikdy nehádáme.
+**uchovávání záznamů** a **kde fyzicky běží výpočet**. Evropští
+poskytovatelé jsou nahoře. Každý údaj má zdroj na podstránce poskytovatele
+(klikněte na jeho název); sporné údaje označujeme, nikdy nehádáme.
 
 ## Srovnání poskytovatelů
 
-<TabulkaZDat zdroj="zdr-poskytovatele.yaml" popisek="Srovnání poskytovatelů podle nulového uchovávání dat" />
+<SrovnaniZdr />
 
 :::caution
-Podmínky poskytovatelů se mění. Řádky jsme ověřili k datu u tabulky, ale před
-rozhodnutím si klíčový údaj ověřte přímo u zdroje (odkaz ve sloupci Zdroj).
+Podmínky poskytovatelů se mění. Řádky jsme ověřili k datu nad tabulkou, ale
+před rozhodnutím si klíčový údaj ověřte přímo u zdroje (odkazy najdete
+na podstránce poskytovatele).
 :::
 
 ## Jak tabulku číst
@@ -28,13 +31,18 @@ rozhodnutím si klíčový údaj ověřte přímo u zdroje (odkaz ve sloupci Zdr
 - **Trénink na datech** — zda poskytovatel smí vaše zadání použít k učení
   svých modelů. „Ne" je pro citlivá data nutnost.
 - **Uchovávání záznamů** — jak dlouho poskytovatel drží vaše požadavky
-  a odpovědi. ZDR znamená, že je nedrží vůbec.
-- **Region výpočtu** — kde fyzicky běží servery, které vaše data zpracují.
-  Pro GDPR je podstatné, zda jde o EU.
+  a odpovědi. Nulové uchovávání (ZDR) znamená, že je nedrží vůbec.
+- **ZDR** — jestli nulové uchovávání platí samo, musíte ho zapnout, nebo
+  o něj žádat.
+- **Kde běží výpočet** — kde fyzicky stojí servery, které vaše data
+  zpracují. Pro [GDPR](/vase-data/gdpr-a-nis2/) je podstatné, zda jde o EU.
+- **DPA** — smlouva o zpracování osobních údajů. Potřebují ji hlavně firmy.
 
 ## Kudy dál
 
 - **[Co je ZDR](/vase-data/zdr/)** — jak nulové uchovávání poznat.
-- **[Placení poskytovatelé](/kolik-to-stoji/placene-poskytovatele/)** — OpenCode Go
-  a Cortecs podrobně.
+- **[Poskytovatelé AI modelů](/modely/poskytovatele/)** — ceny, modely
+  a naše hodnocení.
+- **[Katalog modelů](/modely/katalog/)** — čínské otevřené modely
+  hostované v EU.
 - **[Lokální AI](/vase-data/lokalni-ai/)** — když data nemají opustit počítač.

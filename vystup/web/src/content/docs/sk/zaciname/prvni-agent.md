@@ -14,8 +14,9 @@ nad vašimi súbormi urobí.
 
 - Nainštalovaný OpenWork (viď [Inštalácia](/sk/zaciname/instalace/)).
 - Pripojenú bránu k modelom, napríklad
+  [Melious](/sk/modely/poskytovatele/melious/) alebo
   [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) s modelom
-  **GLM 5.3 Flash**.
+  **DeepSeek V4.1 Flash**.
 
 ## Krok za krokom
 
@@ -23,8 +24,11 @@ nad vašimi súbormi urobí.
    ktorými má agent pracovať. Tento priečinok je jeho **pracovný priestor** —
    vidí len to, čo je v ňom.
 2. **Vyberte model.** V chate v prepínači modelov (anglicky **model picker**)
-   zvoľte, s akým modelom chcete pracovať (na štart odporúčame **GLM 5.3 Flash**).
-3. **Zadajte úlohu vlastnými slovami.** Do chatu napíšte, čo potrebujete — a
+   zvoľte, s akým modelom chcete pracovať (na štart odporúčame
+   **DeepSeek V4.1 Flash**).
+3. **Zadajte úlohu vlastnými slovami.** Do chatu napíšte, čo potrebujete — napríklad
+   „*prejdi tieto faktúry a urob prehľad súm po mesiacoch*" alebo
+   „*nájdi v tých dokumentoch všetky termíny a spíš ich do zoznamu*" — a
    odošlite.
 4. **Sledujte, čo agent robí.** Agent vám ukáže, ako postupuje, a pri dôležitých
    krokoch sa spýta. Nič zásadné neurobí bez vášho vedomia.

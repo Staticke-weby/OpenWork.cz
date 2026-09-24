@@ -24,11 +24,13 @@ zadanie sa pošle na jeho server, tam sa spracuje a odpoveď sa vám vráti.
 - **Na každodennú prácu odporúčame platené modely.** Bezplatné modely sú fajn na
   vyskúšanie, ale platené dajú citeľne lepšiu **rýchlosť, kvalitu a stabilitu**.
   Najjednoduchšie je zaobstarať si základné predplatné
-  [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) a platíte len za spotrebu
-  (viď [Koľko to stojí](/sk/kolik-to-stoji/)).
+  [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) — jednej brány, cez
+  ktorú sa dostanete k dobrým modelom, a platíte len za spotrebu (viď
+  [Koľko to stojí](/sk/kolik-to-stoji/)).
 - **Dáta opúšťajú váš počítač**, preto záleží na tom, komu ich zveríte a či si
   ich niekde neukladá. Vyberte si poskytovateľa s
-  [nulovým uchovávaním dát (ZDR)](/sk/vase-data/zdr/).
+  [nulovým uchovávaním dát (ZDR)](/sk/vase-data/zdr/) — potom aj táto cesta
+  drží vaše dáta v bezpečí.
 
 V OpenWorku pritom **vaše súbory zostávajú na počítači** — poskytovateľovi sa
 posiela len samotné zadanie vami zvolenému modelu.
@@ -40,6 +42,8 @@ lákavo — dáta nikam neodídu a za výpočet neplatíte — ale pre väčšin
 neoplatí:
 
 - Slušné modely potrebujú **výkonný počítač** (hlavne pamäť a grafickú kartu).
+  Na bežnom notebooku rozbehnete len menšie modely, ktoré nestačia tým od
+  poskytovateľov.
 - Sprevádzkovanie dá **viac práce** než pár kliknutí.
 
 Zmysel to dáva hlavne vtedy, keď **dáta naozaj nesmú opustiť váš stôl** (napríklad
@@ -58,9 +62,9 @@ Providers → Add a custom LLM**), kde zadáte adresu svojho lokálneho servera.
 - Nie ste zviazaní s jednou voľbou — v OpenWorku model kedykoľvek vymeníte.
 
 :::tip
-Neviete, kde začať? Nastavte si [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)
-ako prvú bránu k modelom. Ako východiskový odporúčame **GLM 5.3 Flash** — dobrý
-pomer rýchlosti, kvality a ceny.
+Neviete, kde začať? Nastavte si európsku bránu [Melious](/sk/modely/poskytovatele/melious/)
+— počíta len v Európe a z vašich zadaní si nič neukladá. Ako východiskový
+odporúčame **DeepSeek V4.1 Flash** — dobrý pomer rýchlosti, kvality a ceny.
 :::
 
 ## Kadiaľ ďalej

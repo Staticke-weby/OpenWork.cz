@@ -1,0 +1,74 @@
+---
+// Tabulka modelů jednoho poskytovatele s cenami za 1 milion tokenů
+// a průměrem. Modely z evropského katalogu (modely-eu.yaml) odkazují
+// na svou stránku a nesou štítek doporučení.
+import DoporuceniStitek from './DoporuceniStitek.astro';
+import {
+  poskytovatel,
+  model,
+  formatCena,
+  prumernaCenaPoskytovatele,
+  text,
+} from '../lib/katalog';
+
+interface Props {
+  slug: string;
+}
+const p = poskytovatel(Astro.props.slug);
+const jeSk = Astro.currentLocale === 'sk';
+const prefix = jeSk ? '/sk' : '';
+
+const t = jeSk
+  ? { model: 'Model', vstupy: 'Vstupy', vstup: 'Vstup / 1 mil. tokenov', vystup: 'Výstup / 1 mil. tokenov',
+      pozn: 'Poznámka', prumer: 'Priemer všetkých modelov', popis: 'Modely a ceny' }
+  : { model: 'Model', vstupy: 'Vstupy', vstup: 'Vstup / 1 mil. tokenů', vystup: 'Výstup / 1 mil. tokenů',
+      pozn: 'Poznámka', prumer: 'Průměr všech modelů', popis: 'Modely a ceny' };
+
+const radky = p.modely.map((c) => ({ cena: c, m: model(c.model) }));
+const prumer = prumernaCenaPoskytovatele(p);
+---
+
+<div class="zdat-obal">
+  <table class="zdat-tabulka">
+    <caption class="sr-only">{t.popis} — {p.nazev}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{t.model}</th>
+        <th scope="col">{t.vstupy}</th>
+        <th scope="col">{t.vstup}</th>
+        <th scope="col">{t.vystup}</th>
+        <th scope="col">{t.pozn}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        radky.map(({ cena, m }) => (
+          <tr>
+            <td>
+              {m ? (
+                <>
+                  <a href={`${prefix}/modely/eu/${m.slug}/`}>{m.nazev}</a>{' '}
+                  <DoporuceniStitek uroven={m.doporuceni} />
+                </>
+              ) : (
+                cena.model
+              )}
+            </td>
+            <td>{m ? text(m, 'vstupy', jeSk) : '—'}</td>
+            <td>{formatCena(cena.vstup, p.mena, jeSk)}</td>
+            <td>{formatCena(cena.vystup, p.mena, jeSk)}</td>
+            <td>{text(cena, 'poznamka', jeSk)}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">{t.prumer}</th>
+        <td><strong>{formatCena(prumer.vstup, p.mena, jeSk)}</strong></td>
+        <td><strong>{formatCena(prumer.vystup, p.mena, jeSk)}</strong></td>
+        <td>—</td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

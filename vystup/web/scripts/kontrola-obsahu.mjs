@@ -2,11 +2,15 @@
 // i samostatně (npm run check). Když najde nesoulad, build spadne.
 //
 // Co hlídá:
-// 1. Název doporučeného modelu (src/data/konstanty.yaml) — každý výskyt
-//    „GLM …" v obsahu musí přesně odpovídat konstantě.
+// 1. Názvy modelů GLM — každý výskyt „GLM …" v obsahu musí být model
+//    z katalogu (modely-eu.yaml) nebo z ceníku poskytovatele; doporučený model
+//    (konstanty.yaml) v evropském katalogu být musí.
 // 2. V textu stránek nesmí zůstat ruční věta „Naposledy ověřeno/overené" —
 //    datum se zobrazuje z frontmatteru `last_verified` (PageTitle.astro).
 // 3. Stáří `last_verified` v živých datech (src/data/*.yaml) — jen varování.
+// 4. Poskytovatelé (poskytovatele.yaml) a evropské modely (modely-eu.yaml):
+//    každý má stránku CZ i SK, štítek v bočním menu odpovídá hodnocení
+//    v datech a odkazy na modely v ceníku vedou na existující model.
 
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -24,6 +28,18 @@ if (!model) {
   process.exit(1);
 }
 
+const dataPoskytovatelu = load(readFileSync(join(slozkaDat, 'poskytovatele.yaml'), 'utf8'));
+const dataModeluEu = load(readFileSync(join(slozkaDat, 'modely-eu.yaml'), 'utf8'));
+const poskytovatele = dataPoskytovatelu.poskytovatele ?? [];
+const modelyEu = dataModeluEu.modely ?? [];
+
+// Známé názvy GLM: katalog (modely-eu.yaml) + volné názvy v ceníkách poskytovatelů.
+const znameGlm = new Set(
+  [...modelyEu.map((m) => m.nazev), ...poskytovatele.flatMap((p) => (p.modely ?? []).map((c) => c.model))]
+    .filter((n) => typeof n === 'string' && n.startsWith('GLM'))
+);
+const VARIANTY_GLM = new Set(['Flash', 'Air', 'Turbo', 'Lite', 'Pro', 'Mini', 'Max', 'Plus']);
+
 function soubory(slozka) {
   const vysledek = [];
   for (const nazev of readdirSync(slozka)) {
@@ -40,12 +56,20 @@ for (const cesta of soubory(slozkaObsahu)) {
   const text = readFileSync(cesta, 'utf8');
   const kratka = relative(koren, cesta);
 
-  // 1. Název modelu: „GLM" + verze + případné jedno slovo (varianta).
+  // 1. Název modelu: „GLM" + verze + případné slovo (varianta). Musí jít
+  // o model z katalogu — zachytí zastaralé názvy jako „GLM 5.1 Flash".
   // Zalomení řádku uprostřed názvu je v Markdownu v pořádku — normalizujeme.
-  for (const shoda of text.matchAll(/GLM\s+\d[\d.]*(?:\s+[A-Za-z][\w-]*)?/g)) {
+  for (const shoda of text.matchAll(/GLM\s+\d[\d.]*\d(?:\s+[A-Za-z][\w-]*)?/g)) {
     const nalezeno = shoda[0].replace(/\s+/g, ' ');
-    if (nalezeno !== model) {
-      chyby.push(`${kratka}: „${nalezeno}" neodpovídá konstantě „${model}".`);
+    const slova = nalezeno.split(' ');
+    const bezVarianty = slova.slice(0, 2).join(' ');
+    const varianta = slova[2];
+    const ok =
+      znameGlm.has(nalezeno) ||
+      (varianta !== undefined && !VARIANTY_GLM.has(varianta) && znameGlm.has(bezVarianty)) ||
+      (varianta === undefined && znameGlm.has(bezVarianty));
+    if (!ok) {
+      chyby.push(`${kratka}: „${nalezeno}" není model z katalogu (modely-eu.yaml) — zastaralý název?`);
     }
   }
 
@@ -101,7 +125,65 @@ for (const [tag, pocet] of pocetOdkazu) {
   }
 }
 
-// 4. Stáří živých dat — varování po 60 dnech.
+// 4. Poskytovatelé a evropské modely: stránky CZ + SK, štítek v menu, odkazy.
+if (!modelyEu.some((m) => m.nazev === model)) {
+  chyby.push(`src/data/modely-eu.yaml: doporučený model „${model}" (konstanty.yaml) v katalogu chybí.`);
+}
+const STITKY = {
+  doporucujeme: { cs: 'Doporučujeme', sk: 'Odporúčame' },
+  'dobra-volba': { cs: 'Dobrá volba', sk: 'Dobrá voľba' },
+  specialni: { cs: 'Pro určité případy', sk: 'Pre určité prípady' },
+  'na-zkousku': { cs: 'Spíš na zkoušku', sk: 'Skôr na skúšku' },
+};
+function najdiStranku(...cesta) {
+  const zaklad = join(slozkaObsahu, ...cesta);
+  for (const p of ['.mdx', '.md']) {
+    try { if (statSync(zaklad + p).isFile()) return zaklad + p; } catch { /* další přípona */ }
+  }
+  return null;
+}
+function zkontrolujStranky(polozky, slozka, datovySoubor) {
+  for (const x of polozky) {
+    const stitek = STITKY[x.doporuceni];
+    if (!stitek) {
+      chyby.push(`${datovySoubor}: „${x.slug}" má neznámé doporuceni „${x.doporuceni}".`);
+      continue;
+    }
+    for (const [jazyk, prefix] of [['cs', []], ['sk', ['sk']]]) {
+      const stranka = najdiStranku(...prefix, ...slozka, x.slug);
+      if (!stranka) {
+        chyby.push(`${datovySoubor}: „${x.slug}" nemá stránku ${[...prefix, ...slozka, x.slug].join('/')}.mdx.`);
+        continue;
+      }
+      const text = readFileSync(stranka, 'utf8');
+      const badge = text.match(/badge:\s*\n\s*text:\s*"([^"]+)"/);
+      if (!badge || badge[1] !== stitek[jazyk]) {
+        chyby.push(`${relative(koren, stranka)}: štítek v menu musí být „${stitek[jazyk]}" (podle ${datovySoubor}).`);
+      }
+    }
+  }
+}
+zkontrolujStranky(poskytovatele, ['modely', 'poskytovatele'], 'poskytovatele.yaml');
+zkontrolujStranky(modelyEu, ['modely', 'eu'], 'modely-eu.yaml');
+
+const slugyModelu = new Set(modelyEu.map((m) => m.slug));
+for (const p of poskytovatele) {
+  for (const c of p.modely ?? []) {
+    // Slug (malá písmena a pomlčky) musí existovat; volný název je model mimo katalog.
+    if (/^[a-z0-9]+(-[a-z0-9]+)+$/.test(c.model) && !slugyModelu.has(c.model)) {
+      chyby.push(`poskytovatele.yaml: ${p.slug} odkazuje na neznámý model „${c.model}".`);
+    }
+  }
+}
+// Základnou katalogu je nabídka Melious — každý model v ní musí být.
+const melious = poskytovatele.find((p) => p.slug === 'melious');
+for (const m of modelyEu) {
+  if (!(melious?.modely ?? []).some((c) => c.model === m.slug)) {
+    chyby.push(`modely-eu.yaml: model „${m.slug}" nenabízí Melious — katalog stojí na jeho nabídce.`);
+  }
+}
+
+// 5. Stáří živých dat — varování po 60 dnech.
 for (const nazev of readdirSync(slozkaDat)) {
   if (!nazev.endsWith('.yaml') || nazev === 'konstanty.yaml') continue;
   const data = load(readFileSync(join(slozkaDat, nazev), 'utf8'));
@@ -121,4 +203,4 @@ if (chyby.length > 0) {
   process.exit(1);
 }
 
-console.log('kontrola-obsahu: OK (model i data ověření konzistentní).');
+console.log('kontrola-obsahu: OK (modely, poskytovatelé, štítky i data ověření konzistentní).');

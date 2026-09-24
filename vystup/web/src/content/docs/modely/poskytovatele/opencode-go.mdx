@@ -1,0 +1,84 @@
+---
+title: "OpenCode Go: předplatné AI modelů za 10 $ měsíčně"
+description: "OpenCode Go od tvůrců opencode: předplatné 10 $ měsíčně s přístupem k desítkám modelů včetně DeepSeek V4.1 Flash. Limity, podmínky ZDR, háčky (výpočet v USA) a připojení v OpenWorku."
+sidebar:
+  order: 11
+  label: "OpenCode Go"
+  badge:
+    text: "Dobrá volba"
+    variant: tip
+last_verified: 2026-09-24
+---
+
+import PoskytovatelKarta from '../../../../components/PoskytovatelKarta.astro';
+import PoskytovatelModely from '../../../../components/PoskytovatelModely.astro';
+
+**OpenCode Go** je předplatné od tvůrců **opencode** — základu, na kterém
+OpenWork staví. Za **10 $ měsíčně** dostanete přístup k desítkám
+otevřených modelů, včetně výchozího doporučení webu **DeepSeek V4.1 Flash**.
+Je to nejjednodušší start s pevnou měsíční částkou. Výpočet ale běží
+**v USA**, proto dáváme přednost [evropským poskytovatelům](/modely/poskytovatele/).
+
+**[Vyzkoušet OpenCode Go →](https://opencode.ai/go?ref=K0VC03J925)**
+
+<PoskytovatelKarta slug="opencode-go" />
+
+## Kdy se hodí
+
+- **Chcete pevnou měsíční částku** místo placení za spotřebu.
+- **Chcete to nejjednodušší nastavení** — OpenCode Go je v OpenWorku
+  přímo pod poskytovatelem opencode.
+- **Nevadí vám výpočet v USA.** U většiny modelů platí nulové uchovávání
+  dat, jen server stojí za oceánem.
+
+## Jak fungují limity
+
+Každý model má **měsíční limit** 15 $, 30 $ nebo 60 $ ve spotřebních cenách
+(ceny v tabulce níže). Z něj smíte za 5 hodin vyčerpat 20 % a za týden
+50 %. Třeba GLM 5.3 Flash má limit 60 $ měsíčně, výchozí DeepSeek V4.1 Flash
+jen 15 $ (do 27. září 2026 akčně 60 $). Když limit vyčerpáte,
+můžete dál používat bezplatné modely, nebo si zapnout doplácení z kreditu
+[OpenCode Zen](/modely/poskytovatele/opencode-zen/). Předplatné můžete
+kdykoli zrušit.
+
+## Na co si dát pozor
+
+- **Výpočet v USA.** OpenCode Go evropskou variantu nemá.
+- **Čína na vyžádání.** V nastavení jsou volby *Allow models hosted
+  in China* a *Allow models that train on request data*. Nechte je
+  vypnuté — pak modely běží jen v USA a netrénují na datech.
+- **Výjimky z nulového uchovávání.** GPT a Grok drží data 30 dní — na citlivou
+  práci je nevybírejte. Muse Spark na datech trénuje; vyřadí ho volba
+  *Allow models that train on request data*, když ji necháte vypnutou.
+  Vypnout jednotlivé modely správcem dokumentace popisuje jen u OpenCode Zen.
+- **U DeepSeek** platí dohoda o nulovém uchovávání vždy na měsíc
+  (současná do 30. září 2026).
+- **Předplatné je osobní.** V jednom pracovním prostoru si ho může předplatit
+  jen jeden člen.
+
+## Modely a ceny
+
+Ceny v dolarech za 1 milion tokenů — počítají se do měsíčního limitu,
+neplatíte je zvlášť. Výběr z nabídky, celá je na
+[opencode.ai/docs/go](https://opencode.ai/docs/go/).
+
+<PoskytovatelModely slug="opencode-go" />
+
+## Jak OpenCode Go připojit v OpenWorku
+
+1. Předplaťte si [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925)
+   a zkopírujte si **klíč** (přístupové heslo pro aplikace).
+2. V OpenWorku otevřete **Settings** → **AI Providers** → **Connect**,
+   vyhledejte **opencode** a zvolte **OpenCode Go**.
+3. Vložte klíč a v přepínači modelů (**model picker**) zvolte
+   **DeepSeek V4.1 Flash**.
+
+Podrobně krok za krokem v [instalaci](/zaciname/instalace/).
+
+## Kudy dál
+
+- **[Melious](/modely/poskytovatele/melious/)** — DeepSeek V4.1 Flash
+  s výpočtem v Evropě a levněji.
+- **[OpenCode Zen](/modely/poskytovatele/opencode-zen/)** — sesterská
+  služba s platbou za spotřebu.
+- **[Přehled poskytovatelů](/modely/poskytovatele/)** — všichni vedle sebe.

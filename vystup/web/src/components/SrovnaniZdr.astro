@@ -1,0 +1,77 @@
+---
+// Srovnání poskytovatelů podle nakládání s daty (trénink, uchovávání, ZDR,
+// region, DPA). Data: src/data/poskytovatele.yaml — stejný zdroj jako
+// podstránky poskytovatelů, takže se údaje nerozejdou. Poslední řádek je
+// měřítko: lokální AI na vlastním počítači.
+import { poskytovatele, DOPORUCENI, overenoPoskytovatele, text } from '../lib/katalog';
+
+const jeSk = Astro.currentLocale === 'sk';
+const prefix = jeSk ? '/sk' : '';
+
+const radky = [...poskytovatele].sort(
+  (a, b) =>
+    Number(b.evropsky) - Number(a.evropsky) ||
+    DOPORUCENI[a.doporuceni].poradi - DOPORUCENI[b.doporuceni].poradi ||
+    a.nazev.localeCompare(b.nazev, 'cs')
+);
+
+const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const t = jeSk
+  ? { posk: 'Poskytovateľ', trenink: 'Tréning na dátach', uchovavani: 'Uchovávanie záznamov',
+      zdr: 'ZDR', region: 'Kde beží výpočet', dpa: 'DPA', overeno: 'Naposledy overené',
+      zmeny: 'história zmien', popis: 'Porovnanie poskytovateľov podľa nakladania s dátami',
+      lokal: 'Lokálna AI na vlastnom počítači', lokalTrenink: 'nie — dáta nikam neodchádzajú',
+      lokalUch: 'žiadne mimo váš počítač', lokalZdr: 'z podstaty', lokalRegion: 'váš počítač', netreba: 'netreba' }
+  : { posk: 'Poskytovatel', trenink: 'Trénink na datech', uchovavani: 'Uchovávání záznamů',
+      zdr: 'ZDR', region: 'Kde běží výpočet', dpa: 'DPA', overeno: 'Naposledy ověřeno',
+      zmeny: 'historie změn', popis: 'Srovnání poskytovatelů podle nakládání s daty',
+      lokal: 'Lokální AI na vlastním počítači', lokalTrenink: 'ne — data nikam neodcházejí',
+      lokalUch: 'žádné mimo váš počítač', lokalZdr: 'z podstaty', lokalRegion: 'váš počítač', netreba: 'netřeba' };
+---
+
+<p class="zdat-overeno">
+  {t.overeno}: {overenoPoskytovatele ? datumFormat.format(overenoPoskytovatele) : '—'} ·{' '}
+  <a href={`${prefix}/o-webu/historie-zmen/`}>{t.zmeny}</a>
+</p>
+<div class="zdat-obal">
+  <table class="zdat-tabulka">
+    <caption class="sr-only">{t.popis}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{t.posk}</th>
+        <th scope="col">{t.trenink}</th>
+        <th scope="col">{t.uchovavani}</th>
+        <th scope="col">{t.zdr}</th>
+        <th scope="col">{t.region}</th>
+        <th scope="col">{t.dpa}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        radky.map((p) => (
+          <tr>
+            <td><a href={`${prefix}/modely/poskytovatele/${p.slug}/`}>{p.nazev}</a></td>
+            <td>{text(p, 'trenink', jeSk)}</td>
+            <td>{text(p, 'uchovavani', jeSk)}</td>
+            <td>{text(p, 'zdr', jeSk)}</td>
+            <td>{text(p, 'region_vypoctu', jeSk)}</td>
+            <td>{text(p, 'dpa', jeSk)}</td>
+          </tr>
+        ))
+      }
+      <tr>
+        <td><a href={`${prefix}/vase-data/lokalni-ai/`}>{t.lokal}</a></td>
+        <td>{t.lokalTrenink}</td>
+        <td>{t.lokalUch}</td>
+        <td>{t.lokalZdr}</td>
+        <td>{t.lokalRegion}</td>
+        <td>{t.netreba}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

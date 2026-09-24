@@ -1,0 +1,89 @@
+---
+title: "Melious: evropská AI brána s nulovým uchováváním dat"
+description: "Melious je německá brána k otevřeným AI modelům s výpočtem jen v Evropě a nulovým uchováváním dat. Modely a ceny (DeepSeek V4.1 Flash od 0,20 €), podmínky ZDR, háčky a připojení v OpenWorku."
+sidebar:
+  order: 1
+  label: "Melious"
+  badge:
+    text: "Doporučujeme"
+    variant: success
+last_verified: 2026-09-24
+---
+
+import PoskytovatelKarta from '../../../../components/PoskytovatelKarta.astro';
+import PoskytovatelModely from '../../../../components/PoskytovatelModely.astro';
+
+**Melious** je mladá německá firma ze Saarbrückenu, která vás pustí
+k otevřeným AI modelům — a posílá vaše zadání **jen na servery v Evropě**.
+Sama si z nich nic neukládá a partnerům zakazuje na datech trénovat.
+Melious je **základna našeho [katalogu modelů](/modely/katalog/)** —
+každý model z katalogu u něj vezmete, včetně výchozího doporučení webu
+**DeepSeek V4.1 Flash** za nejnižší cenu, jakou jsme našli.
+
+<PoskytovatelKarta slug="melious" />
+
+## Proč ho doporučujeme
+
+- **Jen Evropa.** Melious nemá záložní servery v USA ani v Asii. Zadání
+  zpracuje některý z 12 evropských partnerů. Sídlí ve Finsku, Švédsku,
+  Německu, Francii, Itálii, Irsku, Nizozemsku a Lucembursku.
+- **Nic se neukládá.** Melious si drží jen údaje k vyúčtování (počet tokenů,
+  model, cenu), ne obsah vašich zadání a odpovědí.
+- **Levně a v eurech.** DeepSeek V4.1 Flash stojí 0,20 € za milion tokenů
+  vstupu — méně než u [OpenCode Go](/modely/poskytovatele/opencode-go/)
+  i Cortecs.
+- **Bezplatný účet bez karty.** Na vyzkoušení nemusíte nic platit.
+- **Jen otevřené modely** — tedy modely, které si kdokoli může stáhnout
+  a provozovat. Nejste závislí na jednom výrobci.
+
+## Na co si dát pozor
+
+- **Vlastní hardware v pravém smyslu nemá.** Melious je hlavně
+  zprostředkovatel. Část modelů provozuje sám, ale na grafických kartách
+  pronajatých u firmy Verda ve Finsku a Švédsku. Zbytek obsluhují partneři.
+- **Nulové uchovávání je slib z dokumentace, ne ze smlouvy.** Ve smluvních
+  podmínkách ani ve smlouvě o zpracování (DPA) to výslovně není. Partneři
+  navíc mohou krátce držet provozní záznamy — jak dlouho, neuvádějí.
+- **Mladá firma.** Melious vznikl v roce 2025 a certifikaci ISO 27001 teprve
+  získává. Firmy s přísnými pravidly by si měly podmínky projít s právníkem.
+- **Nevyberete si zemi.** Který partner váš požadavek zpracuje, zatím
+  neovlivníte — vždy to ale bude Evropa.
+
+## Modely a ceny
+
+Ceny jsou v eurech za 1 milion tokenů, bez DPH. Modely s odkazem jsou
+v našem katalogu a mají vlastní stránku s hodnocením. Melious nabízí
+i další modely (starší generace, evropské a americké otevřené modely) —
+celý ceník je na [melious.ai/pricing](https://melious.ai/pricing).
+
+<PoskytovatelModely slug="melious" />
+
+Melious má i **předplatné pro programátory** (od 49 € měsíčně bez DPH).
+To je ale určené výhradně firmám.
+
+## Jak Melious připojit v OpenWorku
+
+Aplikace je v angličtině, názvy tlačítek proto uvádíme anglicky.
+
+1. Na [melious.ai](https://melious.ai/) si založte účet a vytvořte
+   **klíč** (přístupové heslo pro aplikace; začíná `sk-mel-`).
+2. V OpenWorku otevřete **Settings** (nastavení) → **AI Providers** →
+   **Connect**.
+3. Vyhledejte **Melious**. Je v katalogu models.dev, ze kterého aplikace
+   seznam poskytovatelů bere.
+4. Vložte klíč a v přepínači modelů (**model picker**) zvolte třeba
+   **DeepSeek V4.1 Flash**.
+
+Kdyby aplikace Melious nenabídla, použijte ruční nastavení podle
+[návodu Melious pro opencode](https://melious.ai/integrations/opencode) —
+opencode je základ, na kterém OpenWork staví.
+
+## Kudy dál
+
+- **[Katalog modelů](/modely/katalog/)** — všechny modely, které
+  u Melious doporučujeme.
+- **[DeepSeek V4.1 Flash](/modely/eu/deepseek-v4-1-flash/)** — výchozí model, který
+  u Melious vezmete nejlevněji.
+- **[Cortecs](/modely/poskytovatele/cortecs/)** — podobná evropská brána
+  s větší nabídkou.
+- **[Přehled poskytovatelů](/modely/poskytovatele/)** — všichni vedle sebe.

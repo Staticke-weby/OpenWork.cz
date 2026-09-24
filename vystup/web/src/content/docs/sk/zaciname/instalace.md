@@ -33,7 +33,7 @@ tlačidiel uvádzame anglicky:
 4. Kliknite na **Connect** a vložte svoj **OpenCode API key** (kľúč = prístupové
    heslo pre aplikácie).
 5. V chate si potom v prepínači modelov (**model picker**) vyberiete model — ako
-   východiskový odporúčame **GLM 5.3 Flash**.
+   východiskový odporúčame **DeepSeek V4.1 Flash**.
 
 ## Čo budete potrebovať
 

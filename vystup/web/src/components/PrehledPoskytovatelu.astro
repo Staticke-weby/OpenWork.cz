@@ -1,0 +1,80 @@
+---
+// Přehled poskytovatelů: evropští první, pak zahraniční brány. Každý řádek
+// odkazuje na podstránku poskytovatele.
+import DoporuceniStitek from './DoporuceniStitek.astro';
+import { poskytovatele, DOPORUCENI, prumernaCenaPoskytovatele, formatCena, overenoPoskytovatele, text } from '../lib/katalog';
+
+interface Props {
+  /** "eu" = jen evropští, "zahranicni" = jen zahraniční, jinak všichni. */
+  vyber?: 'eu' | 'zahranicni';
+}
+const { vyber } = Astro.props;
+const jeSk = Astro.currentLocale === 'sk';
+const prefix = jeSk ? '/sk' : '';
+
+const radky = poskytovatele
+  .filter((p) => (vyber === 'eu' ? p.evropsky : vyber === 'zahranicni' ? !p.evropsky : true))
+  .sort(
+    (a, b) =>
+      Number(b.evropsky) - Number(a.evropsky) ||
+      DOPORUCENI[a.doporuceni].poradi - DOPORUCENI[b.doporuceni].poradi ||
+      a.nazev.localeCompare(b.nazev, 'cs')
+  );
+
+const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+const t = jeSk
+  ? { posk: 'Poskytovateľ', hodnoceni: 'Hodnotenie', region: 'Kde beží výpočet', zdr: 'ZDR',
+      modely: 'Modelov', cena: 'Priemerná cena (vstup / výstup za 1 mil. tokenov)', zdarma: 'Zadarmo',
+      overeno: 'Naposledy overené', zmeny: 'história zmien', popis: 'Prehľad poskytovateľov' }
+  : { posk: 'Poskytovatel', hodnoceni: 'Hodnocení', region: 'Kde běží výpočet', zdr: 'ZDR',
+      modely: 'Modelů', cena: 'Průměrná cena (vstup / výstup za 1 mil. tokenů)', zdarma: 'Zdarma',
+      overeno: 'Naposledy ověřeno', zmeny: 'historie změn', popis: 'Přehled poskytovatelů' };
+---
+
+<p class="zdat-overeno">
+  {t.overeno}: {overenoPoskytovatele ? datumFormat.format(overenoPoskytovatele) : '—'} ·{' '}
+  <a href={`${prefix}/o-webu/historie-zmen/`}>{t.zmeny}</a>
+</p>
+<div class="zdat-obal">
+  <table class="zdat-tabulka">
+    <caption class="sr-only">{t.popis}</caption>
+    <thead>
+      <tr>
+        <th scope="col">{t.posk}</th>
+        <th scope="col">{t.hodnoceni}</th>
+        <th scope="col">{t.region}</th>
+        <th scope="col">{t.zdr}</th>
+        <th scope="col">{t.modely}</th>
+        <th scope="col">{t.cena}</th>
+        <th scope="col">{t.zdarma}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        radky.map((p) => {
+          const c = prumernaCenaPoskytovatele(p);
+          return (
+            <tr>
+              <td><a href={`${prefix}/modely/poskytovatele/${p.slug}/`}>{p.nazev}</a></td>
+              <td><DoporuceniStitek uroven={p.doporuceni} /></td>
+              <td>{text(p, 'region_vypoctu', jeSk)}</td>
+              <td>{text(p, 'zdr_kratce', jeSk)}</td>
+              <td>{p.modely.length}</td>
+              <td>
+                {c.vstup === null
+                  ? '—'
+                  : `${formatCena(c.vstup, p.mena, jeSk)} / ${formatCena(c.vystup, p.mena, jeSk)}`}
+              </td>
+              <td>{text(p, 'zdarma_kratce', jeSk)}</td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>
