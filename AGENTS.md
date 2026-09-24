@@ -106,7 +106,8 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   plus jeden soubor CSS s barvou značky.
 - Výstupem je čistě statický web. Žádný JavaScript, který není nutný;
   povolené výjimky: řazení tabulek a kalkulačky, vždy tak, aby stránka
-  fungovala i bez něj.
+  fungovala i bez něj; dále skript měření návštěvnosti (Umami na
+  `navstevnost.pikapod.net`, v `head` v `astro.config.mjs`) — neodstraňovat.
 - Dvě jazykové mutace přes i18n Starlightu: čeština výchozí (`/`),
   slovenština v `/sk/`. Sdílený obsah se píše česky; slovenská mutace se
   překládá až v pozdějším úkolu, teď stačí připravit strukturu.

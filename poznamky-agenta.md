@@ -254,3 +254,7 @@ Nasazuje `.github/workflows/nasazeni.yml` při pushi do `main`. Kanonická adres
 je `https://www.openwork.cz` (pokyn provozovatele) — `site`, og:image, JSON-LD,
 `robots.txt` a `public/CNAME` přepsány na www. Ukázkový odkaz v textu stránky
 o Markdownu (`soubory-md.md`) ponechán bez www — je to jen příklad syntaxe.
+
+**Měření návštěvnosti (24. 9. 2026):** na pokyn provozovatele přidán skript
+Umami (`navstevnost.pikapod.net`) do `head` všech stránek v `astro.config.mjs`.
+Výjimka z pravidla o JavaScriptu zapsána v AGENTS.md.

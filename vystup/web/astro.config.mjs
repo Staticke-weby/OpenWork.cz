@@ -52,6 +52,16 @@ export default defineConfig({
             content: 'OpenWork.cz — nezávislý průvodce aplikací OpenWork',
           },
         },
+        // Měření návštěvnosti (Umami na PikaPods). Povolená výjimka z pravidla
+        // „žádný zbytečný JavaScript" — stránky fungují i bez něj.
+        {
+          tag: 'script',
+          attrs: {
+            defer: true,
+            src: 'https://navstevnost.pikapod.net/script.js',
+            'data-website-id': '7c19d481-b092-4cd8-885b-c0a37959900f',
+          },
+        },
         // Strukturovaná data pro vyhledávače (web + provozovatel).
         {
           tag: 'script',
