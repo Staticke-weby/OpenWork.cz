@@ -30,18 +30,18 @@ nevyplatí trávit hodiny nad žebříčky. Prakticky rozhodují dvě věci:
 
 ## S čím začít
 
-Doporučujeme evropskou bránu **[Melious](/modely/poskytovatele/melious/)**
-— počítá jen v Evropě a z vašich zadání si nic neukládá — a jako výchozí
+Doporučujeme evropské brány **[Melious](/modely/poskytovatele/melious/)**
+nebo **[Cortecs](/modely/poskytovatele/cortecs/)** — počítají jen v Evropě
+a z vašich zadání si nic neukládají — a jako výchozí
 model **[DeepSeek V4.1 Flash](/modely/eu/deepseek-v4-1-flash/)**: rychlý, dobře píše česky,
 spolehlivě pracuje s nástroji a přečte i obrázky. Rozjeďte se s ním a měňte,
 teprve když narazíte na jeho hranice.
 
-Dobře poslouží i **[GLM 5.3 Flash](/modely/eu/glm-5-3-flash/)** (levnější,
-přečte i video), **[DeepSeek V4 Flash](/modely/eu/deepseek-v4-flash/)**
-(nejlevnější na čistý text), **[Kimi K2.7 Code](/modely/eu/kimi-k2-7-code/)**
-(programování) a **[MiniMax M3](/modely/eu/minimax-m3/)** (obrázky a video).
-Všechny najdete v **[katalogu modelů](/modely/katalog/)** — čínských
-otevřených modelů hostovaných v EU, se štítkem, jak moc je doporučujeme.
+Doporučujeme i **[GLM 5.3 Flash](/modely/eu/glm-5-3-flash/)** (levnější,
+přečte i video) a **[DeepSeek V4 Flash](/modely/eu/deepseek-v4-flash/)**
+(nejlevnější na čistý text). Silnější a specializované modely jsou
+v **[katalogu modelů](/modely/katalog/)** — čínských otevřených modelů
+hostovaných v EU — jako druhotná volba, když doporučený model nestačí.
 
 Chcete raději pevnou měsíční částku a nevadí vám výpočet v USA? Stejné
 modely nabízí předplatné
@@ -58,7 +58,7 @@ Opak jsou modely, ke kterým se dostanete jen přes poskytovatele.
 - **[Vstupy: text, obrázek, video](/modely/vstupy/)** — proč je to hlavní
   rozdíl mezi modely a jak si vybrat.
 - **[Katalog modelů](/modely/katalog/)** — čínské otevřené modely v EU
-  se štítkem doporučení a cenou.
+  a jejich ceny.
 - **[Poskytovatelé AI modelů](/modely/poskytovatele/)** — Melious, Cortecs,
   OpenCode Go, OpenCode Zen a OpenRouter vedle sebe.
 - **[Nejlepší pro programování](/modely/nejlepsi-pro/programovani/)**,

@@ -43,8 +43,8 @@ const prumer = prumernaCenaPoskytovatele(p);
     <tbody>
       {
         radky.map(({ cena, m }) => (
-          <tr>
-            <td>
+          <tr class:list={[{ 'ow-doporuceny': m?.doporuceni }]}>
+            <td class="ow-nazev">
               {m ? (
                 <>
                   <a href={`${prefix}/modely/eu/${m.slug}/`}>{m.nazev}</a>{' '}

@@ -1,6 +1,6 @@
 ---
 title: "Katalóg AI modelov: čínske otvorené modely hostované v EÚ"
-description: "Katalóg AI modelov pre OpenWork: GLM, DeepSeek, Kimi, MiniMax a Qwen s výpočtom v EÚ a nulovým uchovávaním dát (ZDR) u Melious. Štítok, ako veľmi model odporúčame, vstupy a priemerná cena."
+description: "Katalóg AI modelov pre OpenWork: GLM, DeepSeek, Kimi, MiniMax a Qwen s výpočtom v EÚ a nulovým uchovávaním dát (ZDR) u Melious a Cortecs. Ktoré modely odporúčame, ich vstupy a ceny."
 sidebar:
   order: 2
   label: "Katalóg modelov"
@@ -15,10 +15,10 @@ import PrehledModeluEu from '../../../../components/PrehledModeluEu.astro';
 Katalóg obsahuje **čínske otvorené modely, ktoré bežia na serveroch v EÚ**
 a nič si z vašich zadaní neukladajú — majú nulové uchovávanie dát, anglicky
 *zero data retention* (ZDR). Základom katalógu je ponuka európskej brány
-**[Melious](/sk/modely/poskytovatele/melious/)**: každý model tu vezmete
-u nej, na porovnanie cien uvádzame aj [Cortecs](/sk/modely/poskytovatele/cortecs/)
-a zahraničné brány. Pri každom modeli nájdete štítok, **ako veľmi ho
-odporúčame**, na čo sa hodí a koľko stojí.
+**[Melious](/sk/modely/poskytovatele/melious/)** — každý model tu vezmete
+u nej, takmer všetky aj u rovnako odporúčanej brány
+**[Cortecs](/sk/modely/poskytovatele/cortecs/)**. Na porovnanie cien uvádzame
+aj zahraničné brány.
 
 ## Modely v katalógu
 
@@ -35,10 +35,9 @@ poskytovateľov nájdete na stránke každého modelu.
   dobre po slovensky, spoľahlivo s nástrojmi a prečíta obrázky.
 - **Lacnejšie a s videom:** [GLM 5.3 Flash](/sk/modely/eu/glm-5-3-flash/).
 - **Najlacnejší text:** [DeepSeek V4 Flash](/sk/modely/eu/deepseek-v4-flash/).
-- **Programovanie:** [Kimi K2.7 Code](/sk/modely/eu/kimi-k2-7-code/),
-  lacnejšie [Qwen3 Coder Next](/sk/modely/eu/qwen3-coder-next/).
-- **Keď lacný model nestačí:** [GLM 5.3](/sk/modely/eu/glm-5-3/) alebo
-  [DeepSeek V4 Pro](/sk/modely/eu/deepseek-v4-pro/).
+- **Keď odporúčaný model nestačí:** na programovanie
+  [Kimi K2.7 Code](/sk/modely/eu/kimi-k2-7-code/), na náročné texty
+  [GLM 5.3](/sk/modely/eu/glm-5-3/) alebo [DeepSeek V4 Pro](/sk/modely/eu/deepseek-v4-pro/).
 
 ## Prečo čínske modely
 
@@ -59,16 +58,19 @@ trénovať.
 Inak je to pri zahraničných bránach: [OpenCode Go](/sk/modely/poskytovatele/opencode-go/)
 počíta rovnaké modely v USA a po ručnom povolení aj v Číne.
 
-## Čo znamenajú štítky
+## Ktoré modely odporúčame
 
-- **Odporúčame** — prvá voľba pre väčšinu ľudí v danej kategórii.
-- **Dobrá voľba** — spoľahlivá alternatíva; siahnite po nej podľa potreby.
-- **Pre určité prípady** — úzky účel, vysoká cena alebo staršia verzia.
-- **Skôr na skúšku** — hodí sa na vyskúšanie, nie na každodennú prácu.
+Štítok **Odporúčame** majú len tri modely, ktoré cenou zodpovedajú
+bežnej každodennej práci v OpenWorku (agent spotrebuje veľa tokenov):
+[DeepSeek V4.1 Flash](/sk/modely/eu/deepseek-v4-1-flash/),
+[DeepSeek V4 Flash](/sk/modely/eu/deepseek-v4-flash/)
+a [GLM 5.3 Flash](/sk/modely/eu/glm-5-3-flash/). V tabuľke sú hore
+a podfarbené.
 
-Štítky skladáme z **overených údajov**: aké vstupy model prijme, koľko
-textu naraz prečíta a koľko stojí. Vlastné testy kvality nerobíme —
-ako dobre model zvláda vaše úlohy a slovenčinu, posúdite najlepšie sami.
+Ostatné modely sú **druhotná voľba** — silnejšie alebo špecializované,
+ale na bežné použitie zbytočne drahé. Siahnite po nich, až keď odporúčaný
+model na úlohu nestačí. Ako dobre model zvláda vaše úlohy a slovenčinu,
+posúdite najlepšie sami.
 
 ## Čo v katalógu nie je
 

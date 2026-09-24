@@ -49,7 +49,6 @@ a výš sahejte, až když narazíte na jeho hranice.
 
 ## Kudy dál
 
-- **[Katalog modelů](/modely/katalog/)** — všechny modely se štítkem, jak
-  moc je doporučujeme.
+- **[Katalog modelů](/modely/katalog/)** — všechny modely a jejich ceny.
 - **[Vstupy: text, obrázek, video](/modely/vstupy/)** — proč na nich záleží.
 - **[Kolik to stojí](/kolik-to-stoji/)** — platba za spotřebu.

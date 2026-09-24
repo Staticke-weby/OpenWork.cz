@@ -15,14 +15,16 @@ podmínky) sem přidáváme i to, kdy jsme je naposledy ověřovali.
   modelů (GLM, DeepSeek, Kimi, MiniMax, Qwen), které běží na serverech
   v EU s nulovým uchováváním dat. Základem je nabídka evropské brány
   [Melious](/modely/poskytovatele/melious/). Každý model má vlastní stránku
-  se štítkem, jak moc ho doporučujeme, a srovnáním cen.
+  se srovnáním cen. Štítek Doporučujeme mají jen DeepSeek V4.1 Flash,
+  DeepSeek V4 Flash a GLM 5.3 Flash; ostatní jsou druhotná volba.
 - **Podstránky poskytovatelů:** [Melious](/modely/poskytovatele/melious/),
   [Cortecs](/modely/poskytovatele/cortecs/),
   [OpenCode Go](/modely/poskytovatele/opencode-go/),
   [OpenCode Zen](/modely/poskytovatele/opencode-zen/)
   a [OpenRouter](/modely/poskytovatele/openrouter/) — podmínky ZDR,
   modely a ceny, háčky a připojení v OpenWorku.
-- **Doporučená cesta** je nově Melious s výchozím modelem
+- **Doporučená cesta** jsou nově evropské brány Melious a Cortecs
+  (rovnocenně) s výchozím modelem
   [DeepSeek V4.1 Flash](/modely/eu/deepseek-v4-1-flash/) (výpočet v Evropě,
   rychlý, čte obrázky); dosavadní GLM 5.3 Flash zůstává jako levnější
   alternativa s videem. OpenCode Go zůstává jako předplatné s výpočtem v USA.

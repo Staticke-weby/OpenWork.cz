@@ -1,19 +1,19 @@
 ---
 // Katalog modelů (čínské otevřené modely hostované v EU z nabídky Melious):
 // štítek doporučení, vstupy, cena u Melious a průměr u evropských
-// poskytovatelů. Řazeno od nejvíc doporučených.
+// poskytovatelů. Doporučené modely jsou nahoře.
 import DoporuceniStitek from './DoporuceniStitek.astro';
-import { modelyEu, DOPORUCENI, prumernaCenaModelu, cenaUZakladny, formatCena, overenoModely, text } from '../lib/katalog';
+import { modelyEu, poradiDoporuceni, prumernaCenaModelu, cenaUZakladny, formatCena, overenoModely, text } from '../lib/katalog';
 
 const jeSk = Astro.currentLocale === 'sk';
 const prefix = jeSk ? '/sk' : '';
 
-// Řazení: podle štítku, uvnitř štítku v pořadí z modely-eu.yaml.
+// Řazení: doporučené napřed, jinak v pořadí z modely-eu.yaml.
 const radky = modelyEu
   .map((m, i) => ({ m, i }))
   .sort(
     (a, b) =>
-      DOPORUCENI[a.m.doporuceni].poradi - DOPORUCENI[b.m.doporuceni].poradi || a.i - b.i
+      poradiDoporuceni(a.m) - poradiDoporuceni(b.m) || a.i - b.i
   )
   .map(({ m }) => ({ m, cena: prumernaCenaModelu(m.slug), zakladna: cenaUZakladny(m.slug) }));
 
@@ -24,10 +24,10 @@ const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
 });
 
 const t = jeSk
-  ? { model: 'Model', hodnoceni: 'Hodnotenie', vyrobce: 'Výrobca', vstupy: 'Vstupy', hodi: 'Hodí sa na',
+  ? { model: 'Model', vyrobce: 'Výrobca', vstupy: 'Vstupy', hodi: 'Hodí sa na',
       melious: 'Cena u Melious (vstup / výstup za 1 mil. tokenov)', cena: 'Priemer v EÚ',
       overeno: 'Naposledy overené', zmeny: 'história zmien', popis: 'Modely hostované v Európe' }
-  : { model: 'Model', hodnoceni: 'Hodnocení', vyrobce: 'Výrobce', vstupy: 'Vstupy', hodi: 'Hodí se na',
+  : { model: 'Model', vyrobce: 'Výrobce', vstupy: 'Vstupy', hodi: 'Hodí se na',
       melious: 'Cena u Melious (vstup / výstup za 1 mil. tokenů)', cena: 'Průměr v EU',
       overeno: 'Naposledy ověřeno', zmeny: 'historie změn', popis: 'Modely hostované v Evropě' };
 ---
@@ -42,7 +42,6 @@ const t = jeSk
     <thead>
       <tr>
         <th scope="col">{t.model}</th>
-        <th scope="col">{t.hodnoceni}</th>
         <th scope="col">{t.vyrobce}</th>
         <th scope="col">{t.vstupy}</th>
         <th scope="col">{t.hodi}</th>
@@ -53,9 +52,11 @@ const t = jeSk
     <tbody>
       {
         radky.map(({ m, cena, zakladna }) => (
-          <tr>
-            <td><a href={`${prefix}/modely/eu/${m.slug}/`}>{m.nazev}</a></td>
-            <td><DoporuceniStitek uroven={m.doporuceni} /></td>
+          <tr class:list={[{ 'ow-doporuceny': m.doporuceni }]}>
+            <td class="ow-nazev">
+              <a href={`${prefix}/modely/eu/${m.slug}/`}>{m.nazev}</a>
+              <DoporuceniStitek uroven={m.doporuceni} />
+            </td>
             <td>{m.vyrobce}</td>
             <td>{text(m, 'vstupy', jeSk)}</td>
             <td>{text(m, 'vhodne_pro', jeSk)}</td>

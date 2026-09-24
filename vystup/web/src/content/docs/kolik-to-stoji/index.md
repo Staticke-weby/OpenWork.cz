@@ -26,9 +26,9 @@ týdně, zaplatí pár korun; kdo s ní pracuje celý den, zaplatí víc.
 skutečného využití, ne podle počtu lidí.
 
 Pro každodenní práci doporučujeme **placené modely** — dají lepší rychlost,
-kvalitu a stabilitu než bezplatné. Doporučujeme evropskou bránu
-[Melious](/modely/poskytovatele/melious/) (výpočet v EU, platba za spotřebu
-v eurech); jako výchozí se hodí **DeepSeek V4.1 Flash** za 0,20 € za milion
+kvalitu a stabilitu než bezplatné. Doporučujeme evropské brány
+[Melious](/modely/poskytovatele/melious/) a [Cortecs](/modely/poskytovatele/cortecs/)
+(výpočet v EU, platba za spotřebu v eurech); jako výchozí se hodí **DeepSeek V4.1 Flash** za 0,20 € za milion
 tokenů vstupu. Kdo chce pevnou měsíční částku, má předplatné
 [OpenCode Go](https://opencode.ai/go?ref=K0VC03J925) s výpočtem v USA.
 Přehled je na stránce [Placení poskytovatelé](/kolik-to-stoji/placene-poskytovatele/).

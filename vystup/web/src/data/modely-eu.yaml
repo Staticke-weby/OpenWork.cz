@@ -14,18 +14,17 @@
 # Starší generace z nabídky Melious (GLM 5.1/5, Kimi K2.5, MiniMax M2.x,
 # DeepSeek V3.2/R1, Qwen3 a Qwen2.5) do katalogu záměrně nedáváme.
 #
-# doporuceni — jak moc model doporučujeme (štítek na webu):
-#   doporucujeme  — první volba pro většinu lidí v dané kategorii
-#   dobra-volba   — spolehlivá alternativa, sáhněte po ní podle potřeby
-#   specialni     — „Pro určité případy": úzký účel, vyšší cena nebo háček
-#   na-zkousku    — „Spíš na zkoušku": starší nebo slabší, máme lepší volby
-# Hodnocení skládáme z ověřených údajů (vstupy, kontext, cena, počet
-# evropských poskytovatelů se ZDR), ne z vlastních testů kvality.
+# doporuceni: doporucujeme — štítek „Doporučujeme". Mají ho JEN modely,
+# které výslovně vybral provozovatel webu (DeepSeek V4.1 Flash, DeepSeek V4
+# Flash 0731, GLM 5.3 Flash): cenou odpovídají běžnému použití v OpenWorku.
+# Ostatní jsou druhotná volba a pole nemají. Jiné úrovně štítků nepoužíváme.
 #
 # Pole s příponou _sk jsou slovenské varianty (volitelné).
 
 last_verified: 2026-09-24
 zmenovnik:
+  - datum: 2026-09-24
+    zmena: "Štítek Doporučujeme jen u DeepSeek V4.1 Flash, DeepSeek V4 Flash a GLM 5.3 Flash; ostatní modely jsou druhotná volba bez štítku."
   - datum: 2026-09-24
     zmena: "Výchozí doporučený model změněn na DeepSeek V4.1 Flash (dříve GLM 5.3 Flash)."
   - datum: 2026-09-24
@@ -70,7 +69,6 @@ modely:
     vstupy_sk: "text + obrázok + video"
     kontext: "262 tisíc tokenů"
     kontext_sk: "262 tisíc tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "běžná práce s dokumenty a obrázky; u Cortecs za cenu GLM 5.3 Flash"
     vhodne_pro_sk: "bežná práca s dokumentmi a obrázkami; u Cortecs za cenu GLM 5.3 Flash"
 
@@ -98,7 +96,6 @@ modely:
     vstupy_sk: "text + obrázok"
     kontext: "262 tisíc tokenů"
     kontext_sk: "262 tisíc tokenov"
-    doporuceni: doporucujeme
     vhodne_pro: "programování a skripty; přečte i snímek obrazovky s chybou"
     vhodne_pro_sk: "programovanie a skripty; prečíta aj snímku obrazovky s chybou"
 
@@ -112,7 +109,6 @@ modely:
     vstupy_sk: "len text"
     kontext: "1 milion tokenů"
     kontext_sk: "1 milión tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "silnější sourozenec GLM 5.3 Flash na náročné texty a programování"
     vhodne_pro_sk: "silnejší súrodenec GLM 5.3 Flash na náročné texty a programovanie"
 
@@ -126,7 +122,6 @@ modely:
     vstupy_sk: "text + obrázok + video"
     kontext: "1 milion tokenů"
     kontext_sk: "1 milión tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "obrázky a video za rozumnou cenu, dlouhé podklady"
     vhodne_pro_sk: "obrázky a video za rozumnú cenu, dlhé podklady"
 
@@ -140,7 +135,6 @@ modely:
     vstupy_sk: "text + obrázok"
     kontext: "256 tisíc tokenů"
     kontext_sk: "256 tisíc tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "univerzál na delší úkoly o více krocích, s obrázky"
     vhodne_pro_sk: "univerzál na dlhšie úlohy o viacerých krokoch, s obrázkami"
 
@@ -154,7 +148,6 @@ modely:
     vstupy_sk: "text + obrázok"
     kontext: "256 tisíc tokenů"
     kontext_sk: "256 tisíc tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "velký model na náročnější rozbory s obrázky"
     vhodne_pro_sk: "veľký model na náročnejšie rozbory s obrázkami"
 
@@ -168,7 +161,6 @@ modely:
     vstupy_sk: "text + obrázok"
     kontext: "256 tisíc tokenů"
     kontext_sk: "256 tisíc tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "rychlé a levné drobné úkoly, třídění a přepisy"
     vhodne_pro_sk: "rýchle a lacné drobné úlohy, triedenie a prepisy"
 
@@ -182,7 +174,6 @@ modely:
     vstupy_sk: "len text"
     kontext: "1 milion tokenů"
     kontext_sk: "1 milión tokenov"
-    doporuceni: specialni
     vhodne_pro: "předchůdce GLM 5.3; u Cortecs má levnější výstup"
     vhodne_pro_sk: "predchodca GLM 5.3; u Cortecs má lacnejší výstup"
 
@@ -196,7 +187,6 @@ modely:
     vstupy_sk: "text + obrázok"
     kontext: "1 milion tokenů"
     kontext_sk: "1 milión tokenov"
-    doporuceni: specialni
     vhodne_pro: "nejtěžší úlohy, kde nevadí vysoká cena"
     vhodne_pro_sk: "najťažšie úlohy, kde neprekáža vysoká cena"
 
@@ -210,7 +200,6 @@ modely:
     vstupy_sk: "len text"
     kontext: "1 milion tokenů"
     kontext_sk: "1 milión tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "silný DeepSeek na náročné texty a programování za rozumnou cenu"
     vhodne_pro_sk: "silný DeepSeek na náročné texty a programovanie za rozumnú cenu"
 
@@ -224,7 +213,6 @@ modely:
     vstupy_sk: "len text"
     kontext: "256 tisíc tokenů"
     kontext_sk: "256 tisíc tokenov"
-    doporuceni: dobra-volba
     vhodne_pro: "levné programování a skripty"
     vhodne_pro_sk: "lacné programovanie a skripty"
 
@@ -238,6 +226,5 @@ modely:
     vstupy_sk: "len text"
     kontext: "256 tisíc tokenů"
     kontext_sk: "256 tisíc tokenov"
-    doporuceni: specialni
     vhodne_pro: "největší Qwen na nejtěžší textové úlohy; drahý"
     vhodne_pro_sk: "najväčší Qwen na najťažšie textové úlohy; drahý"

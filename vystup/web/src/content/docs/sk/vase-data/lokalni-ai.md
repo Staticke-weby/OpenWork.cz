@@ -63,7 +63,8 @@ Providers → Add a custom LLM**), kde zadáte adresu svojho lokálneho servera.
 
 :::tip
 Neviete, kde začať? Nastavte si európsku bránu [Melious](/sk/modely/poskytovatele/melious/)
-— počíta len v Európe a z vašich zadaní si nič neukladá. Ako východiskový
+alebo [Cortecs](/sk/modely/poskytovatele/cortecs/) — počítajú len v Európe
+a z vašich zadaní si nič neukladajú. Ako východiskový
 odporúčame **DeepSeek V4.1 Flash** — dobrý pomer rýchlosti, kvality a ceny.
 :::
 

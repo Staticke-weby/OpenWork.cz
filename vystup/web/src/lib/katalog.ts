@@ -18,7 +18,11 @@ function nacti(nazev: string): any {
 
 export type Mena = 'EUR' | 'USD' | 'CHF';
 
-export type Doporuceni = 'doporucujeme' | 'dobra-volba' | 'na-zkousku' | 'specialni';
+/**
+ * Jediný štítek webu. Mají ho jen výslovně vybrané modely a poskytovatelé;
+ * ostatní jsou druhotná volba a štítek nemají (pole v YAML chybí).
+ */
+export type Doporuceni = 'doporucujeme';
 
 export interface CenaModelu {
   /** Slug modelu z modely-eu.yaml, nebo volný název (model mimo evropský katalog). */
@@ -49,7 +53,7 @@ export interface Poskytovatel {
   zdarma: string;
   zdarma_kratce: string;
   pripojeni: string;
-  doporuceni: Doporuceni;
+  doporuceni?: Doporuceni;
   shrnuti: string;
   zdroje: string[];
   overeno: Date;
@@ -64,7 +68,7 @@ export interface ModelEu {
   otevreny: boolean;
   vstupy: string;
   kontext: string;
-  doporuceni: Doporuceni;
+  doporuceni?: Doporuceni;
   vhodne_pro: string;
 }
 
@@ -149,16 +153,15 @@ export function prumernaCenaPoskytovatele(p: Poskytovatel) {
   return { vstup: prumer(vstup), vystup: prumer(vystup) };
 }
 
-/** Popisky úrovní doporučení (štítek u modelu a poskytovatele). */
-export const DOPORUCENI: Record<
-  Doporuceni,
-  { cs: string; sk: string; varianta: 'success' | 'tip' | 'note' | 'caution'; poradi: number }
-> = {
-  doporucujeme: { cs: 'Doporučujeme', sk: 'Odporúčame', varianta: 'success', poradi: 1 },
-  'dobra-volba': { cs: 'Dobrá volba', sk: 'Dobrá voľba', varianta: 'tip', poradi: 2 },
-  specialni: { cs: 'Pro určité případy', sk: 'Pre určité prípady', varianta: 'note', poradi: 3 },
-  'na-zkousku': { cs: 'Spíš na zkoušku', sk: 'Skôr na skúšku', varianta: 'caution', poradi: 4 },
+/** Popisek štítku doporučení (u modelu a poskytovatele). */
+export const DOPORUCENI: Record<Doporuceni, { cs: string; sk: string; varianta: 'success' }> = {
+  doporucujeme: { cs: 'Doporučujeme', sk: 'Odporúčame', varianta: 'success' },
 };
+
+/** Pro řazení: doporučené napřed (0), ostatní potom (1). */
+export function poradiDoporuceni(x: { doporuceni?: Doporuceni }): number {
+  return x.doporuceni ? 0 : 1;
+}
 
 export function formatCena(cena: number | null | undefined, mena: Mena, jeSk = false): string {
   if (cena === null || cena === undefined) return '—';

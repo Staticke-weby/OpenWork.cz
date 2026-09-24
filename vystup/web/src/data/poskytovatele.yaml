@@ -13,7 +13,8 @@
 # - Ceny: za 1 milion tokenů (vstup / výstup) v měně poskytovatele, bez DPH.
 #   `model` = slug z modely-eu.yaml (pak se model propojí se svou stránkou),
 #   nebo volný název u modelů mimo evropský katalog.
-# - doporuceni: stejné úrovně jako u modelů (viz modely-eu.yaml).
+# - doporuceni: doporucujeme — jen Melious a Cortecs (rovnocenně). Ostatní
+#   brány štítek nemají.
 # - Pole s příponou _sk jsou slovenské varianty (volitelné).
 
 last_verified: 2026-09-24
@@ -248,7 +249,6 @@ poskytovatele:
     zdarma_kratce_sk: "vybrané modely"
     pripojeni: "nativně — Settings → AI Providers → Connect → opencode"
     pripojeni_sk: "natívne — Settings → AI Providers → Connect → opencode"
-    doporuceni: dobra-volba
     shrnuti: "Nejjednodušší start s předplatným od tvůrců opencode. Výpočet ale běží v USA."
     zdroje:
       - "https://opencode.ai/docs/go/"
@@ -355,7 +355,6 @@ poskytovatele:
     zdarma_kratce_sk: "áno, s háčikmi"
     pripojeni: "nativně — Settings → AI Providers → Connect → opencode"
     pripojeni_sk: "natívne — Settings → AI Providers → Connect → opencode"
-    doporuceni: specialni
     shrnuti: "Platba za spotřebu u tvůrců opencode, včetně uzavřených modelů Claude, GPT a Gemini. Výpočet v USA."
     zdroje:
       - "https://opencode.ai/docs/zen/"
@@ -454,7 +453,6 @@ poskytovatele:
     zdarma_kratce_sk: "modely :free"
     pripojeni: "nativně — v OpenWorku ho najdete v seznamu poskytovatelů"
     pripojeni_sk: "natívne — v OpenWorku ho nájdete v zozname poskytovateľov"
-    doporuceni: na-zkousku
     shrnuti: "Brána ke stovkám modelů s bezplatnou řadou na vyzkoušení. Výpočet v EU jen v dražším tarifu Business."
     zdroje:
       - "https://openrouter.ai/docs/guides/features/zdr"

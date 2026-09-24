@@ -3,7 +3,7 @@
 // region, DPA). Data: src/data/poskytovatele.yaml — stejný zdroj jako
 // podstránky poskytovatelů, takže se údaje nerozejdou. Poslední řádek je
 // měřítko: lokální AI na vlastním počítači.
-import { poskytovatele, DOPORUCENI, overenoPoskytovatele, text } from '../lib/katalog';
+import { poskytovatele, poradiDoporuceni, overenoPoskytovatele, text } from '../lib/katalog';
 
 const jeSk = Astro.currentLocale === 'sk';
 const prefix = jeSk ? '/sk' : '';
@@ -11,7 +11,7 @@ const prefix = jeSk ? '/sk' : '';
 const radky = [...poskytovatele].sort(
   (a, b) =>
     Number(b.evropsky) - Number(a.evropsky) ||
-    DOPORUCENI[a.doporuceni].poradi - DOPORUCENI[b.doporuceni].poradi ||
+    poradiDoporuceni(a) - poradiDoporuceni(b) ||
     a.nazev.localeCompare(b.nazev, 'cs')
 );
 

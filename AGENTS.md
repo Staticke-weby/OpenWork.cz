@@ -37,7 +37,8 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   **OpenCode Zen** a **OpenRouter**. Další evropské cloudy (Scaleway,
   OVHcloud, IONOS, Mistral, STACKIT, Berget…) na web nepřidávej — pro snadné
   použití se nehodí (jen pro firmy, ruční nastavení, malá nabídka).
-- **Melious je doporučená cesta a základna katalogu modelů.** Počítá jen
+- **Melious a Cortecs jsou rovnocenně doporučená cesta**; Melious je navíc
+  základna katalogu modelů (každý model z katalogu nabízí). Melious počítá jen
   v Evropě a obsah zadání neukládá. ⚠ Piš přesně: vlastní hardware v pravém
   smyslu nemá (zprostředkovatel; část modelů na pronajatých GPU u Verda ve
   Finsku), ZDR slibuje v dokumentaci, ne ve smlouvě. OpenCode Go zůstává jako
@@ -45,15 +46,19 @@ spotřebujete — ne za hlavy. 3) Nikde nejste zamčení.**
   a modely z Číny dvěma volbami v nastavení — jednotlivé modely lze vypnout
   jen u OpenCode Zen.
 - **Katalog modelů = čínské otevřené modely hostované v EU z nabídky Melious**
-  (`src/data/modely-eu.yaml`, stránky `modely/eu/<slug>`). Každý model má
-  štítek doporučení (Doporučujeme / Dobrá volba / Pro určité případy /
-  Spíš na zkoušku) — stejný v datech i v `sidebar.badge`, hlídá
-  `scripts/kontrola-obsahu.mjs`. Ceny drží `src/data/poskytovatele.yaml`.
+  (`src/data/modely-eu.yaml`, stránky `modely/eu/<slug>`). **Jediný štítek
+  je „Doporučujeme"** a mají ho jen výslovně vybrané modely (DeepSeek V4.1
+  Flash, DeepSeek V4 Flash 0731, GLM 5.3 Flash — cenou odpovídají běžnému
+  použití v OpenWorku) a brány Melious a Cortecs (rovnocenně). Ostatní jsou
+  druhotná volba bez štítku; jiné úrovně (Dobrá volba apod.) nepoužívej.
+  V tabulkách štítek patří k názvu, ne do vlastního sloupce. Shodu dat
+  a `sidebar.badge` hlídá `scripts/kontrola-obsahu.mjs`. Ceny drží
+  `src/data/poskytovatele.yaml`.
 - **Fakta o produktech čerpej primárně z oficiálních zdrojů opencode a OpenWork
   a jejich GitHubu** (viz sekce „Zdroje a hlídání aktuálnosti" na konci). Když
   fakt nemáš ověřený z těchto zdrojů, použij `[DOPLNIT: co]`.
 - **Doporučovaná cesta pro čtenáře** (pořadí důrazu):
-  1. **Placené modely z katalogu přes evropskou bránu Melious** (platba
+  1. **Placené modely z katalogu přes evropskou bránu Melious nebo Cortecs** (platba
      za spotřebu) — pro každodenní práci; dají lepší rychlost, kvalitu
      a stabilitu. Toto je hlavní cesta. Kdo chce pevnou měsíční částku,
      má předplatné OpenCode Go (výpočet v USA).

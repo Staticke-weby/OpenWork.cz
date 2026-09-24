@@ -63,7 +63,8 @@ Providers → Add a custom LLM**), kde zadáte adresu svého lokálního serveru
 
 :::tip
 Nevíte, kde začít? Nastavte si evropskou bránu [Melious](/modely/poskytovatele/melious/)
-— počítá jen v Evropě a z vašich zadání si nic neukládá. Jako výchozí
+nebo [Cortecs](/modely/poskytovatele/cortecs/) — počítají jen v Evropě
+a z vašich zadání si nic neukládají. Jako výchozí
 doporučujeme **DeepSeek V4.1 Flash** — dobrý poměr rychlosti, kvality a ceny.
 :::
 

@@ -10,7 +10,7 @@ Keď siahnete po výkonnejších modeloch, platíte **poskytovateľovi za spotre
 alebo predplatné. Tu sú tri brány, ktoré odporúčame — a kedy siahnuť
 po ktorej.
 
-## Melious (odporúčaná voľba)
+## Melious (odporúčame)
 
 Európska brána z Nemecka a **základ nášho [katalógu modelov](/sk/modely/katalog/)**.
 Výpočet beží **len v Európe** a z vašich zadaní si nič neukladá.
@@ -25,10 +25,10 @@ Výpočet beží **len v Európe** a z vašich zadaní si nič neukladá.
 
 [Melious podrobne →](/sk/modely/poskytovatele/melious/)
 
-## Cortecs (európska brána s najväčšou ponukou)
+## Cortecs (odporúčame)
 
-Rakúska brána k viac než stovke modelov s **výpočtom v EÚ**. Pri rade modelov
-je lacnejšia než Melious.
+Rakúska brána k viac než stovke modelov s **výpočtom v EÚ** — rovnako
+dobrá voľba ako Melious. Pri rade modelov je lacnejšia.
 
 - **Za čo platíte:** za spotrebu z kreditu v eurách plus **5 % z každého
   dobitia**. Bezplatnú úroveň nemá.
@@ -51,8 +51,9 @@ Predplatné od tvorcov opencode (základu, na ktorom OpenWork stavia) za
 
 ## Ako sa rozhodnúť
 
-- **Väčšina ľudí:** Melious — dáta v Európe, platíte len za to, čo spotrebujete.
-- **Chcete najnižšiu cenu alebo širší výber:** Cortecs.
+- **Väčšina ľudí:** Melious alebo Cortecs — dáta v Európe, platíte len za to,
+  čo spotrebujete. Pri Melious nemusíte nič nastavovať a môžete ho vyskúšať
+  zadarmo; Cortecs má väčší výber a často nižšie ceny.
 - **Chcete pevnú mesačnú sumu a nevadí vám USA:** OpenCode Go.
 - **Chcete začať bez platenia:** pozrite sa na
   [poskytovateľov AI zadarmo](/sk/kolik-to-stoji/poskytovatele-ai-zdarma/).

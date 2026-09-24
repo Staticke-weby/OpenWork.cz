@@ -14,12 +14,12 @@ const zakladna = cenaUZakladny(m.slug);
 const jeSk = Astro.currentLocale === 'sk';
 
 const t = jeSk
-  ? { hodnoceni: 'Ako veľmi ho odporúčame', vyrobce: 'Výrobca', otevreny: 'Otvorený model',
+  ? { vyrobce: 'Výrobca', otevreny: 'Otvorený model',
       ano: 'áno — dá sa stiahnuť a prevádzkovať aj u seba', ne: 'nie',
       vstupy: 'Vstupy', kontext: 'Kontext (koľko textu naraz prečíta)', hodi: 'Hodí sa na',
       melious: 'Cena u Melious', cena: 'Priemerná cena v EÚ', zaMil: 'za 1 mil. tokenov vstupu / výstupu',
       pocet: 'u', posk: 'poskytovateľov', popis: 'Základné údaje o modeli' }
-  : { hodnoceni: 'Jak moc ho doporučujeme', vyrobce: 'Výrobce', otevreny: 'Otevřený model',
+  : { vyrobce: 'Výrobce', otevreny: 'Otevřený model',
       ano: 'ano — dá se stáhnout a provozovat i u sebe', ne: 'ne',
       vstupy: 'Vstupy', kontext: 'Kontext (kolik textu najednou přečte)', hodi: 'Hodí se na',
       melious: 'Cena u Melious', cena: 'Průměrná cena v EU', zaMil: 'za 1 mil. tokenů vstupu / výstupu',
@@ -37,10 +37,13 @@ const cenaText =
 ---
 
 <div class="ow-karta">
-  <p class="ow-karta__stitek">
-    <span>{t.hodnoceni}:</span>
-    <DoporuceniStitek uroven={m.doporuceni} velky />
-  </p>
+  {
+    m.doporuceni && (
+      <p class="ow-karta__stitek">
+        <DoporuceniStitek uroven={m.doporuceni} velky />
+      </p>
+    )
+  }
   <div class="zdat-obal">
     <table class="zdat-tabulka ow-karta__fakta">
       <caption class="sr-only">{t.popis} — {m.nazev}</caption>

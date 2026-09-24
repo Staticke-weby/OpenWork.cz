@@ -18,14 +18,14 @@ const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
 
 const t = jeSk
   ? {
-      hodnoceni: 'Naše hodnotenie', sidlo: 'Sídlo', region: 'Kde beží výpočet',
+      sidlo: 'Sídlo', region: 'Kde beží výpočet',
       hw: 'Vlastný hardvér', trenink: 'Tréning na dátach', uchovavani: 'Uchovávanie záznamov',
       zdr: 'Nulové uchovávanie (ZDR)', dpa: 'Zmluva o spracovaní (DPA)', cert: 'Certifikácie',
       platba: 'Platba', zdarma: 'Zadarmo', pripojeni: 'Pripojenie v OpenWorku',
       zdroje: 'Zdroje', overeno: 'Overené', popis: 'Kľúčové fakty',
     }
   : {
-      hodnoceni: 'Naše hodnocení', sidlo: 'Sídlo', region: 'Kde běží výpočet',
+      sidlo: 'Sídlo', region: 'Kde běží výpočet',
       hw: 'Vlastní hardware', trenink: 'Trénink na datech', uchovavani: 'Uchovávání záznamů',
       zdr: 'Nulové uchovávání (ZDR)', dpa: 'Smlouva o zpracování (DPA)', cert: 'Certifikace',
       platba: 'Platba', zdarma: 'Zdarma', pripojeni: 'Připojení v OpenWorku',
@@ -57,10 +57,13 @@ function zkracenyOdkaz(url: string): string {
 ---
 
 <div class="ow-karta">
-  <p class="ow-karta__stitek">
-    <span>{t.hodnoceni}:</span>
-    <DoporuceniStitek uroven={p.doporuceni} velky />
-  </p>
+  {
+    p.doporuceni && (
+      <p class="ow-karta__stitek">
+        <DoporuceniStitek uroven={p.doporuceni} velky />
+      </p>
+    )
+  }
   <div class="zdat-obal">
     <table class="zdat-tabulka ow-karta__fakta">
       <caption class="sr-only">{t.popis} — {p.nazev}</caption>

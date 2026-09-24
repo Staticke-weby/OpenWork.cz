@@ -9,8 +9,8 @@
 //    datum se zobrazuje z frontmatteru `last_verified` (PageTitle.astro).
 // 3. Stáří `last_verified` v živých datech (src/data/*.yaml) — jen varování.
 // 4. Poskytovatelé (poskytovatele.yaml) a evropské modely (modely-eu.yaml):
-//    každý má stránku CZ i SK, štítek v bočním menu odpovídá hodnocení
-//    v datech a odkazy na modely v ceníku vedou na existující model.
+//    každý má stránku CZ i SK, štítek „Doporučujeme" v bočním menu má
+//    jen ten, kdo ho má v datech a odkazy na modely v ceníku vedou na existující model.
 
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -129,11 +129,9 @@ for (const [tag, pocet] of pocetOdkazu) {
 if (!modelyEu.some((m) => m.nazev === model)) {
   chyby.push(`src/data/modely-eu.yaml: doporučený model „${model}" (konstanty.yaml) v katalogu chybí.`);
 }
+// Jediný štítek webu. Kdo ho v datech nemá, nesmí mít štítek ani v menu.
 const STITKY = {
   doporucujeme: { cs: 'Doporučujeme', sk: 'Odporúčame' },
-  'dobra-volba': { cs: 'Dobrá volba', sk: 'Dobrá voľba' },
-  specialni: { cs: 'Pro určité případy', sk: 'Pre určité prípady' },
-  'na-zkousku': { cs: 'Spíš na zkoušku', sk: 'Skôr na skúšku' },
 };
 function najdiStranku(...cesta) {
   const zaklad = join(slozkaObsahu, ...cesta);
@@ -144,9 +142,9 @@ function najdiStranku(...cesta) {
 }
 function zkontrolujStranky(polozky, slozka, datovySoubor) {
   for (const x of polozky) {
-    const stitek = STITKY[x.doporuceni];
-    if (!stitek) {
-      chyby.push(`${datovySoubor}: „${x.slug}" má neznámé doporuceni „${x.doporuceni}".`);
+    const stitek = x.doporuceni ? STITKY[x.doporuceni] : null;
+    if (x.doporuceni && !stitek) {
+      chyby.push(`${datovySoubor}: „${x.slug}" má neznámé doporuceni „${x.doporuceni}" (povolené je jen „doporucujeme").`);
       continue;
     }
     for (const [jazyk, prefix] of [['cs', []], ['sk', ['sk']]]) {
@@ -156,9 +154,13 @@ function zkontrolujStranky(polozky, slozka, datovySoubor) {
         continue;
       }
       const text = readFileSync(stranka, 'utf8');
-      const badge = text.match(/badge:\s*\n\s*text:\s*"([^"]+)"/);
-      if (!badge || badge[1] !== stitek[jazyk]) {
+      const frontmatter = text.match(/^---[\s\S]*?---/)?.[0] ?? '';
+      const badge = frontmatter.match(/badge:\s*\n\s*text:\s*"([^"]+)"/);
+      if (stitek && (!badge || badge[1] !== stitek[jazyk])) {
         chyby.push(`${relative(koren, stranka)}: štítek v menu musí být „${stitek[jazyk]}" (podle ${datovySoubor}).`);
+      }
+      if (!stitek && /\bbadge:/.test(frontmatter)) {
+        chyby.push(`${relative(koren, stranka)}: štítek v menu mít nesmí — v ${datovySoubor} není doporučený.`);
       }
     }
   }

@@ -38,8 +38,8 @@ const t = jeSk
     <tbody>
       {
         nabidky.map(({ poskytovatel: p, cena }) => (
-          <tr>
-            <td>
+          <tr class:list={[{ 'ow-doporuceny': p.doporuceni }]}>
+            <td class="ow-nazev">
               <a href={`${prefix}/modely/poskytovatele/${p.slug}/`}>{p.nazev}</a>{' '}
               <DoporuceniStitek uroven={p.doporuceni} />
             </td>

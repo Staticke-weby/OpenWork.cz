@@ -32,18 +32,18 @@ neoplatí tráviť hodiny nad rebríčkami. Prakticky rozhodujú dve veci:
 
 ## S čím začať
 
-Odporúčame európsku bránu **[Melious](/sk/modely/poskytovatele/melious/)**
-— počíta len v Európe a z vašich zadaní si nič neukladá — a ako východiskový
+Odporúčame európske brány **[Melious](/sk/modely/poskytovatele/melious/)**
+alebo **[Cortecs](/sk/modely/poskytovatele/cortecs/)** — počítajú len v Európe
+a z vašich zadaní si nič neukladajú — a ako východiskový
 model **[DeepSeek V4.1 Flash](/sk/modely/eu/deepseek-v4-1-flash/)**: rýchly, dobre píše po slovensky,
 spoľahlivo pracuje s nástrojmi a prečíta aj obrázky. Rozbehnite sa s ním a meňte,
 až keď narazíte na jeho hranice.
 
-Dobre poslúži aj **[GLM 5.3 Flash](/sk/modely/eu/glm-5-3-flash/)** (lacnejší,
-prečíta aj video), **[DeepSeek V4 Flash](/sk/modely/eu/deepseek-v4-flash/)**
-(najlacnejší na čistý text), **[Kimi K2.7 Code](/sk/modely/eu/kimi-k2-7-code/)**
-(programovanie) a **[MiniMax M3](/sk/modely/eu/minimax-m3/)** (obrázky a video).
-Všetky nájdete v **[katalógu modelov](/sk/modely/katalog/)** — čínskych
-otvorených modelov hostovaných v EÚ, so štítkom, ako veľmi ich odporúčame.
+Odporúčame aj **[GLM 5.3 Flash](/sk/modely/eu/glm-5-3-flash/)** (lacnejší,
+prečíta aj video) a **[DeepSeek V4 Flash](/sk/modely/eu/deepseek-v4-flash/)**
+(najlacnejší na čistý text). Silnejšie a špecializované modely sú
+v **[katalógu modelov](/sk/modely/katalog/)** — čínskych otvorených modelov
+hostovaných v EÚ — ako druhotná voľba, keď odporúčaný model nestačí.
 
 Chcete radšej pevnú mesačnú sumu a nevadí vám výpočet v USA? Rovnaké
 modely ponúka predplatné
@@ -61,7 +61,7 @@ dostanete len cez poskytovateľa.
 - **[Vstupy: text, obrázok, video](/sk/modely/vstupy/)** — prečo je to hlavný
   rozdiel medzi modelmi a ako si vybrať.
 - **[Katalóg modelov](/sk/modely/katalog/)** — čínske otvorené modely v EÚ
-  so štítkom odporúčania a cenou.
+  a ich ceny.
 - **[Poskytovatelia AI modelov](/sk/modely/poskytovatele/)** — Melious, Cortecs,
   OpenCode Go, OpenCode Zen a OpenRouter vedľa seba.
 - **[Najlepší na programovanie](/sk/modely/nejlepsi-pro/programovani/)**,

@@ -234,6 +234,13 @@ GLM 5.3 Flash zůstává se štítkem Doporučujeme jako levnější alternativa
 s videem. Háček: v OpenCode Go má DeepSeek V4.1 Flash limit jen 15 $
 měsíčně (do 27. 9. 2026 akčně 60 $) — uvedeno na stránce OpenCode Go.
 
+**Štítky zjednodušeny (pokyn provozovatele):** jediný štítek „Doporučujeme"
+mají DeepSeek V4.1 Flash, DeepSeek V4 Flash (0731) a GLM 5.3 Flash a brány
+Melious a Cortecs (rovnocenně). Ostatní modely jsou druhotná volba bez
+štítku — na běžné použití v OpenWorku jsou cenou nevhodné. Úrovně Dobrá
+volba / Pro určité případy / Spíš na zkoušku zrušeny. V tabulkách štítek
+u názvu a podbarvený řádek místo vlastního sloupce.
+
 **Kontrola češtiny:** nové stránky psány krátkými větami v činném rodě,
 výrazy ze slovníčku (poskytovatel, platba za spotřebu, klíč, výpočet),
 u každého doporučení uveden háček. Opraveno při psaní: 3 nepřesná

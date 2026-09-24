@@ -2,7 +2,7 @@
 // Přehled poskytovatelů: evropští první, pak zahraniční brány. Každý řádek
 // odkazuje na podstránku poskytovatele.
 import DoporuceniStitek from './DoporuceniStitek.astro';
-import { poskytovatele, DOPORUCENI, prumernaCenaPoskytovatele, formatCena, overenoPoskytovatele, text } from '../lib/katalog';
+import { poskytovatele, poradiDoporuceni, prumernaCenaPoskytovatele, formatCena, overenoPoskytovatele, text } from '../lib/katalog';
 
 interface Props {
   /** "eu" = jen evropští, "zahranicni" = jen zahraniční, jinak všichni. */
@@ -17,7 +17,7 @@ const radky = poskytovatele
   .sort(
     (a, b) =>
       Number(b.evropsky) - Number(a.evropsky) ||
-      DOPORUCENI[a.doporuceni].poradi - DOPORUCENI[b.doporuceni].poradi ||
+      poradiDoporuceni(a) - poradiDoporuceni(b) ||
       a.nazev.localeCompare(b.nazev, 'cs')
   );
 
@@ -28,10 +28,10 @@ const datumFormat = new Intl.DateTimeFormat(jeSk ? 'sk-SK' : 'cs-CZ', {
 });
 
 const t = jeSk
-  ? { posk: 'Poskytovateľ', hodnoceni: 'Hodnotenie', region: 'Kde beží výpočet', zdr: 'ZDR',
+  ? { posk: 'Poskytovateľ', region: 'Kde beží výpočet', zdr: 'ZDR',
       modely: 'Modelov', cena: 'Priemerná cena (vstup / výstup za 1 mil. tokenov)', zdarma: 'Zadarmo',
       overeno: 'Naposledy overené', zmeny: 'história zmien', popis: 'Prehľad poskytovateľov' }
-  : { posk: 'Poskytovatel', hodnoceni: 'Hodnocení', region: 'Kde běží výpočet', zdr: 'ZDR',
+  : { posk: 'Poskytovatel', region: 'Kde běží výpočet', zdr: 'ZDR',
       modely: 'Modelů', cena: 'Průměrná cena (vstup / výstup za 1 mil. tokenů)', zdarma: 'Zdarma',
       overeno: 'Naposledy ověřeno', zmeny: 'historie změn', popis: 'Přehled poskytovatelů' };
 ---
@@ -46,7 +46,6 @@ const t = jeSk
     <thead>
       <tr>
         <th scope="col">{t.posk}</th>
-        <th scope="col">{t.hodnoceni}</th>
         <th scope="col">{t.region}</th>
         <th scope="col">{t.zdr}</th>
         <th scope="col">{t.modely}</th>
@@ -59,9 +58,11 @@ const t = jeSk
         radky.map((p) => {
           const c = prumernaCenaPoskytovatele(p);
           return (
-            <tr>
-              <td><a href={`${prefix}/modely/poskytovatele/${p.slug}/`}>{p.nazev}</a></td>
-              <td><DoporuceniStitek uroven={p.doporuceni} /></td>
+            <tr class:list={[{ 'ow-doporuceny': p.doporuceni }]}>
+              <td class="ow-nazev">
+                <a href={`${prefix}/modely/poskytovatele/${p.slug}/`}>{p.nazev}</a>
+                <DoporuceniStitek uroven={p.doporuceni} />
+              </td>
               <td>{text(p, 'region_vypoctu', jeSk)}</td>
               <td>{text(p, 'zdr_kratce', jeSk)}</td>
               <td>{p.modely.length}</td>

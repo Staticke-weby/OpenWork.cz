@@ -146,3 +146,18 @@
 .zdat-tabulka tfoot td {
   background: var(--sl-color-gray-6);
 }
+
+/* Doporučené řádky: štítek u názvu + jemné podbarvení barvou značky
+   (místo samostatného sloupce). */
+.zdat-tabulka tbody tr.ow-doporuceny td {
+  background: var(--sl-color-accent-low);
+}
+/* Název se nezalomí; štítek se v úzkém sloupci přesune pod něj. */
+.zdat-tabulka td.ow-nazev a {
+  white-space: nowrap;
+}
+.zdat-tabulka td.ow-nazev .sl-badge {
+  display: inline-block;
+  margin-inline-start: 0.35rem;
+  vertical-align: middle;
+}
