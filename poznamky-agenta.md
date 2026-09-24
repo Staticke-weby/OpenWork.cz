@@ -258,3 +258,13 @@ o Markdownu (`soubory-md.md`) ponechán bez www — je to jen příklad syntaxe.
 **Měření návštěvnosti (24. 9. 2026):** na pokyn provozovatele přidán skript
 Umami (`navstevnost.pikapod.net`) do `head` všech stránek v `astro.config.mjs`.
 Výjimka z pravidla o JavaScriptu zapsána v AGENTS.md.
+
+**Odstraněny oddíly „Na co si dát pozor" u modelů (24. 9. 2026, pokyn
+provozovatele):** na všech 30 stránkách modelů (CZ i SK) zrušen oddíl
+s výtkami — opakoval, co už říká karta modelu (vstupy) a štítek Doporučujeme
+(„na běžnou práci zbytečně drahý"), a web působil kriticky. Věcné poznámky
+k nabídce (verze u Melious a OpenCode Go, zmenšená verze GLM 5.3 Flash
+u Cortecs, tarif Business u OpenRouter, záměna Qwen3.8 27B / Flash) přesunuty
+do „Kde ho vezmete". Titulek Kimi K3 bez „za vysokou cenu". Zásada „u každého
+doporučení uveden háček" už neplatí — háčky patří jen na stránky poskytovatelů,
+kde jde o data a poplatky. Katalog: „zbytečně drahé" → „a proto dražší".
